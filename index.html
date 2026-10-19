@@ -1,0 +1,614 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Priority Daily Brief</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&family=Inter:wght@400;500;600;700&display=swap">
+
+<style>
+/* ── TOKENS (PDB_Style_Spec.md v1.0) ── */
+:root {
+  --page-bg:       #F5F4F0;
+  --content-bg:    #FFFFFF;
+  --masthead-bg:   #1A2744;
+  --masthead-fg:   #FFFFFF;
+  --accent-gold:   #C8A84B;
+  --heading-fg:    #1A2744;
+  --body-fg:       #1A1A1A;
+  --meta-fg:       #555555;
+  --secondary-fg:  #888880;
+  --divider:       #DDDDDD;
+  --banner-bg:     #E8E6E0;
+  --banner-fg:     #1A2744;
+  --balance-bg:    #F0EDE6;
+  --balance-bdr:   #C8A84B;
+  --tag-bg:        #FFFFFF;
+  --link-fg:       #1A5FBF;
+  --link-hover:    #0D3D8A;
+  --pill-bg:       #E8E6E0;
+  --pill-fg:       #1A2744;
+  --card-hover:    #FAFAF8;
+
+  /* source colors */
+  --src-left:    #1A5FBF;
+  --src-center:  #2A7A3A;
+  --src-right:   #B03020;
+  --src-intl:    #5A3A8A;
+  --src-primary: #5A5850;
+
+  --font-display: 'Playfair Display', Georgia, serif;
+  --font-body:    'Source Serif 4', Georgia, 'Times New Roman', serif;
+  --font-ui:      'Inter', 'Helvetica Neue', Arial, sans-serif;
+
+  --max-width: 820px;
+  --radius:    6px;
+  --shadow:    0 2px 8px rgba(0,0,0,0.07);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --page-bg:      #0F1117;
+    --content-bg:   #181C27;
+    --masthead-bg:  #0B1020;
+    --body-fg:      #E4E2DC;
+    --meta-fg:      #9A9890;
+    --secondary-fg: #5A5850;
+    --divider:      #272B38;
+    --banner-bg:    #161A28;
+    --banner-fg:    #C0C8E0;
+    --balance-bg:   #1A180E;
+    --tag-bg:       #181C27;
+    --pill-bg:      #1E2232;
+    --pill-fg:      #C0C8E0;
+    --card-hover:   #1C2030;
+    --heading-fg:   #C0C8E0;
+    --shadow:       0 2px 12px rgba(0,0,0,0.35);
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --page-bg:      #0F1117;
+  --content-bg:   #181C27;
+  --masthead-bg:  #0B1020;
+  --body-fg:      #E4E2DC;
+  --meta-fg:      #9A9890;
+  --secondary-fg: #5A5850;
+  --divider:      #272B38;
+  --banner-bg:    #161A28;
+  --banner-fg:    #C0C8E0;
+  --balance-bg:   #1A180E;
+  --tag-bg:       #181C27;
+  --pill-bg:      #1E2232;
+  --pill-fg:      #C0C8E0;
+  --card-hover:   #1C2030;
+  --heading-fg:   #C0C8E0;
+  --shadow:       0 2px 12px rgba(0,0,0,0.35);
+  color-scheme: dark;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--page-bg);
+  color: var(--body-fg);
+  font-family: var(--font-body);
+  font-size: 15px;
+  line-height: 1.65;
+}
+
+a { color: var(--link-fg); text-decoration: none; }
+a:hover { color: var(--link-hover); text-decoration: underline; }
+
+/* ── MASTHEAD ── */
+.masthead {
+  background: var(--masthead-bg);
+  padding: 28px 24px 20px;
+}
+
+.masthead__inner {
+  max-width: var(--max-width);
+  margin-inline: auto;
+}
+
+.masthead__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.masthead__title {
+  font-family: var(--font-display);
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--masthead-fg);
+  margin: 0;
+  line-height: 1.15;
+}
+
+.masthead__x-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  background: rgba(255,255,255,0.10);
+  border: 1px solid rgba(255,255,255,0.18);
+  border-radius: 20px;
+  padding: 6px 14px;
+  font-family: var(--font-ui);
+  font-size: 12px;
+  font-weight: 600;
+  color: #FFFFFF;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background 0.15s;
+  flex-shrink: 0;
+}
+.masthead__x-link:hover {
+  background: rgba(255,255,255,0.18);
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.masthead__x-icon {
+  width: 14px;
+  height: 14px;
+  fill: currentColor;
+  flex-shrink: 0;
+}
+
+.masthead__rule {
+  border: none;
+  border-top: 2px solid var(--accent-gold);
+  margin: 8px 0 6px;
+}
+
+.masthead__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.masthead__sub {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--accent-gold);
+  letter-spacing: 0.10em;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.masthead__tagline {
+  font-family: var(--font-ui);
+  font-size: 12px;
+  color: rgba(255,255,255,0.55);
+  margin: 0;
+}
+
+/* ── NAV BANNER ── */
+.nav-banner {
+  background: var(--banner-bg);
+  border-bottom: 1px solid var(--divider);
+}
+
+.nav-banner__inner {
+  max-width: var(--max-width);
+  margin-inline: auto;
+  padding: 0 24px;
+  display: flex;
+  gap: 0;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+
+.nav-banner__link {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--banner-fg);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 10px 14px;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.15s, color 0.15s;
+}
+.nav-banner__link:hover,
+.nav-banner__link.active {
+  color: var(--link-fg);
+  border-bottom-color: var(--accent-gold);
+  text-decoration: none;
+}
+
+/* ── PAGE LAYOUT ── */
+.page {
+  max-width: var(--max-width);
+  margin-inline: auto;
+  padding: 32px 24px 48px;
+  display: grid;
+  grid-template-columns: 1fr 280px;
+  gap: 32px;
+  align-items: start;
+}
+
+/* ── SECTION HEADING ── */
+.section-heading {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--meta-fg);
+  text-transform: uppercase;
+  letter-spacing: 0.10em;
+  margin: 0 0 16px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid var(--heading-fg);
+  color: var(--heading-fg);
+}
+
+/* ── BRIEF CARDS (archive list) ── */
+.briefs { list-style: none; margin: 0; padding: 0; }
+
+.brief-card {
+  display: block;
+  background: var(--content-bg);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 18px 20px;
+  margin-bottom: 12px;
+  text-decoration: none;
+  color: inherit;
+  transition: background 0.15s, box-shadow 0.15s;
+  border-left: 3px solid transparent;
+}
+.brief-card:hover {
+  background: var(--card-hover);
+  border-left-color: var(--accent-gold);
+  text-decoration: none;
+  color: inherit;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.10);
+}
+
+.brief-card__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+  margin-bottom: 4px;
+}
+
+.brief-card__date {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--accent-gold);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  white-space: nowrap;
+}
+
+.brief-card__edition {
+  font-family: var(--font-ui);
+  font-size: 10px;
+  color: var(--secondary-fg);
+  white-space: nowrap;
+}
+
+.brief-card__title {
+  font-family: var(--font-ui);
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--heading-fg);
+  margin: 0 0 6px;
+  line-height: 1.3;
+  text-wrap: balance;
+}
+
+.brief-card__topics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-top: 8px;
+}
+
+.brief-card__pill {
+  display: inline-block;
+  font-family: var(--font-ui);
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  background: var(--pill-bg);
+  color: var(--pill-fg);
+  border-radius: 3px;
+  padding: 2px 7px;
+}
+
+.brief-card__iw {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-family: var(--font-ui);
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  background: #FFF3CD;
+  color: #7A5800;
+  border-radius: 3px;
+  padding: 2px 7px;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .brief-card__iw {
+    background: #2A2000;
+    color: #C8A84B;
+  }
+}
+:root[data-theme="dark"] .brief-card__iw {
+  background: #2A2000;
+  color: #C8A84B;
+}
+
+/* placeholder state */
+.brief-card--placeholder {
+  border-left-color: var(--divider);
+  opacity: 0.55;
+  pointer-events: none;
+}
+.brief-card--placeholder .brief-card__date { color: var(--secondary-fg); }
+
+/* ── SIDEBAR ── */
+.sidebar { display: flex; flex-direction: column; gap: 20px; }
+
+.sidebar-card {
+  background: var(--content-bg);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 18px 20px;
+}
+
+.sidebar-card__heading {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--heading-fg);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin: 0 0 10px;
+  padding-bottom: 7px;
+  border-bottom: 1px solid var(--divider);
+}
+
+.sidebar-card p {
+  font-family: var(--font-body);
+  font-size: 13px;
+  color: var(--meta-fg);
+  line-height: 1.6;
+  margin: 0 0 8px;
+}
+.sidebar-card p:last-child { margin-bottom: 0; }
+
+/* legend swatches */
+.legend { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 6px; }
+.legend li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-ui);
+  font-size: 11px;
+  color: var(--meta-fg);
+}
+.legend__dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+/* subscribe prompt */
+.subscribe-prompt {
+  background: var(--balance-bg);
+  border-left: 4px solid var(--balance-bdr);
+  border-radius: 0 var(--radius) var(--radius) 0;
+  padding: 14px 16px;
+}
+.subscribe-prompt p {
+  font-family: var(--font-body);
+  font-size: 13px;
+  color: var(--body-fg);
+  line-height: 1.55;
+  margin: 0;
+}
+
+/* ── FOOTER ── */
+.site-footer {
+  border-top: 1px solid var(--divider);
+  padding: 20px 24px;
+  max-width: var(--max-width);
+  margin-inline: auto;
+}
+.site-footer p {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  color: var(--secondary-fg);
+  margin: 0;
+  text-align: center;
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 680px) {
+  .page {
+    grid-template-columns: 1fr;
+    padding-inline: 16px;
+    gap: 24px;
+  }
+  .masthead { padding-inline: 16px; }
+  .masthead__title { font-size: 26px; }
+  .nav-banner__inner { padding-inline: 16px; }
+  .sidebar { order: -1; }
+  .site-footer { padding-inline: 16px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { transition: none !important; }
+}
+</style>
+
+<!-- ── MASTHEAD ── -->
+<header class="masthead">
+  <div class="masthead__inner">
+    <div class="masthead__top">
+      <h1 class="masthead__title">Priority Daily Brief</h1>
+      <a class="masthead__x-link" href="https://x.com/Cincinnatus1775" target="_blank" rel="noopener" aria-label="Follow on X">
+        <!-- X (Twitter) logo -->
+        <svg class="masthead__x-icon" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.746l7.73-8.835L1.254 2.25H8.08l4.259 5.629L18.244 2.25zm-1.161 17.52h1.833L7.084 4.126H5.117L17.083 19.77z"/>
+        </svg>
+        Follow on X
+      </a>
+    </div>
+    <hr class="masthead__rule" aria-hidden="true">
+    <div class="masthead__bottom">
+      <p class="masthead__sub">Your Open-Source Daily Brief</p>
+      <p class="masthead__tagline">Sourced across the spectrum · No paywalls</p>
+    </div>
+  </div>
+</header>
+
+<!-- ── NAV ── -->
+<nav class="nav-banner" aria-label="Site sections">
+  <div class="nav-banner__inner">
+    <a class="nav-banner__link active" href="#archive">Archive</a>
+    <a class="nav-banner__link" href="#about">About</a>
+  </div>
+</nav>
+
+<!-- ── MAIN ── -->
+<div class="page">
+
+  <!-- ── ARCHIVE LIST ── -->
+  <main id="archive">
+    <h2 class="section-heading">All Editions</h2>
+
+    <ul class="briefs" aria-label="Brief archive">
+
+      <!--
+        AGENT INSTRUCTIONS — PREPEND NEW ENTRIES AT THE TOP OF THIS LIST.
+        Copy the block below, fill in the values, and paste above the previous entry.
+        Never modify existing entries; never alter the CSS or structure.
+
+        <li>
+          <a class="brief-card" href="briefs/YYYY-MM-DD.html">
+            <div class="brief-card__top">
+              <span class="brief-card__date">DD Mon YYYY</span>
+              <span class="brief-card__edition">Edition #N</span>
+            </div>
+            <p class="brief-card__title">{{HOOK_LINE}}</p>
+            <div class="brief-card__topics">
+              <span class="brief-card__pill">Nat'l Security</span>
+              <span class="brief-card__pill">Politics</span>
+              <span class="brief-card__pill">Economy</span>
+              <span class="brief-card__pill">Technology</span>
+              [INCLUDE IF I&W ITEMS PRESENT:]
+              <span class="brief-card__iw">⚠ I&amp;W</span>
+            </div>
+          </a>
+        </li>
+      -->
+
+      <!-- PLACEHOLDER — remove when first real brief is published -->
+      <li>
+        <div class="brief-card brief-card--placeholder">
+          <div class="brief-card__top">
+            <span class="brief-card__date">Coming soon</span>
+            <span class="brief-card__edition">Edition #1</span>
+          </div>
+          <p class="brief-card__title">The first Priority Daily Brief will appear here.</p>
+          <div class="brief-card__topics">
+            <span class="brief-card__pill">Nat'l Security</span>
+            <span class="brief-card__pill">Politics</span>
+            <span class="brief-card__pill">Economy</span>
+            <span class="brief-card__pill">Technology</span>
+          </div>
+        </div>
+      </li>
+
+    </ul>
+  </main>
+
+  <!-- ── SIDEBAR ── -->
+  <aside class="sidebar" aria-label="About and source guide">
+
+    <!-- About -->
+    <div class="sidebar-card" id="about">
+      <p class="sidebar-card__heading">About</p>
+      <p>
+        The Priority Daily Brief is a daily open-source intelligence brief covering the four stories
+        most widely reported across the spectrum in the preceding 24 hours — national security,
+        politics, the economy, and technology.
+      </p>
+      <p>
+        Every edition is sourced from a curated registry of outlets rated for editorial bias and
+        factual reliability by independent assessors. Sources are selected for balance, not
+        to confirm any particular view.
+      </p>
+    </div>
+
+    <!-- Source legend -->
+    <div class="sidebar-card">
+      <p class="sidebar-card__heading">Source Key</p>
+      <ul class="legend">
+        <li>
+          <span class="legend__dot" style="background:#1A5FBF;"></span>
+          Left / Left-Center
+        </li>
+        <li>
+          <span class="legend__dot" style="background:#2A7A3A;"></span>
+          Center
+        </li>
+        <li>
+          <span class="legend__dot" style="background:#B03020;"></span>
+          Right / Right-Center
+        </li>
+        <li>
+          <span class="legend__dot" style="background:#5A3A8A;"></span>
+          International
+        </li>
+        <li>
+          <span class="legend__dot" style="background:#5A5850;"></span>
+          Primary Source
+        </li>
+      </ul>
+    </div>
+
+    <!-- I&W note -->
+    <div class="sidebar-card">
+      <p class="sidebar-card__heading">Indications &amp; Warning</p>
+      <p>
+        Editions marked <strong>⚠ I&amp;W</strong> include up to three items flagged for
+        major significance — developments that may indicate an impending large-scale event
+        or a sudden shift in a key situation.
+      </p>
+    </div>
+
+    <!-- Subscribe prompt -->
+    <div class="subscribe-prompt">
+      <p>
+        Personalized briefs with subscriber-defined topics and regions are coming.
+        Follow <a href="https://x.com/Cincinnatus1775" target="_blank" rel="noopener">@Cincinnatus1775</a> on X for updates.
+      </p>
+    </div>
+
+  </aside>
+
+</div><!-- /page -->
+
+<!-- ── FOOTER ── -->
+<footer>
+  <div class="site-footer">
+    <p>Priority Daily Brief · All sources open-access · No paywalls bypassed</p>
+  </div>
+</footer>
+
+</body></html>
