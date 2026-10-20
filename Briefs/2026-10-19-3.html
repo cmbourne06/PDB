@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="claude:viewport-fit-sides" content="cover">
+<title>On-Demand Report · RFI-20261019-01 Rev.1</title>
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="The PDB">
+<meta property="og:title" content="PDB · 19 Oct 2026 — Who Is Really Behind Europe's Unrest?">
+<meta property="og:description" content="On-Demand Report: European Unrest — Left, Islamist, and the Stalking Horse Question">
+<meta property="og:url" content="https://thepdb.news/RFI-20261019-01_european-unrest-v2.html">
+<meta property="og:image" content="https://thepdb.news/Assets/Images/pdb-og-wide.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="The PDB — Your Personal Daily Brief">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@thepdb">
+<meta name="twitter:title" content="PDB · 19 Oct 2026 — Who Is Really Behind Europe's Unrest?">
+<meta name="twitter:description" content="On-Demand Report: European Unrest — Left, Islamist, and the Stalking Horse Question">
+<meta name="twitter:image" content="https://thepdb.news/Assets/Images/pdb-og-wide.png">
+<meta name="twitter:image:alt" content="The PDB — Your Personal Daily Brief">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&family=Inter:wght@400;600;700&display=swap">
+
+<style>
+/* ============================================================
+   PDB DESIGN TOKENS — LOCKED per PDB_Style_Spec.md v1.0
+   ============================================================ */
+:root {
+  --page-bg:        #F5F4F0;
+  --content-bg:     #FFFFFF;
+  --content-radius: 6px;
+  --content-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  --max-width:      760px;
+  --masthead-bg:    #1A2744;
+  --masthead-fg:    #FFFFFF;
+  --accent-gold:    #C8A84B;
+  --heading-fg:     #1A2744;
+  --heading-rule:   #1A2744;
+  --body-fg:        #1A1A1A;
+  --meta-fg:        #555555;
+  --secondary-fg:   #AAAAAA;
+  --divider:        #DDDDDD;
+  --banner-bg:      #E8E6E0;
+  --banner-fg:      #1A2744;
+  --balance-bg:     #F0EDE6;
+  --balance-border: #C8A84B;
+  --iw-bg:          #FFF8E8;
+  --iw-border:      #C8A84B;
+  --gaps-fg:        #8B0000;
+  --src-left:       #1A5FBF;
+  --src-center:     #2A7A3A;
+  --src-right:      #B03020;
+  --src-intl:       #5A3A8A;
+  --src-primary:    #5A5850;
+  --link-fg:        #1A5FBF;
+  --link-hover:     #0D3D8A;
+  --font-display:   'Playfair Display', 'Georgia', serif;
+  --font-body:      'Source Serif 4', 'Georgia', 'Times New Roman', serif;
+  --font-ui:        'Inter', 'Helvetica Neue', 'Arial', sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --page-bg:      #111318;
+    --content-bg:   #1C2030;
+    --content-shadow: 0 2px 12px rgba(0,0,0,0.4);
+    --masthead-bg:  #0D1526;
+    --body-fg:      #E8E6E0;
+    --meta-fg:      #9A9890;
+    --secondary-fg: #6A6860;
+    --divider:      #2E3040;
+    --banner-bg:    #1A1E2E;
+    --banner-fg:    #C8D0E8;
+    --balance-bg:   #1E1C14;
+    --iw-bg:        #1E1A0C;
+    --heading-fg:   #C8D0E8;
+    --heading-rule: #3A4060;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --page-bg:      #111318;
+  --content-bg:   #1C2030;
+  --content-shadow: 0 2px 12px rgba(0,0,0,0.4);
+  --masthead-bg:  #0D1526;
+  --body-fg:      #E8E6E0;
+  --meta-fg:      #9A9890;
+  --secondary-fg: #6A6860;
+  --divider:      #2E3040;
+  --banner-bg:    #1A1E2E;
+  --banner-fg:    #C8D0E8;
+  --balance-bg:   #1E1C14;
+  --iw-bg:        #1E1A0C;
+  --heading-fg:   #C8D0E8;
+  --heading-rule: #3A4060;
+  color-scheme: dark;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--page-bg);
+  color: var(--body-fg);
+  font-family: var(--font-body);
+  font-size: 15px;
+  line-height: 1.65;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  padding-block: 24px;
+}
+
+a { color: var(--link-fg); text-decoration: none; }
+a:hover { color: var(--link-hover); text-decoration: underline; }
+
+.pdb-page {
+  max-width: var(--max-width);
+  margin-inline: auto;
+  background: var(--content-bg);
+  border-radius: var(--content-radius);
+  box-shadow: var(--content-shadow);
+  overflow: hidden;
+}
+
+/* MASTHEAD */
+.pdb-masthead {
+  background: var(--masthead-bg);
+  padding: 20px 24px 16px;
+}
+.pdb-masthead__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 16px;
+}
+.pdb-masthead__title {
+  font-family: var(--font-display);
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--masthead-fg);
+  margin: 0;
+  line-height: 1.2;
+}
+.pdb-masthead__badge {
+  display: inline-block;
+  font-family: var(--font-ui);
+  font-size: 10px;
+  font-weight: 700;
+  color: var(--masthead-bg);
+  background: var(--accent-gold);
+  border-radius: 3px;
+  padding: 2px 7px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  vertical-align: middle;
+  margin-left: 10px;
+  position: relative;
+  top: -3px;
+}
+.pdb-masthead__date {
+  font-family: var(--font-ui);
+  font-size: 13px;
+  color: var(--secondary-fg);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.pdb-masthead__rule {
+  border: none;
+  border-top: 2px solid var(--accent-gold);
+  margin: 6px 0;
+}
+.pdb-masthead__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+.pdb-masthead__sub {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--accent-gold);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin: 0;
+}
+.pdb-masthead__meta {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  color: var(--secondary-fg);
+  text-align: right;
+}
+
+/* TOPICS BANNER */
+.pdb-banner {
+  background: var(--banner-bg);
+  padding: 10px 24px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 0;
+  align-items: center;
+}
+.pdb-banner__link {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--banner-fg);
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+  padding: 2px 4px;
+}
+.pdb-banner__link:hover { color: var(--link-fg); }
+.pdb-banner__sep {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  color: var(--secondary-fg);
+  padding: 0 2px;
+  user-select: none;
+}
+
+/* CONTENT */
+.pdb-content { padding: 24px 24px 0; }
+
+/* BALANCE BOX */
+.pdb-balance {
+  background: var(--balance-bg);
+  border-left: 4px solid var(--balance-border);
+  padding: 16px 20px;
+  margin-bottom: 24px;
+  border-radius: 0 4px 4px 0;
+}
+.pdb-balance__heading {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--heading-fg);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin: 0 0 8px;
+}
+.pdb-balance__body {
+  font-family: var(--font-body);
+  font-size: 13px;
+  color: var(--body-fg);
+  line-height: 1.6;
+  margin: 0;
+}
+.pdb-balance__legend {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 16px;
+}
+.pdb-balance__swatch {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-ui);
+  font-size: 11px;
+  color: var(--meta-fg);
+}
+.pdb-balance__dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+/* I&W */
+.pdb-iw {
+  background: var(--iw-bg);
+  border-left: 4px solid var(--iw-border);
+  padding: 16px 20px;
+  margin-bottom: 24px;
+  border-radius: 0 4px 4px 0;
+}
+.pdb-section-heading {
+  font-family: var(--font-ui);
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--heading-fg);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border-bottom: 2px solid var(--heading-rule);
+  padding-bottom: 6px;
+  margin: 0 0 14px;
+}
+.pdb-iw__item {
+  margin-bottom: 14px;
+  padding-bottom: 14px;
+  border-bottom: 1px dashed var(--divider);
+}
+.pdb-iw__item:last-child { margin-bottom: 0; padding-bottom: 0; border-bottom: none; }
+.pdb-iw__label {
+  font-family: var(--font-ui);
+  font-size: 10px;
+  font-weight: 700;
+  color: var(--meta-fg);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin: 0 0 3px;
+}
+.pdb-iw__title {
+  font-family: var(--font-ui);
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--heading-fg);
+  margin: 0 0 6px;
+}
+.pdb-iw__body {
+  font-family: var(--font-body);
+  font-size: 13px;
+  color: var(--body-fg);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* REPORT SECTIONS */
+.pdb-topic {
+  margin-bottom: 0;
+  padding-bottom: 28px;
+  border-bottom: 1px solid var(--divider);
+}
+.pdb-topic:last-of-type { border-bottom: none; }
+.pdb-topic__eyebrow {
+  font-family: var(--font-ui);
+  font-size: 10px;
+  font-weight: 700;
+  color: var(--meta-fg);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin: 0 0 2px;
+}
+.pdb-topic__heading {
+  font-family: var(--font-ui);
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--heading-fg);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border-bottom: 2px solid var(--heading-rule);
+  padding-bottom: 6px;
+  margin: 0 0 14px;
+}
+.pdb-report__subject {
+  font-family: var(--font-ui);
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--heading-fg);
+  margin: 0 0 6px;
+  text-wrap: balance;
+}
+.pdb-report__bluf {
+  font-family: var(--font-body);
+  font-size: 15px;
+  font-style: italic;
+  color: var(--body-fg);
+  margin: 0 0 14px;
+  line-height: 1.6;
+}
+.pdb-report__label {
+  font-family: var(--font-ui);
+  font-size: 10px;
+  font-weight: 700;
+  color: var(--heading-fg);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin: 0 0 4px;
+}
+.pdb-report__facts {
+  margin: 0 0 14px;
+  padding-left: 20px;
+  font-family: var(--font-body);
+  font-size: 14px;
+  line-height: 1.65;
+  color: var(--body-fg);
+}
+.pdb-report__facts li { margin-bottom: 5px; }
+.pdb-report__dispute {
+  font-family: var(--font-body);
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--body-fg);
+  margin: 0 0 14px;
+}
+.pdb-report__dispute em { color: var(--meta-fg); }
+.pdb-report__watch {
+  margin: 0 0 14px;
+  padding-left: 0;
+  list-style: none;
+  font-family: var(--font-body);
+  font-size: 14px;
+  line-height: 1.65;
+  color: var(--body-fg);
+}
+.pdb-report__watch li {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 7px;
+}
+.pdb-report__watch li::before {
+  content: "W" attr(data-n);
+  font-family: var(--font-ui);
+  font-size: 10px;
+  font-weight: 700;
+  color: var(--meta-fg);
+  white-space: nowrap;
+  padding-top: 3px;
+  min-width: 48px;
+}
+.pdb-report__assessment {
+  font-family: var(--font-body);
+  font-size: 14px;
+  color: var(--src-intl);
+}
+.pdb-report__assessment strong { font-weight: 600; }
+
+/* ANALYSIS BOX */
+.pdb-analysis-box {
+  background: var(--iw-bg);
+  border-left: 4px solid var(--accent-gold);
+  padding: 14px 18px;
+  margin: 14px 0;
+  border-radius: 0 4px 4px 0;
+}
+.pdb-analysis-box__heading {
+  font-family: var(--font-ui);
+  font-size: 10px;
+  font-weight: 700;
+  color: var(--heading-fg);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin: 0 0 6px;
+}
+.pdb-analysis-box__body {
+  font-family: var(--font-body);
+  font-size: 13px;
+  color: var(--body-fg);
+  line-height: 1.65;
+  margin: 0;
+}
+
+/* SOURCE TAGS */
+.pdb-sources { margin-top: 14px; }
+.pdb-sources__group { margin-bottom: 8px; }
+.pdb-sources__group-label {
+  font-family: var(--font-ui);
+  font-size: 10px;
+  font-weight: 700;
+  color: var(--meta-fg);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin: 0 0 4px;
+}
+.pdb-sources__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+.pdb-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  border-radius: 4px;
+  padding: 2px 8px;
+  font-family: var(--font-ui);
+  font-size: 11px;
+  font-weight: 600;
+  background: var(--content-bg);
+  text-decoration: none;
+  line-height: 1.4;
+}
+.pdb-tag:hover { text-decoration: none; opacity: 0.85; }
+.pdb-tag__desc { font-weight: 400; color: var(--meta-fg); }
+.pdb-tag--left    { border: 2px solid var(--src-left);    color: var(--src-left); }
+.pdb-tag--center  { border: 2px solid var(--src-center);  color: var(--src-center); }
+.pdb-tag--right   { border: 2px solid var(--src-right);   color: var(--src-right); }
+.pdb-tag--intl    { border: 2px solid var(--src-intl);    color: var(--src-intl); }
+.pdb-tag--primary { border: 2px solid var(--src-primary); color: var(--src-primary); }
+
+/* GAPS */
+.pdb-gaps { margin-top: 10px; }
+.pdb-gaps__heading {
+  font-family: var(--font-ui);
+  font-size: 10px;
+  font-weight: 700;
+  color: var(--gaps-fg);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  text-decoration: underline;
+  margin: 0 0 4px;
+}
+.pdb-gaps__body {
+  font-family: var(--font-body);
+  font-size: 13px;
+  color: var(--meta-fg);
+  margin: 0;
+}
+
+/* FOOTER */
+.pdb-footer {
+  padding: 16px 24px;
+  border-top: 1px solid var(--divider);
+  margin-top: 0;
+}
+.pdb-footer__text {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  color: var(--secondary-fg);
+  text-align: center;
+  margin: 0;
+}
+
+/* RESPONSIVE */
+@media (max-width: 500px) {
+  body { padding-inline: 0; padding-block: 0; }
+  .pdb-page { border-radius: 0; box-shadow: none; }
+  .pdb-masthead, .pdb-content { padding-inline: 16px; }
+  .pdb-masthead__top { flex-direction: column; gap: 4px; }
+  .pdb-masthead__date { text-align: left; }
+  .pdb-masthead__bottom { flex-direction: column; align-items: flex-start; gap: 2px; }
+  .pdb-banner { padding-inline: 16px; }
+  .pdb-footer { padding-inline: 16px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+}
+</style>
+</head>
+<body>
+<main class="pdb-page" role="main">
+
+  <!-- MASTHEAD -->
+  <header class="pdb-masthead">
+    <div class="pdb-masthead__top">
+      <h1 class="pdb-masthead__title">On-Demand Report <span class="pdb-masthead__badge">RFI-20261019-01 Rev.1</span></h1>
+      <span class="pdb-masthead__date">19 Oct 2026</span>
+    </div>
+    <hr class="pdb-masthead__rule" aria-hidden="true">
+    <div class="pdb-masthead__bottom">
+      <p class="pdb-masthead__sub">Your Personal Daily Brief · European Unrest</p>
+      <span class="pdb-masthead__meta">Open-Source Collection · 7 countries assessed</span>
+    </div>
+  </header>
+
+  <!-- TOPICS BANNER -->
+  <nav class="pdb-banner" aria-label="Report sections">
+    <a class="pdb-banner__link" href="#iw">I&amp;W</a>
+    <span class="pdb-banner__sep" aria-hidden="true">|</span>
+    <a class="pdb-banner__link" href="#background">Background</a>
+    <span class="pdb-banner__sep" aria-hidden="true">|</span>
+    <a class="pdb-banner__link" href="#structural">Structural Analysis</a>
+    <span class="pdb-banner__sep" aria-hidden="true">|</span>
+    <a class="pdb-banner__link" href="#actors">Organizational Actors</a>
+    <span class="pdb-banner__sep" aria-hidden="true">|</span>
+    <a class="pdb-banner__link" href="#stalking-horse">Stalking Horse Assessment</a>
+    <span class="pdb-banner__sep" aria-hidden="true">|</span>
+    <a class="pdb-banner__link" href="#country-reports">Country Reports</a>
+    <span class="pdb-banner__sep" aria-hidden="true">|</span>
+    <a class="pdb-banner__link" href="#dispute">Dispute</a>
+    <span class="pdb-banner__sep" aria-hidden="true">|</span>
+    <a class="pdb-banner__link" href="#sources">Sources</a>
+  </nav>
+
+  <div class="pdb-content">
+
+    <!-- BALANCE BOX — LOCKED TEXT -->
+    <aside class="pdb-balance" aria-label="Balance and source integrity statement">
+      <p class="pdb-balance__heading">How We Ensure Balance and Source Integrity</p>
+      <p class="pdb-balance__body">
+        This brief draws from a curated registry of over 250 national and international news outlets rated for editorial bias and factual reliability by independent third-party assessors. Each report includes sources from across the editorial spectrum — left, center, and right — and includes primary-source materials where available. Sources are selected for relevance and reliability, not conformity with any particular narrative or perspective. Gaps in coverage are noted when a spectrum segment did not report on the selected story. All sources are open-access; no paywalled content is accessed or reproduced.
+      </p>
+      <div class="pdb-balance__legend">
+        <span class="pdb-balance__swatch"><span class="pdb-balance__dot" style="background:#1A5FBF;"></span>Left / Left-Center</span>
+        <span class="pdb-balance__swatch"><span class="pdb-balance__dot" style="background:#2A7A3A;"></span>Center</span>
+        <span class="pdb-balance__swatch"><span class="pdb-balance__dot" style="background:#B03020;"></span>Right / Right-Center</span>
+        <span class="pdb-balance__swatch"><span class="pdb-balance__dot" style="background:#5A3A8A;"></span>International</span>
+        <span class="pdb-balance__swatch"><span class="pdb-balance__dot" style="background:#5A5850;"></span>Primary Source</span>
+      </div>
+    </aside>
+
+    <!-- I&W -->
+    <section class="pdb-iw" id="iw" aria-label="Indications and Warning">
+      <h2 class="pdb-section-heading">Indications and Warning</h2>
+
+      <div class="pdb-iw__item">
+        <p class="pdb-iw__label">W[RFI-20261019-01].1</p>
+        <p class="pdb-iw__title">French Government Considers Banning La France Insoumise</p>
+        <p class="pdb-iw__body">Interior Minister Bruno Retailleau has publicly stated he is considering seeking a ban on La France Insoumise, accusing the party of "organizing insurrection." If pursued, this would be the most significant legal action against a major French political party in the Fifth Republic's history and would accelerate the political crisis ahead of the 2027 presidential election. <strong>Watch:</strong> Whether Macron's government formally initiates dissolution proceedings, which would require a Council of State referral and could trigger a constitutional confrontation.</p>
+      </div>
+
+      <div class="pdb-iw__item">
+        <p class="pdb-iw__label">W[RFI-20261019-01].2</p>
+        <p class="pdb-iw__title">International Youth Strike — November 20, 2026</p>
+        <p class="pdb-iw__body">An "International Youth Strike" coalition announced a coordinated pan-European mobilization for November 20 — a date announced in August, before the current wave of unrest began. This is the clearest documented evidence of cross-border organizational infrastructure predating the protests. <strong>Watch:</strong> Whether the November 20 events produce violence at a scale that validates or undermines the organized-coordination thesis.</p>
+      </div>
+
+      <div class="pdb-iw__item">
+        <p class="pdb-iw__label">W[RFI-20261019-01].3</p>
+        <p class="pdb-iw__title">Albanian Flamingo Revolution — Risk of Escalation Before 2027 Elections</p>
+        <p class="pdb-iw__body">Albania's citizen-led Flamingo Revolution, nominally independent of partisan leadership, has drawn support from all major opposition parties. As Edi Rama's government approaches the 2027 election cycle with no political concessions, the movement risks either radicalization by DP-aligned actors or suppression by the state. <strong>Watch:</strong> Whether Rama imposes emergency measures or whether the Flamingo movement retains civic character under opposition pressure.</p>
+      </div>
+    </section>
+
+    <!-- BACKGROUND -->
+    <article class="pdb-topic" id="background">
+      <p class="pdb-topic__eyebrow">Section 1</p>
+      <h2 class="pdb-topic__heading">Background</h2>
+
+      <p class="pdb-report__subject">European Unrest Wave — Mid to Late 2026</p>
+      <p class="pdb-report__bluf">Seven European nations are experiencing simultaneous waves of street protest and violence rooted in shared affordability grievances — but with dramatically different organizational drivers, political actors, and violence profiles that defy a single explanatory framework.</p>
+
+      <p class="pdb-report__label">Key Facts</p>
+      <ul class="pdb-report__facts">
+        <li>Active unrest documented in France, Albania, Italy, Belgium, Portugal, Spain, and Greece as of 19 October 2026. *(Multi-Source Confirmed)*</li>
+        <li>Common stated grievances: cost of living, housing affordability, wages, underfunded public services, and education access. *(Multi-Source Confirmed)*</li>
+        <li>France reports the most severe violence: 1,200+ arrests, 300+ police and gendarme injuries in a single day, school arson in Nantes and Le Havre, and attacks on public buildings in Lyon and Limoges. *(Multi-Source Confirmed — Interior Ministry figures)*</li>
+        <li>Albania's protests are structurally distinct: primarily opposition-party-driven, focused on electoral legitimacy and anti-corruption rather than economic grievances, and ongoing since November 2025. *(Multi-Source Confirmed)*</li>
+        <li>Italy's most violent incidents — January 31, 2026 in Turin — resulted in 108 security personnel injured; subsequent October protests have been smaller. *(Multi-Source Confirmed)*</li>
+        <li>Portugal's demonstrations have been large (tens of thousands) and nonviolent, organized by the CGTP trade union. *(Multi-Source Confirmed)*</li>
+        <li>Belgium's protests, framed as student demonstrations, have been modest in size (several hundred) with localized clashes in Brussels and Liège. *(Multi-Source Confirmed)*</li>
+      </ul>
+    </article>
+
+    <!-- STRUCTURAL ANALYSIS -->
+    <article class="pdb-topic" id="structural">
+      <p class="pdb-topic__eyebrow">Section 2</p>
+      <h2 class="pdb-topic__heading">Structural Root Causes</h2>
+
+      <p class="pdb-report__subject">Real Grievances Provide the Fuel — Organizations Provide Ignition and Direction</p>
+      <p class="pdb-report__bluf">The material conditions driving European unrest are real, documented, and cross-ideological; the organizational actors exploiting those conditions are varied, opportunistic, and in some cases competing rather than cooperating.</p>
+
+      <p class="pdb-report__label">Key Facts</p>
+      <ul class="pdb-report__facts">
+        <li><strong>Cost of living crisis.</strong> European inflation, particularly in energy and housing, has eroded real wages across the continent since 2021. By 2026, housing costs in major cities — Paris, Lisbon, Brussels, Milan — have outpaced wage growth for a decade. These are not manufactured grievances; they are verifiable economic conditions that produce predictable political instability. *(Multi-Source Confirmed)*</li>
+        <li><strong>Education underfunding.</strong> In France specifically, chronic underfunding of public secondary schools — overcrowded classrooms, shortage of teachers and principals — provided the direct trigger for the October 2026 protests. Teachers and public-sector workers initiated the strikes that preceded the student mobilization. *(Multi-Source Confirmed — French Interior Ministry, CGT)*</li>
+        <li><strong>Post-COVID public sector strain.</strong> Healthcare, housing, and education systems across Southern and Eastern Europe remain under structural strain from COVID-era budget cuts that have not been reversed. *(Multi-Source Confirmed)*</li>
+        <li><strong>Electoral proximity as accelerant.</strong> France faces a 2027 presidential election; Macron's government is politically weak. In Albania, protests are explicitly tied to electoral legitimacy following the May 2025 election. Political actors on all sides have incentive to exploit unrest rather than resolve it. *(Multi-Source Confirmed)*</li>
+        <li><strong>Social media amplification.</strong> Multiple sources confirm that platforms — particularly Telegram, TikTok, and Instagram — have been used to coordinate protest turnout, spread imagery of violence, and amplify grievances. Attribution of specific posts to specific organizations is difficult. *(Single Source — MEMRI, via Legal Insurrection)*</li>
+      </ul>
+    </article>
+
+    <!-- ORGANIZATIONAL ACTORS -->
+    <article class="pdb-topic" id="actors">
+      <p class="pdb-topic__eyebrow">Section 3</p>
+      <h2 class="pdb-topic__heading">Organizational Actors — Who Is Actually Involved</h2>
+
+      <p class="pdb-report__subject">A Taxonomy of Actors: Left-Wing Organizations, Anarchist Networks, Trade Unions, Islamist-Adjacent Groups, and Unaffiliated Youth</p>
+      <p class="pdb-report__bluf">The protest wave is dominated by documented left-wing, anarchist, and trade union actors; Islamist organizational involvement is asserted by right-of-center sources but is not confirmed by primary sources or center-left reporting, and the operational role of Islamist groups appears to be participation rather than direction.</p>
+
+      <p class="pdb-report__label">Left-Wing and Anarchist Organizations — Confirmed</p>
+      <ul class="pdb-report__facts">
+        <li><strong>France:</strong> La France Insoumise (LFI), France Unbowed — the dominant organizational presence. LFI deputies including Thomas Portes, Bally Bagayoko, Louis Boyard, and Ersilia Soudais were documented at protest sites. The CGT (General Confederation of Labour) and the Union syndicale lycéenne organized the initial teacher and student strikes. The French Communist Party, Union de la Jeunesse Communiste, Révolution permanente, and Le Poing levé (Paris 8) are named in a French intelligence assessment dated 29 September 2026 as proxies operating within the protest structure. *(Primary Source Confirmed — Interior Ministry / French intelligence report, as reported by Il Foglio/Le Figaro)*</li>
+        <li><strong>Belgium:</strong> The Marxist Workers' Party (PTB), its youth wing RedFox, university wing Comac, and the socialist FGTB union provided organizational infrastructure for what were framed as student demonstrations. *(Multi-Source Confirmed — Gateway Pundit, RTBF)*</li>
+        <li><strong>Italy:</strong> Anarchist and far-left social centers — including the Askatasuna center in Turin (evicted by authorities in January 2026) — and communist student groups OSA and Cambiare Rotta were involved in organizing or participating in the most violent incidents. *(Multi-Source Confirmed — Fox News, Italian authorities)*</li>
+        <li><strong>Albania:</strong> Lëvizja Bashkë, a left-wing civic movement led by academic Arlind Qori, mobilized around economic inequality and corruption. The conservative Democratic Party (DP) under Sali Berisha is the largest driver of anti-Rama protests — making Albania the only country where the right, not the left, leads street unrest. *(Multi-Source Confirmed — Wikipedia, Al Jazeera)*</li>
+        <li><strong>Portugal:</strong> Portuguese Communist Party (PCP) and CGTP — nonviolent, institutionalized. *(Multi-Source Confirmed)*</li>
+        <li><strong>Cross-border coordination:</strong> A KNE (Greek Communist Party youth wing) delegation marched in Paris on October 17. The Berlin LFI branch organized a rally at the French Embassy. Italy's OSA used the slogan "Let's do as in France." An International Youth Strike coalition announced a November 20 coordinated mobilization in August — before the current violence began. These represent documented cross-border contact, not a confirmed command structure. *(Multi-Source Confirmed — Gateway Pundit)*</li>
+      </ul>
+
+      <p class="pdb-report__label">Islamist and Immigrant-Adjacent Participation — Partially Confirmed</p>
+      <ul class="pdb-report__facts">
+        <li><strong>Urgence Palestine</strong> (France): A pro-Palestinian advocacy organization, classified as adjacent to Islamist networks by MEMRI analyst Nathalie Szerman, declared October 2026 "a month of revolt" and stated publicly it was supporting the demonstrations. MEMRI reports that the protests began "in an apparently spontaneous way" in immigrant suburbs of Paris before spreading. Urgence Palestine's organizational role was public endorsement and amplification, not operational direction. *(Single Source — MEMRI, via Legal Insurrection)*</li>
+        <li><strong>Palestinian flags and "Free Palestine" chanting</strong> at French protests are multi-source confirmed. Their presence indicates participation by pro-Palestinian and Muslim community members, but does not establish operational Islamist direction of the protests. *(Multi-Source Confirmed)*</li>
+        <li><strong>Pro-Palestinian activists</strong> in Turin reportedly took control of a march alongside antagonist collectives, per Italian news agency ANSA. *(Single Source — ANSA, via Gateway Pundit)*</li>
+        <li><strong>LFI's explicit pro-Palestinian posture</strong> — including Louis Boyard leading La Marseillaise while raising a Palestinian flag — reflects LFI's deliberate political coalition-building with Muslim and immigrant communities, not evidence of Islamist direction of LFI. *(Multi-Source Confirmed)*</li>
+        <li><strong>No named Islamist organization</strong> (e.g., UOIF, Frères Musulmans, or designated groups) has been confirmed as an operational organizer of the protests in any country. The Heritage Foundation's Nile Gardiner asserted "far-left and Islamists combining forces" without naming a specific organization. *(Single Source — Heritage Foundation, unverified)*</li>
+      </ul>
+
+      <p class="pdb-report__label">Unaffiliated Youth and Criminal Opportunists</p>
+      <ul class="pdb-report__facts">
+        <li>Multiple sources — including Gateway Pundit, Italian authorities, and Belgian police — confirm that the worst violence in Milan, Brussels, and several French cities was carried out by "loosely organized youths whom police have not tied to any single organization." A 15-year-old was arrested for blasting fire into a woman's face in Marseille; school attacks in Nantes and Le Havre have not been attributed to organized groups. *(Multi-Source Confirmed)*</li>
+        <li>Belgium's Vlaams Belang party (right-wing) has claimed "foreign nationals" were involved in the Brussels violence. This claim has not been confirmed by Belgian police or prosecutors. *(Single Source — European Conservative, unverified)*</li>
+      </ul>
+
+      <div class="pdb-analysis-box">
+        <p class="pdb-analysis-box__heading">Analytical Assessment: Who Is Driving the Violence?</p>
+        <p class="pdb-analysis-box__body">The evidence supports a three-layer model. <strong>Layer 1 (Structural):</strong> Real economic and institutional grievances produce large protest turnout that is ideologically diverse and largely nonviolent — this is the mass base. <strong>Layer 2 (Organizational):</strong> Left-wing parties (primarily LFI in France), trade unions, anarchist networks, and communist student groups provide organizational infrastructure, amplify grievances, and in some documented cases encourage confrontation with authorities. This layer is confirmed across multiple sources. <strong>Layer 3 (Opportunistic/Violent):</strong> Unaffiliated youth, criminal opportunists, and — partially confirmed — pro-Palestinian and immigrant community participants join or exploit the protests for grievances of their own. This layer contributes disproportionately to the most violent incidents but is not directing the protests. The evidence does not support the conclusion that Islamist organizations are driving, directing, or operationally coordinating the protests in any country.</p>
+      </div>
+    </article>
+
+    <!-- STALKING HORSE ASSESSMENT -->
+    <article class="pdb-topic" id="stalking-horse">
+      <p class="pdb-topic__eyebrow">Section 4</p>
+      <h2 class="pdb-topic__heading">Stalking Horse Assessment — Is One Side Using the Other?</h2>
+
+      <p class="pdb-report__subject">The Stalking Horse Question: Are Left-Wing Groups Using Islamist/Immigrant Participants as Instruments, or Are Islamist Networks Using the Left as Cover?</p>
+      <p class="pdb-report__bluf">The available evidence supports a partial stalking horse relationship running primarily in one direction: left-wing political parties, particularly LFI, are deliberately cultivating alliances with Muslim and immigrant communities to build an electoral coalition, using shared grievances as the organizing frame — while there is insufficient evidence that Islamist organizations are strategically using the left as a shield.</p>
+
+      <p class="pdb-report__label">Evidence Supporting Left Using Islamist/Immigrant Participants as a Political Instrument</p>
+      <ul class="pdb-report__facts">
+        <li><strong>LFI's documented electoral strategy.</strong> LFI has explicitly built its political base in banlieues and immigrant communities since 2017. Mélenchon's presidential campaigns in 2017 and 2022 secured disproportionate Muslim and immigrant district vote shares. The Palestinian flag at protest sites is not coincidental — it reflects LFI's deliberate signaling to this constituency. *(Multi-Source Confirmed)*</li>
+        <li><strong>Intelligence assessment framing.</strong> The French intelligence report (29 September 2026) characterizes the protests as "a manoeuvre organised by LFI and its proxies" designed to "cause disorder" as part of an electoral strategy ahead of 2027. The report specifically identifies student union proxies, not Islamist groups, as the mechanism. This suggests the French government's own assessment is that LFI is the instrumentalizing actor, not an Islamist network. *(Primary Source Confirmed — French intelligence, via Il Foglio/Le Figaro)*</li>
+        <li><strong>LFI's posture on violence.</strong> Mélenchon publicly supported protesters while formally urging them to avoid looting — a classic political triangulation that allows a party to benefit from unrest without bearing legal responsibility for it. LFI deputy Bompard accused the government of "conspiracy theories" when intelligence accusations were publicized. *(Multi-Source Confirmed)*</li>
+        <li><strong>Pro-Palestinian framing as coalition signal.</strong> LFI's integration of "Free Palestine" rhetoric into domestic economic protests serves to bind immigrant and Muslim community participants to a left-wing political project, not to advance an Islamist agenda. This is standard coalition politics, not an Islamist operation. *(Multi-Source Confirmed)*</li>
+      </ul>
+
+      <p class="pdb-report__label">Evidence That Would Support the Reverse — Islamist Networks Using the Left as Cover</p>
+      <ul class="pdb-report__facts">
+        <li>Urgence Palestine's declaration of October as "a month of revolt" and explicit endorsement of the protests could be read as Islamist-adjacent networks attempting to leverage left-wing infrastructure for their own agenda. However, Urgence Palestine is a pro-Palestinian advocacy group, not a designated Islamist organization, and its operational capacity to direct street protests has not been demonstrated. *(Single Source — MEMRI)*</li>
+        <li>The spontaneous origin of protests in immigrant suburbs (per MEMRI) is consistent with a scenario in which Islamist-adjacent community networks provided early mobilization that left-wing parties then amplified and organized. This is plausible but unconfirmed. *(Single Source — MEMRI)*</li>
+      </ul>
+
+      <p class="pdb-report__label">Points of Dispute</p>
+      <p class="pdb-report__dispute">
+        The core dispute is interpretive rather than factual: the same observable events — Palestinian flags at economic protests, LFI deputies at demonstration sites, violence in immigrant-heavy suburbs — are read by right-of-center sources as evidence of an "Islamist-left axis" and by left-of-center sources as evidence of legitimate coalition politics and opportunistic attribution. Neither reading is fully supported by primary-source evidence. <em>Right-center position (Fox News, RedState, Organiser, Gateway Pundit):</em> An organized Islamist-left alliance is strategically exploiting economic grievances to destabilize European states ahead of elections. <em>Left-center position (Le Monde, Guardian, AP):</em> The protests are a legitimate response to material conditions; Islamist framing is a right-wing attribution designed to delegitimize economic grievances and demonize immigrant communities. <em>Center assessment:</em> The evidence confirms left-wing organizational involvement; it does not confirm Islamist organizational direction. The stalking horse relationship, where it exists, runs primarily from left-wing parties toward Muslim/immigrant communities as an electoral constituency, not in the reverse direction.
+      </p>
+
+      <div class="pdb-analysis-box">
+        <p class="pdb-analysis-box__heading">Bottom Line: Stalking Horse Assessment</p>
+        <p class="pdb-analysis-box__body"><strong>Confirmed:</strong> LFI and allied left-wing organizations are exploiting real economic grievances to build political capital and electoral coalition ahead of 2027, deliberately incorporating Muslim and immigrant community grievances (including Palestinian solidarity) as a unifying frame. This is a left-using-community-as-instrument dynamic — classic coalition-building that crosses into opportunism. <strong>Not confirmed:</strong> An Islamist organizational strategy to use left-wing protest infrastructure as a stalking horse. Islamist-adjacent participation is documented; Islamist direction is not. <strong>Assessment:</strong> <em>Likely</em> that left-wing parties are the primary instrumentalizing actors. <em>Possible</em> that pro-Palestinian and Islamist-adjacent networks are simultaneously free-riding on left-wing infrastructure to advance their own agenda — making this a case of mutual opportunism rather than a single coordinated axis. <strong>Confidence:</strong> Moderate. Primary-source confirmation of the intelligence assessment's full claim set is not available.</p>
+      </div>
+
+      <p class="pdb-report__label">Watch Items</p>
+      <ol class="pdb-report__watch">
+        <li data-n="RFI-01.1">Whether French authorities pursue legal action against LFI figures (Portes, Bagayoko) beyond statements, which would constitute primary-source confirmation of the intelligence assessment's core claim. <span class="pdb-report__assessment">Assessment: <strong>Likely to escalate rhetorically</strong> (moderate confidence — Retailleau is seeking political advantage as much as legal accountability)</span></li>
+        <li data-n="RFI-01.2">Whether the November 20 International Youth Strike produces cross-border simultaneous violence, which would confirm coordinated organizational infrastructure over spontaneous parallel mobilization.</li>
+        <li data-n="RFI-01.3">Whether any Islamist organization is formally identified by French, Belgian, or Italian authorities as an operational actor in the protests — the absence of such identification after three weeks of investigation is itself analytically significant.</li>
+      </ol>
+    </article>
+
+    <!-- COUNTRY REPORTS -->
+    <article class="pdb-topic" id="country-reports">
+      <p class="pdb-topic__eyebrow">Section 5</p>
+      <h2 class="pdb-topic__heading">Country-by-Country Assessments</h2>
+
+      <!-- FRANCE -->
+      <p class="pdb-report__subject">France — The Epicenter</p>
+      <p class="pdb-report__bluf">France's unrest is the most violent, most politically consequential, and most organizationally complex: it involves confirmed left-wing party organization, trade union mobilization, unaffiliated youth violence, and a contested claim of Islamist-adjacent participation — all occurring simultaneously and serving different agendas.</p>
+      <ul class="pdb-report__facts">
+        <li><strong>Trigger:</strong> Teacher strikes over school underfunding escalated to student protests in late September 2026. *(Multi-Source Confirmed)*</li>
+        <li><strong>Primary organizational drivers:</strong> LFI and its student/trade union proxies. *(Primary Source Confirmed — French intelligence)*</li>
+        <li><strong>Scale:</strong> 550,000–800,000 in organized marches (Interior Ministry / CGT figures); 1,200+ arrests; 300+ officer injuries in a single day. *(Primary Source Confirmed)*</li>
+        <li><strong>Violence profile:</strong> Arson of Limoges town hall and Lyon tourist office; school fires in Nantes and Le Havre; looting in multiple cities; targeted attacks on police including use of incendiary devices, hammers, and signal-jamming equipment indicating premeditation. *(Multi-Source Confirmed)*</li>
+        <li><strong>Islamist/immigrant dimension:</strong> Protests originated in immigrant suburbs; Urgence Palestine endorsed the movement; Palestinian flags visible at demonstrations; 74% of French respondents in an Odoxa-Backbone poll believe LFI encourages violence. No Islamist organization identified as operational director. *(Multi-Source Confirmed / Single Source — MEMRI on origins)*</li>
+        <li><strong>Political consequence:</strong> Interior Minister Retailleau threatening LFI ban; Macron government under pressure; Le Pen accusing Mélenchon of "legitimizing" violence; 2027 presidential cycle now directly implicated. *(Multi-Source Confirmed)*</li>
+      </ul>
+
+      <hr style="border: none; border-top: 1px dashed var(--divider); margin: 16px 0;">
+
+      <!-- ALBANIA -->
+      <p class="pdb-report__subject">Albania — Structurally Distinct</p>
+      <p class="pdb-report__bluf">Albania's unrest is a sustained, opposition-party-driven political crisis focused on electoral legitimacy, corruption, and anti-authoritarianism — with no ideological overlap with the Western European left-Islamist dynamic and a right-wing opposition as the primary street actor.</p>
+      <ul class="pdb-report__facts">
+        <li><strong>Trigger:</strong> Sali Berisha's Democratic Party (DP) disputed the May 2025 election result, alleging fraud; protests have been ongoing since November 2025. *(Multi-Source Confirmed)*</li>
+        <li><strong>Primary drivers:</strong> Conservative DP (largest force); left-wing civic movement Lëvizja Bashkë (Arlind Qori); citizen-led Flamingo Revolution (independent, focused on Kushner-linked coastal development project at Zvërnec). *(Multi-Source Confirmed)*</li>
+        <li><strong>Violence profile:</strong> Molotov cocktails, fireworks; 167 arrests as of mid-October; 35 wounded in fifth day of protests; police vehicle burned. *(Multi-Source Confirmed)*</li>
+        <li><strong>No leftist-Islamist dynamic:</strong> Albania is majority Muslim but secular; the protests have no religious or pro-Palestinian dimension. The unrest is fundamentally anti-corruption and pro-democracy in character. *(Multi-Source Confirmed)*</li>
+        <li><strong>International dimension:</strong> Opposition to the Jared Kushner-linked development project at Zvërnec has generated international attention and connects Albanian domestic politics to U.S. political figures. *(Multi-Source Confirmed)*</li>
+      </ul>
+
+      <hr style="border: none; border-top: 1px dashed var(--divider); margin: 16px 0;">
+
+      <!-- ITALY -->
+      <p class="pdb-report__subject">Italy — Anarchist-Led, Episodic</p>
+      <p class="pdb-report__bluf">Italy's unrest is driven primarily by anarchist and far-left social center networks, triggered by the eviction of the Askatasuna social center in Turin; while pro-Palestinian groups have participated, there is no confirmed Islamist organizational involvement.</p>
+      <ul class="pdb-report__facts">
+        <li><strong>Primary drivers:</strong> Anarchist networks, Askatasuna (evicted social center), OSA and Cambiare Rotta (communist student groups), antagonist collectives in Turin. *(Multi-Source Confirmed)*</li>
+        <li><strong>Violence profile:</strong> January 31 Turin march — 108 security personnel injured; attackers used Molotov cocktails, nail-filled paper bombs, signal jammers, hammers. Meloni called it an "attack on the state." *(Multi-Source Confirmed — Italian authorities)*</li>
+        <li><strong>Pro-Palestinian dimension:</strong> Pro-Palestinian activists reportedly took control of a Turin march; Palestinian flags present. No Islamist organization identified. *(Single Source — ANSA)*</li>
+        <li><strong>Political consequence:</strong> Meloni government using the violence to reinforce law-and-order posture; no political concessions. *(Multi-Source Confirmed)*</li>
+      </ul>
+
+      <hr style="border: none; border-top: 1px dashed var(--divider); margin: 16px 0;">
+
+      <!-- BELGIUM -->
+      <p class="pdb-report__subject">Belgium — Student Protests with Disputed Composition</p>
+      <p class="pdb-report__bluf">Belgium's protests are Marxist-party-organized student demonstrations with confirmed participation of immigrant and foreign-national youth, and an unresolved question about the role of outside actors in the most violent incidents.</p>
+      <ul class="pdb-report__facts">
+        <li><strong>Primary drivers:</strong> PTB (Marxist Workers' Party), RedFox, Comac, FGTB union. *(Multi-Source Confirmed)*</li>
+        <li><strong>Disputed claim:</strong> Vlaams Belang (right-wing party) claims "foreign nationals" incited the worst violence in Liège; Belgian police have not confirmed this. RTBF reported "masked outsiders" at the Liège events. *(Single Source — Vlaams Belang / RTBF; unverified)*</li>
+        <li><strong>Scale:</strong> Several hundred demonstrators; localized clashes in Brussels and Liège. *(Multi-Source Confirmed)*</li>
+      </ul>
+
+      <hr style="border: none; border-top: 1px dashed var(--divider); margin: 16px 0;">
+
+      <!-- PORTUGAL / SPAIN / GREECE -->
+      <p class="pdb-report__subject">Portugal, Spain, Greece — Institutionalized, Nonviolent</p>
+      <p class="pdb-report__bluf">These three countries show institutionalized left-wing mobilization (trade unions, communist parties) responding to the same affordability conditions without significant violence — demonstrating that organizational character, not just grievance depth, determines violence levels.</p>
+      <ul class="pdb-report__facts">
+        <li><strong>Portugal:</strong> CGTP-organized housing and wage marches; tens of thousands; nonviolent. Left Bloc participated. *(Multi-Source Confirmed)*</li>
+        <li><strong>Spain:</strong> Izquierda Unida, PCE, CCOO, UGT — institutionalized labor and left parties. *(Single Source — Gateway Pundit)*</li>
+        <li><strong>Greece:</strong> Communist Party of Greece (KKE) and KNE; KNE delegation documented at Paris marches on October 17. *(Single Source — Gateway Pundit)*</li>
+        <li><strong>No Islamist involvement documented</strong> in any of the three countries. *(Not available from any source)*</li>
+      </ul>
+    </article>
+
+    <!-- POINTS OF DISPUTE -->
+    <article class="pdb-topic" id="dispute">
+      <p class="pdb-topic__eyebrow">Section 6</p>
+      <h2 class="pdb-topic__heading">Points of Dispute</h2>
+
+      <p class="pdb-report__dispute"><strong>1. Extent of Islamist Organizational Involvement.</strong> <em>Right-center sources (Fox News, RedState, Legal Insurrection, Gateway Pundit, Organiser.org):</em> Assert a functioning left-Islamist axis in which organized Islamist networks are co-directing the protests. Evidence cited: Palestinian flags, Urgence Palestine endorsement, immigrant suburb origins, anecdotal social media posts. <em>Center and left sources (AP, RTBF, Il Foglio):</em> Report Islamist-adjacent participation (flags, community involvement) but do not confirm organizational direction. No named Islamist organization has been identified as an operational actor. The French government's own intelligence assessment names LFI and left-wing proxies — not Islamist groups — as the organizers. <em>Assessment:</em> The asymmetry of evidence favors the center position on this specific question. Islamist participation is documented; Islamist direction is not confirmed.</p>
+
+      <p class="pdb-report__dispute"><strong>2. LFI's Legal and Moral Responsibility.</strong> <em>Government position (Macron / Retailleau):</em> LFI is organizing insurrection; ban should be considered. <em>LFI position (Bompard):</em> The government is "sinking into conspiracy theories"; the protests are a legitimate popular response to material conditions. <em>Assessment:</em> The intelligence report's characterization of LFI involvement is plausible and consistent with documented LFI behavior; whether it constitutes a legally actionable offense under French constitutional law is unresolved and contested.</p>
+
+      <p class="pdb-report__dispute"><strong>3. Demographics of Arrestees.</strong> <em>Right-center position:</em> The arrest population is disproportionately second- and third-generation immigrants and Muslim youth; authorities are concealing this. <em>Center position:</em> No verified arrest demographic data has been released; making demographic claims about the arrest population from social media anecdote is methodologically unsound. <em>Assessment:</em> Unresolved — primary-source arrest demographic data is not available.</p>
+    </article>
+
+    <!-- SOURCES -->
+    <article class="pdb-topic" id="sources">
+      <p class="pdb-topic__eyebrow">Section 7</p>
+      <h2 class="pdb-topic__heading">Sources</h2>
+
+      <div class="pdb-sources">
+        <div class="pdb-sources__group">
+          <p class="pdb-sources__group-label">Left / Left-Center</p>
+          <div class="pdb-sources__tags">
+            <a class="pdb-tag pdb-tag--left" href="https://www.aljazeera.com/news/2026/2/11/antigovernment-protests-in-albania-turn-violent-at-least-13-arrested" target="_blank" rel="noopener">Al Jazeera <span class="pdb-tag__desc">· Albania protests</span></a>
+            <a class="pdb-tag pdb-tag--left" href="https://www.balcanicaucaso.org/en/cp_article/albania-protests-against-the-government/" target="_blank" rel="noopener">Osservatorio Balcani <span class="pdb-tag__desc">· Albania analysis</span></a>
+          </div>
+        </div>
+
+        <div class="pdb-sources__group">
+          <p class="pdb-sources__group-label">Center</p>
+          <div class="pdb-sources__tags">
+            <a class="pdb-tag pdb-tag--center" href="https://www.ilfoglio.it/en/world/2026/10/02/news/french-intelligence-accuses-melenchon-of-fuelling-the-protests-the-manoeuvre-by-lfi-and-its-proxies--409504" target="_blank" rel="noopener">Il Foglio <span class="pdb-tag__desc">· French intelligence / LFI assessment</span></a>
+            <a class="pdb-tag pdb-tag--center" href="https://hotair.com/david-strom/2026/10/19/muslims-we-dont-see-any-muslims-in-the-french-riots-n3820091" target="_blank" rel="noopener">HotAir <span class="pdb-tag__desc">· Muslim involvement debate</span></a>
+          </div>
+        </div>
+
+        <div class="pdb-sources__group">
+          <p class="pdb-sources__group-label">Right / Right-Center</p>
+          <div class="pdb-sources__tags">
+            <a class="pdb-tag pdb-tag--right" href="https://www.foxnews.com/world/italy-rocked-anarchist-led-riots-over-100-police-injured-meloni-condemns-violence" target="_blank" rel="noopener">Fox News <span class="pdb-tag__desc">· Italy anarchist riots</span></a>
+            <a class="pdb-tag pdb-tag--right" href="https://www.foxnews.com/world/france-devouring-itself-school-riots-reveal-crisis-far-bigger-than-broken-classrooms" target="_blank" rel="noopener">Fox News <span class="pdb-tag__desc">· France school riots analysis</span></a>
+            <a class="pdb-tag pdb-tag--right" href="https://legalinsurrection.com/2026/10/far-left-and-islamist-groups-fuel-violent-riots-across-france/" target="_blank" rel="noopener">Legal Insurrection <span class="pdb-tag__desc">· Far-left / Islamist claim</span></a>
+            <a class="pdb-tag pdb-tag--right" href="https://redstate.com/kyle-becker/2026/10/17/as-france-explodes-with-violent-riots-islamic-leftist-alliance-flexes-its-muscle-ahead-of-elections-n2208271" target="_blank" rel="noopener">RedState <span class="pdb-tag__desc">· Islamic-leftist alliance claim</span></a>
+            <a class="pdb-tag pdb-tag--right" href="https://www.thegatewaypundit.com/2026/10/analysis-leftist-groups-involved-riots-across-europe/" target="_blank" rel="noopener">Gateway Pundit <span class="pdb-tag__desc">· European leftist organizations</span></a>
+            <a class="pdb-tag pdb-tag--right" href="https://www.thegatewaypundit.com/2026/10/leftist-migrant-alliance-behind-belgiums-student-riots/" target="_blank" rel="noopener">Gateway Pundit <span class="pdb-tag__desc">· Belgium leftist-migrant alliance</span></a>
+          </div>
+        </div>
+
+        <div class="pdb-sources__group">
+          <p class="pdb-sources__group-label">International</p>
+          <div class="pdb-sources__tags">
+            <a class="pdb-tag pdb-tag--intl" href="https://organiser.org/2026/10/18/413052/world/riots-sweep-european-nations-france-albania-italy-portugal-and-belgium-face-escalating-street-violence-and-unrest/" target="_blank" rel="noopener">Organiser (India) <span class="pdb-tag__desc">· Multi-country overview</span></a>
+            <a class="pdb-tag pdb-tag--intl" href="https://organiser.org/2026/10/15/386571/world/france-riots-expose-radical-left-islamist-nexus-deepening-political-crisis-ahead-of-2027-presidential-election/" target="_blank" rel="noopener">Organiser (India) <span class="pdb-tag__desc">· Left-Islamist nexus analysis</span></a>
+            <a class="pdb-tag pdb-tag--intl" href="https://www.meforum.org/fwi/fwi-news/leftists-and-sow-chaos-in-france-with-help-of-young-muslims" target="_blank" rel="noopener">Middle East Forum <span class="pdb-tag__desc">· Left / Muslim youth dynamic</span></a>
+            <a class="pdb-tag pdb-tag--intl" href="https://freewestmedia.com/2026/10/19/europe-on-fire/" target="_blank" rel="noopener">Free West Media <span class="pdb-tag__desc">· Pan-European overview</span></a>
+            <a class="pdb-tag pdb-tag--intl" href="https://en.wikipedia.org/wiki/2026_European_unrest" target="_blank" rel="noopener">Wikipedia <span class="pdb-tag__desc">· 2026 European unrest</span></a>
+            <a class="pdb-tag pdb-tag--intl" href="https://en.wikipedia.org/wiki/2025%E2%80%932026_Albanian_opposition_protests" target="_blank" rel="noopener">Wikipedia <span class="pdb-tag__desc">· Albanian opposition protests</span></a>
+          </div>
+        </div>
+
+        <div class="pdb-sources__group">
+          <p class="pdb-sources__group-label">Primary Source</p>
+          <div class="pdb-sources__tags">
+            <a class="pdb-tag pdb-tag--primary" href="https://www.ilfoglio.it/en/world/2026/10/02/news/french-intelligence-accuses-melenchon-of-fuelling-the-protests-the-manoeuvre-by-lfi-and-its-proxies--409504" target="_blank" rel="noopener">French Intelligence Report (via Il Foglio/Le Figaro) <span class="pdb-tag__desc">· 29 Sep 2026 LFI assessment</span></a>
+            <a class="pdb-tag pdb-tag--primary" href="https://lcp.fr/actualites/bruno-retailleau-envisage-l-interdiction-de-lfi-qu-il-accuse-d-organiser-l-insurrection" target="_blank" rel="noopener">LCP France <span class="pdb-tag__desc">· Retailleau statement on LFI ban</span></a>
+          </div>
+        </div>
+
+        <div class="pdb-gaps">
+          <p class="pdb-gaps__heading">Gaps</p>
+          <p class="pdb-gaps__body">
+            Mainstream left-center French reporting (Le Monde, Libération) not available in English for this edition — relevant for assessing the center-left framing of LFI's role.<br>
+            Belgian police official statement on foreign-national involvement claim: not available.<br>
+            Arrest demographic data for France, Italy, or Belgium: not available — primary source confirmation of the demographic composition of arrested protesters is the single largest evidential gap in the Islamist-involvement debate.<br>
+            Direct reporting from Portuguese, Spanish, or Greek outlets on organizational coordination: not available.<br>
+            Full text of the 29 September 2026 French intelligence report: not available — all references are mediated through Le Figaro and Il Foglio.
+          </p>
+        </div>
+      </div>
+    </article>
+
+  </div><!-- /pdb-content -->
+
+  <!-- FOOTER -->
+  <footer class="pdb-footer">
+    <p class="pdb-footer__text">
+      On-Demand Report · RFI-20261019-01 Rev.1 · 19 Oct 2026 · All sources open-access · No paywalls bypassed · SOP Draft 0.6 Para. 10.5
+    </p>
+  </footer>
+
+</main>
+</body>
+</html>
