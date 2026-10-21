@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The PDB · On-Demand Update · European Unrest · 20 Oct 2026</title>
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="The PDB">
+  <meta property="og:title" content="PDB On-Demand · 20 Oct 2026 — European Unrest: 101 Groups, 13 Countries, US in Crosshairs">
+  <meta property="og:description" content="On-demand update: The coordinated network behind European unrest, CCP-linked funding, and explicit plans to replicate the campaign in the United States.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="PDB On-Demand · 20 Oct 2026 — European Unrest">
+  <meta name="twitter:description" content="On-demand update: 101 groups, 13 countries, CCP-linked funding, and explicit plans to bring the unrest to the United States.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&family=Inter:wght@400;600;700&display=swap">
+
+  <style>
+  /* ============================================================
+     PDB DESIGN TOKENS — DO NOT MODIFY
+     All values sourced from PDB_Style_Spec.md v1.0
+     ============================================================ */
+  :root {
+    --page-bg:        #F5F4F0;
+    --content-bg:     #FFFFFF;
+    --content-radius: 6px;
+    --content-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    --max-width:      760px;
+    --masthead-bg:    #1A2744;
+    --masthead-fg:    #FFFFFF;
+    --accent-gold:    #C8A84B;
+    --heading-fg:     #1A2744;
+    --heading-rule:   #1A2744;
+    --body-fg:        #1A1A1A;
+    --meta-fg:        #555555;
+    --secondary-fg:   #AAAAAA;
+    --divider:        #DDDDDD;
+    --banner-bg:      #E8E6E0;
+    --banner-fg:      #1A2744;
+    --balance-bg:     #F0EDE6;
+    --balance-border: #C8A84B;
+    --iw-bg:          #FFF8E8;
+    --iw-border:      #C8A84B;
+    --gaps-fg:        #8B0000;
+    --src-left:       #1A5FBF;
+    --src-center:     #2A7A3A;
+    --src-right:      #B03020;
+    --src-intl:       #5A3A8A;
+    --src-primary:    #5A5850;
+    --link-fg:        #1A5FBF;
+    --link-hover:     #0D3D8A;
+    --font-display:   'Playfair Display', 'Georgia', serif;
+    --font-body:      'Source Serif 4', 'Georgia', 'Times New Roman', serif;
+    --font-ui:        'Inter', 'Helvetica Neue', 'Arial', sans-serif;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --page-bg:      #111318;
+      --content-bg:   #1C2030;
+      --content-shadow: 0 2px 12px rgba(0,0,0,0.4);
+      --masthead-bg:  #0D1526;
+      --body-fg:      #E8E6E0;
+      --meta-fg:      #9A9890;
+      --secondary-fg: #6A6860;
+      --divider:      #2E3040;
+      --banner-bg:    #1A1E2E;
+      --banner-fg:    #C8D0E8;
+      --balance-bg:   #1E1C14;
+      --iw-bg:        #1E1A0C;
+      --heading-fg:   #C8D0E8;
+      --heading-rule: #3A4060;
+      color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --page-bg:      #111318;
+    --content-bg:   #1C2030;
+    --content-shadow: 0 2px 12px rgba(0,0,0,0.4);
+    --masthead-bg:  #0D1526;
+    --body-fg:      #E8E6E0;
+    --meta-fg:      #9A9890;
+    --secondary-fg: #6A6860;
+    --divider:      #2E3040;
+    --banner-bg:    #1A1E2E;
+    --banner-fg:    #C8D0E8;
+    --balance-bg:   #1E1C14;
+    --iw-bg:        #1E1A0C;
+    --heading-fg:   #C8D0E8;
+    --heading-rule: #3A4060;
+    color-scheme: dark;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--page-bg);
+    color: var(--body-fg);
+    font-family: var(--font-body);
+    font-size: 15px;
+    line-height: 1.65;
+    padding-inline: 16px;
+    padding-block: 24px;
+  }
+
+  a { color: var(--link-fg); text-decoration: none; }
+  a:hover { color: var(--link-hover); text-decoration: underline; }
+
+  .pdb-page {
+    max-width: var(--max-width);
+    margin-inline: auto;
+    background: var(--content-bg);
+    border-radius: var(--content-radius);
+    box-shadow: var(--content-shadow);
+    overflow: hidden;
+  }
+
+  /* MASTHEAD */
+  .pdb-masthead {
+    background: var(--masthead-bg);
+    padding: 20px 24px 16px;
+  }
+  .pdb-masthead__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 16px;
+  }
+  .pdb-masthead__title {
+    font-family: var(--font-display);
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--masthead-fg);
+    margin: 0;
+    line-height: 1.2;
+  }
+  .pdb-masthead__date {
+    font-family: var(--font-ui);
+    font-size: 13px;
+    color: var(--secondary-fg);
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+  .pdb-masthead__rule {
+    border: none;
+    border-top: 2px solid var(--accent-gold);
+    margin: 6px 0;
+  }
+  .pdb-masthead__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+  }
+  .pdb-masthead__sub {
+    font-family: var(--font-ui);
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--accent-gold);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin: 0;
+  }
+  .pdb-masthead__meta {
+    font-family: var(--font-ui);
+    font-size: 11px;
+    color: var(--secondary-fg);
+    text-align: right;
+  }
+
+  /* TOPICS BANNER */
+  .pdb-banner {
+    background: var(--banner-bg);
+    padding: 10px 24px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 0;
+    align-items: center;
+  }
+  .pdb-banner__link {
+    font-family: var(--font-ui);
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--banner-fg);
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    white-space: nowrap;
+    padding: 2px 4px;
+  }
+  .pdb-banner__link:hover { color: var(--link-fg); text-decoration: none; }
+  .pdb-banner__sep {
+    font-family: var(--font-ui);
+    font-size: 11px;
+    color: var(--secondary-fg);
+    padding: 0 2px;
+    user-select: none;
+  }
+
+  /* CONTENT */
+  .pdb-content { padding: 24px 24px 0; }
+
+  /* BALANCE BOX */
+  .pdb-balance {
+    background: var(--balance-bg);
+    border-left: 4px solid var(--balance-border);
+    padding: 16px 20px;
+    margin-bottom: 24px;
+    border-radius: 0 4px 4px 0;
+  }
+  .pdb-balance__heading {
+    font-family: var(--font-ui);
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--heading-fg);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin: 0 0 8px;
+  }
+  .pdb-balance__body {
+    font-family: var(--font-body);
+    font-size: 13px;
+    color: var(--body-fg);
+    line-height: 1.6;
+    margin: 0;
+  }
+  .pdb-balance__legend {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 16px;
+  }
+  .pdb-balance__swatch {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-family: var(--font-ui);
+    font-size: 11px;
+    color: var(--meta-fg);
+  }
+  .pdb-balance__dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+
+  /* I&W */
+  .pdb-iw {
+    background: var(--iw-bg);
+    border-left: 4px solid var(--iw-border);
+    padding: 16px 20px;
+    margin-bottom: 24px;
+    border-radius: 0 4px 4px 0;
+  }
+  .pdb-section-heading {
+    font-family: var(--font-ui);
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--heading-fg);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    border-bottom: 2px solid var(--heading-rule);
+    padding-bottom: 6px;
+    margin: 0 0 14px;
+  }
+  .pdb-iw__item {
+    margin-bottom: 14px;
+    padding-bottom: 14px;
+    border-bottom: 1px dashed var(--divider);
+  }
+  .pdb-iw__item:last-child { margin-bottom: 0; padding-bottom: 0; border-bottom: none; }
+  .pdb-iw__label {
+    font-family: var(--font-ui);
+    font-size: 10px;
+    font-weight: 700;
+    color: var(--meta-fg);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    margin: 0 0 3px;
+  }
+  .pdb-iw__title {
+    font-family: var(--font-ui);
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--heading-fg);
+    margin: 0 0 6px;
+  }
+  .pdb-iw__body {
+    font-family: var(--font-body);
+    font-size: 13px;
+    color: var(--body-fg);
+    line-height: 1.6;
+    margin: 0;
+  }
+
+  /* TOPIC SECTIONS */
+  .pdb-topic {
+    margin-bottom: 0;
+    padding-bottom: 24px;
+    border-bottom: 1px solid var(--divider);
+  }
+  .pdb-topic:last-of-type { border-bottom: none; }
+  .pdb-topic__eyebrow {
+    font-family: var(--font-ui);
+    font-size: 10px;
+    font-weight: 700;
+    color: var(--meta-fg);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin: 0 0 2px;
+  }
+  .pdb-topic__heading {
+    font-family: var(--font-ui);
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--heading-fg);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    border-bottom: 2px solid var(--heading-rule);
+    padding-bottom: 6px;
+    margin: 0 0 14px;
+  }
+  .pdb-report__subject {
+    font-family: var(--font-ui);
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--heading-fg);
+    margin: 0 0 6px;
+    text-wrap: balance;
+  }
+  .pdb-report__bluf {
+    font-family: var(--font-body);
+    font-size: 15px;
+    font-style: italic;
+    color: var(--body-fg);
+    margin: 0 0 14px;
+    line-height: 1.6;
+  }
+  .pdb-report__label {
+    font-family: var(--font-ui);
+    font-size: 10px;
+    font-weight: 700;
+    color: var(--heading-fg);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    margin: 0 0 4px;
+  }
+  .pdb-report__facts {
+    margin: 0 0 14px;
+    padding-left: 20px;
+    font-family: var(--font-body);
+    font-size: 14px;
+    line-height: 1.65;
+    color: var(--body-fg);
+  }
+  .pdb-report__facts li { margin-bottom: 4px; }
+  .pdb-report__dispute {
+    font-family: var(--font-body);
+    font-size: 14px;
+    line-height: 1.6;
+    color: var(--body-fg);
+    margin: 0 0 14px;
+  }
+  .pdb-report__dispute em { color: var(--meta-fg); }
+  .pdb-report__watch {
+    margin: 0 0 14px;
+    padding-left: 0;
+    list-style: none;
+    font-family: var(--font-body);
+    font-size: 14px;
+    line-height: 1.65;
+    color: var(--body-fg);
+  }
+  .pdb-report__watch li {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 6px;
+  }
+  .pdb-report__watch li::before {
+    content: "W" attr(data-n);
+    font-family: var(--font-ui);
+    font-size: 10px;
+    font-weight: 700;
+    color: var(--meta-fg);
+    white-space: nowrap;
+    padding-top: 3px;
+    min-width: 28px;
+  }
+  .pdb-report__assessment {
+    font-family: var(--font-body);
+    font-size: 14px;
+    color: var(--src-intl);
+  }
+  .pdb-report__assessment strong { font-weight: 600; }
+
+  /* NAMED GROUPS TABLE */
+  .pdb-groups-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: var(--font-ui);
+    font-size: 12px;
+    margin: 0 0 14px;
+  }
+  .pdb-groups-table th {
+    font-weight: 700;
+    color: var(--heading-fg);
+    text-align: left;
+    padding: 5px 8px;
+    border-bottom: 2px solid var(--divider);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-size: 10px;
+  }
+  .pdb-groups-table td {
+    padding: 4px 8px;
+    border-bottom: 1px solid var(--divider);
+    color: var(--body-fg);
+    vertical-align: top;
+  }
+  .pdb-groups-table tr:last-child td { border-bottom: none; }
+  .pdb-groups-table .cat-communist { color: #8B0000; font-weight: 600; }
+  .pdb-groups-table .cat-socialist { color: #B03020; font-weight: 600; }
+  .pdb-groups-table .cat-amplifier { color: #5A3A8A; font-weight: 600; }
+  .pdb-groups-table .cat-labor     { color: #2A7A3A; font-weight: 600; }
+  .pdb-groups-table .cat-antifa    { color: #555555; font-weight: 600; }
+
+  /* SOURCE TAGS */
+  .pdb-sources { margin-top: 14px; }
+  .pdb-sources__group { margin-bottom: 8px; }
+  .pdb-sources__group-label {
+    font-family: var(--font-ui);
+    font-size: 10px;
+    font-weight: 700;
+    color: var(--meta-fg);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    margin: 0 0 4px;
+  }
+  .pdb-sources__tags { display: flex; flex-wrap: wrap; gap: 4px; }
+  .pdb-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    border-radius: 4px;
+    padding: 2px 8px;
+    font-family: var(--font-ui);
+    font-size: 11px;
+    font-weight: 600;
+    background: var(--content-bg);
+    text-decoration: none;
+    line-height: 1.4;
+  }
+  .pdb-tag:hover { text-decoration: none; opacity: 0.85; }
+  .pdb-tag__desc { font-weight: 400; color: var(--meta-fg); }
+  .pdb-tag--left    { border: 2px solid var(--src-left);    color: var(--src-left); }
+  .pdb-tag--center  { border: 2px solid var(--src-center);  color: var(--src-center); }
+  .pdb-tag--right   { border: 2px solid var(--src-right);   color: var(--src-right); }
+  .pdb-tag--intl    { border: 2px solid var(--src-intl);    color: var(--src-intl); }
+  .pdb-tag--primary { border: 2px solid var(--src-primary); color: var(--src-primary); }
+
+  /* GAPS */
+  .pdb-gaps { margin-top: 10px; }
+  .pdb-gaps__heading {
+    font-family: var(--font-ui);
+    font-size: 10px;
+    font-weight: 700;
+    color: var(--gaps-fg);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    text-decoration: underline;
+    margin: 0 0 4px;
+  }
+  .pdb-gaps__body {
+    font-family: var(--font-body);
+    font-size: 13px;
+    color: var(--meta-fg);
+    margin: 0;
+  }
+
+  /* FOOTER */
+  .pdb-footer {
+    padding: 16px 24px;
+    border-top: 1px solid var(--divider);
+    margin-top: 0;
+  }
+  .pdb-footer__text {
+    font-family: var(--font-ui);
+    font-size: 11px;
+    color: var(--secondary-fg);
+    text-align: center;
+    margin: 0;
+  }
+
+  /* RESPONSIVE */
+  @media (max-width: 500px) {
+    body { padding-inline: 0; padding-block: 0; }
+    .pdb-page { border-radius: 0; box-shadow: none; }
+    .pdb-masthead, .pdb-content { padding-inline: 16px; }
+    .pdb-masthead__top { flex-direction: column; gap: 4px; }
+    .pdb-masthead__date { text-align: left; }
+    .pdb-masthead__bottom { flex-direction: column; align-items: flex-start; gap: 2px; }
+    .pdb-banner { padding-inline: 16px; }
+    .pdb-footer { padding-inline: 16px; }
+    .pdb-groups-table { font-size: 11px; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation: none !important; transition: none !important; }
+  }
+  </style>
+</head>
+<body>
+
+<main class="pdb-page" role="main">
+
+  <!-- MASTHEAD -->
+  <header class="pdb-masthead">
+    <div class="pdb-masthead__top">
+      <h1 class="pdb-masthead__title">The PDB</h1>
+      <span class="pdb-masthead__date">20 Oct 2026</span>
+    </div>
+    <hr class="pdb-masthead__rule" aria-hidden="true">
+    <div class="pdb-masthead__bottom">
+      <p class="pdb-masthead__sub">On-Demand Update</p>
+      <span class="pdb-masthead__meta">
+        1 report · Collection window: 19 Oct 2026 17:00–20 Oct 2026 17:00 EDT
+      </span>
+    </div>
+  </header>
+
+  <!-- TOPICS BANNER -->
+  <nav class="pdb-banner" aria-label="Report sections">
+    <a class="pdb-banner__link" href="#iw">I&amp;W</a>
+    <span class="pdb-banner__sep" aria-hidden="true">|</span>
+    <a class="pdb-banner__link" href="#topic-1">European Unrest</a>
+    <span class="pdb-banner__sep" aria-hidden="true">|</span>
+    <a class="pdb-banner__link" href="#topic-1-scope">Scope &amp; Groups</a>
+    <span class="pdb-banner__sep" aria-hidden="true">|</span>
+    <a class="pdb-banner__link" href="#topic-1-network">CCP / Singham Network</a>
+    <span class="pdb-banner__sep" aria-hidden="true">|</span>
+    <a class="pdb-banner__link" href="#topic-1-money">Follow the Money</a>
+  </nav>
+
+  <div class="pdb-content">
+
+    <!-- BALANCE BOX — LOCKED TEXT -->
+    <aside class="pdb-balance" aria-label="Balance and source integrity statement">
+      <p class="pdb-balance__heading">How We Ensure Balance and Source Integrity</p>
+      <p class="pdb-balance__body">
+        This brief draws from a curated registry of news outlets rated for editorial bias and factual reliability
+        by independent third-party assessors. Each topic report includes sources from across the editorial spectrum —
+        left, center, and right — as well as international and primary-source materials where available.
+        Sources are selected for relevance and reliability, not to confirm any particular narrative.
+        Gaps in coverage are noted when a spectrum segment did not report on the selected story.
+        No paywalled content is accessed or reproduced. All sources are open-access.
+      </p>
+      <div class="pdb-balance__legend">
+        <span class="pdb-balance__swatch">
+          <span class="pdb-balance__dot" style="background:#1A5FBF;"></span>Left / Left-Center
+        </span>
+        <span class="pdb-balance__swatch">
+          <span class="pdb-balance__dot" style="background:#2A7A3A;"></span>Center
+        </span>
+        <span class="pdb-balance__swatch">
+          <span class="pdb-balance__dot" style="background:#B03020;"></span>Right / Right-Center
+        </span>
+        <span class="pdb-balance__swatch">
+          <span class="pdb-balance__dot" style="background:#5A3A8A;"></span>International
+        </span>
+        <span class="pdb-balance__swatch">
+          <span class="pdb-balance__dot" style="background:#5A5850;"></span>Primary Source
+        </span>
+      </div>
+    </aside>
+
+    <!-- INDICATIONS AND WARNING -->
+    <section class="pdb-iw" id="iw" aria-label="Indications and Warning">
+      <h2 class="pdb-section-heading">Indications and Warning</h2>
+
+      <div class="pdb-iw__item">
+        <p class="pdb-iw__label">Major Significance</p>
+        <p class="pdb-iw__title">CODEPINK explicitly links European unrest to planned Washington, D.C. mobilization, Nov. 10–12</p>
+        <p class="pdb-iw__body">
+          CODEPINK — a U.S. organization funded through the Singham network and whose co-founder is married to Neville Roy Singham — stated publicly: "From France to the United States, the message is clear," before promoting its planned Nov. 10–12 "Taxpayer Uprising" in Washington demanding that federal spending shift from defense to domestic programs. This is the clearest organizational statement to date that the European campaign is explicitly intended to export to the United States. Separately, the Progressive International stated on Oct. 16 that it is "working to support and connect" the protest movements in France, Spain, India, and Albania.
+        </p>
+      </div>
+
+      <div class="pdb-iw__item">
+        <p class="pdb-iw__label">Major Significance</p>
+        <p class="pdb-iw__title">Congressional subpoena deadline passed today — Singham network organizations face possible deposition</p>
+        <p class="pdb-iw__body">
+          Today, Oct. 20, is the compliance deadline set by the House Ways and Means Committee for The People's Forum, BreakThrough News, and Tricontinental: Institute for Social Research to respond to congressional subpoenas. The committee warned that failure to comply will trigger deposition subpoenas covering 21 named officials and staff members. The deadline coincides with those same organizations actively amplifying European unrest and planning U.S. mobilizations.
+        </p>
+      </div>
+
+    </section>
+
+    <!-- MAIN REPORT -->
+    <article class="pdb-topic" id="topic-1" aria-label="European Unrest: Scope, Network, and US Implications">
+
+      <p class="pdb-topic__eyebrow">On-Demand Report</p>
+      <h2 class="pdb-topic__heading">European Unrest: Scope, Network, and US Implications</h2>
+
+      <p class="pdb-report__subject">A coordinated international network of at least 101 organizations spanning 13 countries — with explicit U.S. links — is amplifying and escalating civil unrest across Europe, with organized plans to replicate the campaign in the United States.</p>
+
+      <p class="pdb-report__bluf">What began as localized student protests in France has been absorbed into a structured, externally amplified campaign by communist, socialist, Islamist, and far-left organizations operating across 12 European countries and the United States; a Shanghai-based American businessman under federal grand jury investigation for financial crimes provides the primary funding link between these organizations and the Chinese Communist Party.</p>
+
+      <!-- SECTION 1: SCOPE -->
+      <div id="topic-1-scope">
+        <p class="pdb-report__label">Scope: Countries and Scale</p>
+        <ul class="pdb-report__facts">
+          <li>Active unrest is documented in <strong>France, Spain, Italy, Portugal, Belgium, Albania, and Greece</strong> — seven countries with demonstrations ongoing as of 20 Oct 2026. Germany, Ireland, and the UK have organizations actively mobilizing for the Nov. 20 International Youth Strike.</li>
+          <li>An international coalition of 28 communist and socialist youth organizations across <strong>12 European countries</strong> is organizing a coordinated strike on Nov. 20 under the slogan "Fight for Our Future, Not Their Wars," calling for walkouts, blockades, occupations, and mass demonstrations.</li>
+          <li>Fox News Digital's investigation identified <strong>101 organizations across 13 countries — including the United States</strong> — coordinating, organizing, or amplifying the protest ecosystem as of Oct. 20. That figure is up from 54 organizations identified one week prior.</li>
+          <li>France is the epicenter: an estimated 500,000 demonstrators took to the streets Oct. 17; more than 6,500 have been arrested since protests began in mid-September. Organizers have scheduled "Acte II" for Oct. 24 (212 mobilizations planned), "Acte III" for Oct. 31, and further actions on Nov. 5 and Nov. 14.</li>
+          <li>Grievances driving the mass population are primarily domestic: cost of living, housing, fuel prices, education funding, and teacher shortages. These genuine grievances have been systematically exploited and amplified by organized external networks.</li>
+        </ul>
+      </div>
+
+      <!-- SECTION 2: NAMED GROUPS -->
+      <p class="pdb-report__label">Named Activist Organizations (Representative Roster — 101 Total Identified)</p>
+      <p class="pdb-report__dispute" style="margin-bottom:8px;">
+        The following table lists the principal named organizations confirmed by investigative reporting as coordinating, organizing, or amplifying the protest network. Only 33 of the 101 identified groups are student- or youth-led. The remaining 68 are adult-led communist, socialist, labor, Islamist, or advocacy organizations. U.S.-based organizations with direct amplification roles are included.
+      </p>
+
+      <table class="pdb-groups-table" style="margin-bottom:18px;">
+        <thead>
+          <tr>
+            <th>Organization</th>
+            <th>Country</th>
+            <th>Category</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>International Youth Strike (youthstrike.org)</td><td>UK/Intl</td><td class="cat-communist">Anti-capitalist coalition</td></tr>
+          <tr><td>Committee for a Workers' International (CWI)</td><td>International</td><td class="cat-communist">Trotskyist / socialist</td></tr>
+          <tr><td>International Socialist Alternative (ISA)</td><td>International</td><td class="cat-communist">Revolutionary socialist</td></tr>
+          <tr><td>Progressive International</td><td>International</td><td class="cat-amplifier">Transnational left network</td></tr>
+          <tr><td>Stop ReArm Europe</td><td>Europe</td><td class="cat-amplifier">Anti-war / anti-militarization coalition</td></tr>
+          <tr><td>World BEYOND War</td><td>International</td><td class="cat-amplifier">Anti-war</td></tr>
+          <tr><td>Révolution Permanente</td><td>France</td><td class="cat-communist">Trotskyist</td></tr>
+          <tr><td>Le Poing Levé (The Raised Fist)</td><td>France</td><td class="cat-communist">Revolutionary communist student/youth</td></tr>
+          <tr><td>La Jeunesse Communiste</td><td>France</td><td class="cat-communist">Communist youth</td></tr>
+          <tr><td>Parti communiste français (PCF)</td><td>France</td><td class="cat-communist">Communist party</td></tr>
+          <tr><td>Organisation communiste révolutionnaire</td><td>France</td><td class="cat-communist">Revolutionary communist</td></tr>
+          <tr><td>Parti de l'égalité socialiste</td><td>France</td><td class="cat-communist">Trotskyist</td></tr>
+          <tr><td>New Anticapitalist Party (NPA)</td><td>France</td><td class="cat-socialist">Revolutionary socialist</td></tr>
+          <tr><td>CGT (Confédération générale du travail)</td><td>France</td><td class="cat-labor">Major labor confederation</td></tr>
+          <tr><td>CGT Éduc'action</td><td>France</td><td class="cat-labor">Education labor union</td></tr>
+          <tr><td>CNT (anarcho-syndicalist)</td><td>France</td><td class="cat-labor">Anarcho-syndicalist union</td></tr>
+          <tr><td>Force Ouvrière</td><td>France</td><td class="cat-labor">Labor confederation</td></tr>
+          <tr><td>SUD éducation</td><td>France</td><td class="cat-labor">Left-wing education union</td></tr>
+          <tr><td>Gilets jaunes (Yellow Vests)</td><td>France</td><td class="cat-amplifier">Decentralized protest movement</td></tr>
+          <tr><td>Les Soulèvements de la Terre</td><td>France</td><td class="cat-amplifier">Radical environmental / antifascist</td></tr>
+          <tr><td>Coordination nationale lycéenne</td><td>France</td><td class="cat-amplifier">National high school coordination</td></tr>
+          <tr><td>Peuple RÉVOLTÉ (People in Revolt)</td><td>France</td><td class="cat-amplifier">Protest collective</td></tr>
+          <tr><td>Indignons-nous, Bloquons tout</td><td>France</td><td class="cat-antifa">Direct action collective</td></tr>
+          <tr><td>Action Antifasciste 16 (Antifa)</td><td>France</td><td class="cat-antifa">Antifascist</td></tr>
+          <tr><td>Caen Antifa Squad</td><td>France</td><td class="cat-antifa">Antifascist</td></tr>
+          <tr><td>La France insoumise (LFI) affiliates</td><td>France</td><td class="cat-socialist">Far-left political party network</td></tr>
+          <tr><td>Communist Youth of Greece</td><td>Greece</td><td class="cat-communist">Communist youth</td></tr>
+          <tr><td>Die Falken</td><td>Germany</td><td class="cat-socialist">Socialist youth</td></tr>
+          <tr><td>Linksjugend ['solid]</td><td>Germany</td><td class="cat-socialist">Socialist youth (Die Linke affiliated)</td></tr>
+          <tr><td>Socialist German Workers Youth (SDAJ)</td><td>Germany</td><td class="cat-communist">Communist youth</td></tr>
+          <tr><td>Schulstreik gegen Wehrpflicht</td><td>Germany</td><td class="cat-amplifier">Anti-conscription school strike network</td></tr>
+          <tr><td>Comac</td><td>Belgium</td><td class="cat-communist">Marxist/socialist youth</td></tr>
+          <tr><td>RedFox</td><td>Belgium</td><td class="cat-socialist">Socialist youth</td></tr>
+          <tr><td>Counterfire</td><td>UK</td><td class="cat-communist">Revolutionary socialist / anti-war</td></tr>
+          <tr><td>Socialist Students</td><td>UK</td><td class="cat-socialist">Socialist student org</td></tr>
+          <tr><td>Socialist Party (UK)</td><td>UK</td><td class="cat-communist">Trotskyist</td></tr>
+          <tr><td>Stop the War Coalition</td><td>UK</td><td class="cat-amplifier">Anti-war</td></tr>
+          <tr><td>Militant Left</td><td>Ireland</td><td class="cat-socialist">Socialist</td></tr>
+          <tr><td>Rete della Conoscenza</td><td>Italy</td><td class="cat-socialist">Left-wing student network</td></tr>
+          <tr><td>CGIL (Italian labor confederation)</td><td>Italy</td><td class="cat-labor">Major labor confederation (Nov. 20 general strike)</td></tr>
+          <tr><td>Sindicato de Estudiantes</td><td>Spain</td><td class="cat-socialist">Socialist student union</td></tr>
+          <tr><td>BreakThrough News</td><td>USA</td><td class="cat-amplifier">Singham-network media amplifier</td></tr>
+          <tr><td>CODEPINK</td><td>USA</td><td class="cat-amplifier">Singham-linked anti-war / activist</td></tr>
+          <tr><td>Party for Socialism and Liberation (PSL)</td><td>USA</td><td class="cat-communist">Marxist-Leninist</td></tr>
+          <tr><td>The People's Forum</td><td>USA</td><td class="cat-amplifier">Singham-funded activist hub</td></tr>
+          <tr><td>Tricontinental: Institute for Social Research</td><td>USA/Intl</td><td class="cat-amplifier">Singham-funded; "national liberation Marxism"</td></tr>
+          <tr><td>teleSUR English</td><td>International</td><td class="cat-amplifier">State-linked international media amplifier</td></tr>
+          <tr><td>Indian Alliance Paris + People's Forum (NY)</td><td>France/USA</td><td class="cat-amplifier">Diaspora / transatlantic amplifier network</td></tr>
+        </tbody>
+      </table>
+
+      <!-- SECTION 3: CCP / SINGHAM NETWORK -->
+      <div id="topic-1-network">
+        <p class="pdb-report__label">CCP and Singham Network Involvement</p>
+        <ul class="pdb-report__facts">
+          <li><strong>Neville Roy Singham</strong>, 72, sold his tech company ThoughtWorks for an estimated $785 million in 2017. He now lives in Shanghai, attends CCP workshops focused on overseas messaging, and has publicly expressed support for a "new world order" under Xi Jinping. He is married to CODEPINK co-founder Jodie Evans.</li>
+          <li>Singham funds and directs an array of U.S. far-left organizations including <strong>CODEPINK, The People's Forum, BreakThrough News, Tricontinental, the ANSWER Coalition, and the International Peoples' Assembly</strong>. These organizations are the primary U.S.-based nodes amplifying European unrest and planning domestic mobilizations.</li>
+          <li><strong>BreakThrough News</strong> — which operates out of the same building as The People's Forum and shares staff — published advance coverage framing the European unrest as "Europe's Youth Uprising" and announced an online discussion on Oct. 20 titled "A rebellion is sweeping Europe." Journalists Rania Khalek, Zoe Alexandra, and Amanda Yee are among staff named in congressional correspondence as potential deposition targets.</li>
+          <li>Vijay Prashad, executive director of Tricontinental and a Singham-funded figure, publicly celebrated the European unrest.</li>
+          <li>CODEPINK co-founder Medea Benjamin launched a 12-day China tour on Oct. 13, promoting "revolutionary history" and "socialist development," while the federal grand jury investigation into Singham's network continues. Jodie Evans travels to Shanghai to visit Singham and participates in U.S. demonstrations alongside Benjamin.</li>
+          <li>The House Ways and Means Committee (Chairman Jason Smith, R-MO) issued subpoenas to The People's Forum, BreakThrough News, and Tricontinental in January 2026. All three organizations failed to produce a single document in response to earlier requests.</li>
+        </ul>
+      </div>
+
+      <!-- SECTION 4: FOLLOW THE MONEY -->
+      <div id="topic-1-money">
+        <p class="pdb-report__label">Follow the Money</p>
+        <ul class="pdb-report__facts">
+          <li>A Fox News Digital five-part investigation documented approximately <strong>$278 million</strong> flowing from Singham through a Goldman Sachs donor-advised fund and two now-defunct shell companies to six core U.S. nonprofits.</li>
+          <li>Documented flows to core organizations: <strong>The People's Forum, $22.44 million; Tricontinental, $16.76 million; BreakThrough News (Breakthrough BT Media), $1.098 million; CODEPINK, approximately $1.3 million</strong>. Additional recipients include the Justice and Education Fund and the People's Support Foundation, which in turn funded the Party for Socialism and Liberation and the ANSWER Coalition.</li>
+          <li>Approximately $1.8 million from Singham-linked funding streams has been documented going to Chinese media outlets that echo CCP messaging.</li>
+          <li>The SDNY grand jury, authorized by Acting AG Todd Blanche and led by U.S. Attorney Jay Clayton, is investigating <strong>wire fraud, bank fraud, and money laundering</strong>. Grand jury subpoenas seeking bank records and other financial documents have been issued. No criminal charges have been filed.</li>
+          <li>The House Ways and Means Committee's investigation focuses on whether existing tax law adequately prevents foreign interests from using U.S. nonprofits to conceal funding sources and exercise influence. FARA (Foreign Agents Registration Act) compliance is a central concern. Singham and his organizations deny taking direction from the Chinese government.</li>
+          <li>Singham previously gave $1.3 million to CODEPINK; since 2017, approximately a quarter of CODEPINK's donations — totaling more than $1.4 million — have come from Singham-linked groups.</li>
+          <li>The congressional subpoena compliance deadline for the three key organizations was <strong>today, Oct. 20</strong>. Non-compliance triggers potential depositions of 21 officials and staff.</li>
+        </ul>
+      </div>
+
+      <p class="pdb-report__label">Points of Dispute</p>
+      <p class="pdb-report__dispute">
+        <em>Key contested questions:</em> Singham and CodePink deny that the organizations take direction from the Chinese government. Singham states he is guided by his own political beliefs; Benjamin states CodePink receives no money from the Chinese Communist Party directly. The World Socialist Web Site and left-wing commentators characterize the congressional investigation as a politically motivated witch hunt. Left-center and mainstream outlets (Reuters, Al Jazeera, Axios) report the underlying protests as genuine, largely domestic responses to cost-of-living grievances, noting the protests are not one coordinated European movement. The question of whether the Singham network constitutes foreign influence operations versus domestic political organizing protected by the First Amendment is the central legal dispute before the grand jury.
+      </p>
+
+      <p class="pdb-report__label">Watch</p>
+      <ol class="pdb-report__watch">
+        <li data-n="1.1">Oct. 24 "Acte II" mobilization in France (212 planned events): scale and violence level will signal whether the movement is gaining or losing momentum. <span class="pdb-report__assessment">Assessment: <strong>Escalatory</strong> (moderate confidence)</span></li>
+        <li data-n="1.2">Nov. 10–12 CODEPINK "Taxpayer Uprising" in Washington, D.C.: first direct test of the network's ability to translate European momentum into organized U.S. street action.</li>
+        <li data-n="1.3">Nov. 20 International Youth Strike: 12 European countries targeted; CGIL (Italy) general strike converges on same date, raising potential for multi-sector disruption.</li>
+        <li data-n="1.4">SDNY grand jury and House Ways and Means Committee deposition proceedings against The People's Forum, BreakThrough News, and Tricontinental: outcome will determine whether criminal charges are warranted and whether FARA enforcement follows.</li>
+      </ol>
+
+      <!-- SOURCES -->
+      <div class="pdb-sources">
+
+        <div class="pdb-sources__group">
+          <p class="pdb-sources__group-label">Left / Left-Center</p>
+          <div class="pdb-sources__tags">
+            <a class="pdb-tag pdb-tag--left" href="https://www.axios.com/2026/10/07/europe-student-protests-france-belgium" target="_blank" rel="noopener">
+              Axios <span class="pdb-tag__desc">· Europe student protests — France, Belgium</span>
+            </a>
+            <a class="pdb-tag pdb-tag--left" href="https://www.aljazeera.com/news/2026/10/17/cost-of-living-protests-hit-belgium-italy-portugal-and-france" target="_blank" rel="noopener">
+              Al Jazeera <span class="pdb-tag__desc">· Cost-of-living protests, Oct. 17</span>
+            </a>
+            <a class="pdb-tag pdb-tag--left" href="https://globalfreedomofexpression.columbia.edu/updates/2026/09/cgfoe-protest-monitor-september-10-2026-issue-albania/" target="_blank" rel="noopener">
+              Columbia CGFoE <span class="pdb-tag__desc">· Albania protest monitor, Sept. 2026</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="pdb-sources__group">
+          <p class="pdb-sources__group-label">Center</p>
+          <div class="pdb-sources__tags">
+            <a class="pdb-tag pdb-tag--center" href="https://www.abc.net.au/news/2026-10-20/europe-protests-explained-as-demonstrations-grow/107285508" target="_blank" rel="noopener">
+              ABC News (AU) <span class="pdb-tag__desc">· Europe protests explained, Oct. 20</span>
+            </a>
+            <a class="pdb-tag pdb-tag--center" href="https://euperspectives.eu/2026/10/europe-protests-explained-causes/" target="_blank" rel="noopener">
+              EU Perspectives <span class="pdb-tag__desc">· Europe's streets erupt: causes</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="pdb-sources__group">
+          <p class="pdb-sources__group-label">Right / Right-Center</p>
+          <div class="pdb-sources__tags">
+            <a class="pdb-tag pdb-tag--right" href="https://jingletree.com/global-chaos-inc-grows-to-101-groups-with-plans-for-new-rounds-of-demonstrations-291604.html" target="_blank" rel="noopener">
+              Fox News (via Jingletree) <span class="pdb-tag__desc">· "Chaos Inc." grows to 101 groups</span>
+            </a>
+            <a class="pdb-tag pdb-tag--right" href="https://redstate.com/terichristoph/2026/10/19/frances-student-uprising-has-a-whole-lot-of-grown-up-radicals-behind-it-report-n2208320" target="_blank" rel="noopener">
+              RedState <span class="pdb-tag__desc">· Network behind violence says US is next</span>
+            </a>
+            <a class="pdb-tag pdb-tag--right" href="https://www.yahoo.com/news/politics/articles/codepink-launches-china-tour-190832364.html" target="_blank" rel="noopener">
+              Fox News (via Yahoo) <span class="pdb-tag__desc">· CodePink China tour, grand jury ongoing</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="pdb-sources__group">
+          <p class="pdb-sources__group-label">International</p>
+          <div class="pdb-sources__tags">
+            <a class="pdb-tag pdb-tag--intl" href="https://organiser.org/2026/10/20/418481/world/who-is-neville-roy-singham-how-his-china-linked-left-wing-funding-network-extends-to-delhi-protests-amid-us-probe/" target="_blank" rel="noopener">
+              Organiser (India) <span class="pdb-tag__desc">· Singham network extends to Delhi protests</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="pdb-sources__group">
+          <p class="pdb-sources__group-label">Primary Source</p>
+          <div class="pdb-sources__tags">
+            <a class="pdb-tag pdb-tag--primary" href="https://en.wikipedia.org/wiki/Neville_Roy_Singham" target="_blank" rel="noopener">
+              Wikipedia / Congressional Record <span class="pdb-tag__desc">· Singham funding network and CCP links</span>
+            </a>
+            <a class="pdb-tag pdb-tag--primary" href="https://zerohedge.com/political/house-panel-warns-singham-linked-nonprofits-possible-depositions-over-subpoenas" target="_blank" rel="noopener">
+              House Ways &amp; Means Committee <span class="pdb-tag__desc">· Subpoena compliance deadline Oct. 20</span>
+            </a>
+            <a class="pdb-tag pdb-tag--primary" href="https://hoodline.com/2026/06/neville-singham-s-money-trail-lands-in-crosshairs-of-manhattan-grand-jury/" target="_blank" rel="noopener">
+              SDNY Grand Jury <span class="pdb-tag__desc">· Federal grand jury subpoenas issued</span>
+            </a>
+            <a class="pdb-tag pdb-tag--primary" href="https://www.icnl.org/our-work/us-program/foreign-agents-registration-act/fara-congressional-investigations" target="_blank" rel="noopener">
+              ICNL FARA Monitor <span class="pdb-tag__desc">· Congressional FARA investigations tracker</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="pdb-gaps">
+          <p class="pdb-gaps__heading">Gaps</p>
+          <p class="pdb-gaps__body">
+            Direct reporting from German, Italian, Spanish, and Portuguese mainstream outlets on the organized political infrastructure behind protests is not available in English-language open-access sources this edition. Independent verification of the full $278 million figure cited in the Fox News investigation is not available; that reporting has not been confirmed or refuted by the SDNY or Ways and Means Committee in publicly released documents. Reporting from center-left U.S. outlets (NPR, New York Times, Washington Post) on the Singham network's amplification of European protests is not available this edition.
+          </p>
+        </div>
+
+      </div>
+
+    </article>
+
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="pdb-footer">
+    <p class="pdb-footer__text">
+      The PDB · On-Demand Update · 20 Oct 2026 · All sources open-access · No paywalls bypassed
+    </p>
+  </footer>
+
+</main>
+
+</body>
+</html>
