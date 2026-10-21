@@ -1,0 +1,1231 @@
+<title>The PDB · {{DATE_DD_MON_YYYY}}</title>
+<!-- ============================================================
+     OG / TWITTER META — LOCKED FORMULA (SOP Section 11)
+     Agent fills ONLY the three values marked below.
+     All other values are constants — do not change them.
+
+     {{DATE_DD_MON_YYYY}}  — e.g. 21 Oct 2026   ← fill this
+     {{IW1_HEADLINE}}      — exact I&W #1 title from this brief,
+                             trimmed to 120 chars if needed      ← fill this
+     {{BRIEF_URL}}         — GitHub Pages URL for this file;
+                             formula: [BASE_URL]/pdb-DD-mon-YYYY.html
+                             (DD-mon-YYYY lowercase, e.g. pdb-21-oct-2026.html)
+                             Set BASE_URL in SOP Section 11.     ← fill this
+
+     twitter:site — set once in SOP Section 11; copy from there.
+     og:image     — omit until a canonical image URL is
+                    established in SOP Section 11. When one
+                    exists, also change twitter:card to
+                    "summary_large_image" and add twitter:image.
+     ============================================================ -->
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="The PDB">
+<meta property="og:title" content="The PDB · {{DATE_DD_MON_YYYY}}">
+<meta property="og:description" content="{{IW1_HEADLINE}}">
+<meta property="og:url" content="{{BRIEF_URL}}">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="{{TWITTER_HANDLE}}">
+<meta name="twitter:title" content="The PDB · {{DATE_DD_MON_YYYY}}">
+<meta name="twitter:description" content="{{IW1_HEADLINE}}">
+<!--
+  PDB_Public_Template.html
+  Canonical HTML template for the Priority Daily Brief (public product)
+  and for The PDB (personal brief, effective 20 Oct 2026).
+  Version: 1.2 — October 21, 2026
+  Authority: News Analysis Agent SOP, Sections 6, 9, 11; PDB_Style_Spec.md
+
+  AGENT INSTRUCTIONS:
+  1. Read PDB_Style_Spec.md and SOP Sections 9 and 11 before every run.
+  2. Fill ALL placeholders marked {{LIKE_THIS}} with real content.
+  3. For the personal PDB (The PDB): change "Priority Daily Brief" in the
+     masthead h1 to "The PDB" and "YOUR OPEN-SOURCE DAILY BRIEF" to
+     "YOUR PERSONAL DAILY BRIEF". Add Follow Up and Responses to Your
+     Questions sections after Topic 4. Banner links include Follow Up and
+     Responses to Your Questions.
+  4. Remove all placeholder comments before publishing.
+  5. Do NOT modify any CSS, hex values, font rules, or structural elements.
+  6. Do NOT add sections not in this template.
+  7. The Balance and Source Integrity statement text is LOCKED — reproduce
+     it exactly as written in this template.
+  8. Repeat the {{TOPIC_REPORT_BLOCK}} pattern four times (one per topic).
+  9. Repeat the {{IW_ITEM_BLOCK}} up to three times; omit section if no
+     qualifying items.
+ 10. OG/Twitter meta: fill only DATE_DD_MON_YYYY, IW1_HEADLINE, and
+     BRIEF_URL. All other meta values are constants from SOP Section 11.
+-->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&family=Inter:wght@400;600;700&display=swap">
+
+<style>
+/* ============================================================
+   PDB DESIGN TOKENS — DO NOT MODIFY
+   All values sourced from PDB_Style_Spec.md v1.0
+   ============================================================ */
+:root {
+  /* Page structure */
+  --page-bg:        #F5F4F0;
+  --content-bg:     #FFFFFF;
+  --content-radius: 6px;
+  --content-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  --max-width:      760px;
+
+  /* Masthead */
+  --masthead-bg:    #1A2744;
+  --masthead-fg:    #FFFFFF;
+  --accent-gold:    #C8A84B;
+
+  /* Section headings */
+  --heading-fg:     #1A2744;
+  --heading-rule:   #1A2744;
+
+  /* Body text */
+  --body-fg:        #1A1A1A;
+  --meta-fg:        #555555;
+  --secondary-fg:   #AAAAAA;
+  --divider:        #DDDDDD;
+
+  /* Topics banner */
+  --banner-bg:      #E8E6E0;
+  --banner-fg:      #1A2744;
+
+  /* Balance box */
+  --balance-bg:     #F0EDE6;
+  --balance-border: #C8A84B;
+
+  /* I&W section */
+  --iw-bg:          #FFF8E8;
+  --iw-border:      #C8A84B;
+
+  /* Gaps label */
+  --gaps-fg:        #8B0000;
+
+  /* Source group colors — LOCKED */
+  --src-left:       #1A5FBF;
+  --src-center:     #2A7A3A;
+  --src-right:      #B03020;
+  --src-intl:       #5A3A8A;
+  --src-primary:    #5A5850;
+
+  /* Links */
+  --link-fg:        #1A5FBF;
+  --link-hover:     #0D3D8A;
+
+  /* Typography */
+  --font-display:   'Playfair Display', 'Georgia', serif;
+  --font-body:      'Source Serif 4', 'Georgia', 'Times New Roman', serif;
+  --font-ui:        'Inter', 'Helvetica Neue', 'Arial', sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --page-bg:      #111318;
+    --content-bg:   #1C2030;
+    --content-shadow: 0 2px 12px rgba(0,0,0,0.4);
+    --masthead-bg:  #0D1526;
+    --body-fg:      #E8E6E0;
+    --meta-fg:      #9A9890;
+    --secondary-fg: #6A6860;
+    --divider:      #2E3040;
+    --banner-bg:    #1A1E2E;
+    --banner-fg:    #C8D0E8;
+    --balance-bg:   #1E1C14;
+    --iw-bg:        #1E1A0C;
+    --heading-fg:   #C8D0E8;
+    --heading-rule: #3A4060;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --page-bg:      #111318;
+  --content-bg:   #1C2030;
+  --content-shadow: 0 2px 12px rgba(0,0,0,0.4);
+  --masthead-bg:  #0D1526;
+  --body-fg:      #E8E6E0;
+  --meta-fg:      #9A9890;
+  --secondary-fg: #6A6860;
+  --divider:      #2E3040;
+  --banner-bg:    #1A1E2E;
+  --banner-fg:    #C8D0E8;
+  --balance-bg:   #1E1C14;
+  --iw-bg:        #1E1A0C;
+  --heading-fg:   #C8D0E8;
+  --heading-rule: #3A4060;
+  color-scheme: dark;
+}
+
+/* ============================================================
+   BASE
+   ============================================================ */
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--page-bg);
+  color: var(--body-fg);
+  font-family: var(--font-body);
+  font-size: 15px;
+  line-height: 1.65;
+  padding-inline: 16px;
+  padding-block: 24px;
+}
+
+a {
+  color: var(--link-fg);
+  text-decoration: none;
+}
+a:hover { color: var(--link-hover); text-decoration: underline; }
+
+/* ============================================================
+   PAGE WRAPPER
+   ============================================================ */
+.pdb-page {
+  max-width: var(--max-width);
+  margin-inline: auto;
+  background: var(--content-bg);
+  border-radius: var(--content-radius);
+  box-shadow: var(--content-shadow);
+  overflow: hidden;
+}
+
+/* ============================================================
+   MASTHEAD
+   ============================================================ */
+.pdb-masthead {
+  background: var(--masthead-bg);
+  padding: 20px 24px 16px;
+}
+
+.pdb-masthead__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 16px;
+}
+
+.pdb-masthead__title {
+  font-family: var(--font-display);
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--masthead-fg);
+  margin: 0;
+  line-height: 1.2;
+}
+
+.pdb-masthead__date {
+  font-family: var(--font-ui);
+  font-size: 13px;
+  color: var(--secondary-fg);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.pdb-masthead__rule {
+  border: none;
+  border-top: 2px solid var(--accent-gold);
+  margin: 6px 0;
+}
+
+.pdb-masthead__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+
+.pdb-masthead__sub {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--accent-gold);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.pdb-masthead__meta {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  color: var(--secondary-fg);
+  text-align: right;
+}
+
+/* ============================================================
+   TOPICS BANNER
+   ============================================================ */
+.pdb-banner {
+  background: var(--banner-bg);
+  padding: 10px 24px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 0;
+  align-items: center;
+}
+
+.pdb-banner__link {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--banner-fg);
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+  padding: 2px 4px;
+}
+.pdb-banner__link:hover {
+  color: var(--link-fg);
+  text-decoration: none;
+}
+
+.pdb-banner__sep {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  color: var(--secondary-fg);
+  padding: 0 2px;
+  user-select: none;
+}
+
+/* ============================================================
+   CONTENT AREA
+   ============================================================ */
+.pdb-content {
+  padding: 24px 24px 0;
+}
+
+/* ============================================================
+   BALANCE AND SOURCE INTEGRITY BOX — LOCKED ELEMENT
+   ============================================================ */
+.pdb-balance {
+  background: var(--balance-bg);
+  border-left: 4px solid var(--balance-border);
+  padding: 16px 20px;
+  margin-bottom: 24px;
+  border-radius: 0 4px 4px 0;
+}
+
+.pdb-balance__heading {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--heading-fg);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin: 0 0 8px;
+}
+
+.pdb-balance__body {
+  font-family: var(--font-body);
+  font-size: 13px;
+  color: var(--body-fg);
+  line-height: 1.6;
+  margin: 0;
+}
+
+.pdb-balance__legend {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 16px;
+}
+
+.pdb-balance__swatch {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-ui);
+  font-size: 11px;
+  color: var(--meta-fg);
+}
+
+.pdb-balance__dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+/* ============================================================
+   INDICATIONS AND WARNING SECTION
+   ============================================================ */
+.pdb-iw {
+  background: var(--iw-bg);
+  border-left: 4px solid var(--iw-border);
+  padding: 16px 20px;
+  margin-bottom: 24px;
+  border-radius: 0 4px 4px 0;
+}
+
+.pdb-section-heading {
+  font-family: var(--font-ui);
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--heading-fg);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border-bottom: 2px solid var(--heading-rule);
+  padding-bottom: 6px;
+  margin: 0 0 14px;
+}
+
+.pdb-iw__none {
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-style: italic;
+  color: var(--meta-fg);
+  margin: 0;
+}
+
+/* I&W item */
+.pdb-iw__item {
+  margin-bottom: 14px;
+  padding-bottom: 14px;
+  border-bottom: 1px dashed var(--divider);
+}
+.pdb-iw__item:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.pdb-iw__label {
+  font-family: var(--font-ui);
+  font-size: 10px;
+  font-weight: 700;
+  color: var(--meta-fg);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin: 0 0 3px;
+}
+
+.pdb-iw__title {
+  font-family: var(--font-ui);
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--heading-fg);
+  margin: 0 0 6px;
+}
+
+.pdb-iw__body {
+  font-family: var(--font-body);
+  font-size: 13px;
+  color: var(--body-fg);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* ============================================================
+   TOPIC REPORT SECTIONS
+   ============================================================ */
+.pdb-topic {
+  margin-bottom: 0;
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--divider);
+}
+.pdb-topic:last-of-type {
+  border-bottom: none;
+}
+
+.pdb-topic__eyebrow {
+  font-family: var(--font-ui);
+  font-size: 10px;
+  font-weight: 700;
+  color: var(--meta-fg);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin: 0 0 2px;
+}
+
+.pdb-topic__heading {
+  font-family: var(--font-ui);
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--heading-fg);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border-bottom: 2px solid var(--heading-rule);
+  padding-bottom: 6px;
+  margin: 0 0 14px;
+}
+
+/* Subject / title */
+.pdb-report__subject {
+  font-family: var(--font-ui);
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--heading-fg);
+  margin: 0 0 6px;
+  text-wrap: balance;
+}
+
+/* BLUF */
+.pdb-report__bluf {
+  font-family: var(--font-body);
+  font-size: 15px;
+  font-style: italic;
+  color: var(--body-fg);
+  margin: 0 0 14px;
+  line-height: 1.6;
+}
+
+/* Change Since Last Report (conditional) */
+.pdb-report__change-label {
+  font-family: var(--font-ui);
+  font-size: 10px;
+  font-weight: 700;
+  color: var(--src-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin: 0 0 4px;
+}
+
+.pdb-report__change-body {
+  font-family: var(--font-body);
+  font-size: 14px;
+  color: var(--body-fg);
+  margin: 0 0 14px;
+}
+
+/* Key facts */
+.pdb-report__label {
+  font-family: var(--font-ui);
+  font-size: 10px;
+  font-weight: 700;
+  color: var(--heading-fg);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin: 0 0 4px;
+}
+
+.pdb-report__facts {
+  margin: 0 0 14px;
+  padding-left: 20px;
+  font-family: var(--font-body);
+  font-size: 14px;
+  line-height: 1.65;
+  color: var(--body-fg);
+}
+.pdb-report__facts li {
+  margin-bottom: 4px;
+}
+
+/* Points of dispute */
+.pdb-report__dispute {
+  font-family: var(--font-body);
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--body-fg);
+  margin: 0 0 14px;
+}
+.pdb-report__dispute em {
+  color: var(--meta-fg);
+}
+
+/* Watch items */
+.pdb-report__watch {
+  margin: 0 0 14px;
+  padding-left: 0;
+  list-style: none;
+  font-family: var(--font-body);
+  font-size: 14px;
+  line-height: 1.65;
+  color: var(--body-fg);
+  counter-reset: watch-counter;
+}
+.pdb-report__watch li {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+.pdb-report__watch li::before {
+  content: "W" attr(data-n);
+  font-family: var(--font-ui);
+  font-size: 10px;
+  font-weight: 700;
+  color: var(--meta-fg);
+  white-space: nowrap;
+  padding-top: 3px;
+  min-width: 28px;
+}
+
+/* Assessment inline */
+.pdb-report__assessment {
+  font-family: var(--font-body);
+  font-size: 14px;
+  color: var(--src-intl);
+  font-style: normal;
+}
+.pdb-report__assessment strong {
+  font-weight: 600;
+}
+
+/* ============================================================
+   SOURCE TAGS
+   ============================================================ */
+.pdb-sources {
+  margin-top: 14px;
+}
+
+.pdb-sources__group {
+  margin-bottom: 8px;
+}
+
+.pdb-sources__group-label {
+  font-family: var(--font-ui);
+  font-size: 10px;
+  font-weight: 700;
+  color: var(--meta-fg);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin: 0 0 4px;
+}
+
+.pdb-sources__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+/* Base tag */
+.pdb-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  border-radius: 4px;
+  padding: 2px 8px;
+  font-family: var(--font-ui);
+  font-size: 11px;
+  font-weight: 600;
+  background: var(--content-bg);
+  text-decoration: none;
+  line-height: 1.4;
+}
+.pdb-tag:hover { text-decoration: none; opacity: 0.85; }
+
+.pdb-tag__desc {
+  font-weight: 400;
+  color: var(--meta-fg);
+}
+
+/* Source group variants */
+.pdb-tag--left    { border: 2px solid var(--src-left);    color: var(--src-left); }
+.pdb-tag--center  { border: 2px solid var(--src-center);  color: var(--src-center); }
+.pdb-tag--right   { border: 2px solid var(--src-right);   color: var(--src-right); }
+.pdb-tag--intl    { border: 2px solid var(--src-intl);    color: var(--src-intl); }
+.pdb-tag--primary { border: 2px solid var(--src-primary); color: var(--src-primary); }
+.pdb-tag--regional { border: 2px dashed var(--src-intl);  color: var(--src-intl); }
+
+/* ============================================================
+   GAPS ELEMENT
+   ============================================================ */
+.pdb-gaps {
+  margin-top: 10px;
+}
+
+.pdb-gaps__heading {
+  font-family: var(--font-ui);
+  font-size: 10px;
+  font-weight: 700;
+  color: var(--gaps-fg);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  text-decoration: underline;
+  margin: 0 0 4px;
+}
+
+.pdb-gaps__body {
+  font-family: var(--font-body);
+  font-size: 13px;
+  color: var(--meta-fg);
+  margin: 0;
+}
+
+/* ============================================================
+   FOLLOW UP AND RESPONSES (PERSONAL PDB ONLY)
+   ============================================================ */
+.pdb-followup,
+.pdb-rfi {
+  padding-bottom: 24px;
+  border-top: 1px solid var(--divider);
+  padding-top: 24px;
+}
+
+.pdb-followup__item,
+.pdb-rfi__item {
+  margin-bottom: 16px;
+}
+
+.pdb-followup__item:last-child,
+.pdb-rfi__item:last-child {
+  margin-bottom: 0;
+}
+
+.pdb-followup__number,
+.pdb-rfi__number {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--heading-fg);
+  margin: 0 0 2px;
+}
+
+.pdb-followup__text,
+.pdb-rfi__question {
+  font-family: var(--font-body);
+  font-size: 14px;
+  color: var(--body-fg);
+  margin: 0 0 4px;
+}
+
+.pdb-followup__dev,
+.pdb-rfi__answer {
+  font-family: var(--font-body);
+  font-size: 14px;
+  color: var(--body-fg);
+  margin: 0 0 4px;
+}
+
+.pdb-badge {
+  display: inline-block;
+  font-family: var(--font-ui);
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 1px 6px;
+  border-radius: 3px;
+}
+.pdb-badge--open   { color: var(--src-center); border: 1px solid var(--src-center); }
+.pdb-badge--closed { color: var(--src-primary); border: 1px solid var(--src-primary); }
+
+/* ============================================================
+   FOOTER
+   ============================================================ */
+.pdb-footer {
+  padding: 16px 24px;
+  border-top: 1px solid var(--divider);
+  margin-top: 0;
+}
+
+.pdb-footer__text {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  color: var(--secondary-fg);
+  text-align: center;
+  margin: 0;
+}
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+@media (max-width: 500px) {
+  body { padding-inline: 0; padding-block: 0; }
+  .pdb-page { border-radius: 0; box-shadow: none; }
+  .pdb-masthead,
+  .pdb-content { padding-inline: 16px; }
+  .pdb-masthead__top { flex-direction: column; gap: 4px; }
+  .pdb-masthead__date { text-align: left; }
+  .pdb-masthead__bottom { flex-direction: column; align-items: flex-start; gap: 2px; }
+  .pdb-banner { padding-inline: 16px; }
+  .pdb-footer { padding-inline: 16px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+}
+</style>
+
+<!-- ============================================================
+     PAGE STRUCTURE — FILL ALL {{PLACEHOLDERS}} WITH REAL CONTENT
+     ============================================================ -->
+
+<main class="pdb-page" role="main">
+
+  <!-- ── MASTHEAD ─────────────────────────────────────────── -->
+  <!-- Priority Daily Brief: use "Priority Daily Brief" / "YOUR OPEN-SOURCE DAILY BRIEF" -->
+  <!-- Personal PDB (The PDB): use "The PDB" / "YOUR PERSONAL DAILY BRIEF" -->
+  <header class="pdb-masthead">
+    <div class="pdb-masthead__top">
+      <h1 class="pdb-masthead__title">Priority Daily Brief</h1>
+      <span class="pdb-masthead__date">{{DATE_DD_MON_YYYY}}</span>
+    </div>
+    <hr class="pdb-masthead__rule" aria-hidden="true">
+    <div class="pdb-masthead__bottom">
+      <p class="pdb-masthead__sub">Your Open-Source Daily Brief</p>
+      <span class="pdb-masthead__meta">
+        {{REPORT_COUNT}} reports · Collection window: {{COLLECTION_WINDOW_START}}–{{COLLECTION_WINDOW_END}}
+      </span>
+    </div>
+  </header>
+
+  <!-- ── TOPICS BANNER ────────────────────────────────────── -->
+  <!-- Priority Daily Brief: I&W + 4 topics only -->
+  <!-- Personal PDB: add Follow Up and Responses to Your Questions links -->
+  <nav class="pdb-banner" aria-label="Report sections">
+    <a class="pdb-banner__link" href="#iw">I&amp;W</a>
+    <span class="pdb-banner__sep" aria-hidden="true">|</span>
+    <a class="pdb-banner__link" href="#topic-1">Nat'l Security</a>
+    <span class="pdb-banner__sep" aria-hidden="true">|</span>
+    <a class="pdb-banner__link" href="#topic-2">Politics</a>
+    <span class="pdb-banner__sep" aria-hidden="true">|</span>
+    <a class="pdb-banner__link" href="#topic-3">Economy</a>
+    <span class="pdb-banner__sep" aria-hidden="true">|</span>
+    <a class="pdb-banner__link" href="#topic-4">Technology</a>
+    <!-- Personal PDB: add these two links -->
+    <!--
+    <span class="pdb-banner__sep" aria-hidden="true">|</span>
+    <a class="pdb-banner__link" href="#followup">Follow Up</a>
+    <span class="pdb-banner__sep" aria-hidden="true">|</span>
+    <a class="pdb-banner__link" href="#rfi">Your Questions</a>
+    -->
+  </nav>
+
+  <div class="pdb-content">
+
+    <!-- ── BALANCE AND SOURCE INTEGRITY BOX — LOCKED TEXT ── -->
+    <!-- SOP Figure 1 (Draft 0.6). Reproduce exactly. Do not paraphrase. -->
+    <aside class="pdb-balance" aria-label="Balance and source integrity statement">
+      <p class="pdb-balance__heading">How We Ensure Balance and Source Integrity</p>
+      <p class="pdb-balance__body">
+        This brief draws from a curated registry of over 250 national and international news outlets
+        rated for editorial bias and factual reliability by independent third-party assessors.
+        Each report includes sources from across the editorial spectrum — left, center, and right —
+        and includes primary-source materials where available. Sources are selected for relevance
+        and reliability, not conformity with any particular narrative or perspective. Gaps in coverage
+        are noted when a spectrum segment did not report on the selected story. All sources are
+        open-access; no paywalled content is accessed or reproduced.
+      </p>
+      <div class="pdb-balance__legend">
+        <span class="pdb-balance__swatch">
+          <span class="pdb-balance__dot" style="background:#1A5FBF;"></span>Left / Left-Center
+        </span>
+        <span class="pdb-balance__swatch">
+          <span class="pdb-balance__dot" style="background:#2A7A3A;"></span>Center
+        </span>
+        <span class="pdb-balance__swatch">
+          <span class="pdb-balance__dot" style="background:#B03020;"></span>Right / Right-Center
+        </span>
+        <span class="pdb-balance__swatch">
+          <span class="pdb-balance__dot" style="background:#5A3A8A;"></span>International
+        </span>
+        <span class="pdb-balance__swatch">
+          <span class="pdb-balance__dot" style="background:#5A5850;"></span>Primary Source
+        </span>
+      </div>
+    </aside>
+
+    <!-- ── INDICATIONS AND WARNING ──────────────────────────
+         Include this section always. If no qualifying items,
+         show the pdb-iw__none paragraph.                         -->
+    <section class="pdb-iw" id="iw" aria-label="Indications and Warning">
+      <h2 class="pdb-section-heading">Indications and Warning</h2>
+
+      <!-- OPTION A: No qualifying items this edition -->
+      <!--
+      <p class="pdb-iw__none">No items this edition.</p>
+      -->
+
+      <!-- OPTION B: Up to three I&W items (repeat block; remove unused) -->
+      <div class="pdb-iw__item">
+        <p class="pdb-iw__label">Major Significance</p>
+        <p class="pdb-iw__title">{{IW_ITEM_1_TITLE}}</p>
+        <p class="pdb-iw__body">{{IW_ITEM_1_BODY}}</p>
+      </div>
+
+      <div class="pdb-iw__item">
+        <p class="pdb-iw__label">Major Significance</p>
+        <p class="pdb-iw__title">{{IW_ITEM_2_TITLE}}</p>
+        <p class="pdb-iw__body">{{IW_ITEM_2_BODY}}</p>
+      </div>
+
+      <div class="pdb-iw__item">
+        <p class="pdb-iw__label">Major Significance</p>
+        <p class="pdb-iw__title">{{IW_ITEM_3_TITLE}}</p>
+        <p class="pdb-iw__body">{{IW_ITEM_3_BODY}}</p>
+      </div>
+
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════
+         TOPIC REPORT BLOCK — REPEAT FOUR TIMES
+         Topic order: 1 National Security · 2 Politics
+                      3 Economy         · 4 Technology
+         ══════════════════════════════════════════════════════ -->
+
+    <!-- ── TOPIC 1: NATIONAL SECURITY AND FOREIGN AFFAIRS ── -->
+    <article class="pdb-topic" id="topic-1" aria-label="Topic 1: National Security and Foreign Affairs">
+
+      <p class="pdb-topic__eyebrow">Topic 1</p>
+      <h2 class="pdb-topic__heading">National Security and Foreign Affairs</h2>
+
+      <p class="pdb-report__subject">{{T1_SUBJECT}}</p>
+      <p class="pdb-report__bluf">{{T1_BLUF}}</p>
+
+      <!-- Change Since Last Report — CONDITIONAL: include only for continuing stories -->
+      <!--
+      <p class="pdb-report__change-label">Change Since Last Report</p>
+      <p class="pdb-report__change-body">{{T1_CHANGE}}</p>
+      -->
+
+      <p class="pdb-report__label">Key Facts</p>
+      <ul class="pdb-report__facts">
+        <li>{{T1_FACT_1}}</li>
+        <li>{{T1_FACT_2}}</li>
+        <li>{{T1_FACT_3}}</li>
+        <!-- Add or remove bullets as warranted; minimum 2, maximum 5 -->
+      </ul>
+
+      <p class="pdb-report__label">Points of Dispute</p>
+      <p class="pdb-report__dispute">{{T1_DISPUTE}}</p>
+
+      <p class="pdb-report__label">Watch</p>
+      <ol class="pdb-report__watch">
+        <li data-n="1.1">{{T1_WATCH_1}} <span class="pdb-report__assessment">Assessment: <strong>{{T1_ASSESS_TERM}}</strong> ({{T1_ASSESS_CONFIDENCE}})</span></li>
+        <li data-n="1.2">{{T1_WATCH_2}}</li>
+      </ol>
+
+      <div class="pdb-sources">
+        <div class="pdb-sources__group">
+          <p class="pdb-sources__group-label">Left / Left-Center</p>
+          <div class="pdb-sources__tags">
+            <a class="pdb-tag pdb-tag--left" href="{{T1_LEFT_1_URL}}" target="_blank" rel="noopener">
+              {{T1_LEFT_1_OUTLET}} <span class="pdb-tag__desc">· {{T1_LEFT_1_DESC}}</span>
+            </a>
+          </div>
+        </div>
+        <div class="pdb-sources__group">
+          <p class="pdb-sources__group-label">Center</p>
+          <div class="pdb-sources__tags">
+            <a class="pdb-tag pdb-tag--center" href="{{T1_CENTER_1_URL}}" target="_blank" rel="noopener">
+              {{T1_CENTER_1_OUTLET}} <span class="pdb-tag__desc">· {{T1_CENTER_1_DESC}}</span>
+            </a>
+          </div>
+        </div>
+        <div class="pdb-sources__group">
+          <p class="pdb-sources__group-label">Right / Right-Center</p>
+          <div class="pdb-sources__tags">
+            <a class="pdb-tag pdb-tag--right" href="{{T1_RIGHT_1_URL}}" target="_blank" rel="noopener">
+              {{T1_RIGHT_1_OUTLET}} <span class="pdb-tag__desc">· {{T1_RIGHT_1_DESC}}</span>
+            </a>
+          </div>
+        </div>
+        <div class="pdb-sources__group">
+          <p class="pdb-sources__group-label">International</p>
+          <div class="pdb-sources__tags">
+            <a class="pdb-tag pdb-tag--intl" href="{{T1_INTL_1_URL}}" target="_blank" rel="noopener">
+              {{T1_INTL_1_OUTLET}} <span class="pdb-tag__desc">· {{T1_INTL_1_DESC}}</span>
+            </a>
+          </div>
+        </div>
+        <div class="pdb-sources__group">
+          <p class="pdb-sources__group-label">Primary Source</p>
+          <div class="pdb-sources__tags">
+            <a class="pdb-tag pdb-tag--primary" href="{{T1_PRIMARY_1_URL}}" target="_blank" rel="noopener">
+              {{T1_PRIMARY_1_OUTLET}} <span class="pdb-tag__desc">· {{T1_PRIMARY_1_DESC}}</span>
+            </a>
+          </div>
+        </div>
+        <div class="pdb-gaps">
+          <p class="pdb-gaps__heading">Gaps</p>
+          <p class="pdb-gaps__body">{{T1_GAPS}}</p>
+        </div>
+      </div>
+    </article>
+
+    <!-- ── TOPIC 2: POLITICS AND POLICY ─────────────────── -->
+    <article class="pdb-topic" id="topic-2" aria-label="Topic 2: Politics and Policy">
+
+      <p class="pdb-topic__eyebrow">Topic 2</p>
+      <h2 class="pdb-topic__heading">Politics and Policy</h2>
+
+      <p class="pdb-report__subject">{{T2_SUBJECT}}</p>
+      <p class="pdb-report__bluf">{{T2_BLUF}}</p>
+
+      <!--
+      <p class="pdb-report__change-label">Change Since Last Report</p>
+      <p class="pdb-report__change-body">{{T2_CHANGE}}</p>
+      -->
+
+      <p class="pdb-report__label">Key Facts</p>
+      <ul class="pdb-report__facts">
+        <li>{{T2_FACT_1}}</li>
+        <li>{{T2_FACT_2}}</li>
+        <li>{{T2_FACT_3}}</li>
+      </ul>
+
+      <p class="pdb-report__label">Points of Dispute</p>
+      <p class="pdb-report__dispute">{{T2_DISPUTE}}</p>
+
+      <p class="pdb-report__label">Watch</p>
+      <ol class="pdb-report__watch">
+        <li data-n="2.1">{{T2_WATCH_1}} <span class="pdb-report__assessment">Assessment: <strong>{{T2_ASSESS_TERM}}</strong> ({{T2_ASSESS_CONFIDENCE}})</span></li>
+      </ol>
+
+      <div class="pdb-sources">
+        <div class="pdb-sources__group">
+          <p class="pdb-sources__group-label">Left / Left-Center</p>
+          <div class="pdb-sources__tags">
+            <a class="pdb-tag pdb-tag--left" href="{{T2_LEFT_1_URL}}" target="_blank" rel="noopener">
+              {{T2_LEFT_1_OUTLET}} <span class="pdb-tag__desc">· {{T2_LEFT_1_DESC}}</span>
+            </a>
+          </div>
+        </div>
+        <div class="pdb-sources__group">
+          <p class="pdb-sources__group-label">Center</p>
+          <div class="pdb-sources__tags">
+            <a class="pdb-tag pdb-tag--center" href="{{T2_CENTER_1_URL}}" target="_blank" rel="noopener">
+              {{T2_CENTER_1_OUTLET}} <span class="pdb-tag__desc">· {{T2_CENTER_1_DESC}}</span>
+            </a>
+          </div>
+        </div>
+        <div class="pdb-sources__group">
+          <p class="pdb-sources__group-label">Right / Right-Center</p>
+          <div class="pdb-sources__tags">
+            <a class="pdb-tag pdb-tag--right" href="{{T2_RIGHT_1_URL}}" target="_blank" rel="noopener">
+              {{T2_RIGHT_1_OUTLET}} <span class="pdb-tag__desc">· {{T2_RIGHT_1_DESC}}</span>
+            </a>
+          </div>
+        </div>
+        <div class="pdb-sources__group">
+          <p class="pdb-sources__group-label">International</p>
+          <div class="pdb-sources__tags">
+            <a class="pdb-tag pdb-tag--intl" href="{{T2_INTL_1_URL}}" target="_blank" rel="noopener">
+              {{T2_INTL_1_OUTLET}} <span class="pdb-tag__desc">· {{T2_INTL_1_DESC}}</span>
+            </a>
+          </div>
+        </div>
+        <div class="pdb-sources__group">
+          <p class="pdb-sources__group-label">Primary Source</p>
+          <div class="pdb-sources__tags">
+            <a class="pdb-tag pdb-tag--primary" href="{{T2_PRIMARY_1_URL}}" target="_blank" rel="noopener">
+              {{T2_PRIMARY_1_OUTLET}} <span class="pdb-tag__desc">· {{T2_PRIMARY_1_DESC}}</span>
+            </a>
+          </div>
+        </div>
+        <div class="pdb-gaps">
+          <p class="pdb-gaps__heading">Gaps</p>
+          <p class="pdb-gaps__body">{{T2_GAPS}}</p>
+        </div>
+      </div>
+
+    </article>
+
+    <!-- ── TOPIC 3: ECONOMY, BUSINESS, AND HOUSING ───────── -->
+    <article class="pdb-topic" id="topic-3" aria-label="Topic 3: Economy, Business, and Housing">
+
+      <p class="pdb-topic__eyebrow">Topic 3</p>
+      <h2 class="pdb-topic__heading">Economy, Business, and Housing</h2>
+
+      <p class="pdb-report__subject">{{T3_SUBJECT}}</p>
+      <p class="pdb-report__bluf">{{T3_BLUF}}</p>
+
+      <!--
+      <p class="pdb-report__change-label">Change Since Last Report</p>
+      <p class="pdb-report__change-body">{{T3_CHANGE}}</p>
+      -->
+
+      <p class="pdb-report__label">Key Facts</p>
+      <ul class="pdb-report__facts">
+        <li>{{T3_FACT_1}}</li>
+        <li>{{T3_FACT_2}}</li>
+        <li>{{T3_FACT_3}}</li>
+      </ul>
+
+      <p class="pdb-report__label">Points of Dispute</p>
+      <p class="pdb-report__dispute">{{T3_DISPUTE}}</p>
+
+      <p class="pdb-report__label">Watch</p>
+      <ol class="pdb-report__watch">
+        <li data-n="3.3">{{T3_WATCH_1}} <span class="pdb-report__assessment">Assessment: <strong>{{T3_ASSESS_TERM}}</strong> ({{T3_ASSESS_CONFIDENCE}})</span></li>
+      </ol>
+
+      <div class="pdb-sources">
+        <div class="pdb-sources__group">
+          <p class="pdb-sources__group-label">Left / Left-Center</p>
+          <div class="pdb-sources__tags">
+            <a class="pdb-tag pdb-tag--left" href="{{T3_LEFT_1_URL}}" target="_blank" rel="noopener">
+              {{T3_LEFT_1_OUTLET}} <span class="pdb-tag__desc">· {{T3_LEFT_1_DESC}}</span>
+            </a>
+          </div>
+        </div>
+        <div class="pdb-sources__group">
+          <p class="pdb-sources__group-label">Center</p>
+          <div class="pdb-sources__tags">
+            <a class="pdb-tag pdb-tag--center" href="{{T3_CENTER_1_URL}}" target="_blank" rel="noopener">
+              {{T3_CENTER_1_OUTLET}} <span class="pdb-tag__desc">· {{T3_CENTER_1_DESC}}</span>
+            </a>
+          </div>
+        </div>
+        <div class="pdb-sources__group">
+          <p class="pdb-sources__group-label">Right / Right-Center</p>
+          <div class="pdb-sources__tags">
+            <a class="pdb-tag pdb-tag--right" href="{{T3_RIGHT_1_URL}}" target="_blank" rel="noopener">
+              {{T3_RIGHT_1_OUTLET}} <span class="pdb-tag__desc">· {{T3_RIGHT_1_DESC}}</span>
+            </a>
+          </div>
+        </div>
+        <div class="pdb-sources__group">
+          <p class="pdb-sources__group-label">International</p>
+          <div class="pdb-sources__tags">
+            <a class="pdb-tag pdb-tag--intl" href="{{T3_INTL_1_URL}}" target="_blank" rel="noopener">
+              {{T3_INTL_1_OUTLET}} <span class="pdb-tag__desc">· {{T3_INTL_1_DESC}}</span>
+            </a>
+          </div>
+        </div>
+        <div class="pdb-sources__group">
+          <p class="pdb-sources__group-label">Primary Source</p>
+          <div class="pdb-sources__tags">
+            <a class="pdb-tag pdb-tag--primary" href="{{T3_PRIMARY_1_URL}}" target="_blank" rel="noopener">
+              {{T3_PRIMARY_1_OUTLET}} <span class="pdb-tag__desc">· {{T3_PRIMARY_1_DESC}}</span>
+            </a>
+          </div>
+        </div>
+        <div class="pdb-gaps">
+          <p class="pdb-gaps__heading">Gaps</p>
+          <p class="pdb-gaps__body">{{T3_GAPS}}</p>
+        </div>
+      </div>
+
+    </article>
+
+    <!-- ── TOPIC 4: TECHNOLOGY AND SCIENCE ───────────────── -->
+    <article class="pdb-topic" id="topic-4" aria-label="Topic 4: Technology and Science">
+
+      <p class="pdb-topic__eyebrow">Topic 4</p>
+      <h2 class="pdb-topic__heading">Technology and Science</h2>
+
+      <p class="pdb-report__subject">{{T4_SUBJECT}}</p>
+      <p class="pdb-report__bluf">{{T4_BLUF}}</p>
+
+      <!--
+      <p class="pdb-report__change-label">Change Since Last Report</p>
+      <p class="pdb-report__change-body">{{T4_CHANGE}}</p>
+      -->
+
+      <p class="pdb-report__label">Key Facts</p>
+      <ul class="pdb-report__facts">
+        <li>{{T4_FACT_1}}</li>
+        <li>{{T4_FACT_2}}</li>
+        <li>{{T4_FACT_3}}</li>
+      </ul>
+
+      <p class="pdb-report__label">Points of Dispute</p>
+      <p class="pdb-report__dispute">{{T4_DISPUTE}}</p>
+
+      <p class="pdb-report__label">Watch</p>
+      <ol class="pdb-report__watch">
+        <li data-n="4.1">{{T4_WATCH_1}} <span class="pdb-report__assessment">Assessment: <strong>{{T4_ASSESS_TERM}}</strong> ({{T4_ASSESS_CONFIDENCE}})</span></li>
+        <li data-n="4.2">{{T4_WATCH_2}} <span class="pdb-report__assessment">Assessment: <strong>{{T4_ASSESS_TERM_2}}</strong> ({{T4_ASSESS_CONFIDENCE_2}})</span></li>
+      </ol>
+
+      <div class="pdb-sources">
+        <div class="pdb-sources__group">
+          <p class="pdb-sources__group-label">Left / Left-Center</p>
+          <div class="pdb-sources__tags">
+            <a class="pdb-tag pdb-tag--left" href="{{T4_LEFT_1_URL}}" target="_blank" rel="noopener">
+              {{T4_LEFT_1_OUTLET}} <span class="pdb-tag__desc">· {{T4_LEFT_1_DESC}}</span>
+            </a>
+          </div>
+        </div>
+        <div class="pdb-sources__group">
+          <p class="pdb-sources__group-label">Center</p>
+          <div class="pdb-sources__tags">
+            <a class="pdb-tag pdb-tag--center" href="{{T4_CENTER_1_URL}}" target="_blank" rel="noopener">
+              {{T4_CENTER_1_OUTLET}} <span class="pdb-tag__desc">· {{T4_CENTER_1_DESC}}</span>
+            </a>
+          </div>
+        </div>
+        <div class="pdb-sources__group">
+          <p class="pdb-sources__group-label">Right / Right-Center</p>
+          <div class="pdb-sources__tags">
+            <a class="pdb-tag pdb-tag--right" href="{{T4_RIGHT_1_URL}}" target="_blank" rel="noopener">
+              {{T4_RIGHT_1_OUTLET}} <span class="pdb-tag__desc">· {{T4_RIGHT_1_DESC}}</span>
+            </a>
+          </div>
+        </div>
+        <div class="pdb-sources__group">
+          <p class="pdb-sources__group-label">International</p>
+          <div class="pdb-sources__tags">
+            <a class="pdb-tag pdb-tag--intl" href="{{T4_INTL_1_URL}}" target="_blank" rel="noopener">
+              {{T4_INTL_1_OUTLET}} <span class="pdb-tag__desc">· {{T4_INTL_1_DESC}}</span>
+            </a>
+          </div>
+        </div>
+        <div class="pdb-sources__group">
+          <p class="pdb-sources__group-label">Primary Source</p>
+          <div class="pdb-sources__tags">
+            <a class="pdb-tag pdb-tag--primary" href="{{T4_PRIMARY_1_URL}}" target="_blank" rel="noopener">
+              {{T4_PRIMARY_1_OUTLET}} <span class="pdb-tag__desc">· {{T4_PRIMARY_1_DESC}}</span>
+            </a>
+          </div>
+        </div>
+        <div class="pdb-gaps">
+          <p class="pdb-gaps__heading">Gaps</p>
+          <p class="pdb-gaps__body">{{T4_GAPS}}</p>
+        </div>
+      </div>
+
+    </article>
+
+    <!-- ── FOLLOW UP (PERSONAL PDB ONLY) ────────────────────
+         Omit this section for the Priority Daily Brief.
+         Omit if no items are open.                               -->
+    <!--
+    <section class="pdb-followup" id="followup" aria-label="Follow Up">
+      <h2 class="pdb-section-heading">Follow Up</h2>
+      <div class="pdb-followup__item">
+        <p class="pdb-followup__number">{{FU_NUMBER}}</p>
+        <p class="pdb-followup__text">{{FU_TEXT}}</p>
+        <p class="pdb-followup__dev">{{FU_DEVELOPMENT}}</p>
+        <span class="pdb-badge pdb-badge--open">Open</span>
+      </div>
+    </section>
+    -->
+
+    <!-- ── RESPONSES TO YOUR QUESTIONS (PERSONAL PDB ONLY) ──
+         Omit this section for the Priority Daily Brief.
+         Omit if no RFIs are open.                               -->
+    <!--
+    <section class="pdb-rfi" id="rfi" aria-label="Responses to Your Questions">
+      <h2 class="pdb-section-heading">Responses to Your Questions</h2>
+      <div class="pdb-rfi__item">
+        <p class="pdb-rfi__number">{{RFI_NUMBER}}</p>
+        <p class="pdb-rfi__question"><strong>Q:</strong> {{RFI_QUESTION}}</p>
+        <p class="pdb-rfi__answer">{{RFI_ANSWER}}</p>
+      </div>
+    </section>
+    -->
+
+  </div><!-- /pdb-content -->
+
+  <!-- ── FOOTER ─────────────────────────────────────────── -->
+  <footer class="pdb-footer">
+    <p class="pdb-footer__text">
+      The PDB · {{DATE_DD_MON_YYYY}} · All sources open-access · No paywalls bypassed
+    </p>
+  </footer>
+
+</main>
+
+<!--
+  ================================================================
+  AGENT CHECKLIST — COMPLETE BEFORE PUBLISHING
+  ================================================================
+  [ ] All {{PLACEHOLDERS}} filled with real content
+  [ ] OG/Twitter meta filled: DATE_DD_MON_YYYY, IW1_HEADLINE, BRIEF_URL,
+      TWITTER_HANDLE (copy from SOP Section 11 constants)
+  [ ] All placeholder comments removed
+  [ ] Masthead text correct for product type (personal PDB vs. Priority Daily Brief)
+  [ ] Topics Banner links correct for product type
+  [ ] Follow Up and Responses sections: included (personal PDB) or commented out
+  [ ] Unused I&W blocks removed (maximum 3; use OPTION A if none)
+  [ ] Unused Change Since Last Report blocks removed
+  [ ] Unused Watch items / source tags removed (minimum 2 per group where available)
+  [ ] Unused source groups removed AND Gaps entry updated accordingly
+  [ ] No CSS values altered
+  [ ] Balance and Source Integrity text reproduced exactly (SOP Figure 1, Draft 0.6)
+  [ ] Footer date matches masthead date
+  [ ] <title> matches format: "The PDB · DD Mon YYYY"
+  [ ] X post draft produced per SOP para. 9.6.b (Priority Daily Brief only)
+  ================================================================
+-->
