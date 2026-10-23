@@ -1,0 +1,1126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="claude:viewport-fit-sides" content="cover">
+<title>The PDB — Democracy Files: Primary Source Assessment</title>
+
+<!-- OG / Twitter Meta -->
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="The PDB">
+<meta property="og:title" content="PDB · 21 Oct 2026 — The Democracy Files: A Primary-Source Assessment">
+<meta property="og:description" content="On-Demand Report · 21 Oct 2026">
+<meta property="og:url" content="https://cmbourne.github.io/pdb/democracy-files-primary-assessment.html">
+<meta property="og:image" content="https://thepdb.news/Assets/Images/pdb-og-wide.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="The PDB — Your Personal Daily Brief">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@thepdb">
+<meta name="twitter:title" content="PDB · 21 Oct 2026 — The Democracy Files: A Primary-Source Assessment">
+<meta name="twitter:description" content="On-Demand Report · 21 Oct 2026">
+<meta name="twitter:image" content="https://thepdb.news/Assets/Images/pdb-og-wide.png">
+<meta name="twitter:image:alt" content="The PDB — Your Personal Daily Brief">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+/* ── PDB DESIGN TOKENS ── */
+:root {
+  --bg-page:       #F5F4F0;
+  --bg-content:    #FFFFFF;
+  --bg-masthead:   #1A2744;
+  --bg-nav:        #E8E6E0;
+  --bg-iw:         #FFF8E8;
+  --bg-balance:    #F0EDE6;
+  --color-gold:    #C8A84B;
+  --color-navy:    #1A2744;
+  --color-body:    #1A1A1A;
+  --color-meta:    #555555;
+  --color-muted:   #AAAAAA;
+  --color-divider: #DDDDDD;
+  --color-gaps:    #8B0000;
+  --color-link:    #1A5FBF;
+  --color-link-hv: #0D3D8A;
+  --color-left:    #1A5FBF;
+  --color-center:  #2A7A3A;
+  --color-right:   #B03020;
+  --color-intl:    #5A3A8A;
+  --color-primary: #5A5850;
+  --color-purple:  #5A3A8A;
+
+  /* Verdict colors */
+  --color-confirmed:    #1A5FBF;
+  --color-verified:     #2A7A3A;
+  --color-partial:      #C8A84B;
+  --color-unverified:   #B03020;
+
+  --font-display: 'Playfair Display', 'Georgia', serif;
+  --font-body:    'Source Serif 4', 'Georgia', 'Times New Roman', serif;
+  --font-ui:      'Inter', 'Helvetica Neue', 'Arial', sans-serif;
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg-page:       #0F1117;
+    --bg-content:    #1A1E2A;
+    --bg-masthead:   #0D1526;
+    --bg-nav:        #1E2330;
+    --bg-iw:         #1E1A0A;
+    --bg-balance:    #1A1810;
+    --color-body:    #E8E6E0;
+    --color-meta:    #9A9890;
+    --color-muted:   #6A6860;
+    --color-divider: #2A2E3A;
+    /* foreground overrides — dark blue / dark red are illegible on dark bg */
+    --color-navy:    #C8D0E8;
+    --color-gaps:    #E87070;
+    --color-link:    #7AACF0;
+    --color-link-hv: #A8CCFF;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg-page:       #0F1117;
+  --bg-content:    #1A1E2A;
+  --bg-masthead:   #0D1526;
+  --bg-nav:        #1E2330;
+  --bg-iw:         #1E1A0A;
+  --bg-balance:    #1A1810;
+  --color-body:    #E8E6E0;
+  --color-meta:    #9A9890;
+  --color-muted:   #6A6860;
+  --color-divider: #2A2E3A;
+  --color-navy:    #C8D0E8;
+  --color-gaps:    #E87070;
+  --color-link:    #7AACF0;
+  --color-link-hv: #A8CCFF;
+  color-scheme: dark;
+}
+
+/* ── RESET & BASE ── */
+*, *::before, *::after { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg-page);
+  color: var(--color-body);
+  font-family: var(--font-body);
+  font-size: 15px;
+  line-height: 1.65;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  padding-block: 24px;
+}
+
+a { color: var(--color-link); }
+a:hover { color: var(--color-link-hv); }
+
+/* ── LAYOUT ── */
+.pdb-page {
+  max-width: 760px;
+  margin: 0 auto;
+  background: var(--bg-content);
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  overflow: hidden;
+}
+
+@media (max-width: 500px) {
+  body { padding: 0; }
+  .pdb-page { border-radius: 0; }
+}
+
+/* ── MASTHEAD ── */
+.pdb-masthead {
+  background: var(--bg-masthead);
+  padding: 20px 24px;
+}
+.pdb-masthead__row1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+.pdb-masthead__title {
+  font-family: var(--font-display);
+  font-size: 28px;
+  font-weight: 700;
+  color: #FFFFFF;
+  margin: 0;
+}
+.pdb-masthead__date {
+  font-family: var(--font-ui);
+  font-size: 13px;
+  color: #AAAAAA;
+}
+.pdb-masthead__rule {
+  border: none;
+  border-top: 2px solid #C8A84B;
+  margin: 4px 0;
+}
+.pdb-masthead__row2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+.pdb-masthead__sub {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  font-weight: 600;
+  color: #C8A84B;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.pdb-masthead__meta {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  color: #AAAAAA;
+}
+
+/* ── NAV BANNER ── */
+.pdb-nav {
+  background: var(--bg-nav);
+  padding: 10px 24px;
+  font-family: var(--font-ui);
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--color-navy);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 12px;
+  align-items: center;
+}
+.pdb-nav a { color: var(--color-navy); text-decoration: none; }
+.pdb-nav a:hover { color: var(--color-left); text-decoration: underline; }
+.pdb-nav__sep { color: var(--color-muted); }
+
+/* ── BODY CONTENT ── */
+.pdb-body {
+  padding: 28px 24px;
+}
+
+/* ── SECTION HEADING STYLE ── */
+.pdb-section-eyebrow {
+  font-family: var(--font-ui);
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--color-meta);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin: 0 0 4px;
+}
+.pdb-section-heading {
+  font-family: var(--font-ui);
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--color-navy);
+  border-bottom: 2px solid var(--color-navy);
+  padding-bottom: 6px;
+  margin: 0 0 14px;
+}
+.pdb-section { margin-bottom: 36px; }
+.pdb-divider {
+  border: none;
+  border-top: 1px solid var(--color-divider);
+  margin: 28px 0;
+}
+
+/* ── ON-DEMAND REPORT HEADER ── */
+.pdb-od-header {
+  background: var(--bg-iw);
+  border-left: 4px solid var(--color-gold);
+  padding: 14px 18px;
+  margin-bottom: 24px;
+  border-radius: 0 4px 4px 0;
+}
+.pdb-od-header__label {
+  font-family: var(--font-ui);
+  font-size: 10px;
+  font-weight: 700;
+  color: var(--color-meta);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 4px;
+}
+.pdb-od-header__title {
+  font-family: var(--font-display);
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--color-navy);
+  line-height: 1.2;
+  margin-bottom: 6px;
+}
+.pdb-od-header__sub {
+  font-family: var(--font-body);
+  font-size: 14px;
+  color: var(--color-meta);
+  font-style: italic;
+}
+
+/* ── BLUF ── */
+.pdb-bluf {
+  font-family: var(--font-body);
+  font-size: 15px;
+  font-style: italic;
+  color: var(--color-body);
+  margin-bottom: 20px;
+  padding: 12px 16px;
+  border-left: 3px solid var(--color-gold);
+  background: var(--bg-balance);
+}
+
+/* ── SUBJECT LINE ── */
+.pdb-report__subject {
+  font-family: var(--font-ui);
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--color-navy);
+  margin-bottom: 6px;
+}
+
+/* ── KEY FACTS ── */
+.pdb-label {
+  font-family: var(--font-ui);
+  font-size: 10px;
+  font-weight: 700;
+  color: var(--color-navy);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin: 14px 0 6px;
+}
+.pdb-facts {
+  margin: 0 0 10px;
+  padding-left: 20px;
+}
+.pdb-facts li {
+  font-family: var(--font-body);
+  font-size: 14px;
+  line-height: 1.65;
+  margin-bottom: 4px;
+}
+
+/* ── ENTITY TABLE ── */
+.pdb-entity-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: var(--font-body);
+  font-size: 13px;
+  margin-bottom: 16px;
+  overflow-x: auto;
+  display: block;
+}
+.pdb-entity-table thead th {
+  font-family: var(--font-ui);
+  font-size: 10px;
+  font-weight: 700;
+  color: var(--color-meta);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border-bottom: 2px solid var(--color-divider);
+  padding: 6px 8px;
+  text-align: left;
+  background: var(--bg-page);
+}
+.pdb-entity-table tbody td {
+  padding: 7px 8px;
+  border-bottom: 1px solid var(--color-divider);
+  vertical-align: top;
+}
+.pdb-entity-table tbody tr:hover td {
+  background: var(--bg-nav);
+}
+.pdb-entity-table .ent-name {
+  font-weight: 600;
+  color: var(--color-navy);
+  white-space: nowrap;
+}
+.pdb-entity-table .ent-tier {
+  font-family: var(--font-ui);
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+}
+.tier-doctrine  { color: var(--color-intl); }
+.tier-operator  { color: var(--color-verified); }
+.tier-execution { color: var(--color-right); }
+.tier-external  { color: var(--color-meta); }
+
+/* ── TIMELINE ── */
+.pdb-timeline {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 16px;
+  position: relative;
+}
+.pdb-timeline::before {
+  content: '';
+  position: absolute;
+  left: 10px;
+  top: 6px;
+  bottom: 6px;
+  width: 2px;
+  background: var(--color-gold);
+}
+.pdb-timeline__item {
+  position: relative;
+  padding: 0 0 18px 32px;
+}
+.pdb-timeline__item::before {
+  content: '';
+  position: absolute;
+  left: 4px;
+  top: 6px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--bg-content);
+  border: 2px solid var(--color-gold);
+}
+.pdb-timeline__date {
+  font-family: var(--font-ui);
+  font-size: 10px;
+  font-weight: 700;
+  color: var(--color-gold);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 2px;
+}
+.pdb-timeline__event {
+  font-family: var(--font-ui);
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--color-navy);
+  margin-bottom: 3px;
+}
+.pdb-timeline__detail {
+  font-family: var(--font-body);
+  font-size: 13px;
+  color: var(--color-body);
+  line-height: 1.55;
+}
+
+/* ── QUOTE BOX ── */
+.pdb-quote {
+  border-left: 3px solid var(--color-gold);
+  margin: 12px 0;
+  padding: 10px 16px;
+  background: var(--bg-balance);
+}
+.pdb-quote p {
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-style: italic;
+  color: var(--color-body);
+  margin: 0 0 4px;
+}
+.pdb-quote__attr {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--color-meta);
+  font-style: normal;
+}
+
+/* ── ASSESSMENT BOX ── */
+.pdb-assessment {
+  background: var(--bg-nav);
+  border-left: 4px solid var(--color-navy);
+  padding: 14px 18px;
+  margin: 18px 0;
+  border-radius: 0 4px 4px 0;
+}
+.pdb-assessment__label {
+  font-family: var(--font-ui);
+  font-size: 10px;
+  font-weight: 700;
+  color: var(--color-navy);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 6px;
+}
+.pdb-assessment p {
+  font-family: var(--font-body);
+  font-size: 14px;
+  color: var(--color-body);
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* ── SOURCE TAGS ── */
+.pdb-sources-group { margin-bottom: 10px; }
+.pdb-sources-group__label {
+  font-family: var(--font-ui);
+  font-size: 10px;
+  font-weight: 700;
+  color: var(--color-meta);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 4px;
+}
+.pdb-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 4px; }
+.pdb-tag {
+  display: inline-block;
+  font-family: var(--font-ui);
+  font-size: 11px;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 4px;
+  background: var(--bg-content);
+  text-decoration: none;
+  white-space: nowrap;
+}
+.pdb-tag--left    { border: 2px solid var(--color-left);    color: var(--color-left); }
+.pdb-tag--center  { border: 2px solid var(--color-center);  color: var(--color-center); }
+.pdb-tag--right   { border: 2px solid var(--color-right);   color: var(--color-right); }
+.pdb-tag--intl    { border: 2px solid var(--color-intl);    color: var(--color-intl); }
+.pdb-tag--primary { border: 2px solid var(--color-primary); color: var(--color-primary); }
+.pdb-tag:hover { opacity: 0.8; }
+.pdb-tag__desc { font-weight: 400; color: var(--color-meta); }
+
+/* ── GAPS ── */
+.pdb-gaps__heading {
+  font-family: var(--font-ui);
+  font-size: 10px;
+  font-weight: 700;
+  color: var(--color-gaps);
+  text-transform: uppercase;
+  text-decoration: underline;
+  margin: 12px 0 4px;
+}
+.pdb-gaps p {
+  font-family: var(--font-body);
+  font-size: 13px;
+  color: var(--color-meta);
+  margin: 0 0 2px;
+}
+
+/* ── BALANCE BOX ── */
+.pdb-balance {
+  background: var(--bg-balance);
+  border-left: 4px solid var(--color-gold);
+  padding: 16px 20px;
+  margin: 16px 0;
+  border-radius: 0 4px 4px 0;
+}
+.pdb-balance__heading {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--color-navy);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 8px;
+}
+.pdb-balance p {
+  font-family: var(--font-body);
+  font-size: 13px;
+  color: var(--color-body);
+  line-height: 1.6;
+  margin: 0 0 10px;
+}
+.pdb-balance p:last-child { margin-bottom: 0; }
+.pdb-balance__legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 20px;
+  margin-top: 10px;
+}
+.pdb-balance__swatch {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  color: var(--color-body);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.pdb-balance__dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+
+/* ── FOOTER ── */
+.pdb-footer {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  color: var(--color-muted);
+  text-align: center;
+  padding: 16px 24px 20px;
+  border-top: 1px solid var(--color-divider);
+}
+
+/* ── NOTE BOX ── */
+.pdb-note {
+  background: var(--bg-iw);
+  border-left: 4px solid var(--color-gold);
+  padding: 12px 16px;
+  margin-bottom: 20px;
+  border-radius: 0 4px 4px 0;
+}
+.pdb-note__label {
+  font-family: var(--font-ui);
+  font-size: 10px;
+  font-weight: 700;
+  color: var(--color-meta);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 4px;
+}
+.pdb-note p {
+  font-family: var(--font-body);
+  font-size: 13px;
+  color: var(--color-body);
+  margin: 0;
+  line-height: 1.55;
+}
+</style>
+</head>
+<body>
+<div class="pdb-page">
+
+<!-- MASTHEAD -->
+<header class="pdb-masthead">
+  <div class="pdb-masthead__row1">
+    <h1 class="pdb-masthead__title">The PDB</h1>
+    <span class="pdb-masthead__date">21 Oct 2026</span>
+  </div>
+  <hr class="pdb-masthead__rule">
+  <div class="pdb-masthead__row2">
+    <span class="pdb-masthead__sub">On-Demand Report</span>
+    <span class="pdb-masthead__meta">Primary Source Assessment · 21 Oct 2026</span>
+  </div>
+</header>
+
+<!-- NAV BANNER -->
+<nav class="pdb-nav" aria-label="Sections">
+  <a href="#bottom-line">Bottom Line</a>
+  <span class="pdb-nav__sep">|</span>
+  <a href="#indicators">Indicators</a>
+  <span class="pdb-nav__sep">|</span>
+  <a href="#overview">Overview</a>
+  <span class="pdb-nav__sep">|</span>
+  <a href="#network">Network</a>
+  <span class="pdb-nav__sep">|</span>
+  <a href="#timeline">Timeline</a>
+  <span class="pdb-nav__sep">|</span>
+  <a href="#scenarios">Scenarios</a>
+  <span class="pdb-nav__sep">|</span>
+  <a href="#intl">Int'l &amp; European Nexus</a>
+</nav>
+
+<!-- BODY -->
+<main class="pdb-body">
+
+  <!-- ON-DEMAND HEADER -->
+  <div class="pdb-od-header">
+    <div class="pdb-od-header__label">On-Demand Intelligence Report · Exclusive Primary Sources</div>
+    <div class="pdb-od-header__title">The Democracy Files: A Primary-Source Assessment</div>
+    <div class="pdb-od-header__sub">What the recordings and documents actually show about post-election planning by a coordinated network of former U.S. officials, academics, and civil-society operators</div>
+  </div>
+
+  <!-- NOTE ON SOURCING -->
+  <div class="pdb-note">
+    <div class="pdb-note__label">Note on Sourcing</div>
+    <p>This report draws exclusively from primary source materials: audio recordings and their transcripts from five separate sessions between January and October 2026, and a persons-of-interest profile compiled from the same archive. Secondary source framing and amplification are not assessed in this report; this report covers what the primary sources say. This report does not adjudicate the framing of any secondary source; it reports what the primary sources say, in context.</p>
+  </div>
+
+  <!-- SECTION 1: BOTTOM LINE -->
+  <section class="pdb-section" id="bottom-line">
+    <p class="pdb-section-eyebrow">Section 1</p>
+    <h2 class="pdb-section-heading">Bottom Line</h2>
+
+    <div class="pdb-label">What Is Documented and Credible</div>
+    <ul class="pdb-facts">
+      <li>A multi-organization network has been conducting structured contingency planning since at least January 2026 for three post-midterm emergency scenarios: militarization, election meltdown, and constitutional crisis.</li>
+      <li>The planning involves former senior U.S. diplomatic, USAID, and military officials in operational roles — not as commentators.</li>
+      <li>The network has achieved access to governors' forums and mayor networks and has transmitted planning memos to multiple governors.</li>
+      <li>NSL4A is standing up a war room and has conducted at least one in-person tabletop exercise specifically modeling Insurrection Act scenarios at the 2026 midterms.</li>
+      <li>The network is actively importing operational methodologies from countries where election defense was deployed (Brazil, Serbia, Guatemala, Slovakia).</li>
+      <li>The UDA "situation room," pre-organized red-line triggers, and pre-positioned messaging for elected officials represent a level of preparation exceeding routine civic advocacy.</li>
+    </ul>
+
+    <div class="pdb-label">What Is Not Supported by the Evidence</div>
+    <ul class="pdb-facts">
+      <li>CIA direction, control, or funding — no evidence in any recording or document.</li>
+      <li>A plan to seize government, remove officials by force, or prevent Congress from convening.</li>
+      <li>A secession plan — explicitly rejected by a participant in the August 13 session.</li>
+      <li>An unconditional plan to declare the government illegitimate — all formulations in the recordings are conditional on red-line triggers.</li>
+    </ul>
+
+    <div class="pdb-label">Analytical Judgment</div>
+    <div class="pdb-assessment">
+      <div class="pdb-assessment__label">Bottom Line</div>
+      <p>The recordings document a coordinated, professional, and operationally serious effort to position a network of former U.S. officials and civil-society organizations to contest the post-2026 midterm environment across multiple lines of effort — legal, political, media, international, and public mobilization. The effort is larger, more organized, and more operationally advanced than routine political opposition. It is not, on the evidence of these documents, a coup, a CIA operation, a secession plan, or a plan to physically seize government. It is a defensive mobilization strategy built on the assumption that the administration will cross lines the network has pre-defined as constitutional violations — and that when it does, pre-positioned people, plans, messaging, and networks will be ready to respond. Whether that preparation is legitimate civic defense or pre-emptive destabilization is a political judgment the documents themselves do not resolve. What the documents resolve is that the preparation is real.</p>
+    </div>
+  </section>
+
+
+
+  <hr class="pdb-divider">
+
+  <!-- SECTION 2: INDICATORS TO WATCH -->
+  <section class="pdb-section" id="indicators">
+    <p class="pdb-section-eyebrow">Section 2</p>
+    <h2 class="pdb-section-heading">Indicators to Watch: Signals That Would Confirm Destabilization Intent</h2>
+
+    <div class="pdb-note" style="margin-bottom: 16px;">
+      <div class="pdb-note__label">Analytical Note</div>
+      <p>The infrastructure documented in this archive — legal defense funds, trained marshals, bail networks, legislative relationships, international solidarity contacts — is consistent with robust, lawful protest organization. It is also consistent with pre-positioned capacity for something larger. The following indicators are the observable signals that would distinguish disciplined civic organizing from coordinated destabilization. None of these indicators is currently confirmed; they constitute a watch list for readers who wish to monitor how this situation develops.</p>
+    </div>
+
+    <div class="pdb-bluf">
+      Watch for rapid multi-city mobilization on short notice, hardening operational security, pre-deployment of legal infrastructure before announced events, synchronized messaging across nominally independent organizations, and logistics-level contact between domestic and European networks. Any combination of three or more indicators appearing in close temporal proximity would significantly elevate the assessment of coordinated intent.
+    </div>
+
+    <div class="pdb-report__subject" style="margin-top: 20px;">1 &mdash; Escalation in Trigger Discipline</div>
+    <p class="pdb-body">Organic protest movements require time to organize — days or weeks between a triggering event and street action. A shift to <strong>rapid multi-city mobilization within hours of a triggering event</strong> suggests pre-positioned activation rather than spontaneous response. Watch particularly for mobilization at a scale or geographic spread inconsistent with the apparent magnitude of the trigger.</p>
+
+    <div class="pdb-report__subject" style="margin-top: 16px;">2 &mdash; Pre-Deployment of Legal Infrastructure</div>
+    <p class="pdb-body">The bail funds and legal observer networks documented in Section 6 are reactive by design — they respond to arrests. Watch for <strong>legal observers and rapid-response legal teams deployed to cities in advance of any announced event</strong>. Pre-deployment is a planning tell: legal infrastructure goes forward only when organizers expect arrests before the event is publicly announced.</p>
+
+    <div class="pdb-report__subject" style="margin-top: 16px;">3 &mdash; Hardening Operational Security</div>
+    <p class="pdb-body">The Democracy Files network operates publicly — its training sessions, policy documents, and organizational relationships are in open sources. A shift to <strong>encrypted coordination platforms, participant vetting, and compartmentalized communications</strong> for activities that were previously conducted openly would indicate a change in operational intent, not just operational method.</p>
+
+    <div class="pdb-report__subject" style="margin-top: 16px;">4 &mdash; Synchronized Cross-Organization Messaging</div>
+    <p class="pdb-body">Independent organizations naturally produce varied messaging about the same events — different emphasis, language, and framing. <strong>Identical or near-identical language, hashtags, and narrative frames appearing simultaneously across nominally independent organizations</strong> is a command-and-control indicator. Organic solidarity produces convergent themes; coordinated action produces verbatim convergence.</p>
+
+    <div class="pdb-report__subject" style="margin-top: 16px;">5 &mdash; New Funding Streams Tracing to European Networks</div>
+    <p class="pdb-body">Section 7 documents historical NED/USAID funding overlap as the common institutional thread between U.S. and European civil society. Watch for <strong>new funding relationships — particularly in the 90-day window preceding an election or major legislative vote</strong> — that trace to European activist foundations or their U.S. intermediaries. Funding cycles preceding operational cycles is a documented pattern in coordinated civil action.</p>
+
+    <div class="pdb-report__subject" style="margin-top: 16px;">6 &mdash; Legislative Coordination with Street Action</div>
+    <p class="pdb-body">The Horizons Block-Bridge-Build framework explicitly cultivates relationships with sympathetic legislators. The European precedent includes instances of unusual legislative scheduling — recesses, quorum breaks, procedural delays — timed to coincide with street action in a way that prevents legislative response. Watch for <strong>legislative scheduling anomalies that create a window of reduced institutional capacity during periods of planned street mobilization</strong>.</p>
+
+    <div class="pdb-report__subject" style="margin-top: 16px;">7 &mdash; Logistics-Level Contact with European Networks</div>
+    <p class="pdb-body">The international solidarity panel (Audio 3) brought MEMO 98 and CRTA to the table in an advisory capacity — European practitioners sharing methodology with U.S. organizers. That is ideology transfer. Watch for a qualitative shift: <strong>operational or logistics-level personnel from European protest networks appearing at U.S. planning events</strong>, or U.S. network leaders traveling to European operational centers outside of conference or training contexts. The distinction between a conference visitor and a logistics coordinator matters.</p>
+
+    <div class="pdb-report__subject" style="margin-top: 16px;">8 &mdash; Nakagawa Threshold Crossing</div>
+    <p class="pdb-body">Scot Nakagawa (22nd Century Initiative) introduced a probability framework in the June 30, 2025 post-conference huddle that functions as a built-in decision metric: administrative-state resistance alone = <strong>&lt;9% probability</strong> of blocking authoritarian consolidation; civil resistance = approximately <strong>50/50</strong>; organized labor involvement = <strong>&gt;80%</strong>. The framework frames labor as the decisive variable — the next escalation step. Watch for <strong>coordinated outreach by network principals to major union leadership or active AFL-CIO/SEIU engagement with R2T/RAD planning sessions</strong>. Simultaneously, Nakagawa cited approximately 8 million No Kings Day attendees as roughly 2.4% of the U.S. population — short of the Chenoweth 3.5% threshold (~11.6 million). Watch for mobilization events that plausibly approach or breach the 3.5% threshold; the network is tracking this number as a live operational metric.</p>
+
+    <div class="pdb-assessment">
+      <div class="pdb-assessment__label">Assessment — Updated Oct. 22</div>
+      <p>One indicator has moved from "watch" to "partially confirmed." The August 5 session documents RADM Smith explicitly describing the situation as "everybody's already pre-organized" and acknowledging R2T provides "the day after tomorrow plan." Indicators 1 (trigger discipline) and 3 (OPSEC hardening — legal counsel advised against recording, subpoena risk assessed as real) also have partial confirmation. The Nakagawa framework (Indicator 8) introduces a quantifiable escalation threshold: if organized labor joins at scale, the network's own internal probability model shifts the assessment of success from coin-flip to likely. The remaining indicators — new European funding streams, legislative coordination anomalies, logistics-level European contacts, and Nakagawa threshold crossing — remain unconfirmed. The overall assessment: the infrastructure is pre-positioned and the trigger conditions are identified. Watch the midterm period, November 2026 through January 2027, for labor outreach (Indicator 8) and threshold-scale mobilization events (Indicator 8 / Chenoweth metric).</p>
+    </div>
+  </section>
+
+  <hr class="pdb-divider">
+
+  <!-- SECTION 3: OVERVIEW -->
+  <section class="pdb-section" id="overview">
+    <p class="pdb-section-eyebrow">Section 3</p>
+    <h2 class="pdb-section-heading">Overview and Bottom-Line Assessment</h2>
+
+    <div class="pdb-bluf">
+      A network of former U.S. diplomats and USAID officials — many from USAID's Democracy, Rights, and Governance (DRG) office, shut down in 2025 — retired military flag officers, academics, and civil-society operators has been conducting coordinated planning since at least January 2026 for scenarios in which a Democratic midterm sweep triggers a sustained campaign against the Trump administration. The planning includes pre-organized street mobilization, engagement with governors and mayors, international solidarity coordination, and contingency framing for events they describe as crossing constitutional "red lines." Its intellectual and operational lineage traces directly to the USAID democracy-assistance playbook used in externally supported democratic transitions abroad — including a confirmed connection to Canvas, the Serbian activist training organization that operationalized the Otpor model in more than 50 countries. The planning is real, organized, and more operationally advanced than routine political opposition. It does not, on the evidence of these recordings, constitute a coup, a secession plan, or a CIA-directed operation. Three findings from the newest primary sources materially advance the assessment: (1) the Chenoweth 3.5% mobilization threshold is being tracked as a live operational metric — current mobilization is estimated at approximately 2.4% of the U.S. population and approaching the threshold; (2) a Washington State Secretary of State participated in a September 2026 briefing that explicitly discussed provisional or transitional governance if the federal government is declared illegitimate, naming governors and former presidents as potential transitional actors; and (3) Ezra Levin of Indivisible confirmed on record that Chenoweth has been "the intellectual foundation for a lot of the strategy of the last 20 months." The problem is structural: people who spent careers deciding when foreign governments had lost legitimacy have written that test for the United States, in private, with no public debate, and are actively tracking whether the conditions for applying it have been met.
+    </div>
+
+    <div class="pdb-label">What These Documents Show</div>
+    <ul class="pdb-facts">
+      <li>A named network — operating under the Renew to Thrive (R2T), Renew American Democracy (RAD), Democracy Renewal Group, and National Security Leaders for America (NSL4A) umbrellas — has developed a three-tier structure: doctrine/research at the top, former national-security operators in the middle, and protest/legal/street execution below.</li>
+      <li>The network has identified three "emergency scenarios" — militarization, election meltdown, and constitutional crisis — and conducted planning sessions, breakout groups, and at least one in-person tabletop exercise in Washington, D.C. for each.</li>
+      <li>Planners have engaged or sought to engage governors (through "Governors Safeguarding Democracy"), mayors, Senate staff, and election officials with preparatory materials and briefings.</li>
+      <li>The network has explicitly solicited input from foreign practitioners experienced in externally supported democratic transitions, and Danielle Reiff has framed the U.S. as now the recipient of that expertise rather than its exporter. Canvas — the Serbian activist training organization that grew from Otpor and trained activists in more than 50 countries — was included in the 2023 USAID coalition that received that office's largest single grant award. That award is the direct institutional link between the USAID DRG playbook and the current domestic operation.</li>
+      <li>The RAD framework has four named components: <strong>Block</strong> (delegated to the UDA), <strong>Bridge and Belong</strong>, <strong>Win</strong>, and <strong>Build</strong> — the last explicitly framing constitutional redesign as the end-state goal, with crisis as the opening: "We can take that breakdown moment and leverage it for a big structural reform — a refounding moment." (Speaker 2, DataRepublican Oct. 22 transcript.)</li>
+      <li>Legal counsel advised network members to stop recording planning sessions in case of subpoenas. Most members continued recording anyway, producing the archive now in public circulation. The fact that subpoena risk was assessed as real enough for legal counsel to raise it is material to any assessment of the network's legal posture.</li>
+      <li>The United Democracy Alliance (UDA), described as a "big tent" coordinating the "blocking community," has developed red-line indicators and is standing up a "situation room." The UDA is explicitly identified as Erica Chenoweth's project; its meetings are secret, it has no public website or filings, and it declined to appear at RAD forums. Reiff characterizes it as "progressive coded… like that on steroids."</li>
+      <li>The Chenoweth 3.5% mobilization threshold is being tracked in real time as an operational metric. Scot Nakagawa (22nd Century Initiative) reported on June 30, 2025 that approximately 8 million people mobilized on the last "No Kings Day" — placing current mobilization at approximately 2.4% of the U.S. population and approaching the documented threshold. Nakagawa also cites a Chenoweth-derived probability framework: civil resistance alone shifts the odds of blocking an authoritarian takeover from 9% (administrative state alone) to 50/50; with organized labor, to over 80%.</li>
+      <li>The network has briefed at least one sitting state official on its emergency planning scenarios: Washington State Secretary of State Steve Hobbs participated in the September 8, 2026 "Thriving Together Washington State Civic Innovation Forum" at which Reiff laid out all three emergency scenarios and explicitly discussed provisional or transitional governance — including "a cross-partisan group of governors" and former Presidents Bush and Obama playing a stabilizing role if the federal government is declared illegitimate. Hobbs responded warmly and connected the scenarios to conversations he had with German and Japanese parliament members about democratic backsliding in their countries.</li>
+      <li>Reiff's Washington State briefing includes the most explicit articulation of post-illegitimacy governance planning in the archive: "How can cross-partisan political leaders come together to think about provisional or transitional leadership of the country in case the federal government becomes illegitimate?" This goes beyond the "Third Continental Congress" framing in earlier sessions to name specific actors — governors and former presidents — in a transitional role.</li>
+      <li>Participants include a DSA/Marxist Unity Group Caucus member who called for an "explicitly anti-constitutional" organization — a view not endorsed by the other participants in that session, who were operating within a nonviolent, c3 framework.</li>
+      <li>Multiple speakers explicitly commit to nonviolence and constitutional process; one participant explicitly states: "This is not a concept for a secession."</li>
+    </ul>
+
+    <div class="pdb-label">What These Documents Do Not Show</div>
+    <ul class="pdb-facts">
+      <li>No evidence of CIA direction, control, or funding of any element of this network.</li>
+      <li>No evidence of a plan to physically seize government, prevent Congress from convening, or remove officeholders by force.</li>
+      <li>No evidence that the network's "extraconstitutional process" language amounts to secession — Reiff's own formulation is a "Third Continental Congress" to draft a new declaration of principles if red lines are crossed.</li>
+      <li>No evidence that Indivisible, 50501, or No Kings organizations are being commanded rather than informed by this network's planning.</li>
+    </ul>
+  </section>
+
+
+
+  <hr class="pdb-divider">
+
+  <!-- SECTION 4: NETWORK MAP -->
+  <section class="pdb-section" id="network">
+    <p class="pdb-section-eyebrow">Section 4</p>
+    <h2 class="pdb-section-heading">Network Structure and Key Actors</h2>
+
+    <p style="font-family: var(--font-body); font-size: 14px; margin-bottom: 16px;">The primary sources document a three-tier division of labor consistent across all five sessions. Tier assignments below reflect roles described in the recordings and in the Persons of Interest profile compiled from the archive.</p>
+
+    <table class="pdb-entity-table">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Tier</th>
+          <th>Primary Organization(s)</th>
+          <th>Role in Planning</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="ent-name">Erica Chenoweth</td>
+          <td class="ent-tier tier-doctrine">Doctrine</td>
+          <td>Harvard Kennedy School / Horizons Project</td>
+          <td>Intellectual framework; "3.5% rule" and <em>Why Civil Resistance Works</em> supply academic justification for the UDA big-tent concept.</td>
+        </tr>
+        <tr>
+          <td class="ent-name">Maria Stephan</td>
+          <td class="ent-tier tier-doctrine">Doctrine</td>
+          <td>Horizons Project</td>
+          <td>Co-author of the Chenoweth framework; co-lead of Horizons Project, bridging academic research to domestic organizing ecosystem.</td>
+        </tr>
+        <tr>
+          <td class="ent-name">Zoe Marks</td>
+          <td class="ent-tier tier-doctrine">Doctrine</td>
+          <td>Harvard Kennedy School</td>
+          <td>Scenario planning and analytical support feeding Horizons and UDA frameworks; co-authored 2022 strategic assessment on pro-democracy organizing.</td>
+        </tr>
+        <tr>
+          <td class="ent-name">Julia Roig</td>
+          <td class="ent-tier tier-operator">Operator</td>
+          <td>Horizons Project</td>
+          <td>Founder and "network weaver"; builds relational infrastructure enabling disparate groups to act in concert. Describes her function as ecosystem coordination rather than public agitation. Attended NSL4A/Horizons Oct. 14 toolkit session.</td>
+        </tr>
+        <tr>
+          <td class="ent-name">RADM Michael E. Smith (Ret.)</td>
+          <td class="ent-tier tier-operator">Operator</td>
+          <td>National Security Leaders for America (NSL4A)</td>
+          <td>Founder and public face of NSL4A (~1,600 retired flag officers, intel officials, diplomats). Operationalizes UDA; led Insurrection Act working group and DC tabletop exercise. Stood up NSL4A "war room." Attended multiple RAD and R2T sessions.</td>
+        </tr>
+        <tr>
+          <td class="ent-name">Danielle M. Reiff</td>
+          <td class="ent-tier tier-operator">Operator</td>
+          <td>Renew to Thrive / Renew American Democracy / Democracy Renewal Group</td>
+          <td>Co-founder and primary strategist of the civilian operator layer. Twenty-year USAID/State veteran. Co-convenes RAD forums, chairs R2T core team, solicits foreign practitioner input. Primary speaker across all five sessions.</td>
+        </tr>
+        <tr>
+          <td class="ent-name">Dr. Paul Zeitz</td>
+          <td class="ent-tier tier-operator">Operator</td>
+          <td>UnifyUSA / Renew to Thrive / NSL4A</td>
+          <td>Physician and epidemiologist; relational half of R2T effort. Moves between former USAID cadre and protest-coordination umbrella. Briefed UDA red-line development and situation room in Aug. 13 session.</td>
+        </tr>
+        <tr>
+          <td class="ent-name">Walt Roberts</td>
+          <td class="ent-tier tier-operator">Operator</td>
+          <td>Renew to Thrive / Mediators Foundation / IMIP</td>
+          <td>Mapping and convening; identifies which organizations hold which functions and pulls them into shared planning sessions. Core R2T team member.</td>
+        </tr>
+        <tr>
+          <td class="ent-name">Brendan Halloran</td>
+          <td class="ent-tier tier-operator">Operator</td>
+          <td>Renew to Thrive</td>
+          <td>Former USAID anti-corruption technical integration advisor. Contributes accountability ecosystems, fragmentation-overcoming strategy, and long-term reform sequencing — same toolkit applied overseas, now domestic.</td>
+        </tr>
+        <tr>
+          <td class="ent-name">Laura Adams</td>
+          <td class="ent-tier tier-operator">Operator</td>
+          <td>Renew to Thrive / PACT</td>
+          <td>Former USAID officer. Implementation layer: turns strategy papers into operational plans for the post-2026 period. Limited public biographical detail.</td>
+        </tr>
+        <tr>
+          <td class="ent-name">Bryce Carpenter</td>
+          <td class="ent-tier tier-operator">Operator</td>
+          <td>Democracy Renewal Group / NSL4A</td>
+          <td>Former USAID Technology Official. Co-leads RAD militarization scenario work; crosslinks Democracy Renewal Group and NSL4A. Confirmed active in NSL4A in Jan. 15 session.</td>
+        </tr>
+        <tr>
+          <td class="ent-name">John Mongan</td>
+          <td class="ent-tier tier-operator">Operator</td>
+          <td>Former State Department (retired)</td>
+          <td>Engaged governors in MA, CA, and IL with preparatory memos. MA declined; CA and IL "interested if someone else would take the lead." Participated in Aug. 13 RAD Dialogue session.</td>
+        </tr>
+        <tr>
+          <td class="ent-name">Melissa Hooper</td>
+          <td class="ent-tier tier-operator">Operator</td>
+          <td>RAD International Solidarity Working Group</td>
+          <td>Coordinates international-domestic legitimacy signaling — describes value of aligned domestic and foreign voices in contesting election results.</td>
+        </tr>
+        <tr>
+          <td class="ent-name">Nadine Bloch</td>
+          <td class="ent-tier tier-execution">Execution</td>
+          <td>Beautiful Trouble (Training Director)</td>
+          <td>Facilitated RAD militarization breakout. Acknowledged in Jan. 15 session: "there's not a clear possible transfer of power at the national level from the right to the left" — framed as requiring action for the midterms.</td>
+        </tr>
+        <tr>
+          <td class="ent-name">Luke Pickrell</td>
+          <td class="ent-tier tier-execution">Execution</td>
+          <td>DSA / Marxist Unity Group Caucus</td>
+          <td>Participant in Mar. 25 session. Disclosed DSA/MUG Caucus membership; called for an organization "explicitly anti-constitutional." This position was not affirmed by other participants in the session.</td>
+        </tr>
+        <tr>
+          <td class="ent-name">Ezra Levin</td>
+          <td class="ent-tier tier-execution">Execution</td>
+          <td>Indivisible (Co-Executive Director)</td>
+          <td>On record Sept. 25, 2026 calling Chenoweth "the intellectual foundation for a lot of the strategy of the last 20 months." Confirms Indivisible deliberately grounded its strategy in Chenoweth's civil resistance research. Upgrades Indivisible's role from listed UDA member to confirmed doctrine adopter.</td>
+        </tr>
+        <tr>
+          <td class="ent-name">Scot Nakagawa</td>
+          <td class="ent-tier tier-execution">Execution</td>
+          <td>22nd Century Initiative (Executive Director)</td>
+          <td>Cited Chenoweth-derived probability framework on June 30, 2025: administrative state alone = &lt;9% chance of blocking authoritarian takeover; civil resistance = ~50/50; organized labor added = &gt;80%. Also tracked No Kings Day mobilization (~8 million attendees) against the 3.5% threshold. Framework functions as an operational decision tree for escalation sequencing.</td>
+        </tr>
+        <tr>
+          <td class="ent-name">Steve Hobbs</td>
+          <td class="ent-tier tier-external">External / Government</td>
+          <td>Washington State Secretary of State</td>
+          <td>Participated in Sept. 8, 2026 Thriving Together Washington State forum. Received Reiff's briefing on all three emergency scenarios including provisional governance framing. Responded warmly; connected the scenarios to conversations with German and Japanese parliaments about democratic backsliding. First confirmed sitting state official documented receiving this briefing.</td>
+        </tr>
+        <tr>
+          <td class="ent-name">Peter Swiderski</td>
+          <td class="ent-tier tier-external">External</td>
+          <td>Not identified</td>
+          <td>Named as outreach contact in NSL4A work; present at Oct. 14 toolkit session.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="pdb-assessment">
+      <div class="pdb-assessment__label">Structural Assessment</div>
+      <p>The network demonstrates functional specialization: doctrine and academic legitimacy at the top tier; former U.S. government national-security and diplomatic operators in the middle tier providing credibility, institutional access, and operational planning; and training, legal, and street-mobilization capacity at the execution tier. This is not an improvised coalition. It is an organized, hierarchical planning structure with distinct roles assigned at each tier.</p>
+      <p style="margin-top: 10px;">The September 8, 2026 Washington State forum marks a material escalation in government-official engagement. Previous engagements were with elected officials in politically sympathetic forums (Democratic governors, mayors) or with legislative staff. Washington State Secretary of State Steve Hobbs is the first confirmed sitting state constitutional officer documented receiving the full three-scenario briefing — including the provisional governance framing. His positive response and reference to parallel conversations with foreign parliaments suggests this was not an isolated outreach.</p>
+    </div>
+  </section>
+
+
+
+  <hr class="pdb-divider">
+
+  <!-- SECTION 5: TIMELINE -->
+  <section class="pdb-section" id="timeline">
+    <p class="pdb-section-eyebrow">Section 5</p>
+    <h2 class="pdb-section-heading">Chronological Record of Documented Activity</h2>
+
+    <ul class="pdb-timeline">
+      <li class="pdb-timeline__item">
+        <div class="pdb-timeline__date">2000–2023 (Background)</div>
+        <div class="pdb-timeline__event">USAID DRG Playbook — Canvas, NED, and the Democracy-Assistance Pipeline</div>
+        <div class="pdb-timeline__detail">Serbia 2000: U.S.-backed student activist movement Otpor brings down Milosevic. Alumni form Canvas (Centre for Applied Nonviolent Action and Strategies), which by its own count subsequently trains activists in more than 50 countries — including Georgia (2003), Ukraine (2004), and Egypt (2011) — using the same nonviolent-escalation curriculum. USAID's DRG office funds this ecosystem through NED and direct grants. In 2023, the White House authorizes a program to back people-powered movements abroad; USAID's DRG office makes its largest-ever single award to a coalition that includes Canvas. The same year, USAID is shut down. DRG office personnel, now out of work, form the Democracy Renewal Group — same initials — and begin applying the standard overseas toolkit to the United States.</div>
+      </li>
+      <li class="pdb-timeline__item">
+        <div class="pdb-timeline__date">June 30, 2025</div>
+        <div class="pdb-timeline__event">IMIP-Hosted 22CI Post-Conference Huddle — Mobilization Threshold Briefing</div>
+        <div class="pdb-timeline__detail">Evan Milligan and Scot Nakagawa (22nd Century Initiative) brief participants on mobilization status. Nakagawa cites Chenoweth's 3.5% threshold and reports approximately 8 million No Kings Day attendees — approximately 2.4% of U.S. population, described as "right at around that threshold." Nakagawa also introduces the probability framework: administrative state resistance alone = &lt;9% chance of blocking authoritarian takeover; civil resistance = ~50/50; organized labor involvement = &gt;80%. Framework frames labor outreach as the next escalation step. Milligan flags base-building gap from 1.5% (current No Kings participants at that time) to the 3.5% target.</div>
+      </li>
+      <li class="pdb-timeline__item">
+        <div class="pdb-timeline__date">January 15, 2026</div>
+        <div class="pdb-timeline__event">RAD Forum — "Emergency Scenarios in RAD's Strategy"</div>
+        <div class="pdb-timeline__detail">Danielle Reiff convenes a Zoom forum to brief the Renew American Democracy network on three emergency scenarios: (1) militarization, (2) election meltdown, (3) constitutional crisis including newly-elected members of Congress not being seated. Bryce Carpenter confirms cross-network coordination with NSL4A. Nadine Bloch facilitates a militarization breakout group and notes that a clean transfer of power "from the right to the left" is not achievable without significant change.</div>
+      </li>
+      <li class="pdb-timeline__item">
+        <div class="pdb-timeline__date">March 25, 2026</div>
+        <div class="pdb-timeline__event">R2T Core Team Call — Coalition and Strategy Discussion</div>
+        <div class="pdb-timeline__detail">Walt Roberts, Luke Pickrell, Danielle Reiff, and John Mulkins participate. Reiff describes a potential "Third Continental Congress" that could "come up with a declaration that says here are the red lines. Like if these red lines in our democracy are crossed, we will move into an extraconstitutional process." Pickrell discloses DSA/Marxist Unity Group Caucus membership and separately calls for an "explicitly anti-constitutional" organization.</div>
+      </li>
+      <li class="pdb-timeline__item">
+        <div class="pdb-timeline__date">April 10, 2026</div>
+        <div class="pdb-timeline__event">R2T Core Team Call — Governor Outreach Confirmed</div>
+        <div class="pdb-timeline__detail">Reiff and Zeitz report meeting with "Governors Safeguarding Democracy," a forum convening Democratic governors. Governors forum requested a panel to brief governors on a "doomsday scenario" and response options. Zeitz notes the forum will also connect R2T to "Mayors for Democracy," a national network of mayors. Reiff describes this as "a huge breakthrough for us."</div>
+      </li>
+      <li class="pdb-timeline__item">
+        <div class="pdb-timeline__date">August 5, 2026</div>
+        <div class="pdb-timeline__event">Reiff Briefing — Synergy Huddle Prep</div>
+        <div class="pdb-timeline__detail">Reiff describes the United Democracy Alliance as a "big, big, big, big, big tent" being organized across the blocking community so that "if there is a red line crossed in terms of the constitutional crisis, like everybody's already pre-organized." Documents RADM Smith's recognition that R2T provides "the day after tomorrow plan" — the structural reform vision that the blocker community (focused on election day and January 3 certification) has not developed.</div>
+      </li>
+      <li class="pdb-timeline__item">
+        <div class="pdb-timeline__date">August 13, 2026</div>
+        <div class="pdb-timeline__event">RAD Dialogue — UDA Red Lines, NSL4A War Room, Governors Memo</div>
+        <div class="pdb-timeline__detail">Zeitz describes United Democracy Alliance developing "a set of red lines that are now being refined in terms of indicators and metrics" and "creating a situation room." NSL4A described as 1,600 retired, cross-partisan military, intelligence, diplomat, and ambassador network. John Mongan confirms he transmitted planning memos to governors in MA, CA, and IL; MA declined to engage, CA and IL indicated interest contingent on another party taking the lead. Mongan explicitly states: "This is not a concept for a secession."</div>
+      </li>
+      <li class="pdb-timeline__item">
+        <div class="pdb-timeline__date">September 8, 2026</div>
+        <div class="pdb-timeline__event">Thriving Together — Washington State Civic Innovation Forum (Zoom)</div>
+        <div class="pdb-timeline__detail">Danielle Reiff briefs Washington State Secretary of State Steve Hobbs and other civic leaders on all three emergency scenarios. Reiff presents the most explicit articulation of post-illegitimacy governance planning in the archive: "How can cross-partisan political leaders come together to think about provisional or transitional leadership of the country in case the federal government becomes illegitimate? Is there a cross-partisan group of governors that could step up?" Hobbs responds warmly, connecting the scenarios to conversations he has had with German and Japanese parliaments about democratic backsliding. This is the first documented instance of a sitting state constitutional officer receiving the full emergency-scenario briefing. Jurisdiction: Washington State.</div>
+      </li>
+      <li class="pdb-timeline__item">
+        <div class="pdb-timeline__date">Undated (between Aug. and Oct. 2026)</div>
+        <div class="pdb-timeline__event">International Solidarity Panel — Foreign Practitioner Input</div>
+        <div class="pdb-timeline__detail">Reiff addresses an international forum including practitioners from Slovakia (MEMO 98), Serbia (CRTA), Brazil (Transparencia Eleitoral), and Guatemala. She explicitly describes the U.S. as now "grateful for those of you who are stepping up to provide a similar level of guidance and support." Panelists share lessons from election observation (polling station presence, legal hotlines, litigation) and the role of international actors in lending legitimacy to domestic challenges.</div>
+      </li>
+      <li class="pdb-timeline__item">
+        <div class="pdb-timeline__date">October 14, 2026</div>
+        <div class="pdb-timeline__event">NSL4A / Horizons Project Toolkit Info Session — Insurrection Act Tabletop</div>
+        <div class="pdb-timeline__detail">RADM Smith briefs participants on an in-person tabletop exercise held in Washington, D.C. addressing four Insurrection Act scenarios for the 2026 midterms, three of which involve the administration using ICE to provoke civil unrest, then invoking the Insurrection Act to deploy military in blue cities in red states to suppress voter turnout. Smith confirms outreach to "many different elected officials" and organizations of elected officials. NSL4A war room is being stood up. Senate staff are being engaged to prepare public statements contesting claimed intelligence about foreign interference with voting machines. A readiness checklist is being prepared for election officials in case "the colonel shows up." Julia Roig (Horizons Project) confirms commitment to nonviolence and c3 organizing framework.</div>
+      </li>
+      <li class="pdb-timeline__item">
+        <div class="pdb-timeline__date">October 20–21, 2026</div>
+        <div class="pdb-timeline__event">Archive Released — Amplification Begins</div>
+        <div class="pdb-timeline__detail">DataRepublican (@Schwalm5132) releases recordings and analysis in two parts on X. Right-leaning and far-right outlets amplify with escalating framing: "CIA color revolution," "declaring the government illegitimate," "diabolical." Secondary amplification chain adds attribution not in the primary sources.</div>
+      </li>
+      <li class="pdb-timeline__item">
+        <div class="pdb-timeline__date">October 22, 2026</div>
+        <div class="pdb-timeline__event">DataRepublican Explanatory Video — USAID DRG Provenance and RAD Structure Detailed</div>
+        <div class="pdb-timeline__detail">DataRepublican publishes a narrated explanatory video providing the institutional origin story: USAID DRG → Canvas → Democracy Renewal Group (same initials, deliberate). Names the RAD four-part framework explicitly: Block, Bridge/Belong, Win, Build — with Build described as redesigning American government itself, using "the crisis as the opening." Sources the "day after tomorrow quiz" framing to RADM Smith directly. Reports legal counsel advised against recording; notes most participants recorded anyway. Adds: red lines were written in private working groups with no public debate or vote; the legitimacy-adjudication panel was also self-selected in advance.</div>
+      </li>
+    </ul>
+  </section>
+
+
+
+  <hr class="pdb-divider">
+
+  <!-- SECTION 6: OPERATIONAL SCENARIOS -->
+  <section class="pdb-section" id="scenarios">
+    <p class="pdb-section-eyebrow">Section 6</p>
+    <h2 class="pdb-section-heading">The Three Emergency Scenarios — What the Network Is Planning For</h2>
+
+    <p style="font-family: var(--font-body); font-size: 14px; margin-bottom: 16px;">Reiff laid out the three scenarios explicitly in the January 15, 2026 RAD Forum. Subsequent sessions developed each in greater detail.</p>
+
+    <!-- Scenario 1 -->
+    <div class="pdb-report__subject">Scenario 1 — Militarization</div>
+    <div class="pdb-bluf" style="margin-top: 8px;">Defined as increased use of military, ICE, and National Guard on streets beyond current levels, potentially including Insurrection Act deployment to suppress voter turnout.</div>
+    <div class="pdb-label">Documented Planning Activity</div>
+    <ul class="pdb-facts">
+      <li>NSL4A led the detailed scenario work. RADM Smith's tabletop exercise (Washington, D.C.) modeled four Insurrection Act scenarios specifically calibrated to the 2026 midterms.</li>
+      <li>Most likely scenario assessed: ICE used to provoke civil unrest in blue cities, followed by Insurrection Act invocation, followed by military deployment to suppress voter turnout.</li>
+      <li>Counter-measures planned: Senate staff engagement to prepare public statements; election official checklists for "if the colonel shows up"; NSL4A war room to respond in real time.</li>
+      <li>Bryce Carpenter (former USAID, Democracy Renewal Group) confirmed co-leading RAD militarization scenario work alongside NSL4A contacts.</li>
+    </ul>
+
+    <div class="pdb-quote">
+      <p>"So we we we looked at what if suddenly the president claims at a very high level of security of classification that that a foreign actor, be it Iran or China, has in fact corrupted those voting machines, and now he's sending the colonel to the voting site to confiscate the machine."</p>
+      <span class="pdb-quote__attr">— RADM Michael E. Smith (Ret.), NSL4A, Oct. 14, 2026</span>
+    </div>
+
+    <hr class="pdb-divider">
+
+    <!-- Scenario 2 -->
+    <div class="pdb-report__subject">Scenario 2 — Election Meltdown</div>
+    <div class="pdb-bluf" style="margin-top: 8px;">Defined as a contested election outcome, including scenarios where results are disputed despite a clean election, or where newly-elected members of Congress are not seated promptly.</div>
+    <div class="pdb-label">Documented Planning Activity</div>
+    <ul class="pdb-facts">
+      <li>United Democracy Alliance developing "red lines that are now being refined in terms of indicators and metrics" specifically for election integrity scenarios.</li>
+      <li>International practitioner input solicited on election observation methodology: polling-station presence, legal hotlines, litigation strategy (Brazil, Serbia, Guatemala models discussed).</li>
+      <li>Melissa Hooper (RAD International Solidarity Working Group) describes value of aligned domestic and international voices in contesting disputed results.</li>
+      <li>John Mongan transmitted preparatory memos to governors in MA, CA, and IL regarding response options. CA and IL expressed conditional interest.</li>
+    </ul>
+
+    <div class="pdb-quote">
+      <p>"We could have a perfectly clean election, and then half the country or 25 percent of the country doesn't trust the results."</p>
+      <span class="pdb-quote__attr">— Danielle Reiff, RAD Forum, January 15, 2026</span>
+    </div>
+
+    <hr class="pdb-divider">
+
+    <!-- Scenario 3 -->
+    <div class="pdb-report__subject">Scenario 3 — Constitutional Crisis / Extraconstitutional Response</div>
+    <div class="pdb-bluf" style="margin-top: 8px;">Defined as an "acute constitutional crisis" — an attempt to undermine peaceful transition of power. If crossed, planners contemplate convening a "Third Continental Congress" to produce a new declaration of principles and, in Reiff's March 25 formulation, moving into an "extraconstitutional process."</div>
+    <div class="pdb-label">Documented Planning Activity</div>
+    <ul class="pdb-facts">
+      <li>R2T and RAD planning frames this as a contingency scenario triggered only if red lines are crossed — not as an unconditional agenda.</li>
+      <li>"Extraconstitutional process" is defined through the lens of a new public declaration of principles, not seizure of government or armed insurrection.</li>
+      <li>Mongan explicitly rejected the secession characterization: "This is not a concept for a secession."</li>
+      <li>The UDA "situation room" being developed by NSL4A is described as a monitoring and rapid-response capacity, not a command structure for operational action.</li>
+      <li>Nadine Bloch (Beautiful Trouble) acknowledged in the January session that the network must "sit with" the reality that clean transfer of power from right to left is unlikely without significant change — the most candid acknowledgment in the archive of the political limitations the network faces.</li>
+    </ul>
+
+    <div class="pdb-quote">
+      <p>"We've talked about a sequence of… an important convening, maybe like a Third Continental Congress that actually comes up with a declaration that says here are the red lines. Like if these red lines in our democracy are crossed, we will move into an extraconstitutional process."</p>
+      <span class="pdb-quote__attr">— Danielle Reiff, R2T Core Team Call, March 25, 2026</span>
+    </div>
+
+    <div class="pdb-quote">
+      <p>"How can cross-partisan political leaders come together to think about provisional or transitional leadership of the country in case the federal government becomes illegitimate? Is there a cross-partisan group of governors that could step up and together form some sort of provisional governing capacity?"</p>
+      <span class="pdb-quote__attr">— Danielle Reiff, Thriving Together Washington State Civic Innovation Forum, September 8, 2026. Delivered to Washington State Secretary of State Steve Hobbs.</span>
+    </div>
+
+    <div class="pdb-assessment">
+      <div class="pdb-assessment__label">Assessment — Updated</div>
+      <p>The planning is reactive in structure — triggered by scenarios the network expects the administration to initiate — but proactive in preparation. Pre-organized red-line triggers, a standing war room, pre-positioned messaging for elected officials, and a pre-recruited roster of 1,600 retired national-security figures represent a level of operational readiness beyond normal civic advocacy. The framing throughout is defensive and nonviolent. The "extraconstitutional" language refers to public mobilization and constitutional convention-style deliberation, not to the use of force or the physical displacement of government.</p>
+      <p style="margin-top: 10px;">The September 8 quote above, delivered to a sitting state constitutional officer, represents the most advanced articulation of post-illegitimacy governance planning in the archive. It goes beyond declaring red lines to naming a specific governing structure: a cross-partisan group of governors forming "provisional governing capacity." This is contingency planning for a scenario in which the federal government is judged to have lost legitimacy — with governors designated as the replacement authority. The audience (a Secretary of State who administers elections) and the warm reception documented in the Thriving Together transcript are analytically significant.</p>
+    </div>
+  </section>
+
+
+
+  <hr class="pdb-divider">
+
+  <!-- SECTION 7: INTERNATIONAL DIMENSION AND EUROPEAN NEXUS -->
+  <section class="pdb-section" id="intl">
+    <p class="pdb-section-eyebrow">Section 7</p>
+    <h2 class="pdb-section-heading">International Dimension and European Nexus</h2>
+
+    <div class="pdb-bluf">
+      The network is importing specific operational methodologies from countries where election defense was deployed (Brazil, Serbia, Guatemala, Slovakia). The institutional lineage — USAID DRG → Canvas → Democracy Renewal Group — is confirmed, not analogical. No operational command link between U.S. planners and European protest movements has been documented. European unrest in 2026 is primarily domestically driven and decentralized.
+    </div>
+
+    <div class="pdb-label" style="margin-top: 14px;">What the International Dimension Consists Of</div>
+    <ul class="pdb-facts">
+      <li><strong>Tactical import, not solidarity:</strong> Reiff explicitly describes the U.S. network as having reversed roles — formerly exporters of pro-democracy methodology, now recipients. The panel includes practitioners from Serbia (CRTA), Slovakia (MEMO 98), Brazil, and Guatemala — countries where election defense was operationally deployed against contested results. Specific methodologies discussed: polling-station presence, real-time voter legal hotlines, coordinated domestic-international observation "situation rooms" (Brazil 2022 Lula model), and narrative inoculation against false information (MEMO 98/Kuzel).</li>
+      <li><strong>International legitimacy function:</strong> Melissa Hooper articulates the value of coordinated domestic and international voices — explicitly connecting foreign attestation to domestic legitimacy claims in a contested result scenario.</li>
+      <li><strong>Canvas is the direct institutional link:</strong> Canvas — founded by Otpor alumni after the 2000 fall of Milosevic, training activists in 50-plus countries — was included in the 2023 USAID coalition's largest single grant award. The Democracy Renewal Group (DRG) is the organizational successor of USAID's DRG office operating domestically. The pipeline is institutional, not analogical.</li>
+      <li><strong>Historical funding overlap is documented:</strong> NED and USAID historically funded both MEMO 98 and CRTA — the two organizations in Audio 3's international solidarity panel. Past grants describe an election-observation funding relationship, not current command authority. Serbian state media (Novosti, partisan) has alleged USAID specifically funded CRTA; this is unverified in open sources.</li>
+    </ul>
+
+    <div class="pdb-label">European Nexus — What Is Not Supported</div>
+    <ul class="pdb-facts">
+      <li><strong>2026 European protests are domestically driven.</strong> France, Spain, Italy, Portugal, Albania, and Serbia are each responding to discrete domestic economic and political conditions that substantially pre-date U.S. 2026 election cycle activity.</li>
+      <li><strong>Organization is decentralized and social-media native.</strong> Gen Z organizing on TikTok, Instagram, and Discord — leaderless and platform-driven — is structurally inconsistent with top-down NGO direction from any external source.</li>
+      <li><strong>No documented coordination signal.</strong> None of the session transcripts reference European protest activity or intent to support or direct European street action. Audio 3 is explicitly a methodology-import exercise — U.S. practitioners receiving advice from Europeans, not the reverse.</li>
+    </ul>
+
+    <div class="pdb-assessment">
+      <div class="pdb-assessment__label">Nexus Assessment — Updated Oct. 22</div>
+      <p>The institutional lineage is confirmed: the playbook now operating domestically is the same playbook deployed in Serbia, Georgia, Ukraine, Egypt, and 50-plus other countries. That is lineage, not analogy. The Level 3 finding is unchanged: no operational coordination between the U.S. network and the 2026 European protests is documented. Revised overall assessment: <strong>confirmed institutional lineage, confirmed shared framework, no documented operational command link to European street action.</strong> The "color revolution" critique has a stronger factual basis at the institutional level than commentators previously established. What it cannot resolve — and what remains the critical analytical question — is whether domestically-applied nonviolent resistance doctrine, applied by U.S. citizens in a constitutional democracy, constitutes the same category of activity as externally-applied regime-change support.</p>
+    </div>
+
+    <div class="pdb-sources-group" style="margin-top: 14px;">
+      <div class="pdb-sources-group__label">Sources</div>
+      <div class="pdb-tags">
+        <a href="https://www.opb.org/article/2026/09/18/europe-protests-2026-economic-unrest/" class="pdb-tag pdb-tag--center" target="_blank" rel="noopener">OPB / AP <span class="pdb-tag__desc">· European unrest · Center</span></a>
+        <a href="https://www.theguardian.com/world/2026/oct/10/europe-protest-wave-gen-z" class="pdb-tag pdb-tag--left" target="_blank" rel="noopener">The Guardian <span class="pdb-tag__desc">· Gen Z protest · Left-Center</span></a>
+        <a href="https://memo98.sk/" class="pdb-tag pdb-tag--intl" target="_blank" rel="noopener">MEMO 98 <span class="pdb-tag__desc">· Slovakia · Intl</span></a>
+        <a href="https://www.crta.rs/en/" class="pdb-tag pdb-tag--intl" target="_blank" rel="noopener">CRTA <span class="pdb-tag__desc">· Serbia · Intl</span></a>
+        <a href="https://thefulcrum.us/democracy/generals-election-integrity-2026" class="pdb-tag pdb-tag--center" target="_blank" rel="noopener">The Fulcrum <span class="pdb-tag__desc">· Retired generals · Center</span></a>
+        <a href="https://nsla.net/statements" class="pdb-tag pdb-tag--primary" target="_blank" rel="noopener">NSL4A Public Record <span class="pdb-tag__desc">· Primary</span></a>
+      </div>
+    </div>
+
+    <div class="pdb-gaps__heading">Coverage Gaps This Edition</div>
+    <div class="pdb-gaps">
+      <p>CRTA USAID funding allegation — sourced to Novosti (Serbian state media, partisan); independent confirmation not available.</p>
+      <p>Current NED funding to MEMO 98 and CRTA — not available from open sources.</p>
+      <p>No reporting from center-rated outlets (AP, Reuters, NPR) on these specific recordings as of publication.</p>
+      <p>No response or statement from any named organization (NSL4A, Horizons Project, R2T, RAD, Democracy Renewal Group) — not available.</p>
+      <p>Democracy Renewal Group full membership and funding sources — not available.</p>
+    </div>
+  </section>
+
+
+
+  <!-- BALANCE BOX -->
+  <div class="pdb-balance">
+    <div class="pdb-balance__heading">How We Ensure Balance and Source Integrity</div>
+    <p>This brief draws from a curated registry of over 250 national and international news outlets rated for editorial bias and factual reliability by independent third-party assessors. Each report includes sources from across the editorial spectrum — left, center, and right — and includes primary-source materials where available. Sources are selected for relevance and reliability, not conformity with any particular narrative or perspective. Gaps in coverage are noted when a spectrum segment did not report on the selected story. All sources are open-access; no paywalled content is accessed or reproduced.</p>
+    <div class="pdb-balance__legend">
+      <span class="pdb-balance__swatch"><span class="pdb-balance__dot" style="background:#1A5FBF;"></span>Left / Left-Center</span>
+      <span class="pdb-balance__swatch"><span class="pdb-balance__dot" style="background:#2A7A3A;"></span>Center</span>
+      <span class="pdb-balance__swatch"><span class="pdb-balance__dot" style="background:#B03020;"></span>Right / Right-Center</span>
+      <span class="pdb-balance__swatch"><span class="pdb-balance__dot" style="background:#5A3A8A;"></span>International</span>
+      <span class="pdb-balance__swatch"><span class="pdb-balance__dot" style="background:#5A5850;"></span>Primary Source</span>
+    </div>
+  </div>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="pdb-footer">
+  The PDB · 21 Oct 2026 · All sources open-access · No paywalls bypassed
+</footer>
+
+</div>
+</body>
+</html>
