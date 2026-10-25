@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>The PDB · 25 Oct 2026</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Your Personal Daily Brief — 25 Oct 2026. Russia and U.S. Resume Military-to-Military Dialogue at Abu Dhabi Day 2 as Oleshky Ceasefire Set for 27 Oct.">
+<meta property="og:title" content="The PDB · 25 Oct 2026">
+<meta property="og:description" content="Russia and U.S. Resume Military-to-Military Dialogue at Abu Dhabi Day 2 as Oleshky Ceasefire Set for 27 Oct">
+<meta property="og:image" content="https://thepdb.news/Assets/Images/pdb-og-wide.png">
+<meta property="og:url" content="https://thepdb.news/Briefs/2026-10-25-pdb.html">
+<meta property="og:type" content="article">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@thepdb">
+<meta name="twitter:title" content="The PDB · 25 Oct 2026">
+<meta name="twitter:description" content="Russia and U.S. Resume Military-to-Military Dialogue at Abu Dhabi Day 2 as Oleshky Ceasefire Set for 27 Oct">
+<meta name="twitter:image" content="https://thepdb.news/Assets/Images/pdb-og-wide.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+/* ===== CSS VARIABLES ===== */
+:root {
+  --navy:       #1A2744;
+  --gold:       #C8A84B;
+  --body-bg:    #FAFAF8;
+  --body-fg:    #1A1A1A;
+  --heading-fg: #1A2744;
+  --heading-rule:#1A2744;
+  --divider:    #DDDDDD;
+  --card-bg:    #FFFFFF;
+  --card-border:#E5E5E0;
+  --meta-fg:    #5A5A5A;
+  --gaps-heading:#8B0000;
+
+  /* Source colors */
+  --lc:  #1A5FBF;
+  --ctr: #2A7A3A;
+  --rc:  #B03020;
+  --int: #5A3A8A;
+  --ps:  #5A5850;
+
+  /* Typography */
+  --font-display: 'Playfair Display', Georgia, serif;
+  --font-body:    'Source Serif 4', Georgia, serif;
+  --font-ui:      'Inter', 'Helvetica Neue', Arial, sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --body-bg:    #111318;
+    --body-fg:    #E8E6E0;
+    --heading-fg: #D4B86A;
+    --heading-rule:#D4B86A;
+    --divider:    #333840;
+    --card-bg:    #1C1F26;
+    --card-border:#2A2D35;
+    --meta-fg:    #9A9A9A;
+  }
+}
+[data-theme="dark"] {
+  --body-bg:    #111318;
+  --body-fg:    #E8E6E0;
+  --heading-fg: #D4B86A;
+  --heading-rule:#D4B86A;
+  --divider:    #333840;
+  --card-bg:    #1C1F26;
+  --card-border:#2A2D35;
+  --meta-fg:    #9A9A9A;
+}
+
+/* ===== RESET & BASE ===== */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  background: var(--body-bg);
+  color: var(--body-fg);
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+a { color: inherit; }
+p { margin: 0 0 0.85em; }
+p:last-child { margin-bottom: 0; }
+
+/* ===== LAYOUT ===== */
+.pdb-wrap { max-width: 860px; margin: 0 auto; padding: 0 16px 48px; }
+
+/* ===== MASTHEAD ===== */
+.pdb-masthead {
+  background: var(--navy);
+  color: #FFFFFF;
+  padding: 28px 24px 22px;
+  margin-bottom: 0;
+  text-align: center;
+}
+.pdb-masthead__flag {
+  font-family: var(--font-ui);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 6px;
+}
+.pdb-masthead__title {
+  font-family: var(--font-display);
+  font-size: clamp(36px, 8vw, 56px);
+  font-weight: 900;
+  color: #FFFFFF;
+  line-height: 1.05;
+  letter-spacing: -0.01em;
+}
+.pdb-masthead__sub {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-top: 6px;
+}
+.pdb-masthead__meta {
+  font-family: var(--font-ui);
+  font-size: 12px;
+  color: rgba(255,255,255,0.65);
+  margin-top: 14px;
+  line-height: 1.5;
+}
+.pdb-masthead__rule {
+  border: none;
+  border-top: 1px solid rgba(200,168,75,0.35);
+  margin: 16px 0 0;
+}
+
+/* ===== TOPICS BANNER ===== */
+.pdb-banner {
+  background: var(--navy);
+  border-bottom: 3px solid var(--gold);
+  padding: 0 24px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0;
+  margin-bottom: 24px;
+}
+.pdb-banner__link {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.7);
+  text-decoration: none;
+  padding: 10px 14px;
+  display: inline-block;
+  border-right: 1px solid rgba(255,255,255,0.12);
+  transition: color 0.15s, background 0.15s;
+}
+.pdb-banner__link:last-child { border-right: none; }
+.pdb-banner__link:hover { color: var(--gold); background: rgba(200,168,75,0.1); }
+.pdb-banner__link--otr { color: #D08030; }
+.pdb-banner__link--otr:hover { color: #E09040; }
+
+/* ===== SECTION HEADING ===== */
+.pdb-section-head {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--heading-fg);
+  border-bottom: 2px solid var(--heading-rule);
+  padding-bottom: 7px;
+  margin: 32px 0 18px;
+}
+
+/* ===== I&W SECTION ===== */
+.pdb-iw { margin-bottom: 24px; }
+.pdb-iw__item {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-left: 4px solid var(--navy);
+  border-radius: 4px;
+  padding: 14px 18px;
+  margin-bottom: 12px;
+}
+.pdb-iw__pir {
+  font-family: var(--font-ui);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--meta-fg);
+  margin-bottom: 4px;
+}
+.pdb-iw__sig {
+  display: inline-block;
+  font-family: var(--font-ui);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  background: #8B0000;
+  color: #FFFFFF;
+  border-radius: 3px;
+  padding: 1px 6px;
+  margin-left: 8px;
+  vertical-align: middle;
+}
+.pdb-iw__title {
+  font-family: var(--font-ui);
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--heading-fg);
+  margin-bottom: 8px;
+  line-height: 1.4;
+}
+.pdb-iw__body {
+  font-family: var(--font-body);
+  font-size: 14px;
+  color: var(--body-fg);
+  line-height: 1.65;
+}
+
+/* ===== ON THE RISE ===== */
+.pdb-otr {
+  background: #F5F0E8;
+  border-left: 4px solid #B06010;
+  border-radius: 4px;
+  padding: 16px 20px;
+  margin: 0 0 24px 0;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .pdb-otr { background: #1E1A12; }
+}
+[data-theme="dark"] .pdb-otr { background: #1E1A12; }
+.pdb-otr__eyebrow {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  font-weight: 700;
+  color: #B06010;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin: 0 0 4px;
+}
+.pdb-otr__heading {
+  font-family: var(--font-ui);
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--heading-fg);
+  border-bottom: 2px solid var(--heading-rule);
+  padding-bottom: 8px;
+  margin: 0 0 14px;
+}
+.pdb-otr__item {
+  margin-bottom: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px dashed var(--divider);
+}
+.pdb-otr__item:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+.pdb-otr__title {
+  font-family: var(--font-ui);
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--heading-fg);
+  margin: 0 0 3px;
+  line-height: 1.4;
+}
+.pdb-otr__velocity {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  font-weight: 400;
+  color: #B06010;
+  font-style: italic;
+  margin: 0 0 8px;
+}
+.pdb-otr__summary {
+  font-family: var(--font-body);
+  font-size: 14px;
+  color: var(--body-fg);
+  line-height: 1.65;
+  margin: 0 0 10px;
+}
+
+/* ===== TOPIC CARDS ===== */
+.pdb-topic {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 6px;
+  padding: 22px 24px;
+  margin-bottom: 20px;
+}
+.pdb-topic__eyebrow {
+  font-family: var(--font-ui);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--meta-fg);
+  margin-bottom: 6px;
+}
+.pdb-topic__subject {
+  font-family: var(--font-ui);
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--heading-fg);
+  line-height: 1.35;
+  margin-bottom: 12px;
+}
+.pdb-topic__rule {
+  border: none;
+  border-top: 2px solid var(--heading-rule);
+  margin: 0 0 14px;
+}
+.pdb-topic__label {
+  font-family: var(--font-ui);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--meta-fg);
+  margin: 14px 0 5px;
+}
+.pdb-topic__bluf {
+  font-family: var(--font-body);
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--body-fg);
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+.pdb-topic__body {
+  font-family: var(--font-body);
+  font-size: 14px;
+  color: var(--body-fg);
+  line-height: 1.7;
+}
+.pdb-topic__body ul {
+  margin: 6px 0 10px 18px;
+}
+.pdb-topic__body li {
+  margin-bottom: 5px;
+}
+.pdb-topic__divider {
+  border: none;
+  border-top: 1px solid var(--divider);
+  margin: 16px 0;
+}
+
+/* ===== WATCH ITEMS ===== */
+.pdb-watch {
+  background: rgba(26,39,68,0.04);
+  border-left: 3px solid var(--navy);
+  border-radius: 3px;
+  padding: 10px 14px;
+  margin: 10px 0;
+  font-family: var(--font-body);
+  font-size: 13.5px;
+  line-height: 1.6;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .pdb-watch { background: rgba(200,168,75,0.07); }
+}
+[data-theme="dark"] .pdb-watch { background: rgba(200,168,75,0.07); }
+.pdb-watch__q {
+  font-family: var(--font-ui);
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--heading-fg);
+  margin-bottom: 4px;
+}
+.pdb-watch__a {
+  color: var(--body-fg);
+  font-size: 13.5px;
+}
+.pdb-watch__recommend {
+  border-left-color: #B06010;
+  background: rgba(176,96,16,0.05);
+}
+
+/* ===== SOURCE TAGS ===== */
+.pdb-sources {
+  margin-top: 14px;
+  padding-top: 12px;
+  border-top: 1px solid var(--divider);
+}
+.pdb-sources__label {
+  font-family: var(--font-ui);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--meta-fg);
+  margin-bottom: 7px;
+}
+.pdb-sources__tags { display: flex; flex-wrap: wrap; gap: 6px; }
+.pdb-tag {
+  display: inline-block;
+  font-family: var(--font-ui);
+  font-size: 11px;
+  font-weight: 600;
+  border-radius: 4px;
+  padding: 2px 8px;
+  color: #FFFFFF;
+  border: 2px solid transparent;
+  text-decoration: none;
+}
+.pdb-tag--lc  { background: var(--lc);  border-color: var(--lc); }
+.pdb-tag--ctr { background: var(--ctr); border-color: var(--ctr); }
+.pdb-tag--rc  { background: var(--rc);  border-color: var(--rc); }
+.pdb-tag--int { background: var(--int); border-color: var(--int); }
+.pdb-tag--ps  { background: var(--ps);  border-color: var(--ps); }
+.pdb-tag--na  { background: #999999;    border-color: #999999; }
+
+/* ===== GAPS ===== */
+.pdb-gaps {
+  margin-top: 12px;
+  padding: 10px 14px;
+  background: rgba(139,0,0,0.04);
+  border-left: 3px solid var(--gaps-heading);
+  border-radius: 3px;
+  font-family: var(--font-ui);
+  font-size: 12px;
+  color: var(--body-fg);
+  line-height: 1.55;
+}
+.pdb-gaps__heading {
+  font-weight: 700;
+  color: var(--gaps-heading);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 10px;
+  margin-bottom: 3px;
+}
+
+/* ===== TRENDING FLAG ===== */
+.trending-flag {
+  display: inline-block;
+  background-color: #B06010;
+  color: #FFFFFF;
+  font-family: var(--font-ui);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border-radius: 3px;
+  padding: 2px 6px;
+  margin-left: 8px;
+  vertical-align: middle;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .trending-flag { background-color: #C87020; }
+}
+[data-theme="dark"] .trending-flag { background-color: #C87020; }
+
+/* ===== BALANCE BOX ===== */
+.pdb-balance {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 6px;
+  padding: 18px 22px;
+  margin: 32px 0 0;
+  font-family: var(--font-body);
+  font-size: 13px;
+  color: var(--meta-fg);
+  line-height: 1.65;
+}
+.pdb-balance__heading {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--heading-fg);
+  margin-bottom: 8px;
+  border-bottom: 1px solid var(--divider);
+  padding-bottom: 6px;
+}
+.pdb-balance__legend { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 10px; }
+.pdb-balance__swatch {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-ui);
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--body-fg);
+}
+.pdb-balance__dot {
+  width: 10px; height: 10px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+/* ===== FOOTER ===== */
+.pdb-footer {
+  border-top: 2px solid var(--navy);
+  padding: 18px 0 0;
+  margin-top: 36px;
+  font-family: var(--font-ui);
+  font-size: 11px;
+  color: var(--meta-fg);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 8px;
+  line-height: 1.55;
+}
+.pdb-footer__left { font-weight: 600; color: var(--heading-fg); }
+
+/* ===== UTILITY ===== */
+.pdb-dispute {
+  font-family: var(--font-body);
+  font-size: 13.5px;
+  color: var(--meta-fg);
+  font-style: italic;
+  margin-top: 6px;
+  line-height: 1.6;
+}
+
+@media (max-width: 600px) {
+  .pdb-topic { padding: 16px 16px; }
+  .pdb-masthead { padding: 20px 16px 16px; }
+  .pdb-banner__link { font-size: 10px; padding: 8px 10px; }
+}
+</style>
+</head>
+<body>
+
+<!-- MASTHEAD -->
+<div class="pdb-masthead">
+  <div class="pdb-masthead__flag">Open-Source Intelligence</div>
+  <div class="pdb-masthead__title">The PDB</div>
+  <div class="pdb-masthead__sub">Your Personal Daily Brief</div>
+  <hr class="pdb-masthead__rule">
+  <div class="pdb-masthead__meta">
+    25 Oct 2026 &nbsp;·&nbsp; 20 reports reviewed &nbsp;·&nbsp; Collection window: 24 Oct 2026 06:00 UTC – 25 Oct 2026 06:00 UTC
+  </div>
+</div>
+
+<!-- TOPICS BANNER -->
+<nav class="pdb-banner" aria-label="Jump to section">
+  <a class="pdb-banner__link" href="#iw">I&amp;W</a>
+  <a class="pdb-banner__link pdb-banner__link--otr" href="#otr">On the Rise</a>
+  <a class="pdb-banner__link" href="#t1">Nat'l Security</a>
+  <a class="pdb-banner__link" href="#t2">Politics</a>
+  <a class="pdb-banner__link" href="#t3">Economy</a>
+  <a class="pdb-banner__link" href="#t4">Tech</a>
+</nav>
+
+<div class="pdb-wrap">
+
+<!-- ===== I&W SECTION ===== -->
+<div id="iw">
+  <div class="pdb-section-head">Indicators &amp; Warnings</div>
+  <div class="pdb-iw">
+
+    <!-- I&W #1 -->
+    <div class="pdb-iw__item">
+      <div class="pdb-iw__pir">PIR 1.1 / 1.3 <span class="pdb-iw__sig">Major Significance</span></div>
+      <div class="pdb-iw__title">Russia and U.S. Resume Military-to-Military Dialogue at Abu Dhabi Day 2 as Oleshky Ceasefire Set for 27 Oct</div>
+      <div class="pdb-iw__body">
+        The second day of U.S.-brokered Ukraine-Russia-U.S. peace talks in Abu Dhabi concluded 25 Oct with Russia and the United States agreeing to resume direct military-to-military dialogue — the most substantive bilateral security engagement between the two countries since the February 2022 invasion. Ukraine ombudsman Dmytro Lubinets confirmed the locally limited Oleshky humanitarian ceasefire will begin 27 Oct; the White House listed 29 Oct as the start date, a process gap that could complicate implementation. No comprehensive peace framework was announced; bilateral infrastructure strikes on both sides continued throughout the collection window. Watch items W1.3 and W1.4 remain open; assessments unchanged.
+      </div>
+    </div>
+
+    <!-- I&W #2 -->
+    <div class="pdb-iw__item">
+      <div class="pdb-iw__pir">PIR 1.4 <span class="pdb-iw__sig">Major Significance</span></div>
+      <div class="pdb-iw__title">Brent Crude Hits $114–$115 as Houthi Attacks Escalate Saudi Energy Infrastructure; CENTCOM Iran Blockade Exceeds 100 Days</div>
+      <div class="pdb-iw__body">
+        Houthi drone and missile attacks on Saudi Arabia's energy infrastructure pushed Brent crude above $114–$115 per barrel — its highest level since April — as Saudi Arabia lost normal export shipping capacity. CENTCOM's naval blockade of Iran has now exceeded 100 days; King Khalid International Airport in Riyadh resumed limited operations after intercepting a Houthi drone. The oil shock enters FOMC week (Oct 27–28) as an unresolved upside inflation risk; no Saudi or U.S. de-escalation signal was issued in this window. Watch item W1.5 remains Developing (Moderate confidence).
+      </div>
+    </div>
+
+    <!-- I&W #3 -->
+    <div class="pdb-iw__item">
+      <div class="pdb-iw__pir">PIR 4.4 <span class="pdb-iw__sig">Major Significance</span></div>
+      <div class="pdb-iw__title">Federal Judge Rules OPM's Sharing of Sensitive Employee Data with DOGE Was Unlawful; House Democrats Demand AI System Termination</div>
+      <div class="pdb-iw__body">
+        A federal court ruled that the Office of Personnel Management (OPM) violated the Privacy Act by sharing millions of sensitive federal employee records — including health data, financial information, and security clearance files — with DOGE, noting government attorneys "barely defended" the practice. The ruling is the first major judicial check on DOGE's access to federal data systems. House Democrats (led by Rep. Don Beyer) filed an immediate demand for termination of DOGE's unauthorized AI systems and cited potential criminal liability. The ruling compounds the USDA AI oversight failure documented in the prior edition. Subscriber designation of Watch Item W4.4 formally recommended (see Topic 4).
+      </div>
+    </div>
+
+  </div><!-- .pdb-iw -->
+</div><!-- #iw -->
+
+
+<!-- ===== ON THE RISE ===== -->
+<div id="otr">
+  <div class="pdb-section-head">On the Rise</div>
+  <div class="pdb-otr">
+    <div class="pdb-otr__eyebrow">On the Rise</div>
+    <div class="pdb-otr__heading">Coverage Gaining Momentum — 25 Oct 2026</div>
+
+    <!-- OtR Item 1 -->
+    <div class="pdb-otr__item">
+      <div class="pdb-otr__title">Early Voting Tops 24 Million; Democrats Lead Ballot Returns in Key Battleground States</div>
+      <div class="pdb-otr__velocity">↑ Velocity: 6+ outlets, past 12 hours &nbsp;|&nbsp; Estimated V ≈ 3.0 (R ≈ 6, E ≈ 2)</div>
+      <div class="pdb-otr__summary">
+        As of October 25, more than 24 million ballots have been cast nationally in the 2026 midterm elections — a pace exceeding comparable 2022 points in multiple states. Democrats are outpacing Republican ballot returns in key battleground states including Arizona, Georgia, North Carolina, Pennsylvania, and Michigan. Election analysts describe Republican ballot-return engagement as lower than 2022 at this stage. Nine days remain to Election Day (November 3). This turnout story is distinct from the Silver Bulletin forecasting update covered in Topic 2.
+      </div>
+      <div class="pdb-sources">
+        <div class="pdb-sources__label">Sources</div>
+        <div class="pdb-sources__tags">
+          <a href="https://nbcnews.com" class="pdb-tag pdb-tag--lc" target="_blank" rel="noopener noreferrer">NBC News</a>
+          <a href="https://thehill.com" class="pdb-tag pdb-tag--lc" target="_blank" rel="noopener noreferrer">The Hill</a>
+          <a href="https://npr.org" class="pdb-tag pdb-tag--lc" target="_blank" rel="noopener noreferrer">NPR</a>
+          <a href="https://newsmax.com" class="pdb-tag pdb-tag--rc" target="_blank" rel="noopener noreferrer">Newsmax</a>
+          <a href="https://news.yahoo.com" class="pdb-tag pdb-tag--ctr" target="_blank" rel="noopener noreferrer">Yahoo News</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- OtR Item 2 -->
+    <div class="pdb-otr__item">
+      <div class="pdb-otr__title">Silver Bulletin Raises Democratic Senate Odds to 57%; Ohio and Iowa Shift to Toss-Up</div>
+      <div class="pdb-otr__velocity">↑ Velocity: 4+ outlets, past 12 hours &nbsp;|&nbsp; Estimated V ≈ 2.5 (R ≈ 5, E ≈ 2)</div>
+      <div class="pdb-otr__summary">
+        Silver Bulletin's latest update raised Democratic Senate control probability to 57% — a new cycle high — with a median Democratic caucus of 51 seats. The model shift was driven by Ohio and Iowa Senate races reclassifying to Toss-Up; Republicans' best-case path now requires winning nearly every competitive seat. This Senate-specific development is distinct from the House forecast (87% Democratic control) covered in Topic 2.
+      </div>
+      <div class="pdb-sources">
+        <div class="pdb-sources__label">Sources</div>
+        <div class="pdb-sources__tags">
+          <a href="https://newsweek.com" class="pdb-tag pdb-tag--lc" target="_blank" rel="noopener noreferrer">Newsweek</a>
+          <a href="https://www.natesilver.net" class="pdb-tag pdb-tag--ctr" target="_blank" rel="noopener noreferrer">Silver Bulletin</a>
+          <a href="https://news.yahoo.com" class="pdb-tag pdb-tag--ctr" target="_blank" rel="noopener noreferrer">Yahoo News</a>
+          <a href="https://uspollingdata.com" class="pdb-tag pdb-tag--ps" target="_blank" rel="noopener noreferrer">USPollingData</a>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- .pdb-otr -->
+</div><!-- #otr -->
+
+
+<!-- ===== TOPIC 1: NATIONAL SECURITY ===== -->
+<div id="t1">
+  <div class="pdb-section-head">Topic 1 — National Security &amp; Foreign Affairs</div>
+  <div class="pdb-topic">
+    <div class="pdb-topic__eyebrow">National Security &amp; Foreign Affairs · PIR 1.1 / 1.3 / 1.5</div>
+    <div class="pdb-topic__subject">
+      Ukraine-Russia-U.S. Peace Talks Enter Second Day in Abu Dhabi; Military Dialogue Restored
+      <span class="trending-flag">↑ Trending</span>
+    </div>
+    <hr class="pdb-topic__rule">
+
+    <div class="pdb-topic__label">BLUF</div>
+    <div class="pdb-topic__bluf">
+      Second-day U.S.-brokered talks in Abu Dhabi produced the first Russian-U.S. agreement to resume military-to-military dialogue since the February 2022 invasion, while the locally limited Oleshky humanitarian ceasefire is set to begin 27 Oct — even as infrastructure strikes on both sides and a continued Iranian oil shock complicated the broader diplomatic picture.
+    </div>
+
+    <div class="pdb-topic__label">Change Since Last Report</div>
+    <div class="pdb-topic__body">
+      Oleshky humanitarian ceasefire terms confirmed by Ukraine ombudsman Dmytro Lubinets (24 Oct); Abu Dhabi Day 2 talks concluded 25 Oct with Russia-U.S. military dialogue agreement — the single most significant diplomatic development of the collection window.
+    </div>
+
+    <hr class="pdb-topic__divider">
+
+    <div class="pdb-topic__label">Key Facts</div>
+    <div class="pdb-topic__body">
+      <ul>
+        <li>Russia and the United States agreed at Abu Dhabi Day 2 (25 Oct) to resume direct military-to-military dialogue — the most substantive bilateral security channel established since the war began. The scope of the dialogue (whether it covers weapons supply or operational deconfliction only) was not publicly disclosed.</li>
+        <li>The Oleshky humanitarian ceasefire, reportedly mediated in part by Melania Trump, is set to begin 27 Oct per Ukraine's ombudsman; the White House listed 29 Oct as the start date. The two-day discrepancy between Ukrainian and U.S. timelines is a potential implementation friction point.</li>
+        <li>Infrastructure strikes continued throughout the window: Ukrainian forces targeted Russian energy, logistics, and data infrastructure; Russian forces continued ballistic missile and drone attacks on Ukrainian population centers. The ceasefire, if it holds, applies only to Oleshky — not to the broader front.</li>
+      </ul>
+    </div>
+
+    <div class="pdb-topic__label">Points of Dispute</div>
+    <div class="pdb-topic__body pdb-dispute">
+      Russia has framed Abu Dhabi progress as conditional on Ukraine making unspecified "necessary decisions." Ukraine insists on sovereignty and territorial integrity as preconditions for any formal framework. The U.S. position on the scope of resumed military dialogue — particularly whether it limits weapons supply — has not been made public.
+    </div>
+
+    <hr class="pdb-topic__divider">
+    <div class="pdb-topic__label">Watch</div>
+
+    <div class="pdb-watch">
+      <div class="pdb-watch__q">W1.3 — Will Congress challenge the Graham Act waiver authority through court action or legislation?</div>
+      <div class="pdb-watch__a"><strong>Assessment:</strong> Unlikely in near term (Moderate confidence) — Abu Dhabi diplomatic progress reduces bipartisan pressure for near-term countermeasures; no floor vote or legal challenge has been filed in this window.</div>
+    </div>
+
+    <div class="pdb-watch">
+      <div class="pdb-watch__q">W1.4 — Will the Trump-Zelensky public rift lead to a formal reduction in U.S. intelligence sharing or military support?</div>
+      <div class="pdb-watch__a"><strong>Assessment:</strong> Unlikely in near term (Moderate confidence) — Military-to-military dialogue restored at Abu Dhabi Day 2 confirms sustained U.S. engagement; Starshield remains fully operational; no formal reduction signal issued in this window.</div>
+    </div>
+
+    <div class="pdb-watch">
+      <div class="pdb-watch__q">W1.5 — Will the U.S. and Israel launch a coordinated post-midterm military operation against Iran?</div>
+      <div class="pdb-watch__a"><strong>Assessment:</strong> Developing (Moderate confidence) — Brent at $114–$115; CENTCOM blockade exceeds 100 days; no de-escalation signal from Tehran; midterms 9 days away. Iran/oil situation reinforces this watch item.</div>
+    </div>
+
+    <div class="pdb-sources">
+      <div class="pdb-sources__label">Sources</div>
+      <div class="pdb-sources__tags">
+        <a href="https://cbsnews.com" class="pdb-tag pdb-tag--lc" target="_blank" rel="noopener noreferrer">CBS News</a>
+        <a href="https://nbcnews.com" class="pdb-tag pdb-tag--lc" target="_blank" rel="noopener noreferrer">NBC News</a>
+        <a href="https://washingtontimes.com" class="pdb-tag pdb-tag--rc" target="_blank" rel="noopener noreferrer">Washington Times</a>
+        <a href="https://kyivindependent.com" class="pdb-tag pdb-tag--int" target="_blank" rel="noopener noreferrer">Kyiv Independent</a>
+        <a href="https://france24.com" class="pdb-tag pdb-tag--int" target="_blank" rel="noopener noreferrer">France 24</a>
+        <a href="https://gulfnews.com" class="pdb-tag pdb-tag--int" target="_blank" rel="noopener noreferrer">Gulf News</a>
+        <a href="https://aljazeera.com" class="pdb-tag pdb-tag--int" target="_blank" rel="noopener noreferrer">Al Jazeera</a>
+        <a href="https://moscowtimes.ru" class="pdb-tag pdb-tag--ps" target="_blank" rel="noopener noreferrer">The Moscow Times</a>
+      </div>
+    </div>
+
+    <div class="pdb-gaps">
+      <div class="pdb-gaps__heading">Coverage Gaps This Edition</div>
+      Official White House or State Dept. readout on Abu Dhabi Day 2 outcomes: not available. Right-center domestic analysis of congressional response to military dialogue agreement: not available. Independent verification of ceasefire start date discrepancy: not available.
+    </div>
+
+  </div><!-- .pdb-topic -->
+</div><!-- #t1 -->
+
+
+<!-- ===== TOPIC 2: POLITICS ===== -->
+<div id="t2">
+  <div class="pdb-section-head">Topic 2 — Politics &amp; Policy</div>
+  <div class="pdb-topic">
+    <div class="pdb-topic__eyebrow">Politics &amp; Policy · PIR 2.4 / 2.1</div>
+    <div class="pdb-topic__subject">
+      Silver Bulletin: Democrats at 87% House Probability, D+9.1 Generic Ballot — 9 Days to Election Day
+    </div>
+    <hr class="pdb-topic__rule">
+
+    <div class="pdb-topic__label">BLUF</div>
+    <div class="pdb-topic__bluf">
+      Silver Bulletin's 25 Oct model update reached the cycle's highest Democratic House control probability (87%, median 233 seats) and generic ballot margin (D+9.1), as forecasters across the spectrum converged on a Democratic structural advantage with nine days remaining to November 3.
+    </div>
+
+    <div class="pdb-topic__label">Change Since Last Report</div>
+    <div class="pdb-topic__body">
+      Silver Bulletin raised Democratic House probability from approximately 86% to 87%; Democratic generic ballot stable at D+9.1 (near cycle high). Senate odds updated to 57% Democratic control (see "On the Rise").
+    </div>
+
+    <hr class="pdb-topic__divider">
+
+    <div class="pdb-topic__label">Key Facts</div>
+    <div class="pdb-topic__body">
+      <ul>
+        <li>Silver Bulletin (Nate Silver, 25 Oct): Democrats 87% House control probability, median 233 seats (median Republican caucus: 202); generic ballot at D+9.1 — near the cycle high of D+9.2. Both figures represent new highs for the model this election cycle.</li>
+        <li>Fox News Power Rankings (Right-Center) continue to acknowledge the Democratic structural advantage in the House, representing a degree of cross-partisan forecaster convergence that is notable at this stage of the cycle. Poliwave's simulation-based model places Democratic odds lower (~68–70%), reflecting methodological differences rather than a divergent underlying data signal.</li>
+        <li>Twenty-four million ballots have been cast nationally as of October 25, with Democrats leading ballot returns in multiple battleground states (see "On the Rise"). Nine days remain to Election Day, November 3.</li>
+      </ul>
+    </div>
+
+    <div class="pdb-topic__label">Points of Dispute</div>
+    <div class="pdb-topic__body pdb-dispute">
+      Prediction markets (Polymarket) continue to show Republican competitive odds, reflecting market-sentiment and methodological differences from structural regression models. Some analysts have flagged historically elevated oil prices — Brent at $114–$115 amid the Iran crisis — as a potential late economic headwind that could affect majority-party performance; most structural models do not yet reflect this variable.
+    </div>
+
+    <hr class="pdb-topic__divider">
+    <div class="pdb-topic__label">Watch</div>
+
+    <div class="pdb-watch">
+      <div class="pdb-watch__q">W2.1 — Will the Democratic generic ballot and House seat advantage persist through Election Day without a major late shift?</div>
+      <div class="pdb-watch__a"><strong>Assessment:</strong> Stable — no near-term reversal anticipated (High confidence) — D+9.1 at cycle high; 87% House probability; 24M+ early votes with Democratic ballot lead; model convergence across methodologies. No structural data in this window challenges the current trajectory.</div>
+    </div>
+
+    <div class="pdb-sources">
+      <div class="pdb-sources__label">Sources</div>
+      <div class="pdb-sources__tags">
+        <a href="https://newsweek.com" class="pdb-tag pdb-tag--lc" target="_blank" rel="noopener noreferrer">Newsweek</a>
+        <a href="https://nbcnews.com" class="pdb-tag pdb-tag--lc" target="_blank" rel="noopener noreferrer">NBC News</a>
+        <a href="https://www.natesilver.net" class="pdb-tag pdb-tag--ctr" target="_blank" rel="noopener noreferrer">Silver Bulletin</a>
+        <a href="https://news.yahoo.com" class="pdb-tag pdb-tag--ctr" target="_blank" rel="noopener noreferrer">Yahoo News</a>
+        <a href="https://foxnews.com/elections" class="pdb-tag pdb-tag--rc" target="_blank" rel="noopener noreferrer">Fox News Power Rankings</a>
+        <a href="https://newsmax.com" class="pdb-tag pdb-tag--rc" target="_blank" rel="noopener noreferrer">Newsmax</a>
+        <a href="https://theconversation.com" class="pdb-tag pdb-tag--int" target="_blank" rel="noopener noreferrer">The Conversation</a>
+        <a href="https://uspollingdata.com" class="pdb-tag pdb-tag--ps" target="_blank" rel="noopener noreferrer">USPollingData</a>
+        <a href="https://poliwave.com" class="pdb-tag pdb-tag--ps" target="_blank" rel="noopener noreferrer">Poliwave</a>
+      </div>
+    </div>
+
+    <div class="pdb-gaps">
+      <div class="pdb-gaps__heading">Coverage Gaps This Edition</div>
+      Detailed right-center analysis of late GOP mobilization strategy: not available. Updated Poliwave simulation (most recent model run pre-dates collection window): not available.
+    </div>
+
+  </div><!-- .pdb-topic -->
+</div><!-- #t2 -->
+
+
+<!-- ===== TOPIC 3: ECONOMY ===== -->
+<div id="t3">
+  <div class="pdb-section-head">Topic 3 — Economy, Business, &amp; Housing</div>
+  <div class="pdb-topic">
+    <div class="pdb-topic__eyebrow">Economy, Business &amp; Housing · PIR 3.1 / 3.2</div>
+    <div class="pdb-topic__subject">
+      FOMC Decision 3 Days Out: 86% Hold Odds as Mortgage Rates Ease; Iran Oil at $114 Is the Wildcard
+    </div>
+    <hr class="pdb-topic__rule">
+
+    <div class="pdb-topic__label">BLUF</div>
+    <div class="pdb-topic__bluf">
+      The Federal Reserve enters its October 27–28 FOMC meeting with markets pricing an 86% probability of a hold at 3.75–4.00%, as the 30-year mortgage rate eased to 7.32%, but Brent crude's surge to $114–$115 amid Houthi attacks on Saudi Arabia poses an unresolved upside inflation risk entering the decision.
+    </div>
+
+    <div class="pdb-topic__label">Change Since Last Report</div>
+    <div class="pdb-topic__body">
+      Freddie Mac PMMS (22 Oct): 30-yr fixed at 7.32% (−8 bps from prior week). FOMC hold odds firmed from approximately 84% to 86%. Brent crude rose from the prior $112–$113 range to $114–$115 on Houthi escalation.
+    </div>
+
+    <hr class="pdb-topic__divider">
+
+    <div class="pdb-topic__label">Key Facts</div>
+    <div class="pdb-topic__body">
+      <ul>
+        <li>Freddie Mac Primary Mortgage Market Survey (22 Oct, most recent): 30-year fixed at 7.32% (−8 bps week-over-week); 15-year fixed at 6.68% (−3 bps). Housing inventory reached a 6-year high per Nadlan Capital Group — a notable buyer-side positive, though rates remain more than three percentage points above 2020–2021 lows.</li>
+        <li>FOMC meets October 27–28; Chair Powell press conference scheduled for 14:00 ET Wednesday. Market-implied probabilities: 86% hold / 13% hike; benchmark rate expected to remain at 3.75–4.00%. September CPI: +3.7% year-over-year; September payrolls: +29K (below trend).</li>
+        <li>Brent crude at $114–$115/barrel amid Houthi escalation and Saudi Arabia export disruption (see I&amp;W). Oil at this level represents a potential upside inflationary signal entering the FOMC window; the majority consensus holds it insufficient to shift the hold base case absent a sustained further move.</li>
+      </ul>
+    </div>
+
+    <div class="pdb-topic__label">Points of Dispute</div>
+    <div class="pdb-topic__body pdb-dispute">
+      A minority of analysts cite the CPI trajectory and the Iran oil shock as justification for a 25 bps hike — placing the probability meaningfully higher (~30%) than the consensus 13%. The majority holds that labor market softening (+29K Sep payrolls) and housing stress argue for a hold. The dispute resolves Wednesday at 14:00 ET.
+    </div>
+
+    <hr class="pdb-topic__divider">
+    <div class="pdb-topic__label">Watch</div>
+
+    <div class="pdb-watch">
+      <div class="pdb-watch__q">W3.3 — What will the FOMC decide at the October 28 meeting, and will the decision signal a December hike?</div>
+      <div class="pdb-watch__a"><strong>Assessment:</strong> Hold (High confidence) — 86/13 market odds; structural consensus; September payrolls softening; oil wildcard noted but not sufficient to shift base case at current $114–$115 level. Powell press conference expected to characterize December decision as data-dependent.</div>
+    </div>
+
+    <div class="pdb-sources">
+      <div class="pdb-sources__label">Sources</div>
+      <div class="pdb-sources__tags">
+        <a href="https://fortune.com" class="pdb-tag pdb-tag--ctr" target="_blank" rel="noopener noreferrer">Fortune</a>
+        <a href="https://mortgagenewsdaily.com" class="pdb-tag pdb-tag--ctr" target="_blank" rel="noopener noreferrer">Mortgage News Daily</a>
+        <a href="https://nadlancapitalgroup.com" class="pdb-tag pdb-tag--ctr" target="_blank" rel="noopener noreferrer">Nadlan Capital Group</a>
+        <a href="https://nerdwallet.com" class="pdb-tag pdb-tag--ctr" target="_blank" rel="noopener noreferrer">NerdWallet</a>
+        <a href="https://oilprice.com" class="pdb-tag pdb-tag--int" target="_blank" rel="noopener noreferrer">OilPrice.com</a>
+        <a href="https://iranwire.com" class="pdb-tag pdb-tag--int" target="_blank" rel="noopener noreferrer">IranWire</a>
+        <a href="https://freddiemac.com/research/indices/primary-mortgage-market-survey" class="pdb-tag pdb-tag--ps" target="_blank" rel="noopener noreferrer">Freddie Mac PMMS</a>
+        <a href="https://fred.stlouisfed.org" class="pdb-tag pdb-tag--ps" target="_blank" rel="noopener noreferrer">Federal Reserve / FRED</a>
+      </div>
+    </div>
+
+    <div class="pdb-gaps">
+      <div class="pdb-gaps__heading">Coverage Gaps This Edition</div>
+      Left-of-center economic analysis of FOMC outlook: not available (structural gap continues). Right-of-center domestic housing market analysis: not available (structural gap continues). Real-time oil-price pass-through modeling: not available.
+    </div>
+
+  </div><!-- .pdb-topic -->
+</div><!-- #t3 -->
+
+
+<!-- ===== TOPIC 4: TECHNOLOGY ===== -->
+<div id="t4">
+  <div class="pdb-section-head">Topic 4 — Technology &amp; Science</div>
+  <div class="pdb-topic">
+    <div class="pdb-topic__eyebrow">Technology &amp; Science · PIR 4.2 / 4.1 / 4.4</div>
+    <div class="pdb-topic__subject">
+      Federal Judge Rules DOGE/OPM Data Access Unlawful; "Black October" AI Cyberattacks Accelerate
+      <span class="trending-flag">↑ Trending</span>
+    </div>
+    <hr class="pdb-topic__rule">
+
+    <div class="pdb-topic__label">BLUF</div>
+    <div class="pdb-topic__bluf">
+      A federal court ruled OPM's sharing of millions of sensitive employee records with DOGE violated federal privacy law — the first major judicial check on DOGE data operations — as the AI-fueled "Black October" cyberattack campaign documented 14+ confirmed incidents this month and House Democrats demanded immediate termination of DOGE's unauthorized AI systems.
+    </div>
+
+    <div class="pdb-topic__label">Change Since Last Report</div>
+    <div class="pdb-topic__body">
+      Federal court ruling on DOGE/OPM issued (Oct 22–23); Federal News Network, Fortune, EFF, and Law360 coverage accelerated into this collection window. House Democratic demand for DOGE AI termination filed 25 Oct. "Black October" campaign sustained with new reporting on scope.
+    </div>
+
+    <hr class="pdb-topic__divider">
+
+    <div class="pdb-topic__label">Key Facts</div>
+    <div class="pdb-topic__body">
+      <ul>
+        <li>Federal judge ruled that OPM violated the Privacy Act by sharing millions of sensitive federal employee records — including health, financial, and security clearance data — with DOGE; the court noted that government attorneys "barely defended" the practice. The ruling is the first major legal check on DOGE's access to federal data systems and sets a precedent for challenges to other agency data-sharing arrangements.</li>
+        <li>House Democrats (led by Rep. Don Beyer et al.) filed an immediate demand for termination of DOGE's unauthorized AI systems, citing potential criminal liability. The political response compounds the legal ruling and marks a new escalation phase in congressional oversight of DOGE.</li>
+        <li>"Black October 2026" AI-fueled cyberattack campaign: 14+ confirmed incidents documented this month across commercial, healthcare, and government sectors; multiple security researchers report that autonomous AI agents executed many breaches and that attacks "had been running for months" before detection. Exchange4media, SecurityToday, and others report new incidents in this collection window.</li>
+      </ul>
+    </div>
+
+    <div class="pdb-topic__label">Points of Dispute</div>
+    <div class="pdb-topic__body pdb-dispute">
+      The administration asserts DOGE data access was authorized by executive authority; the court disagreed. On Black October attribution: security researchers dispute whether breaches constitute truly "autonomous" AI agents or human actors leveraging AI tools — a distinction with significant implications for both legal liability and defensive strategy.
+    </div>
+
+    <hr class="pdb-topic__divider">
+    <div class="pdb-topic__label">Watch</div>
+
+    <div class="pdb-watch">
+      <div class="pdb-watch__q">W4.1 — Will the SIF voluntary AI governance framework persist without mandatory legislation?</div>
+      <div class="pdb-watch__a"><strong>Assessment:</strong> Likely to persist (Moderate confidence) — DOGE ruling is judicial, not legislative; no new enforcement mechanism created by the ruling; SIF charter and voluntary framework unaffected in this window.</div>
+    </div>
+
+    <div class="pdb-watch">
+      <div class="pdb-watch__q">W4.2 — Will mandatory AI cybersecurity or governance legislation emerge this period?</div>
+      <div class="pdb-watch__a"><strong>Assessment:</strong> Not expected this period (Moderate confidence) — No change; Warner AI Safety Board bill remains blocked; Congress not in regular legislative session; DOGE ruling routes through courts, not legislation.</div>
+    </div>
+
+    <div class="pdb-watch pdb-watch--recommend">
+      <div class="pdb-watch__q">W4.4 — RECOMMENDED FOR SUBSCRIBER DESIGNATION: Will DOGE workforce cuts and data practices compromise federal agencies' ability to maintain safe and compliant AI systems?</div>
+      <div class="pdb-watch__a">The federal court ruling on OPM data access adds a legal dimension to the operational AI oversight failures documented last edition (USDA DOGE cuts rendering mandatory human oversight "untenable"). Compounding evidence now spans legal, operational, and congressional dimensions. Formal subscriber designation recommended; Watch assessment pending approval.</div>
+    </div>
+
+    <div class="pdb-sources">
+      <div class="pdb-sources__label">Sources</div>
+      <div class="pdb-sources__tags">
+        <a href="https://federalnewsnetwork.com" class="pdb-tag pdb-tag--lc" target="_blank" rel="noopener noreferrer">Federal News Network</a>
+        <a href="https://eff.org" class="pdb-tag pdb-tag--lc" target="_blank" rel="noopener noreferrer">EFF</a>
+        <a href="https://fortune.com" class="pdb-tag pdb-tag--ctr" target="_blank" rel="noopener noreferrer">Fortune</a>
+        <a href="https://techdirt.com" class="pdb-tag pdb-tag--ctr" target="_blank" rel="noopener noreferrer">TechDirt</a>
+        <a href="https://exchange4media.com" class="pdb-tag pdb-tag--int" target="_blank" rel="noopener noreferrer">Exchange4media</a>
+        <a href="https://law360.com" class="pdb-tag pdb-tag--ps" target="_blank" rel="noopener noreferrer">Law360</a>
+        <a href="https://beyer.house.gov" class="pdb-tag pdb-tag--ps" target="_blank" rel="noopener noreferrer">Rep. Beyer / House Dems</a>
+      </div>
+    </div>
+
+    <div class="pdb-gaps">
+      <div class="pdb-gaps__heading">Coverage Gaps This Edition</div>
+      Right-of-center analysis of DOGE/OPM ruling and administration legal defense: not available. Independent security firm attribution report on Black October (distinguishing autonomous AI agents from human-AI hybrid attacks): not available. DOGE formal response to ruling: not available.
+    </div>
+
+  </div><!-- .pdb-topic -->
+</div><!-- #t4 -->
+
+
+<!-- ===== BALANCE ===== -->
+<div class="pdb-balance">
+  <div class="pdb-balance__heading">Balance</div>
+  <p>Each edition of The PDB draws from sources across the media spectrum. Source labels reflect general editorial positioning and are assigned using a combination of established bias-rating methodologies. No single source is treated as authoritative; where perspectives diverge, the brief notes points of dispute and coverage gaps. Sourcing decisions are made solely on the basis of relevance, factual reliability, and cross-spectrum coverage — not to validate or favor any political viewpoint.</p>
+  <div class="pdb-balance__legend">
+    <span class="pdb-balance__swatch"><span class="pdb-balance__dot" style="background:var(--lc)"></span>Left / Left-Center</span>
+    <span class="pdb-balance__swatch"><span class="pdb-balance__dot" style="background:var(--ctr)"></span>Center</span>
+    <span class="pdb-balance__swatch"><span class="pdb-balance__dot" style="background:var(--rc)"></span>Right / Right-Center</span>
+    <span class="pdb-balance__swatch"><span class="pdb-balance__dot" style="background:var(--int)"></span>International</span>
+    <span class="pdb-balance__swatch"><span class="pdb-balance__dot" style="background:var(--ps)"></span>Primary Source</span>
+  </div>
+</div>
+
+
+<!-- ===== FOOTER ===== -->
+<div class="pdb-footer">
+  <span class="pdb-footer__left">The PDB · 25 Oct 2026</span>
+  <span>All sources open-access · No paywalls bypassed · Trending features: Edition 1 of 10 (monitoring period)</span>
+</div>
+
+</div><!-- .pdb-wrap -->
+</body>
+</html>
