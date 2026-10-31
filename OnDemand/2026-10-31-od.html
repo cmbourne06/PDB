@@ -1,0 +1,988 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>The PDB · 31 Oct 2026</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="The PDB">
+<meta property="og:title" content="PDB · 31 Oct 2026 — The 3 Nov to 3 Jan window is where the Democracy Files recordings place their scenarios">
+<meta property="og:description" content="Today's brief: Politics">
+<meta property="og:url" content="https://thepdb.news/OnDemand/2026-10-31-od.html">
+<meta property="og:image" content="https://thepdb.news/Assets/Images/pdb-og-wide.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="The PDB — Your Personal Daily Brief">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@thepdb">
+<meta name="twitter:title" content="PDB · 31 Oct 2026 — The 3 Nov to 3 Jan window is where the Democracy Files recordings place their scenarios">
+<meta name="twitter:description" content="Today's brief: Politics">
+<meta name="twitter:image" content="https://thepdb.news/Assets/Images/pdb-og-wide.png">
+<meta name="twitter:image:alt" content="The PDB — Your Personal Daily Brief">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&family=Inter:wght@400;600;700&display=swap">
+
+<style>
+/* PDB DESIGN TOKENS — values from PDB_Style_Spec.md v1.5 */
+:root {
+  --page-bg:        #F5F4F0;
+  --content-bg:     #FFFFFF;
+  --content-radius: 6px;
+  --content-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  --max-width:      760px;
+
+  --masthead-bg:    #1A2744;
+  --masthead-fg:    #FFFFFF;
+  --accent-gold:    #C8A84B;
+
+  --heading-fg:     #1A2744;
+  --heading-rule:   #1A2744;
+
+  --body-fg:        #1A1A1A;
+  --meta-fg:        #555555;
+  --secondary-fg:   #AAAAAA;
+  --divider:        #DDDDDD;
+
+  --banner-bg:      #1A2744;
+  --banner-fg:      #FFFFFF;
+
+  --balance-bg:     #F0EDE6;
+  --balance-border: #C8A84B;
+
+  --iw-bg:          #FFF8E8;
+  --iw-border:      #C8A84B;
+
+  --card-bg:        #FFFFFF;
+  --card-border:    #E0DDD6;
+
+  --gaps-fg:        #8B0000;
+
+  --src-left:       #1A5FBF;
+  --src-center:     #2A7A3A;
+  --src-right:      #B03020;
+  --src-intl:       #5A3A8A;
+  --src-primary:    #5A5850;
+  --src-na:         #999999;
+
+  --link-fg:        #1A5FBF;
+  --link-hover:     #0D3D8A;
+
+  --font-display:   'Playfair Display', 'Georgia', serif;
+  --font-body:      'Source Serif 4', 'Georgia', 'Times New Roman', serif;
+  --font-ui:        'Inter', 'Helvetica Neue', 'Arial', sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --page-bg:      #111318;
+    --content-bg:   #1C2030;
+    --card-bg:      #1C2030;
+    --card-border:  #2E3040;
+    --content-shadow: 0 2px 12px rgba(0,0,0,0.4);
+    --masthead-bg:  #0D1526;
+    --banner-bg:    #0D1526;
+    --body-fg:      #E8E6E0;
+    --meta-fg:      #9A9890;
+    --secondary-fg: #6A6860;
+    --divider:      #2E3040;
+    --balance-bg:   #1E1C14;
+    --iw-bg:        #1E1A0C;
+    --heading-fg:   #C8D0E8;
+    --heading-rule: #3A4060;
+    --link-fg:      #7FB0F0;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --page-bg:      #111318;
+  --content-bg:   #1C2030;
+  --card-bg:      #1C2030;
+  --card-border:  #2E3040;
+  --content-shadow: 0 2px 12px rgba(0,0,0,0.4);
+  --masthead-bg:  #0D1526;
+  --banner-bg:    #0D1526;
+  --body-fg:      #E8E6E0;
+  --meta-fg:      #9A9890;
+  --secondary-fg: #6A6860;
+  --divider:      #2E3040;
+  --balance-bg:   #1E1C14;
+  --iw-bg:        #1E1A0C;
+  --heading-fg:   #C8D0E8;
+  --heading-rule: #3A4060;
+  --link-fg:      #7FB0F0;
+  color-scheme: dark;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--page-bg);
+  color: var(--body-fg);
+  font-family: var(--font-body);
+  font-size: 15px;
+  line-height: 1.65;
+  padding-inline: 16px;
+  padding-block: 24px;
+}
+a { color: var(--link-fg); text-decoration: none; }
+a:hover { color: var(--link-hover); text-decoration: underline; }
+
+.pdb-page {
+  max-width: var(--max-width);
+  margin-inline: auto;
+  background: var(--content-bg);
+  border-radius: var(--content-radius);
+  box-shadow: var(--content-shadow);
+  overflow: hidden;
+}
+
+/* MASTHEAD */
+.pdb-masthead {
+  background: var(--masthead-bg);
+  padding: 32px 24px 24px;
+  text-align: center;
+}
+.pdb-masthead__eyebrow {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--accent-gold);
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  margin: 0 0 10px;
+}
+.pdb-masthead__title {
+  font-family: var(--font-display);
+  font-size: clamp(36px, 8vw, 56px);
+  font-weight: 900;
+  color: var(--masthead-fg);
+  margin: 0;
+  line-height: 1.2;
+}
+.pdb-masthead__rule {
+  border: none;
+  border-top: 2px solid var(--accent-gold);
+  margin: 8px 0;
+}
+.pdb-masthead__sub {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--accent-gold);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  margin: 0 0 10px;
+}
+.pdb-masthead__od {
+  font-family: var(--font-ui);
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--accent-gold);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin: 0 0 8px;
+}
+.pdb-masthead__date {
+  font-family: var(--font-ui);
+  font-size: 13px;
+  color: #AAAAAA;
+  margin: 0 0 2px;
+}
+.pdb-masthead__meta {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  color: #AAAAAA;
+  margin: 0;
+}
+
+/* TOPICS BANNER */
+.pdb-banner {
+  background: var(--banner-bg);
+  padding: 10px 24px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 0;
+  align-items: center;
+}
+.pdb-banner__link {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--banner-fg);
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+  padding: 2px 6px;
+}
+.pdb-banner__link:hover { color: var(--accent-gold); text-decoration: underline; }
+.pdb-banner__link--active { color: var(--accent-gold); text-decoration: underline; }
+.pdb-banner__sep {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  color: rgba(255,255,255,0.3);
+  padding: 0 2px;
+  user-select: none;
+}
+
+.pdb-content { padding: 24px 24px 0; }
+
+/* BALANCE BOX — LOCKED TEXT */
+.pdb-balance {
+  background: var(--balance-bg);
+  border-left: 4px solid var(--balance-border);
+  padding: 16px 20px;
+  margin: 16px 0;
+  border-radius: 0 4px 4px 0;
+}
+.pdb-balance__heading {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--heading-fg);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin: 0 0 8px;
+}
+.pdb-balance__body {
+  font-family: var(--font-body);
+  font-size: 13px;
+  color: var(--body-fg);
+  line-height: 1.6;
+  margin: 0;
+}
+.pdb-balance__legend {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 16px;
+}
+.pdb-balance__swatch {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-ui);
+  font-size: 11px;
+  color: var(--meta-fg);
+}
+.pdb-balance__dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
+
+/* SECTION HEADINGS */
+.pdb-section-head {
+  font-family: var(--font-ui);
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--heading-fg);
+  border-bottom: 2px solid var(--heading-rule);
+  padding-bottom: 6px;
+  margin: 0 0 14px;
+}
+
+/* I&W */
+.pdb-iw {
+  background: var(--iw-bg);
+  border-left: 4px solid var(--iw-border);
+  padding: 16px 20px;
+  margin: 0 0 24px;
+  border-radius: 0 4px 4px 0;
+}
+.pdb-iw__label {
+  font-family: var(--font-ui);
+  font-size: 10px;
+  font-weight: 700;
+  color: #5A5850;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin: 0 0 3px;
+}
+.pdb-iw__title {
+  font-family: var(--font-ui);
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--heading-fg);
+  margin: 0 0 6px;
+}
+.pdb-iw__body {
+  font-family: var(--font-body);
+  font-size: 13px;
+  color: var(--body-fg);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* TOPIC CARD */
+.pdb-topic {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 6px;
+  padding: 22px 24px;
+  margin: 0 0 20px 0;
+}
+.pdb-topic__eyebrow {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--meta-fg);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin: 0 0 4px;
+}
+.pdb-report__subject {
+  font-family: var(--font-ui);
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--heading-fg);
+  margin: 0 0 6px;
+  line-height: 1.3;
+}
+.pdb-topic__rule {
+  border: none;
+  border-top: 1px solid var(--accent-gold);
+  margin: 8px 0 16px;
+}
+.pdb-report__label {
+  font-family: var(--font-ui);
+  font-size: 10px;
+  font-weight: 700;
+  color: var(--heading-fg);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin: 0 0 4px;
+}
+.pdb-report__label--change { color: #5A5850; }
+.pdb-report__bluf {
+  font-family: var(--font-body);
+  font-size: 15px;
+  font-style: italic;
+  color: var(--body-fg);
+  margin: 0 0 14px;
+  line-height: 1.6;
+}
+.pdb-report__change-body {
+  font-family: var(--font-body);
+  font-size: 14px;
+  margin: 0 0 14px;
+}
+.pdb-report__facts {
+  margin: 0 0 14px;
+  padding-left: 20px;
+  font-family: var(--font-body);
+  font-size: 14px;
+  line-height: 1.65;
+  list-style: disc;
+}
+.pdb-report__facts li { margin-bottom: 6px; }
+.pdb-divider { border: none; border-top: 1px solid var(--divider); margin: 14px 0; }
+
+.pdb-report__dispute {
+  font-family: var(--font-body);
+  font-size: 14px;
+  line-height: 1.6;
+  background: rgba(176,48,32,0.04);
+  border-left: 3px solid #B03020;
+  padding: 8px 12px;
+  margin: 0 0 8px;
+}
+.pdb-report__dispute em { color: var(--meta-fg); }
+
+/* WATCH */
+.pdb-report__watch {
+  margin: 0 0 14px;
+  padding-left: 0;
+  list-style: none;
+  font-family: var(--font-body);
+  font-size: 14px;
+  line-height: 1.65;
+}
+.pdb-report__watch li {
+  display: block;
+  margin-bottom: 10px;
+  padding-left: 40px;
+  position: relative;
+}
+.pdb-report__watch li::before {
+  content: "W" attr(data-n);
+  font-family: var(--font-ui);
+  font-size: 10px;
+  font-weight: 700;
+  color: var(--heading-fg);
+  position: absolute;
+  left: 0;
+  top: 3px;
+  min-width: 32px;
+}
+.pdb-report__watch-text { display: block; margin-bottom: 4px; }
+.pdb-report__assessment {
+  display: block;
+  font-family: var(--font-body);
+  font-size: 14px;
+  color: var(--body-fg);
+  margin-top: 4px;
+}
+.pdb-report__assessment strong { font-weight: 700; }
+
+/* CLAIM LEDGER (proposed element) */
+.pdb-statuskey {
+  font-family: var(--font-body);
+  font-size: 13px;
+  color: var(--meta-fg);
+  margin: 0 0 12px;
+  line-height: 1.55;
+}
+.pdb-statuskey dt { display: inline-block; margin: 0 6px 0 0; }
+.pdb-statuskey dd { display: inline; margin: 0; }
+.pdb-statuskey div { margin-bottom: 4px; }
+.pdb-status {
+  display: inline-block;
+  font-family: var(--font-ui);
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 2px 7px;
+  border-radius: 3px;
+  line-height: 1.4;
+  white-space: nowrap;
+}
+.pdb-status--documented { background: #1A2744; color: #FFFFFF; border: 1.5px solid #1A2744; }
+.pdb-status--primary    { background: transparent; color: var(--heading-fg); border: 1.5px solid var(--heading-fg); }
+.pdb-status--reported   { background: transparent; color: #5A5850; border: 1.5px solid #5A5850; }
+.pdb-status--inferred   { background: #FFF8E8; color: #1A2744; border: 1.5px solid #C8A84B; }
+.pdb-status--contested  { background: transparent; color: #B03020; border: 1.5px solid #B03020; }
+.pdb-status--corrected  { background: #8B0000; color: #FFFFFF; border: 1.5px solid #8B0000; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .pdb-status--documented { border-color: #C8D0E8; }
+  :root:not([data-theme="light"]) .pdb-status--primary { color: #C8D0E8; border-color: #C8D0E8; }
+  :root:not([data-theme="light"]) .pdb-status--reported { color: #B0AEA6; border-color: #B0AEA6; }
+  :root:not([data-theme="light"]) .pdb-status--inferred { background: #2A2410; color: #E8E6E0; }
+  :root:not([data-theme="light"]) .pdb-status--contested { color: #E07060; border-color: #E07060; }
+}
+.pdb-claim {
+  border: 1px solid var(--card-border);
+  border-radius: 4px;
+  padding: 12px 14px;
+  margin: 0 0 10px;
+}
+.pdb-claim__head { display: flex; align-items: center; gap: 10px; margin-bottom: 6px; }
+.pdb-claim__id {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--heading-fg);
+}
+.pdb-claim__text {
+  font-family: var(--font-ui);
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--heading-fg);
+  margin: 0 0 6px;
+  line-height: 1.4;
+}
+.pdb-claim__row {
+  font-family: var(--font-body);
+  font-size: 13px;
+  line-height: 1.6;
+  margin: 0 0 4px;
+}
+.pdb-claim__row strong {
+  font-family: var(--font-ui);
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--heading-fg);
+  margin-right: 4px;
+}
+
+/* DISSENT CHECK + ORIGIN MAP (proposed elements) */
+.pdb-position {
+  border-left: 3px solid var(--accent-gold);
+  padding: 4px 0 4px 12px;
+  margin: 0 0 12px;
+  font-size: 13px;
+  line-height: 1.6;
+}
+.pdb-position__name {
+  font-family: var(--font-ui);
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--heading-fg);
+  margin: 0 0 2px;
+}
+.pdb-position p { margin: 0 0 4px; }
+.pdb-origin {
+  font-size: 13px;
+  line-height: 1.6;
+  margin: 0 0 8px;
+}
+.pdb-origin strong {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  color: var(--heading-fg);
+}
+
+/* SOURCE TAGS — solid group-color background, white text */
+.pdb-sources { margin-top: 14px; }
+.pdb-sources__group { margin-bottom: 8px; }
+.pdb-sources__group-label {
+  font-family: var(--font-ui);
+  font-size: 10px;
+  font-weight: 700;
+  color: #555555;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin: 0 0 4px;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .pdb-sources__group-label { color: #9A9890; }
+}
+.pdb-sources__tags { display: flex; flex-wrap: wrap; gap: 4px; }
+.pdb-tag {
+  display: inline-block;
+  font-family: var(--font-ui);
+  font-size: 11px;
+  font-weight: 600;
+  border-radius: 4px;
+  padding: 2px 8px;
+  color: #FFFFFF;
+  border: 2px solid transparent;
+  text-decoration: none;
+  line-height: 1.4;
+}
+.pdb-tag:hover { color: #FFFFFF; text-decoration: underline; }
+.pdb-tag--lc  { background: var(--src-left);    border-color: var(--src-left); }
+.pdb-tag--ctr { background: var(--src-center);  border-color: var(--src-center); }
+.pdb-tag--rc  { background: var(--src-right);   border-color: var(--src-right); }
+.pdb-tag--int { background: var(--src-intl);    border-color: var(--src-intl); }
+.pdb-tag--ps  { background: var(--src-primary); border-color: var(--src-primary); }
+.pdb-tag--na  { background: var(--src-na);      border-color: var(--src-na); }
+.pdb-tag__desc { font-weight: 400; color: rgba(255,255,255,0.85); }
+.pdb-tag__desc em { font-style: italic; }
+
+/* GAPS */
+.pdb-gaps {
+  margin-top: 12px;
+  background: rgba(139,0,0,0.04);
+  border-left: 3px solid #8B0000;
+  border-radius: 3px;
+  padding: 10px 14px;
+}
+.pdb-gaps__heading {
+  font-family: var(--font-ui);
+  font-size: 10px;
+  font-weight: 700;
+  color: var(--gaps-fg);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin: 0 0 4px;
+}
+.pdb-gaps__body {
+  font-family: var(--font-body);
+  font-size: 12px;
+  color: #555555;
+  margin: 0;
+  line-height: 1.6;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .pdb-gaps__heading { color: #E07070; }
+  :root:not([data-theme="light"]) .pdb-gaps__body { color: #9A9890; }
+}
+
+/* FOOTER */
+.pdb-footer { padding: 16px 24px; border-top: 1px solid var(--divider); }
+.pdb-footer__text {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  color: #AAAAAA;
+  text-align: center;
+  margin: 0;
+}
+
+@media (max-width: 500px) {
+  body { padding-inline: 0; padding-block: 0; }
+  .pdb-page { border-radius: 0; box-shadow: none; }
+  .pdb-masthead, .pdb-content { padding-inline: 16px; }
+  .pdb-banner { padding-inline: 16px; }
+  .pdb-footer { padding-inline: 16px; }
+  .pdb-topic { padding: 18px 16px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
+}
+</style>
+</head>
+<body>
+
+<main class="pdb-page" role="main">
+
+  <header class="pdb-masthead">
+    <p class="pdb-masthead__eyebrow">★ ★ ★ · Intelligence</p>
+    <h1 class="pdb-masthead__title">THE PDB</h1>
+    <hr class="pdb-masthead__rule" aria-hidden="true">
+    <p class="pdb-masthead__sub">Your Personal Daily Brief</p>
+    <p class="pdb-masthead__od">On-Demand Report: The Democracy Files — Claim Ledger</p>
+    <p class="pdb-masthead__date">31 Oct 2026</p>
+    <p class="pdb-masthead__meta">1 report · Collection window: 18 Oct–31 Oct</p>
+  </header>
+
+  <nav class="pdb-banner" aria-label="Report sections">
+    <a class="pdb-banner__link" href="#iw">I&amp;W</a>
+    <span class="pdb-banner__sep" aria-hidden="true">|</span>
+    <a class="pdb-banner__link" href="#ledger">Claim Ledger</a>
+    <span class="pdb-banner__sep" aria-hidden="true">|</span>
+    <a class="pdb-banner__link" href="#dissent">Dissent Check</a>
+    <span class="pdb-banner__sep" aria-hidden="true">|</span>
+    <a class="pdb-banner__link" href="#origins">Origin Map</a>
+    <span class="pdb-banner__sep" aria-hidden="true">|</span>
+    <a class="pdb-banner__link" href="#watch">Watch</a>
+    <span class="pdb-banner__sep" aria-hidden="true">|</span>
+    <a class="pdb-banner__link" href="#sources">Sources</a>
+  </nav>
+
+  <div class="pdb-content">
+
+    <aside class="pdb-balance" aria-label="Balance and source integrity statement">
+      <p class="pdb-balance__heading">How We Ensure Balance and Source Integrity</p>
+      <p class="pdb-balance__body">
+        This brief draws from a curated registry of over 250 national and international news outlets
+        rated for editorial bias and factual reliability by independent third-party assessors.
+        Each report includes sources from across the editorial spectrum — left, center, and right —
+        and includes primary-source materials where available. Sources are selected for relevance
+        and reliability, not conformity with any particular narrative or perspective. Gaps in coverage
+        are noted when a spectrum segment did not report on the selected story. All sources are
+        open-access; no paywalled content is accessed or reproduced.
+      </p>
+      <div class="pdb-balance__legend">
+        <span class="pdb-balance__swatch"><span class="pdb-balance__dot" style="background:#1A5FBF;"></span>Left / Left-Center</span>
+        <span class="pdb-balance__swatch"><span class="pdb-balance__dot" style="background:#2A7A3A;"></span>Center</span>
+        <span class="pdb-balance__swatch"><span class="pdb-balance__dot" style="background:#B03020;"></span>Right / Right-Center</span>
+        <span class="pdb-balance__swatch"><span class="pdb-balance__dot" style="background:#5A3A8A;"></span>International</span>
+        <span class="pdb-balance__swatch"><span class="pdb-balance__dot" style="background:#5A5850;"></span>Primary Source</span>
+        <span class="pdb-balance__swatch"><span class="pdb-balance__dot" style="background:#999999;"></span>Not in Registry (outlets, individuals, platforms)</span>
+      </div>
+    </aside>
+
+    <section class="pdb-iw" id="iw" aria-label="Indications and Warning">
+      <h2 class="pdb-section-head">Indicators &amp; Warnings</h2>
+      <div class="pdb-iw__item">
+        <p class="pdb-iw__label">Major Significance</p>
+        <p class="pdb-iw__title">The 3 Nov to 3 Jan window is where the Democracy Files recordings place their scenarios</p>
+        <p class="pdb-iw__body">
+          On 5 Aug, Reiff said the protest and litigation groups plan for Election Day and 3 Jan certification, and not beyond.
+          RAD’s 9 Sep funding proposal, as the series describes it, targets the period after that. The recordings name three
+          scenarios: military deployment or Insurrection Act use, a disputed election result, and elected members of Congress who are not seated.
+          Indicators: a federal action matching one of those scenarios; a public UDA launch or publication of its red lines;
+          a governor’s office adopting or circulating the options paper. None was found in the sources reviewed for this edition.
+        </p>
+      </div>
+    </section>
+
+    <h2 class="pdb-section-head">Topic 2 — Politics and Policy</h2>
+
+    <article class="pdb-topic" id="topic-2" aria-label="Topic 2: Politics and Policy">
+
+      <p class="pdb-topic__eyebrow">Politics and Policy · On-Demand · Claim examination</p>
+      <p class="pdb-report__subject">The Democracy Files: what the recordings document, what the series infers, and what no one has verified</p>
+      <hr class="pdb-topic__rule">
+
+      <p class="pdb-report__label">BLUF</p>
+      <p class="pdb-report__bluf">
+        Recordings and documents from a single archive show former USAID democracy officers, retired national-security officials and organizers
+        planning contingencies for a federal “legitimacy crisis” around the 3 Nov midterms, including a governors-led response and a constitutional
+        redesign afterward. The series’ larger claims rest on inference or hearsay: a command body called the United Democracy Alliance (UDA),
+        coup intent, and foreign-driven implementation. No outside party has authenticated the recordings, and no named party has publicly disputed them.
+      </p>
+
+      <p class="pdb-report__label pdb-report__label--change">Change Since Last Report</p>
+      <p class="pdb-report__change-body">
+        The 20 Oct edition rated the UDA claim “not independently verified” because no mainstream outlet had covered it, and it assessed the author before the claims.
+        This edition grades each claim on its own evidence, traces each one to its origin, and treats the recordings as a primary layer with an open authentication question.
+        It corrects the 20 Oct statement that no established right-of-center outlet had reported the series: The Federalist published an opinion piece on 28 Oct,
+        and a Substack summary lists The Blaze, The Daily Caller and Hot Air as outlets that covered it. Raw Story reported the clips on 23 Oct and said it could not verify them.
+      </p>
+
+      <hr class="pdb-divider">
+
+      <p class="pdb-report__label">Key Facts</p>
+      <ul class="pdb-report__facts">
+        <li><strong>One origin.</strong> Every recording, chat log and planning document traces to the DataRepublican archive. Its author, Jennica Pounds, describes it as 312 gigabytes and has said legal concerns keep her from posting all of it.</li>
+        <li><strong>Five dated recordings carry the core statements:</strong> 15 Jan (RAD forum on three “emergency scenarios”), 25 Mar (Reiff on a “crisis of legitimacy” and an “extra constitutional” path), 6 Aug (Zeitz on UDA red lines), 13 Aug (Reiff on turning a breakdown into a “refounding”), and 8 Sep (Reiff on transitional leadership by governors or former presidents).</li>
+        <li><strong>The scenarios depend on federal action.</strong> Reiff’s three: militarization or Insurrection Act use, an election meltdown, and elected members of Congress who are not seated (15 Jan, 8 Sep).</li>
+        <li><strong>Participants doubt the UDA themselves.</strong> Zeitz said on 4 Jun he lacks “full eyes” on it. Reiff said on 31 Aug that UDA declined her invitation and is probably not as ready as it wants to be. The series found no public launch, website or roster as of 23 Oct.</li>
+        <li><strong>The surrounding climate is independently reported.</strong> The Washington Post (20 Oct) found about 10 current and former national-security officials advising officials in 10 states on possible federal interference. Democratic attorneys general and secretaries of state ran tabletop exercises in Milwaukee in May (Political Wire), and a Clinton-convened war game met in early August (NBC News).</li>
+        <li><strong>The claims have escalated.</strong> Michael Flynn called for arrests of those involved. Sen. Mike Lee shared clips, called them alarming, and said he hoped they were fake or a joke (Raw Story, 23 Oct).</li>
+      </ul>
+
+      <hr class="pdb-divider">
+
+      <h3 class="pdb-report__label" id="ledger" style="font-size:12px;">Claim Ledger</h3>
+      <dl class="pdb-statuskey">
+        <div><dt><span class="pdb-status pdb-status--documented">Documented</span></dt><dd>Public primary record or independent verification.</dd></div>
+        <div><dt><span class="pdb-status pdb-status--primary">Primary · Unauthenticated</span></dt><dd>A recording or document held by one source. The words are as quoted. Authenticity is not independently confirmed.</dd></div>
+        <div><dt><span class="pdb-status pdb-status--reported">Reported</span></dt><dd>Named outlets or officials, independent of the archive.</dd></div>
+        <div><dt><span class="pdb-status pdb-status--inferred">Inferred</span></dt><dd>An interpretation placed on documented material.</dd></div>
+        <div><dt><span class="pdb-status pdb-status--contested">Contested</span></dt><dd>Credible sources, or the files themselves, disagree.</dd></div>
+        <div><dt><span class="pdb-status pdb-status--corrected">Corrected</span></dt><dd>The original statement was changed or is contradicted by the record.</dd></div>
+      </dl>
+
+      <div class="pdb-claim" id="L1">
+        <div class="pdb-claim__head"><span class="pdb-claim__id">L1</span><span class="pdb-status pdb-status--primary">Primary · Unauthenticated</span></div>
+        <p class="pdb-claim__text">The recordings and documents are authentic and complete.</p>
+        <p class="pdb-claim__row"><strong>Basis</strong> Several statements match public material: Zeitz’s “Hit Refresh” constitutional campaign (17 Feb 2025 release), RAD’s published strategy as cited by Know the Times, and NSL4A’s public 14 Sep statement. Requests for comment went unanswered (The Blaze to Reiff; The Daily Caller to R2T and NSL4A; Chenoweth declined, per a Substack summary). No named party has publicly disputed the recordings in the sources found. Silence does not confirm authenticity. Raw Story could not verify the clips or whether they were edited.</p>
+        <p class="pdb-claim__row"><strong>Origin</strong> DataRepublican archive. One origin.</p>
+        <p class="pdb-claim__row"><strong>Would change status</strong> Release of full files, a confirmation or denial by a named party, or independent forensic review.</p>
+      </div>
+
+      <div class="pdb-claim" id="L2">
+        <div class="pdb-claim__head"><span class="pdb-claim__id">L2</span><span class="pdb-status pdb-status--documented">Documented</span></div>
+        <p class="pdb-claim__text">R2T, RAD, DRG and NSL4A are real organizations with the named principals, and RAD advocates structural or constitutional reform.</p>
+        <p class="pdb-claim__row"><strong>Basis</strong> Zeitz’s #unifyUSA launched “Hit Refresh” on 17 Feb 2025 to reimagine the Constitution through Citizens’ Assemblies. NSL4A, a network of more than 1,600 retired senior national-security professionals, issued a public statement on 14 Sep about armed deployments near election sites. RAD’s published strategy (23 Jun 2026) and the Reiff–Zeitz Substack post (14 Apr 2026) are cited by Know the Times. These two items were not opened directly for this edition.</p>
+        <p class="pdb-claim__row"><strong>Origin</strong> Organizers’ own public releases, independent of the archive.</p>
+        <p class="pdb-claim__row"><strong>Would change status</strong> Not applicable. Opening RAD’s strategy directly would remove the secondary-source qualifier.</p>
+      </div>
+
+      <div class="pdb-claim" id="L3">
+        <div class="pdb-claim__head"><span class="pdb-claim__id">L3</span><span class="pdb-status pdb-status--primary">Primary · Unauthenticated</span></div>
+        <p class="pdb-claim__text">Participants planned for conditions under which they would treat the federal government as illegitimate, with governors as the interim authority.</p>
+        <p class="pdb-claim__row"><strong>Basis</strong> Reiff on 8 Sep describes provisional or transitional leadership by cross-partisan governors or former presidents if elected members are not seated. Zeitz on 6 Aug says governors become the “lead anchor.” Zeitz describes an options paper written for governors. John Mongan, a former State Department official, says the paper reached governors in Massachusetts, California and Illinois (Massachusetts declined; the other two were interested if someone else led) and that it is not a concept for secession. Reiff insists any response be cross-partisan. Know the Times notes the Constitution assigns no such role to governors or former presidents. Washington Secretary of State Steve Hobbs did not endorse the idea, per the series. The paper itself is not in evidence; The Federalist describes it secondhand.</p>
+        <p class="pdb-claim__row"><strong>Origin</strong> DataRepublican archive. One origin.</p>
+        <p class="pdb-claim__row"><strong>Would change status</strong> Publication of the paper, a governor’s office confirming receipt, or any public adoption.</p>
+      </div>
+
+      <div class="pdb-claim" id="L4">
+        <div class="pdb-claim__head"><span class="pdb-claim__id">L4</span><span class="pdb-status pdb-status--inferred">Inferred</span></div>
+        <p class="pdb-claim__text">UDA’s four “red lines” define when the federal government is declared illegitimate.</p>
+        <p class="pdb-claim__row"><strong>Basis</strong> Zeitz says UDA has four red lines for mobilization and is building a situation room (6 Aug). The series itself says the four lines are mentioned on calls and never listed in anything it holds. Part 2 posted a separate criteria document on when a government crosses into illegitimacy; Raw Story reports that the document warns an undefined concept of illegitimacy can become a weapon. Linking that document to UDA’s four lines is the series’ inference.</p>
+        <p class="pdb-claim__row"><strong>Origin</strong> Series interpretation of statements in the archive.</p>
+        <p class="pdb-claim__row"><strong>Would change status</strong> Publication of the four lines, or a document that names UDA as its author.</p>
+      </div>
+
+      <div class="pdb-claim" id="L5">
+        <div class="pdb-claim__head"><span class="pdb-claim__id">L5</span><span class="pdb-status pdb-status--primary">Primary · Unauthenticated</span></div>
+        <p class="pdb-claim__text">The United Democracy Alliance exists as an operating coalition.</p>
+        <p class="pdb-claim__row"><strong>Basis</strong> Participants refer to it as a converging coalition of protest and litigation groups due to launch in September. Their knowledge is secondhand: Zeitz says he lacks full visibility, and Reiff says UDA declined her invitation to a forum. The series found no public launch, website, roster, leadership or logo by 23 Oct, and none of the groups Zeitz listed describes itself as a member. This is hearsay from participants about a body none of them describes from the inside.</p>
+        <p class="pdb-claim__row"><strong>Origin</strong> DataRepublican archive. One origin.</p>
+        <p class="pdb-claim__row"><strong>Would change status</strong> A public launch, a member group confirming participation, or a statement from anyone who runs it.</p>
+      </div>
+
+      <div class="pdb-claim" id="L6">
+        <div class="pdb-claim__head"><span class="pdb-claim__id">L6</span><span class="pdb-status pdb-status--inferred">Inferred</span></div>
+        <p class="pdb-claim__text">UDA is a command body (a “control plane” or “control room”) that decides when protest groups deploy.</p>
+        <p class="pdb-claim__row"><strong>Basis</strong> No recording shows command authority. Reiff describes UDA as uniting the No Kings and 50501 networks, “on steroids.” The series notes that the 313-partner No Kings list is not a UDA membership list. Part 9 reportedly finds coordination through shared funders and shared language, with no hidden shared offices, phones or bookkeepers, and no central conductor. The “control plane” and “control room” wording appears in secondary accounts of Part 2 and in the 20 Oct edition’s transcription of the post; the original X text was not retrievable for this edition. The command claim goes further than the series’ own later findings.</p>
+        <p class="pdb-claim__row"><strong>Origin</strong> Series framing, repeated by amplifiers.</p>
+        <p class="pdb-claim__row"><strong>Would change status</strong> A document or recording in which UDA directs a named group.</p>
+      </div>
+
+      <div class="pdb-claim" id="L7">
+        <div class="pdb-claim__head"><span class="pdb-claim__id">L7</span><span class="pdb-status pdb-status--primary">Primary · Unauthenticated</span></div>
+        <p class="pdb-claim__text">NSL4A and Rear Adm. Michael Smith (Ret.) lead UDA’s Insurrection Act working group and operationalize UDA.</p>
+        <p class="pdb-claim__row"><strong>Basis</strong> Zeitz says (22 May, 6 Aug) that Smith heads an Insurrection Act working group under Horizons’ “Big Tent,” which is linked to UDA, and that the blocking coalition is “being led under” NSL4A. Reiff and Zeitz say they liaise with the effort through Smith. These are secondhand statements. Smith has not been recorded describing UDA. The transcript of his 14 Oct session with Horizons, labeled as from NSL4A’s public YouTube channel, describes a September tabletop exercise in Washington on scenarios of military use around elections. That video was not viewed for this edition and is a verification task.</p>
+        <p class="pdb-claim__row"><strong>Origin</strong> DataRepublican archive; the Smith session may be independently checkable.</p>
+        <p class="pdb-claim__row"><strong>Would change status</strong> Smith or NSL4A describing UDA’s structure on the record, or denying it.</p>
+      </div>
+
+      <div class="pdb-claim" id="L8">
+        <div class="pdb-claim__head"><span class="pdb-claim__id">L8</span><span class="pdb-status pdb-status--primary">Primary · Unauthenticated</span></div>
+        <p class="pdb-claim__text">Participants rehearsed these scenarios in role-playing (tabletop) exercises.</p>
+        <p class="pdb-claim__row"><strong>Basis</strong> Reiff said on 31 Aug that Smith’s group would run a Washington tabletop the next day, and RAD ran its first with a Wisconsin election-protection coalition on 17 Sep. Smith’s 14 Oct remarks, as transcribed, confirm a Washington exercise. An exercise with FWAD is planned, and the series found no record that it ran. Tabletops do not set this network apart. NBC News, Politico and Political Wire reported Democratic attorneys general, secretaries of state, Senate Democrats and a Clinton-convened group running them in 2026, and a 2024 documentary showed a bipartisan group of former officials running one on a post-election insurrection. The scenario content is what distinguishes the exercises, not the format.</p>
+        <p class="pdb-claim__row"><strong>Origin</strong> Archive for the participants’ own exercises; mainstream outlets for the wider practice.</p>
+        <p class="pdb-claim__row"><strong>Would change status</strong> Scenario materials from either exercise.</p>
+      </div>
+
+      <div class="pdb-claim" id="L9">
+        <div class="pdb-claim__head"><span class="pdb-claim__id">L9</span><span class="pdb-status pdb-status--corrected">Corrected</span></div>
+        <p class="pdb-claim__text">Zeitz wrote that RAD was consulting federal workers on “blocking” inside agencies during emergencies and asked that it stay off the form.</p>
+        <p class="pdb-claim__row"><strong>Basis</strong> A 6 Aug chat line said RAD was starting to consult federal workers on blocking inside agencies in emergencies and asked that it not go on the form. DataRepublican corrected the attribution on 25 Oct: Eric Manton of DRG typed it, not Zeitz. The Part 8 post text as captured on 25 Oct and the Geller Report summary still name Zeitz. The workers’ identity is the series’ inference: no one on the calls names FWAD. The portfolio document copies of 5 Oct and 24 Oct do not mention the line. FWAD’s public “Resistance Menu” contains tactics Know the Times calls lawful and others it says aim to frustrate lawful policy, and states that participants should not engage in waste, fraud, abuse or lawbreaking. A 23 Sep working paper proposes a governors’ compact giving legal defense and jobs to federal workers who engage in nonviolent noncooperation.</p>
+        <p class="pdb-claim__row"><strong>Origin</strong> Archive; correction by its author; error persists downstream.</p>
+        <p class="pdb-claim__row"><strong>Would change status</strong> Identification of the workers consulted, or a record of any guidance given.</p>
+      </div>
+
+      <div class="pdb-claim" id="L10">
+        <div class="pdb-claim__head"><span class="pdb-claim__id">L10</span><span class="pdb-status pdb-status--contested">Contested</span></div>
+        <p class="pdb-claim__text">The network is about 200 former USAID officials.</p>
+        <p class="pdb-claim__row"><strong>Basis</strong> The 20 Oct series post says 200. Walt Roberts says on the 25 Mar recording that the Democracy Renewal Group is about 300 former USAID people. The figures may count different groups. Neither is independently verified.</p>
+        <p class="pdb-claim__row"><strong>Origin</strong> Series post and archive recording, which differ.</p>
+        <p class="pdb-claim__row"><strong>Would change status</strong> A membership list.</p>
+      </div>
+
+      <div class="pdb-claim" id="L11">
+        <div class="pdb-claim__head"><span class="pdb-claim__id">L11</span><span class="pdb-status pdb-status--corrected">Corrected</span></div>
+        <p class="pdb-claim__text">Foreign actors advised the group, and their recommendations were then implemented in the United States.</p>
+        <p class="pdb-claim__row"><strong>Basis</strong> The 9 Jul call with election-observation practitioners from Serbia, Slovakia, Guatemala and Brazil is documented in the files and in the organizers’ August newsletter, as reported by New Conservative Post. Know the Times found the speakers were civil-society activists and lawyers, and not state actors, and that several “implemented” U.S. measures predate the call, including a Senate Democrats’ observer program reported in June and tabletop exercises in May. The series says the video does not prove the call caused those developments. Some amplifiers wrote that the developments track the advice.</p>
+        <p class="pdb-claim__row"><strong>Origin</strong> Series framing; correction by an independent analyst.</p>
+        <p class="pdb-claim__row"><strong>Would change status</strong> Evidence that any measure was adopted because of the call.</p>
+      </div>
+
+      <div class="pdb-claim" id="L12">
+        <div class="pdb-claim__head"><span class="pdb-claim__id">L12</span><span class="pdb-status pdb-status--inferred">Inferred</span></div>
+        <p class="pdb-claim__text">The planning amounts to a coup, seditious conspiracy or overthrow of the government.</p>
+        <p class="pdb-claim__row"><strong>Basis</strong> This characterization comes from the series and its amplifiers. Counter-readings: Blumenthal finds the public material does not establish a unified operational plan. Know the Times does not call it seditious and says refusing a manifestly unlawful order is not sedition. A Substack summary notes no published recording shows anyone proposing to provoke unrest. The Federalist piece itself describes contingency planning with no action taken. Documented elements that both readings must explain: Reiff said on 25 Mar that a midterm meltdown could be a “window of opportunity” and described a staged path through a convening and an “extra constitutional” process; a DSA caucus member on that call urged an explicitly anti-constitutional organization, and when the host asked Reiff if that was fair she said “Yeah, definitely,” and the transcript does not show which proposition she affirmed; on 13 Aug she said a legitimacy crisis could be leveraged for a “refounding”; on 15 Jan the breakout prompt asked how a meltdown would affect each group’s objectives; and a 9 Apr chat line, as the series reads it, reports legal counsel advised against further recordings.</p>
+        <p class="pdb-claim__row"><strong>Origin</strong> Series and amplifiers; critics are derivative of the archive for facts.</p>
+        <p class="pdb-claim__row"><strong>Would change status</strong> A recording proposing to cause a trigger event, an action beyond planning, or legal action.</p>
+      </div>
+
+      <div class="pdb-claim" id="L13">
+        <div class="pdb-claim__head"><span class="pdb-claim__id">L13</span><span class="pdb-status pdb-status--primary">Primary · Unauthenticated</span></div>
+        <p class="pdb-claim__text">Erica Chenoweth directs the UDA.</p>
+        <p class="pdb-claim__row"><strong>Basis</strong> On 4 Jun an unidentified participant says UDA is “Erica Chenoweth’s project.” The statement is hearsay from a participant who does not claim to be inside UDA. Chenoweth declined to comment. Her published research on nonviolent resistance is public; no source shows a role in UDA.</p>
+        <p class="pdb-claim__row"><strong>Origin</strong> DataRepublican archive. One origin.</p>
+        <p class="pdb-claim__row"><strong>Would change status</strong> A statement from Chenoweth or from Horizons.</p>
+      </div>
+
+      <div class="pdb-claim" id="L14">
+        <div class="pdb-claim__head"><span class="pdb-claim__id">L14</span><span class="pdb-status pdb-status--reported">Reported</span></div>
+        <p class="pdb-claim__text">Officials and national-security veterans are preparing for possible federal interference in the midterms.</p>
+        <p class="pdb-claim__row"><strong>Basis</strong> The Washington Post reported on 20 Oct that about 10 current and former national-security officials have advised officials in 10 states, including governors, election administrators and members of Congress from both parties, on hardening procedures and preparing to oppose federal moves. The White House says it is working to protect elections, per IBTimes UK. Democratic tabletop exercises in 2026 were reported by NBC News, Politico and Political Wire. This establishes the climate. It does not establish that the archive’s network is the group the Post described: the Post did not name the officials or the groups in the series.</p>
+        <p class="pdb-claim__row"><strong>Origin</strong> Independent reporting, separate from the archive.</p>
+        <p class="pdb-claim__row"><strong>Would change status</strong> Naming of the advisers in the Post’s report, which would show whether they overlap with the archive’s participants.</p>
+      </div>
+
+      <hr class="pdb-divider">
+
+      <h3 class="pdb-report__label" id="dissent" style="font-size:12px;">Dissent Check</h3>
+      <p class="pdb-claim__row" style="margin-bottom:10px;">Three readings are in circulation. Each lists what it must explain.</p>
+
+      <div class="pdb-position">
+        <p class="pdb-position__name">Reading 1 — A network preparing to supplant federal authority (the series and its supporters)</p>
+        <p><em>Strongest evidence:</em> the “refounding” and “extra constitutional” statements; governors as interim authority; a drafted options paper and funding proposal aimed at “the day after”; secrecy around UDA; counsel’s advice against recording. Rob Maness, who cites his own Joint Staff planning experience, argues nobody rehearses a crisis they hope never comes. Steve Gruber, in a column, says these questions need public answers while granting they do not establish wrongdoing.</p>
+        <p><em>Must explain:</em> every scenario is conditioned on federal action; participants insist on cross-partisan responses and disclaim secession; the series itself found no conductor, no live UDA presence and no exercise with FWAD; tabletop exercises are common across the party.</p>
+      </div>
+
+      <div class="pdb-position">
+        <p class="pdb-position__name">Reading 2 — Defensive contingency planning during a documented period of concern about federal interference</p>
+        <p><em>Strongest evidence:</em> the Washington Post, NPR and other mainstream reporting that election officials and national-security veterans are preparing for federal interference; NSL4A’s public warning on armed deployments; widespread Democratic tabletops; Reiff’s stated worry that a clean election could still leave a quarter to half the country distrusting the result.</p>
+        <p><em>Must explain:</em> language about leveraging a breakdown for a “refounding”; an “extra constitutional” process; a transitional-leadership idea with no constitutional footing; the request to keep federal-worker consultation off a form; an alliance that declines to say who is in it.</p>
+      </div>
+
+      <div class="pdb-position">
+        <p class="pdb-position__name">Reading 3 — Infrastructure without an operation (Aaron Baker, Dannielle Blumenthal)</p>
+        <p><em>Position:</em> Baker argues the network is assembling the infrastructure a color revolution would need and has not become one; Blumenthal says each claim should be judged on its evidence, with neither the archive’s size nor the author’s politics deciding it, and that the public material does not establish a coup narrative.</p>
+        <p><em>Must explain:</em> why rehearsal, drafts and funding requests exist for a scenario the authors say they hope to avoid.</p>
+      </div>
+
+      <hr class="pdb-divider">
+
+      <h3 class="pdb-report__label" id="origins" style="font-size:12px;">Origin Map</h3>
+      <p class="pdb-origin"><strong>Origin 1 — DataRepublican archive.</strong> Sole origin for all private recordings, chat logs and internal planning documents. Outlets and individuals relaying its content in this edition’s sources: at least a dozen, including LifeZette, RVM News, New Conservative Post, Geller Report, America Out Loud, Todayville, The Federalist (opinion), Raw Story (with a caveat that it could not verify), Steve Gruber, and Substack writers Ted Budz, Rob Maness and Ginger Breggin. The Post Millennial is cited as an earlier source of the recordings. The Blaze and The Daily Caller sought comment from named parties and received none, per a Substack summary. A “Persons of Interest” list posted on X on 21 Oct by Eric Schwalm derives from the series and adds characterizations that the recordings do not state in those words.</p>
+      <p class="pdb-origin"><strong>Origin 2 — Organizers’ public record.</strong> Zeitz’s Substack and the #unifyUSA release, RAD’s published strategy, NSL4A’s statements. Independent of the archive. Confirms identities, positions and public campaigns, not private-call content.</p>
+      <p class="pdb-origin"><strong>Origin 3 — Mainstream context reporting.</strong> The Washington Post, NBC News, Politico, NPR and others on federal-interference concerns and Democratic tabletops. Independent of the archive. The Post report did not name the officials or reference the groups in the series.</p>
+      <p class="pdb-origin"><strong>Origin 4 — Analysts and critics.</strong> Know the Times, Blumenthal, a Substack summary by princenemo. Derivative of Origin 1 for facts; independent for analysis.</p>
+      <p class="pdb-origin"><strong>Count.</strong> Facts about the private calls: one origin. Context and public positions: three.</p>
+      <p class="pdb-origin"><strong>Source note.</strong> Blumenthal reports that ABC News 4 said in August that Pounds acknowledged starting service as a Pentagon special government employee in July, and that the report does not show she held the role in October or broke any rule. This bears on how much weight unverified material can carry. It does not bear on whether a recorded statement was made. Pounds posted a correction of one attribution shortly after the Part 8 post.</p>
+
+      <hr class="pdb-divider">
+
+      <p class="pdb-report__label">Points of Dispute</p>
+      <p class="pdb-report__dispute"><em>The series and supporters:</em> the files document private planning to treat a federal action as grounds for declaring the government illegitimate and to hand authority to governors.</p>
+      <p class="pdb-report__dispute"><em>Skeptics:</em> the files document contingency planning, rehearsal and aspiration under stress, with every scenario tied to federal action, and the “control plane,” coup and foreign-implementation claims go beyond them.</p>
+      <p class="pdb-report__dispute"><em>Both camps agree:</em> the recordings have not been authenticated, and the UDA’s existence and role are not independently established.</p>
+
+      <hr class="pdb-divider">
+
+      <p class="pdb-report__label" id="watch">Watch</p>
+      <ol class="pdb-report__watch">
+        <li data-n="2.a">
+          <span class="pdb-report__watch-text">Will UDA launch publicly or publish its red lines before or after 3 Nov?</span>
+          <span class="pdb-report__assessment"><strong>Assessment:</strong> Unlikely (low confidence) — described as “hush hush,” no launch found as of 31 Oct, and participants doubt its readiness.</span>
+        </li>
+        <li data-n="2.b">
+          <span class="pdb-report__watch-text">Will any governor’s office confirm receipt of, adopt, or publish the options paper or the federal-service compact?</span>
+          <span class="pdb-report__assessment"><strong>Assessment:</strong> Unlikely (low confidence) — the files say Massachusetts declined and California and Illinois wanted another party to lead; no public adoption found.</span>
+        </li>
+        <li data-n="2.c">
+          <span class="pdb-report__watch-text">Will full recordings, forensic authentication, or on-the-record responses from Reiff, Zeitz, Smith or Chenoweth become available?</span>
+          <span class="pdb-report__assessment"><strong>Assessment:</strong> Even chance (low confidence) — requests for comment are unanswered, while attention from members of Congress and the press is rising.</span>
+        </li>
+        <li data-n="2.d">
+          <span class="pdb-report__watch-text">Will relaying outlets correct the Manton attribution and the command-structure wording in published posts?</span>
+          <span class="pdb-report__assessment"><strong>Assessment:</strong> Even chance (low confidence) — the author corrected the attribution in a separate post on 25 Oct; at least one relaying outlet still carries the original.</span>
+        </li>
+      </ol>
+
+      <div class="pdb-sources" id="sources">
+        <div class="pdb-sources__group">
+          <p class="pdb-sources__group-label">Left / Left-Center</p>
+          <div class="pdb-sources__tags">
+            <a class="pdb-tag pdb-tag--lc" href="https://www.adn.com/nation-world/2026/10/20/us-officials-privately-advise-states-fearing-trump-election-meddling/" target="_blank" rel="noopener noreferrer">The Washington Post <span class="pdb-tag__desc">· advisers to 10 states, via Anchorage Daily News reprint</span></a>
+            <a class="pdb-tag pdb-tag--lc" href="https://dnyuz.com/?p=262490" target="_blank" rel="noopener noreferrer">NBC News <span class="pdb-tag__desc">· Clinton-convened war game, <em>via DNYUZ summary</em></span></a>
+            <a class="pdb-tag pdb-tag--lc" href="https://www.alternet.org/trump-state-ags-midterms" target="_blank" rel="noopener noreferrer">Politico <span class="pdb-tag__desc">· attorneys general tabletops, <em>via AlterNet summary</em></span></a>
+          </div>
+        </div>
+        <div class="pdb-sources__group">
+          <p class="pdb-sources__group-label">Center</p>
+          <div class="pdb-sources__tags">
+            <a class="pdb-tag pdb-tag--ctr" href="https://rollcall.com/2024/10/22/in-swing-states-and-beyond-war-game-sounds-a-warning/" target="_blank" rel="noopener noreferrer">Roll Call <span class="pdb-tag__desc">· 2024 post-election war game, <em>headline and lede only</em></span></a>
+          </div>
+        </div>
+        <div class="pdb-sources__group">
+          <p class="pdb-sources__group-label">Right / Right-Center</p>
+          <div class="pdb-sources__tags">
+            <a class="pdb-tag pdb-tag--rc" href="https://thefederalist.com/2026/10/28/democrat-aligned-groups-increasingly-threaten-to-undermine-democracy/" target="_blank" rel="noopener noreferrer">The Federalist <span class="pdb-tag__desc">· opinion, 28 Oct</span></a>
+          </div>
+        </div>
+        <div class="pdb-sources__group">
+          <p class="pdb-sources__group-label">International</p>
+          <div class="pdb-sources__tags">
+            <a class="pdb-tag pdb-tag--int" href="https://www.ibtimes.co.uk/us-officials-prepare-states-trump-election-interference-1826837" target="_blank" rel="noopener noreferrer">IBTimes UK <span class="pdb-tag__desc">· summary of the Post advisory report</span></a>
+          </div>
+        </div>
+        <div class="pdb-sources__group">
+          <p class="pdb-sources__group-label">Primary Source</p>
+          <div class="pdb-sources__tags">
+            <a class="pdb-tag pdb-tag--ps" href="https://x.com/DataRepublican/status/2112364654991409339" target="_blank" rel="noopener noreferrer">@DataRepublican · X <span class="pdb-tag__desc">· Part 2, 20 Oct</span></a>
+            <a class="pdb-tag pdb-tag--ps" href="https://x.com/DataRepublican/status/2114170482576839077" target="_blank" rel="noopener noreferrer">@DataRepublican · X <span class="pdb-tag__desc">· Part 8, with 25 Oct correction</span></a>
+            <a class="pdb-tag pdb-tag--ps" href="https://finanzen.net/nachricht/aktien/unifyusa-launches-hit-refresh-citizens-movement-to-reconstruct-the-u-s-constitution-14246829" target="_blank" rel="noopener noreferrer">#unifyUSA <span class="pdb-tag__desc">· “Hit Refresh” release, 17 Feb 2025</span></a>
+            <a class="pdb-tag pdb-tag--ps" href="https://drpaulzeitz.substack.com/" target="_blank" rel="noopener noreferrer">Dr. Paul Zeitz · Substack <span class="pdb-tag__desc">· organizer’s own posts</span></a>
+          </div>
+        </div>
+        <div class="pdb-sources__group">
+          <p class="pdb-sources__group-label">Not in Registry — outlets, individuals, platforms (unrated)</p>
+          <div class="pdb-sources__tags">
+            <a class="pdb-tag pdb-tag--na" href="https://knowthetimes.substack.com/p/the-day-after-tomorrow-inside-the" target="_blank" rel="noopener noreferrer">Know the Times · Aaron Baker <span class="pdb-tag__desc">· Substack, critical analysis</span></a>
+            <a class="pdb-tag pdb-tag--na" href="https://dannielleblumenthal.com/2026/10/21/assessing-datarepublicans-democracy-files-evidence-interpretation-and-transparency/" target="_blank" rel="noopener noreferrer">Dannielle Blumenthal <span class="pdb-tag__desc">· blog, evidence critique</span></a>
+            <a class="pdb-tag pdb-tag--na" href="https://princenemo.substack.com/p/the-democracy-files-data-republicans" target="_blank" rel="noopener noreferrer">princenemo <span class="pdb-tag__desc">· Substack summary</span></a>
+            <a class="pdb-tag pdb-tag--na" href="https://www.rawstory.com/trump-dhs-2678134998/" target="_blank" rel="noopener noreferrer">Raw Story <span class="pdb-tag__desc">· 23 Oct, could not verify clips</span></a>
+            <a class="pdb-tag pdb-tag--na" href="https://thefulcrum.us/elections/national-security-leaders-armed-election-deployments" target="_blank" rel="noopener noreferrer">The Fulcrum <span class="pdb-tag__desc">· NSL4A 14 Sep statement, opinion</span></a>
+            <a class="pdb-tag pdb-tag--na" href="https://www.robmaness.com/2026/10/they-war-gamed-an-election-meltdown-in-january-datarepublicans-part-4-shows-who-was-in-the-room/" target="_blank" rel="noopener noreferrer">Rob Maness <span class="pdb-tag__desc">· Substack, <em>headline and lede only</em></span></a>
+            <a class="pdb-tag pdb-tag--na" href="https://www.stevegruber.com/2026/10/democracy-apparently-has-a-secret-committee/" target="_blank" rel="noopener noreferrer">Steve Gruber <span class="pdb-tag__desc">· column, <em>headline and lede only</em></span></a>
+            <a class="pdb-tag pdb-tag--na" href="https://tedbudz.substack.com/p/they-recorded-themselves-planning" target="_blank" rel="noopener noreferrer">Ted Budz <span class="pdb-tag__desc">· Substack, <em>headline and lede only</em></span></a>
+            <a class="pdb-tag pdb-tag--na" href="https://www.lifezette.com/2026/10/secret-mega-alliance-exposed-as-datarepublican-keeps-dropping-more-democracy-files-watch/" target="_blank" rel="noopener noreferrer">LifeZette <span class="pdb-tag__desc">· <em>headline and lede only</em></span></a>
+            <a class="pdb-tag pdb-tag--na" href="https://www.rvmnews.com/2026/10/secret-mega-alliance-exposed-as-datarepublican-keeps-dropping-more-democracy-files-watch/" target="_blank" rel="noopener noreferrer">RVM News <span class="pdb-tag__desc">· <em>headline and lede only</em></span></a>
+            <a class="pdb-tag pdb-tag--na" href="https://www.newconservativepost.com/2026/10/recordings-detail-plans-to-declare-federal-government-illegitimate-pursue-constitutional-overhaul/" target="_blank" rel="noopener noreferrer">New Conservative Post <span class="pdb-tag__desc">· <em>headline and lede only</em></span></a>
+            <a class="pdb-tag pdb-tag--na" href="https://gellerreport.com/2026/10/coup.html/" target="_blank" rel="noopener noreferrer">Geller Report <span class="pdb-tag__desc">· <em>headline and lede only</em></span></a>
+            <a class="pdb-tag pdb-tag--na" href="https://www.americaoutloud.news/how-to-overthrow-the-united-states-of-america-the-democracy-files/" target="_blank" rel="noopener noreferrer">America Out Loud <span class="pdb-tag__desc">· <em>headline and lede only</em></span></a>
+            <a class="pdb-tag pdb-tag--na" href="https://www.todayville.com/coup-detat-former-democrat-officials-ex-usaid-employees-and-retired-national-security-figures-are-discussing-how-to-overthrow-trump-and-not-throughn-election/" target="_blank" rel="noopener noreferrer">Todayville <span class="pdb-tag__desc">· <em>headline and lede only</em></span></a>
+            <a class="pdb-tag pdb-tag--na" href="https://gingerbreggin.substack.com/p/how-to-overthrow-the-united-states" target="_blank" rel="noopener noreferrer">Ginger Breggin <span class="pdb-tag__desc">· Substack, <em>headline and lede only</em></span></a>
+            <a class="pdb-tag pdb-tag--na" href="https://politicalwire.com/2026/07/24/democrats-prepare-for-possible-election-clashes-with-feds/" target="_blank" rel="noopener noreferrer">Political Wire <span class="pdb-tag__desc">· May Milwaukee tabletop, <em>headline and lede only</em></span></a>
+          </div>
+        </div>
+
+        <div class="pdb-gaps">
+          <p class="pdb-gaps__heading">Coverage Gaps This Edition</p>
+          <p class="pdb-gaps__body">
+            Independent authentication of the recordings and documents: not available.
+            Responses from Reiff, Zeitz, Smith, Chenoweth, Renew to Thrive and NSL4A: not available.
+            The text of UDA’s four red lines and of the governors’ options paper: not available.
+            Original Washington Post, NBC News and Politico articles: not available this edition; read through republished summaries.
+            Articles from The Blaze and The Daily Caller: not available this edition.
+            Center and international coverage of the recordings themselves: not available.
+            The NSL4A and Horizons session of 14 Oct, as video: not available this edition.
+            The original text of the 20 Oct X post: not available this edition; X blocks direct retrieval.
+          </p>
+        </div>
+      </div>
+
+    </article>
+
+  </div><!-- /pdb-content -->
+
+  <footer class="pdb-footer">
+    <p class="pdb-footer__text">The PDB · 31 Oct 2026 · All sources open-access · No paywalls bypassed</p>
+  </footer>
+
+</main>
+
+</body>
+</html>
