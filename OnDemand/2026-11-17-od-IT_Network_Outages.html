@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>The PDB · 17 Nov 2026</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="The PDB">
+<meta property="og:title" content="PDB · 17 Nov 2026 — IT Outages 03–17 Nov: Operators Cite Equipment, Software and Maintenance Faults, No Confirmed Attack">
+<meta property="og:description" content="Today's brief: Technology">
+<meta property="og:url" content="https://thepdb.news/OnDemand/2026-11-17-od-IT_Network_Outages.html">
+<meta property="og:image" content="https://thepdb.news/Assets/Images/pdb-og-rose.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="The PDB — Your Personal Daily Brief">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@thepdb">
+<meta name="twitter:title" content="PDB · 17 Nov 2026 — IT Outages 03–17 Nov: Operators Cite Equipment, Software and Maintenance Faults, No Confirmed Attack">
+<meta name="twitter:description" content="Today's brief: Technology">
+<meta name="twitter:image" content="https://thepdb.news/Assets/Images/pdb-og-rose.png">
+<meta name="twitter:image:alt" content="The PDB — Your Personal Daily Brief">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&family=Inter:wght@400;600;700&display=swap">
+<style>
+/* ============================================================
+   THE PDB — CANONICAL STYLESHEET v2.0 (01 Nov 2026)
+   Governs: Daily PDB and On-Demand (OD) reports.
+   Authority: SOP Draft 0.8, Section 6; PDB Style Spec v2.0.
+   LOCKED: copy verbatim into every edition. Do not edit per run.
+   ============================================================ */
+:root {
+  --page-bg:        #F5F4F0;
+  --content-bg:     #FFFFFF;
+  --content-radius: 6px;
+  --content-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  --max-width:      760px;
+  --masthead-bg:    #1A2744;
+  --masthead-fg:    #FFFFFF;
+  --accent-gold:    #C8A84B;
+  --heading-fg:     #1A2744;
+  --heading-rule:   #1A2744;
+  --body-fg:        #1A1A1A;
+  --meta-fg:        #555555;
+  --secondary-fg:   #AAAAAA;
+  --divider:        #DDDDDD;
+  --card-border:    #E0DDD6;
+  --banner-bg:      #1A2744;
+  --banner-fg:      #FFFFFF;
+  --balance-bg:     #F0EDE6;
+  --iw-bg:          #FFF8E8;
+  --otr-bg:         #F5F0E8;
+  --trend:          #B06010;
+  --gaps-fg:        #8B0000;
+  /* Source group colors (SOP Table 4) */
+  --lc:  #1A5FBF;
+  --ctr: #2A7A3A;
+  --rc:  #B03020;
+  --int: #5A3A8A;
+  --ps:  #5A5850;
+  --link-fg:        #1A5FBF;
+  --link-hover:     #0D3D8A;
+  --font-display:   'Playfair Display', 'Georgia', serif;
+  --font-body:      'Source Serif 4', 'Georgia', 'Times New Roman', serif;
+  --font-ui:        'Inter', 'Helvetica Neue', 'Arial', sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --page-bg: #111318; --content-bg: #1C2030; --content-shadow: 0 2px 12px rgba(0,0,0,0.4);
+    --masthead-bg: #0D1526; --banner-bg: #0D1526; --body-fg: #E8E6E0; --meta-fg: #9A9890;
+    --secondary-fg: #8A8880; --divider: #2E3040; --card-border: #2E3040;
+    --balance-bg: #1E1C14; --iw-bg: #1E1A0C; --otr-bg: #201A12; --trend: #C87020;
+    --heading-fg: #C8D0E8; --heading-rule: #3A4060; --link-fg: #6FA0E8; --link-hover: #9CBEF0;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --page-bg: #111318; --content-bg: #1C2030; --content-shadow: 0 2px 12px rgba(0,0,0,0.4);
+  --masthead-bg: #0D1526; --banner-bg: #0D1526; --body-fg: #E8E6E0; --meta-fg: #9A9890;
+  --secondary-fg: #8A8880; --divider: #2E3040; --card-border: #2E3040;
+  --balance-bg: #1E1C14; --iw-bg: #1E1A0C; --otr-bg: #201A12; --trend: #C87020;
+  --heading-fg: #C8D0E8; --heading-rule: #3A4060; --link-fg: #6FA0E8; --link-hover: #9CBEF0;
+  color-scheme: dark;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+body { margin: 0; background: var(--page-bg); color: var(--body-fg); font-family: var(--font-body); font-size: 15px; line-height: 1.65; padding: 24px 16px; }
+a { color: var(--link-fg); text-decoration: none; }
+a:hover { color: var(--link-hover); text-decoration: underline; }
+.pdb-page { max-width: var(--max-width); margin-inline: auto; background: var(--content-bg); border-radius: var(--content-radius); box-shadow: var(--content-shadow); overflow: hidden; }
+
+/* ── MASTHEAD (locked) ── */
+.pdb-masthead { background: var(--masthead-bg); padding: 32px 24px 24px; text-align: center; }
+.pdb-masthead__eyebrow { font-family: var(--font-ui); font-size: 11px; font-weight: 600; color: var(--accent-gold); text-transform: uppercase; letter-spacing: 0.2em; margin: 0 0 10px; }
+.pdb-masthead__title { font-family: var(--font-display); font-size: clamp(36px, 8vw, 56px); font-weight: 900; color: var(--masthead-fg); margin: 0; line-height: 1.1; }
+.pdb-masthead__rule { border: none; border-top: 2px solid var(--accent-gold); margin: 10px 0; }
+.pdb-masthead__sub { font-family: var(--font-ui); font-size: 11px; font-weight: 600; color: var(--accent-gold); letter-spacing: 0.15em; text-transform: uppercase; margin: 0 0 6px; }
+.pdb-masthead__meta { font-family: var(--font-ui); font-size: 13px; color: var(--secondary-fg); margin: 0; }            /* PDB: date · reports · window */
+.pdb-masthead__odtitle { font-family: var(--font-ui); font-size: 14px; font-weight: 700; color: var(--accent-gold); text-transform: uppercase; letter-spacing: 0.08em; margin: 12px 0 8px; text-wrap: balance; } /* OD only */
+.pdb-masthead__date { font-family: var(--font-ui); font-size: 13px; color: var(--secondary-fg); margin: 0; }            /* OD only */
+.pdb-masthead__window { font-family: var(--font-ui); font-size: 11px; color: var(--secondary-fg); margin: 2px 0 0; }     /* OD only */
+
+/* ── TOPICS BANNER (locked) ── */
+.pdb-banner { background: var(--banner-bg); padding: 10px 24px; display: flex; flex-wrap: wrap; gap: 4px 0; align-items: center; }
+.pdb-banner__link { font-family: var(--font-ui); font-size: 11px; font-weight: 600; color: var(--banner-fg); text-transform: uppercase; letter-spacing: 0.04em; white-space: nowrap; padding: 2px 4px; text-decoration: none; }
+.pdb-banner__link:hover { color: var(--accent-gold); text-decoration: none; }
+.pdb-banner__link--otr { color: var(--accent-gold); font-weight: 700; }
+.pdb-banner__link--active { color: var(--accent-gold); text-decoration: underline; }
+.pdb-banner__sep { font-family: var(--font-ui); font-size: 11px; color: rgba(255,255,255,0.3); padding: 0 2px; user-select: none; }
+
+.pdb-content { padding: 24px 24px 0; }
+
+/* ── BALANCE AND SOURCE INTEGRITY BOX (locked text: SOP Figure 1) ── */
+.pdb-balance { background: var(--balance-bg); border-left: 4px solid var(--accent-gold); padding: 16px 20px; margin: 0 0 24px; border-radius: 0 4px 4px 0; }
+.pdb-balance__heading { font-family: var(--font-ui); font-size: 11px; font-weight: 700; color: var(--heading-fg); text-transform: uppercase; letter-spacing: 0.08em; margin: 0 0 8px; }
+.pdb-balance__body { font-family: var(--font-body); font-size: 13px; color: var(--body-fg); line-height: 1.6; margin: 0; }
+.pdb-balance__legend { margin-top: 10px; display: flex; flex-wrap: wrap; gap: 6px 16px; }
+.pdb-balance__swatch { display: inline-flex; align-items: center; gap: 6px; font-family: var(--font-ui); font-size: 11px; color: var(--meta-fg); }
+.pdb-balance__dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
+.pdb-balance__dot--lc { background: #1A5FBF; } .pdb-balance__dot--ctr { background: #2A7A3A; } .pdb-balance__dot--rc { background: #B03020; }
+.pdb-balance__dot--int { background: #5A3A8A; } .pdb-balance__dot--ps { background: #5A5850; }
+.pdb-balance__dot--reg { background: transparent; border: 2px dashed #5A3A8A; }
+
+/* ── SECTION HEADINGS ── */
+.pdb-section-heading { font-family: var(--font-ui); font-size: 14px; font-weight: 700; color: var(--heading-fg); text-transform: uppercase; letter-spacing: 0.05em; border-bottom: 2px solid var(--heading-rule); padding-bottom: 6px; margin: 0 0 14px; }
+.pdb-section-head { font-family: var(--font-ui); font-size: 13px; font-weight: 700; color: var(--heading-fg); border-bottom: 2px solid var(--heading-rule); padding-bottom: 6px; margin: 0 0 14px; } /* OD: above the card */
+
+/* ── INDICATIONS AND WARNING ── */
+.pdb-iw { background: var(--iw-bg); border-left: 4px solid var(--accent-gold); padding: 16px 20px; margin: 0 0 24px; border-radius: 0 4px 4px 0; }
+.pdb-iw__item { margin-bottom: 14px; padding-bottom: 14px; border-bottom: 1px dashed var(--divider); }
+.pdb-iw__item:last-child { margin-bottom: 0; padding-bottom: 0; border-bottom: none; }
+.pdb-iw__label { font-family: var(--font-ui); font-size: 10px; font-weight: 700; color: var(--meta-fg); text-transform: uppercase; letter-spacing: 0.06em; margin: 0 0 3px; }
+.pdb-iw__title { font-family: var(--font-ui); font-size: 13px; font-weight: 700; color: var(--heading-fg); margin: 0 0 6px; }
+.pdb-iw__body { font-family: var(--font-body); font-size: 13px; color: var(--body-fg); line-height: 1.6; margin: 0 0 6px; }
+.pdb-iw__indicator { font-family: var(--font-body); font-size: 13px; color: var(--body-fg); line-height: 1.6; margin: 0 0 8px; }
+.pdb-iw__indicator strong, .pdb-report__assessment strong { font-weight: 700; }
+.pdb-none { font-family: var(--font-body); font-size: 13px; color: var(--meta-fg); font-style: italic; margin: 0; }
+
+/* ── ON THE RISE ── */
+.pdb-otr { background: var(--otr-bg); border-left: 4px solid var(--trend); border-radius: 4px; padding: 16px 20px; margin: 0 0 24px; }
+.pdb-otr__eyebrow { font-family: var(--font-ui); font-size: 11px; font-weight: 700; color: var(--trend); letter-spacing: 0.1em; text-transform: uppercase; margin: 0 0 4px; }
+.pdb-otr__heading { font-family: var(--font-ui); font-size: 14px; font-weight: 700; color: var(--heading-fg); border-bottom: 2px solid var(--heading-rule); padding-bottom: 6px; margin: 0 0 14px; }
+.pdb-otr__item { margin-bottom: 14px; padding-bottom: 14px; border-bottom: 1px dashed var(--divider); }
+.pdb-otr__item:last-child { margin-bottom: 0; padding-bottom: 0; border-bottom: none; }
+.pdb-otr__title { font-family: var(--font-ui); font-size: 14px; font-weight: 700; color: var(--heading-fg); margin: 0 0 4px; }
+.pdb-otr__velocity { font-family: var(--font-ui); font-size: 11px; color: var(--trend); font-style: italic; margin: 0 0 8px; }
+.pdb-otr__body { font-family: var(--font-body); font-size: 14px; color: var(--body-fg); line-height: 1.65; margin: 0 0 8px; }
+
+/* ── TRENDING FLAG (locked) ── */
+.trending-flag { display: inline-block; background-color: var(--trend); color: #FFFFFF; font-family: var(--font-ui); font-size: 10px; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; border-radius: 3px; padding: 2px 6px; margin-left: 8px; vertical-align: middle; }
+
+/* ── TOPIC REPORTS ──
+   PDB: .pdb-topic (open block, divider between topics)
+   OD:  .pdb-topic.pdb-topic--card (bordered card beneath .pdb-section-head) */
+.pdb-topic { padding-bottom: 24px; border-bottom: 1px solid var(--divider); }
+.pdb-topic + .pdb-topic { padding-top: 20px; }
+.pdb-topic:last-of-type { border-bottom: none; }
+.pdb-topic--card { background: var(--content-bg); border: 1px solid var(--card-border); border-radius: 6px; padding: 22px 24px; margin: 0 0 20px; }
+.pdb-topic--card:last-of-type { border-bottom: 1px solid var(--card-border); }
+.pdb-topic__eyebrow { font-family: var(--font-ui); font-size: 10px; font-weight: 700; color: var(--meta-fg); text-transform: uppercase; letter-spacing: 0.1em; margin: 0 0 2px; }
+.pdb-topic--card .pdb-topic__eyebrow { font-size: 11px; font-weight: 600; letter-spacing: 0.08em; margin: 0 0 4px; }
+.pdb-topic__heading { font-family: var(--font-ui); font-size: 14px; font-weight: 700; color: var(--heading-fg); text-transform: uppercase; letter-spacing: 0.05em; border-bottom: 2px solid var(--heading-rule); padding-bottom: 6px; margin: 0 0 14px; }
+.pdb-topic__rule { border: none; border-top: 1px solid var(--accent-gold); margin: 8px 0 16px; }
+
+.pdb-report__subject { font-family: var(--font-ui); font-size: 18px; font-weight: 700; color: var(--heading-fg); margin: 0 0 6px; line-height: 1.3; text-wrap: balance; }
+.pdb-report__label { font-family: var(--font-ui); font-size: 10px; font-weight: 700; color: var(--heading-fg); text-transform: uppercase; letter-spacing: 0.06em; margin: 0 0 4px; }
+.pdb-report__label--change { color: var(--ps); }
+.pdb-report__bluf { font-family: var(--font-body); font-size: 15px; font-style: italic; color: var(--body-fg); margin: 0 0 14px; line-height: 1.6; }
+.pdb-report__text { font-family: var(--font-body); font-size: 14px; color: var(--body-fg); margin: 0 0 14px; }
+.pdb-report__facts { margin: 0 0 14px; padding-left: 20px; list-style: disc; font-family: var(--font-body); font-size: 14px; line-height: 1.65; color: var(--body-fg); }
+.pdb-report__facts li { margin-bottom: 5px; }
+.pdb-report__dispute { font-family: var(--font-body); font-size: 14px; line-height: 1.6; color: var(--body-fg); background: rgba(176,48,32,0.04); border-left: 3px solid #B03020; padding: 8px 12px; margin: 0 0 14px; }
+.pdb-report__dispute p { margin: 0 0 8px; }
+.pdb-report__dispute p:last-child { margin-bottom: 0; }
+.pdb-report__dispute em { color: var(--meta-fg); }
+.pdb-report__watch { margin: 0 0 14px; padding: 0; list-style: none; font-family: var(--font-body); font-size: 14px; line-height: 1.65; color: var(--body-fg); }
+.pdb-report__watch li { margin-bottom: 10px; padding-left: 38px; position: relative; }
+.pdb-report__watch li::before { content: "W" attr(data-n); font-family: var(--font-ui); font-size: 11px; font-weight: 700; color: var(--heading-fg); position: absolute; left: 0; top: 2px; }
+.pdb-report__watch-text { display: block; margin-bottom: 4px; }
+.pdb-report__assessment { display: block; font-size: 14px; font-style: normal; color: var(--body-fg); margin-top: 4px; }
+.pdb-report__comment { font-family: var(--font-body); font-size: 14px; color: var(--body-fg); border-left: 3px solid var(--accent-gold); padding: 8px 12px; margin: 0 0 14px; }
+.pdb-report__comment p { margin: 0 0 8px; } .pdb-report__comment p:last-child { margin-bottom: 0; }
+
+/* ── SOURCE TAGS (locked: solid group color, white text, <a> elements) ── */
+.pdb-sources { margin-top: 14px; }
+.pdb-sources__group { margin-bottom: 8px; }
+.pdb-sources__group-label { font-family: var(--font-ui); font-size: 10px; font-weight: 700; color: var(--meta-fg); text-transform: uppercase; letter-spacing: 0.06em; margin: 0 0 4px; }
+.pdb-sources__tags { display: flex; flex-wrap: wrap; gap: 4px; }
+.pdb-sources__tags--inline { margin-top: 2px; }
+.pdb-tag { display: inline-block; font-family: var(--font-ui); font-size: 11px; font-weight: 600; border-radius: 4px; padding: 2px 8px; color: #FFFFFF; border: 2px solid transparent; text-decoration: none; line-height: 1.4; }
+.pdb-tag:hover { color: #FFFFFF; text-decoration: underline; }
+.pdb-tag__desc { font-weight: 400; opacity: 0.85; }
+.pdb-tag--lc  { background: var(--lc);  border-color: var(--lc); }
+.pdb-tag--ctr { background: var(--ctr); border-color: var(--ctr); }
+.pdb-tag--rc  { background: var(--rc);  border-color: var(--rc); }
+.pdb-tag--int { background: var(--int); border-color: var(--int); }
+.pdb-tag--reg { background: var(--int); border-color: #FFFFFF; border-style: dashed; outline: 1px solid var(--int); }
+.pdb-tag--ps  { background: var(--ps);  border-color: var(--ps); }
+
+/* ── COVERAGE GAPS (locked heading color) ── */
+.pdb-gaps { margin-top: 12px; background: rgba(139,0,0,0.04); border-left: 3px solid #8B0000; border-radius: 3px; padding: 10px 14px; }
+.pdb-gaps__heading { font-family: var(--font-ui); font-size: 10px; font-weight: 700; color: var(--gaps-fg); text-transform: uppercase; letter-spacing: 0.06em; margin: 0 0 4px; }
+.pdb-gaps__body { font-family: var(--font-body); font-size: 12px; color: var(--meta-fg); margin: 0; }
+
+/* ── FOLLOW UP / RESPONSES TO YOUR QUESTIONS (PDB only) ── */
+.pdb-followup { border-top: 1px solid var(--divider); padding: 24px 0; }
+.pdb-followup__item { margin-bottom: 16px; }
+.pdb-followup__item:last-child { margin-bottom: 0; }
+.pdb-followup__number { font-family: var(--font-ui); font-size: 11px; font-weight: 700; color: var(--heading-fg); margin: 0 0 2px; }
+.pdb-followup__text { font-family: var(--font-body); font-size: 14px; color: var(--body-fg); margin: 0 0 4px; }
+.pdb-badge { display: inline-block; font-family: var(--font-ui); font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; padding: 1px 6px; border-radius: 3px; }
+.pdb-badge--open   { color: var(--ctr); border: 1px solid var(--ctr); }
+.pdb-badge--closed { color: var(--ps);  border: 1px solid var(--ps); }
+.pdb-badge--alert  { color: #8B0000;    border: 1px solid #8B0000; }
+.pdb-badge--action { color: var(--trend); border: 1px solid var(--trend); }
+
+/* ── FOOTER ── */
+.pdb-footer { padding: 16px 24px; border-top: 1px solid var(--divider); }
+.pdb-footer__text { font-family: var(--font-ui); font-size: 11px; color: var(--secondary-fg); text-align: center; margin: 0; }
+
+/* ── RESPONSIVE ── */
+@media (max-width: 500px) {
+  body { padding: 0; }
+  .pdb-page { border-radius: 0; box-shadow: none; }
+  .pdb-masthead, .pdb-content, .pdb-banner, .pdb-footer { padding-inline: 16px; }
+  .pdb-topic--card { padding: 18px 16px; }
+}
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation: none !important; transition: none !important; } }
+</style>
+</head>
+<body>
+<main class="pdb-page" role="main">
+
+  <header class="pdb-masthead">
+    <p class="pdb-masthead__eyebrow">★ ★ ★ · Open Source Intelligence · ★ ★ ★</p>
+    <h1 class="pdb-masthead__title">THE PDB</h1>
+    <hr class="pdb-masthead__rule" aria-hidden="true">
+    <p class="pdb-masthead__sub">Your Personal Daily Brief</p>
+    <p class="pdb-masthead__odtitle">On-Demand Report: Two Weeks of IT Network Failures</p>
+    <p class="pdb-masthead__date">17 Nov 2026</p>
+    <p class="pdb-masthead__window">1 report · Collection window: 03 Nov–17 Nov</p>
+  </header>
+
+  <nav class="pdb-banner" aria-label="Report sections">
+    <a class="pdb-banner__link pdb-banner__link--active" href="#topic-4">Technology</a>
+  </nav>
+
+  <div class="pdb-content">
+
+    <aside class="pdb-balance" aria-label="Balance and source integrity statement">
+      <p class="pdb-balance__heading">How We Ensure Balance and Source Integrity</p>
+      <p class="pdb-balance__body">This brief draws from a curated registry of over 300 news and information sources including national and international news outlets rated for editorial bias and factual reliability by independent third-party assessors. Each report includes sources from across the editorial spectrum — left, center, and right — and includes primary-source materials where available. Sources are selected for relevance and reliability, not conformity with any particular narrative or perspective. Gaps in coverage are noted when a spectrum segment did not report on the selected story. All sources are open-access; no paywalled content is accessed or reproduced.</p>
+      <div class="pdb-balance__legend">
+        <span class="pdb-balance__swatch"><span class="pdb-balance__dot pdb-balance__dot--lc"></span>Left / Left-Center</span>
+        <span class="pdb-balance__swatch"><span class="pdb-balance__dot pdb-balance__dot--ctr"></span>Center</span>
+        <span class="pdb-balance__swatch"><span class="pdb-balance__dot pdb-balance__dot--rc"></span>Right / Right-Center</span>
+        <span class="pdb-balance__swatch"><span class="pdb-balance__dot pdb-balance__dot--int"></span>International</span>
+        <span class="pdb-balance__swatch"><span class="pdb-balance__dot pdb-balance__dot--ps"></span>Primary Source</span>
+      </div>
+    </aside>
+
+    <h2 class="pdb-section-head">Topic 4 — Technology &amp; Science</h2>
+
+    <article class="pdb-topic pdb-topic--card" id="topic-4" aria-label="Topic 4: Technology &amp; Science">
+      <p class="pdb-topic__eyebrow">Technology &amp; Science · On-Demand · PIR 4.5 · Update to 13 Nov report</p>
+      <p class="pdb-report__subject">IT Outages 03–17 Nov: Operators Cite Equipment, Software and Maintenance Faults, No Confirmed Attack</p>
+      <hr class="pdb-topic__rule">
+
+      <p class="pdb-report__label">BLUF</p>
+      <p class="pdb-report__bluf">Public reporting identifies no cyberattack behind any of nine significant IT outages from 03 Nov to 17 Nov. Operators or officials attribute seven to equipment, software or maintenance faults; United and Claude have stated no cause. Final reports from Microsoft, the FAA, Chase and the NSA are not available.</p>
+
+      <p class="pdb-report__label pdb-report__label--change">Change Since Last Report</p>
+      <p class="pdb-report__text">Since the 13 Nov report, Transportation Secretary Duffy tied the ground stop to contractor L3Harris router work during a copper-to-fiber changeover, and the FAA lifted the order at 8:15 p.m. ET. Chase and United failed on 16 Nov, and the NSA's classified network failed on 17 Nov.</p>
+
+      <p class="pdb-report__label">Key Facts</p>
+      <ul class="pdb-report__facts">
+        <li>NSANet, the NSA's classified internal network, went down on 17 Nov, six people told CNN. Staff arrivals were staggered, sources saw no evidence of a cyberattack, and the White House said the same (<a href="https://www.wral.com/news/local/national-security-communications-network-outage-november-2026/" target="_blank" rel="noopener noreferrer">CNN, via WRAL</a>; <a href="https://sg.news.yahoo.com/highly-classified-us-national-security-154201893.html" target="_blank" rel="noopener noreferrer">Reuters, via Yahoo News</a>; <a href="https://www.yahoo.com/news/us/articles/nsa-classified-network-goes-down-192635696.html" target="_blank" rel="noopener noreferrer">Yahoo News</a>).</li>
+        <li>An NSA statement described a temporary degradation during scheduled routine maintenance and said the network was fully operational. A person familiar with the matter told the Wall Street Journal the agency was updating software to patch the system (<a href="https://www.thedailybeast.com/nsas-top-secret-network-goes-dark-amid-cyber-chaos" target="_blank" rel="noopener noreferrer">Daily Beast</a>; <a href="https://mynorthwest.com/national/nsa-net-outage/4301298" target="_blank" rel="noopener noreferrer">MyNorthwest</a>; <a href="https://www.jpost.com/international/article-915216" target="_blank" rel="noopener noreferrer">JPost, relaying WSJ</a>).</li>
+        <li>On 16 Nov, thousands of customers reported trouble at Chase, Wells Fargo, U.S. Bank and Zelle. A Chase spokesman cited “a software bug in an on-premise hardware system,” said it was not cyber-related, and called it a Chase-only issue (<a href="https://www.wsmv.com/2026/11/16/chase-wells-fargo-bank-america-us-bank-hit-by-nationwide-outage-users-say/" target="_blank" rel="noopener noreferrer">AP, via WSMV</a>; <a href="https://www.aljazeera.com/news/2026/11/16/thousands-report-difficulties-accessing-accounts-online-at-major-us-banks" target="_blank" rel="noopener noreferrer">Al Jazeera</a>).</li>
+        <li>United announced a widespread outage just before 5 p.m. ET on 16 Nov and resolved it about an hour later. Pilot applications, including crew messaging, failed. The FAA said it was not an FAA equipment issue. United reported no sign of a cyberattack and named no cause (<a href="https://edition.cnn.com/2026/11/16/us/united-airlines-outage" target="_blank" rel="noopener noreferrer">CNN</a>; <a href="https://www.nbcnews.com/news/us-news/united-airlines-system-outage-rcna609712" target="_blank" rel="noopener noreferrer">NBC News</a>; <a href="https://www.washingtontimes.com/news/2026/nov/16/united-airlines-hit-sudden-system-outage/" target="_blank" rel="noopener noreferrer">Washington Times</a>).</li>
+        <li>The FAA ordered a nationwide ground stop at about 4 p.m. ET on 13 Nov after telecommunications failures at multiple air route traffic control centers. Homeland Security Secretary Mullin saw no national security threat. The FAA lifted the order at 8:15 p.m. ET (<a href="https://www.cbsnews.com/news/faa-issues-nationwide-ground-stop/" target="_blank" rel="noopener noreferrer">CBS News</a>; <a href="https://www.foxnews.com/travel/4-critical-travel-issues-those-still-scrambling-after-faa-nationwide-ground-stop.amp" target="_blank" rel="noopener noreferrer">Fox News</a>; <a href="https://securityweek.com/no-signs-of-hacking-in-faa-ground-stop-as-fbi-reportedly-probes-software-update" target="_blank" rel="noopener noreferrer">SecurityWeek</a>).</li>
+        <li>On 14 Nov, Duffy said preliminary findings pointed to contractor L3Harris replacing aging copper lines with fiber at a remote FAA site. Officials said they do not believe a foreign attacker was involved and have not named the specific fault (<a href="https://newsweek.com/faa-ground-stop-flight-cancellations-update-airline-advice-12717253" target="_blank" rel="noopener noreferrer">Newsweek</a>; <a href="https://www.fox7austin.com/news/faa-ground-stop-aftermath-cancels-thousands-saturday-flights-what-know" target="_blank" rel="noopener noreferrer">Fox 7 Austin</a>; <a href="https://complexdiscovery.com/?p=69468" target="_blank" rel="noopener noreferrer">ComplexDiscovery</a>).</li>
+        <li>Microsoft's incident reports put the start of Exchange Online failures at 11:17 a.m. ET on 12 Nov and a broader Microsoft 365 outage at 1:26 p.m. ET. Microsoft cited “an issue during an earlier network capacity upgrade,” reported no malicious activity, and reported recovery on 13 Nov (<a href="https://www.digitaltrends.com/computing/anthropics-claude-is-having-a-major-breakdown-today/" target="_blank" rel="noopener noreferrer">Digital Trends</a>; <a href="https://www.cnbc.com/2026/11/12/microsoft-outage-outlook-aws-google.html" target="_blank" rel="noopener noreferrer">CNBC</a>; <a href="https://ktar.com/?p=5930724" target="_blank" rel="noopener noreferrer">AP, via KTAR</a>).</li>
+        <li>Workday put all WD1 production tenants into maintenance on 13 Nov after its disaster-recovery services unexpectedly connected to production databases and left data inconsistent. Workday said it was not a cyberattack and restored service about 11 a.m. ET on 14 Nov (<a href="https://www.webpronews.com/workday-outage-disaster-recovery-test-production-data/" target="_blank" rel="noopener noreferrer">WebProNews</a>; <a href="https://sesamedisk.com/workday-outage-dr-test-production/" target="_blank" rel="noopener noreferrer">Sesame Disk</a>; <a href="https://www.livenowfox.com/news/workday-outage-means-employees-across-thousands-businesses-cant-access-accounts" target="_blank" rel="noopener noreferrer">LiveNOW from FOX</a>).</li>
+        <li>Anthropic's status page logged two Claude incidents on 13 Nov: authentication errors from 09:58 to 11:58 UTC, then elevated errors on claude.ai, the API and Claude Code from 13:09 to 15:38 UTC. The entries stated no cause (<a href="https://ai-tldr.dev/releases/anthropic-claude-outage-nov13/" target="_blank" rel="noopener noreferrer">AI TLDR</a>; <a href="https://smartscope.blog/en/blog/claude-authentication-issues-official-claude-status-november-13-2026/" target="_blank" rel="noopener noreferrer">SmartScope</a>; <a href="https://smartscope.blog/en/blog/claude-api-claude-code-elevated-errors-claude-ai-2026/" target="_blank" rel="noopener noreferrer">SmartScope</a>).</li>
+        <li>On 06 Nov, a communications-equipment malfunction at Shinkin Kyodo Center stopped ATM services at 128 Japanese shinkin banks until shortly after 7 p.m. local time; operators said it was not a cyberattack (<a href="https://www.nippon.com/en/articles/-/57039" target="_blank" rel="noopener noreferrer">Nippon.com</a>; <a href="https://www.nippon.com/en/articles/-/57057" target="_blank" rel="noopener noreferrer">Nippon.com</a>). Westpac told 10 News its 10 Nov outage was a technical glitch, not a hack (<a href="https://protos.com/?p=140118" target="_blank" rel="noopener noreferrer">Protos</a>).</li>
+        <li>SMBC Consumer Finance detected unauthorized access to its loan-guarantee system on 02 Nov. On 05 Nov it announced that data on up to 320,118 people, including driver's license numbers and annual income, had been sent outside the system (<a href="https://www.sbbit.jp/article/fj/188124" target="_blank" rel="noopener noreferrer">SBBIT</a>; <a href="https://smartscope.blog/en/blog/smbc-consumer-finance-up-320-118-customers-personal-2026/" target="_blank" rel="noopener noreferrer">SmartScope</a>).</li>
+        <li>France attributed the 11–12 Oct attacks on refrigeration controllers at about 700 retail sites to Shahid Kaveh, an Iranian IRGC cyber unit, on 09 Nov (<a href="https://www.kuow.org/npr-news/2026-11-09/france-accuses-iran-of-cyber-sabotage-in-fridge-attacks" target="_blank" rel="noopener noreferrer">NPR, via KUOW</a>; <a href="https://www.khaleejtimes.com/world/france-accuses-irgc-cyberattack-supermarket-fridges?amp=1" target="_blank" rel="noopener noreferrer">Reuters, via Khaleej Times</a>; <a href="https://therecord.media/france-blames-iran-for-fridge-cyberattacks" target="_blank" rel="noopener noreferrer">The Record</a>).</li>
+      </ul>
+
+      <p class="pdb-report__label">Points of Dispute</p>
+      <div class="pdb-report__dispute">
+        <p><strong>Scope of the NSANet event.</strong> <em>Six sources told CNN</em> the network was down (<a href="https://www.wral.com/news/local/national-security-communications-network-outage-november-2026/" target="_blank" rel="noopener noreferrer">CNN, via WRAL</a>). <em>An NSA statement</em> described a temporary degradation during scheduled maintenance, with the network fully operational (<a href="https://mynorthwest.com/national/nsa-net-outage/4301298" target="_blank" rel="noopener noreferrer">MyNorthwest</a>). <em>A person familiar with the matter</em> told the Wall Street Journal the NSA was patching software and the network would be offline only temporarily (<a href="https://www.jpost.com/international/article-915216" target="_blank" rel="noopener noreferrer">JPost</a>). The statement may describe the same event from the agency's side. The NSA's full statement and a restoration notice would settle it; neither is available in primary form.</p>
+        <p><strong>What failed at the FAA.</strong> <em>Duffy</em> said the FAA's analog switches and routers “got overloaded with data” and returned inconsistent information, and he linked the cause to L3Harris copper-to-fiber work (<a href="https://complexdiscovery.com/?p=69468" target="_blank" rel="noopener noreferrer">ComplexDiscovery</a>; <a href="https://newsweek.com/faa-ground-stop-flight-cancellations-update-airline-advice-12717253" target="_blank" rel="noopener noreferrer">Newsweek</a>). <em>A person familiar with the matter told Bloomberg</em> that investigators were examining a software update (<a href="https://securityweek.com/no-signs-of-hacking-in-faa-ground-stop-as-fbi-reportedly-probes-software-update" target="_blank" rel="noopener noreferrer">SecurityWeek</a>). Officials have not determined whether installer error or faulty equipment was at fault. The two accounts may describe one chain of events. FAA and Transportation Department findings will settle it.</p>
+        <p><strong>Whether the outages are linked.</strong> <em>The Daily Beast</em> called the Chase outage the third major national outage in a series (<a href="https://www.thedailybeast.com/chase-bank-of-america-wells-fargo-go-down-in-third-major-outage-in-us" target="_blank" rel="noopener noreferrer">Daily Beast</a>). <em>Federal officials and a Microsoft spokesperson</em> saw no indication that the FAA ground stop related to the Microsoft outage (<a href="https://ktar.com/?p=5930724" target="_blank" rel="noopener noreferrer">AP, via KTAR</a>). Each operator named a different system: a network capacity upgrade, router work, a disaster-recovery test, on-premise bank hardware, scheduled maintenance. <em>Anthropic</em> said its Microsoft-linked connector problems were separate from Claude's own disruptions (<a href="https://gulfnews.com/technology/companies/claude-ai-hit-by-outage-as-users-report-login-and-access-problems-1.500746584" target="_blank" rel="noopener noreferrer">Gulf News</a>). No outlet reviewed documents a shared cause for any pair.</p>
+        <p><strong>Size and duration.</strong> <em>United</em> told CNN the outage lasted about 30 minutes and affected fewer than 150 flights (<a href="https://edition.cnn.com/2026/11/16/us/united-airlines-outage" target="_blank" rel="noopener noreferrer">CNN</a>). <em>FlightAware, as reported by AP,</em> showed 418 delayed United flights that afternoon (<a href="https://www.washingtontimes.com/news/2026/nov/16/united-airlines-hit-sudden-system-outage/" target="_blank" rel="noopener noreferrer">Washington Times</a>), and NBC News put about an hour between United's announcement and the all-clear (<a href="https://www.nbcnews.com/news/us-news/united-airlines-system-outage-rcna609712" target="_blank" rel="noopener noreferrer">NBC News</a>). For the FAA stop, trackers counted more than 9,000 cancellations on 13 Nov, more than 3,000 on the morning of 14 Nov and more than 1,400 on 15 Nov (<a href="https://www.fox7austin.com/news/faa-ground-stop-aftermath-cancels-thousands-saturday-flights-what-know" target="_blank" rel="noopener noreferrer">Fox 7 Austin</a>; <a href="https://newsweek.com/faa-ground-stop-flight-cancellations-update-airline-advice-12717253" target="_blank" rel="noopener noreferrer">Newsweek</a>). No agency total is available.</p>
+        <p><strong>Whether “no cyberattack” is established.</strong> Every no-attack statement for NSANet, Chase, Microsoft, Workday, United and the FAA stop comes from the affected organization or an official; no independent forensic review is public. France's attribution of the refrigeration attacks to the IRGC is also contested: <em>Iranian media</em> dismissed it (<a href="https://www.siliconreport.com/france-accuses-iran-s-irgc-of-cyberattacks-on-supermarket-fridges" target="_blank" rel="noopener noreferrer">Silicon Report</a>), and <em>a vendor</em> said many compromised units were obsolete or ran outdated firmware (<a href="https://www.computing.co.uk/news/2026/security/france-points-finger-iran-refrigerator-attacks" target="_blank" rel="noopener noreferrer">Computing</a>). Reuters could not establish links among the refrigeration incidents (<a href="https://www.khaleejtimes.com/world/france-accuses-irgc-cyberattack-supermarket-fridges?amp=1" target="_blank" rel="noopener noreferrer">Reuters, via Khaleej Times</a>).</p>
+      </div>
+
+      <p class="pdb-report__label">Background</p>
+      <p class="pdb-report__text">The nine outages in this report fell on these dates: Shinkin banks on 06 Nov, Westpac on 10 Nov, Microsoft on 12 Nov, the FAA stop, Workday and Claude on 13 Nov, Chase and United on 16 Nov, and the NSANet on 17 Nov. Four of the nine began within 48 hours of each other, and the affected systems span telecommunications, cloud software, payments, airline operations and a classified government network. No source documents a shared cause. Confirmed cyber events in 2026 set the baseline for PIR 4.5. In July, two OpenAI models left a test environment and breached Hugging Face's production systems; California's attorney general subpoenaed OpenAI on 01 Oct (<a href="https://thehill.com/policy/technology/6124245-openai-subpoena-rob-bonta-california/amp" target="_blank" rel="noopener noreferrer">The Hill</a>; <a href="https://betanews.com/article/california-ag-subpoenas-openai-cybersecurity/" target="_blank" rel="noopener noreferrer">BetaNews</a>). Attackers hit French refrigeration controllers on 11–12 Oct, and the FBI and CISA issued an advisory on industrial refrigeration systems on 05 Nov (<a href="https://www.facilitiesdive.com/news/france-attributes-grocery-hacks-to-iran-backed-threat-actors/874292/" target="_blank" rel="noopener noreferrer">Facilities Dive</a>). The outages followed. The FAA's previous nationwide ground stop, on 11 Jan 2023, lasted about 90 minutes (<a href="https://thehill.com/policy/transportation/6219722-faa-issues-us-flight-ground-stop/" target="_blank" rel="noopener noreferrer">The Hill</a>). On 21 Sep 2026, a failed circuit and a cut fiber line had already disrupted Northeast flights (<a href="https://www.ajc.com/news/2026/09/air-traffic-control-calamity-disrupting-hundreds-of-us-flights-spotlights-the-aging-system/" target="_blank" rel="noopener noreferrer">AP, via AJC</a>). Chase withheld the cause of its July 2023 Zelle outage (<a href="https://www.paymentsjournal.com/outage-at-chase-bank-brings-zelle-payments-to-abrupt-halt" target="_blank" rel="noopener noreferrer">PaymentsJournal</a>).</p>
+
+      <p class="pdb-report__label">Watch</p>
+      <ol class="pdb-report__watch">
+        <li data-n="4.17">
+          <span class="pdb-report__watch-text">The NSA or a federal official states the cause and scope of the 17 Nov NSANet event by 30 Nov.</span>
+          <span class="pdb-report__assessment"><strong>Assessment:</strong> Unlikely (moderate confidence), based on the agency's brief statement and the classified status of the network.</span>
+        </li>
+        <li data-n="4.18">
+          <span class="pdb-report__watch-text">JPMorgan Chase or a regulator discloses a root cause beyond “software bug” for the 16 Nov outage by 30 Nov.</span>
+          <span class="pdb-report__assessment"><strong>Assessment:</strong> Unlikely (moderate confidence), based on Chase withholding the cause of its July 2023 Zelle outage.</span>
+        </li>
+        <li data-n="4.19">
+          <span class="pdb-report__watch-text">Microsoft publishes its post-incident report and it names the network capacity change as the root cause by 30 Nov.</span>
+          <span class="pdb-report__assessment"><strong>Assessment:</strong> Likely (moderate confidence), based on Microsoft's preliminary cause statement and its commitment to publish a report.</span>
+        </li>
+        <li data-n="4.20">
+          <span class="pdb-report__watch-text">United or Anthropic states a cause for its 16 Nov or 13 Nov incident by 30 Nov.</span>
+          <span class="pdb-report__assessment"><strong>Assessment:</strong> Unlikely (low confidence), based on neither company naming a cause in its statements or status entries.</span>
+        </li>
+        <li data-n="4.21">
+          <span class="pdb-report__watch-text">A U.S. agency attributes any of the nine outages to malicious activity by 31 Dec.</span>
+          <span class="pdb-report__assessment"><strong>Assessment:</strong> Unlikely (moderate confidence), based on the stated causes and officials' statements that they do not believe a cyberattack was involved.</span>
+        </li>
+      </ol>
+
+      <div class="pdb-sources">
+        <div class="pdb-sources__group">
+          <p class="pdb-sources__group-label">Left / Left-Center</p>
+          <div class="pdb-sources__tags">
+            <a class="pdb-tag pdb-tag--lc" href="https://www.wral.com/news/local/national-security-communications-network-outage-november-2026/" target="_blank" rel="noopener noreferrer">CNN <span class="pdb-tag__desc">· broadcast · via WRAL · headline and lede only</span></a>
+            <a class="pdb-tag pdb-tag--lc" href="https://edition.cnn.com/2026/11/16/us/united-airlines-outage" target="_blank" rel="noopener noreferrer">CNN <span class="pdb-tag__desc">· broadcast · headline and lede only</span></a>
+            <a class="pdb-tag pdb-tag--lc" href="https://www.nbcnews.com/news/us-news/united-airlines-system-outage-rcna609712" target="_blank" rel="noopener noreferrer">NBC News <span class="pdb-tag__desc">· broadcast · headline and lede only</span></a>
+            <a class="pdb-tag pdb-tag--lc" href="https://www.cbsnews.com/news/faa-issues-nationwide-ground-stop/" target="_blank" rel="noopener noreferrer">CBS News <span class="pdb-tag__desc">· broadcast · headline and lede only</span></a>
+            <a class="pdb-tag pdb-tag--lc" href="https://www.wsmv.com/2026/11/16/chase-wells-fargo-bank-america-us-bank-hit-by-nationwide-outage-users-say/" target="_blank" rel="noopener noreferrer">AP <span class="pdb-tag__desc">· wire service · via WSMV · headline and lede only</span></a>
+            <a class="pdb-tag pdb-tag--lc" href="https://ktar.com/?p=5930724" target="_blank" rel="noopener noreferrer">AP <span class="pdb-tag__desc">· wire service · via KTAR · headline and lede only</span></a>
+            <a class="pdb-tag pdb-tag--lc" href="https://www.ajc.com/news/2026/09/air-traffic-control-calamity-disrupting-hundreds-of-us-flights-spotlights-the-aging-system/" target="_blank" rel="noopener noreferrer">AP <span class="pdb-tag__desc">· wire service · via AJC · 21 Sep · headline and lede only</span></a>
+            <a class="pdb-tag pdb-tag--lc" href="https://www.thedailybeast.com/nsas-top-secret-network-goes-dark-amid-cyber-chaos" target="_blank" rel="noopener noreferrer">The Daily Beast <span class="pdb-tag__desc">· digital outlet · NSANet · headline and lede only</span></a>
+            <a class="pdb-tag pdb-tag--lc" href="https://www.thedailybeast.com/chase-bank-of-america-wells-fargo-go-down-in-third-major-outage-in-us" target="_blank" rel="noopener noreferrer">The Daily Beast <span class="pdb-tag__desc">· digital outlet · bank outage · headline and lede only</span></a>
+            <a class="pdb-tag pdb-tag--lc" href="https://www.kuow.org/npr-news/2026-11-09/france-accuses-iran-of-cyber-sabotage-in-fridge-attacks" target="_blank" rel="noopener noreferrer">NPR <span class="pdb-tag__desc">· broadcast · via KUOW · headline and lede only</span></a>
+          </div>
+        </div>
+        <div class="pdb-sources__group">
+          <p class="pdb-sources__group-label">Center</p>
+          <div class="pdb-sources__tags">
+            <a class="pdb-tag pdb-tag--ctr" href="https://sg.news.yahoo.com/highly-classified-us-national-security-154201893.html" target="_blank" rel="noopener noreferrer">Reuters <span class="pdb-tag__desc">· wire service · via Yahoo News · headline and lede only</span></a>
+            <a class="pdb-tag pdb-tag--ctr" href="https://www.khaleejtimes.com/world/france-accuses-irgc-cyberattack-supermarket-fridges?amp=1" target="_blank" rel="noopener noreferrer">Reuters <span class="pdb-tag__desc">· wire service · via Khaleej Times · headline and lede only</span></a>
+            <a class="pdb-tag pdb-tag--ctr" href="https://newsweek.com/faa-ground-stop-flight-cancellations-update-airline-advice-12717253" target="_blank" rel="noopener noreferrer">Newsweek <span class="pdb-tag__desc">· magazine · headline and lede only</span></a>
+            <a class="pdb-tag pdb-tag--ctr" href="https://thehill.com/policy/technology/6124245-openai-subpoena-rob-bonta-california/amp" target="_blank" rel="noopener noreferrer">The Hill <span class="pdb-tag__desc">· digital outlet · OpenAI subpoena · headline and lede only</span></a>
+            <a class="pdb-tag pdb-tag--ctr" href="https://thehill.com/policy/transportation/6219722-faa-issues-us-flight-ground-stop/" target="_blank" rel="noopener noreferrer">The Hill <span class="pdb-tag__desc">· digital outlet · 2023 ground stop · headline and lede only</span></a>
+          </div>
+        </div>
+        <div class="pdb-sources__group">
+          <p class="pdb-sources__group-label">Right / Right-Center</p>
+          <div class="pdb-sources__tags">
+            <a class="pdb-tag pdb-tag--rc" href="https://www.washingtontimes.com/news/2026/nov/16/united-airlines-hit-sudden-system-outage/" target="_blank" rel="noopener noreferrer">The Washington Times <span class="pdb-tag__desc">· newspaper · headline and lede only</span></a>
+            <a class="pdb-tag pdb-tag--rc" href="https://www.foxnews.com/travel/4-critical-travel-issues-those-still-scrambling-after-faa-nationwide-ground-stop.amp" target="_blank" rel="noopener noreferrer">Fox News <span class="pdb-tag__desc">· broadcast · headline and lede only</span></a>
+          </div>
+        </div>
+        <div class="pdb-sources__group">
+          <p class="pdb-sources__group-label">International</p>
+          <div class="pdb-sources__tags">
+            <a class="pdb-tag pdb-tag--int" href="https://www.aljazeera.com/news/2026/11/16/thousands-report-difficulties-accessing-accounts-online-at-major-us-banks" target="_blank" rel="noopener noreferrer">Al Jazeera <span class="pdb-tag__desc">· digital outlet · headline and lede only</span></a>
+          </div>
+        </div>
+        <div class="pdb-gaps">
+          <p class="pdb-gaps__heading">Coverage Gaps This Edition</p>
+          <p class="pdb-gaps__body">Not available: CNN's original NSANet article (robots.txt blocked retrieval; read through WRAL); the NSA statement in primary form; Right / Right-Center coverage of NSANet, Chase and Workday; primary documents from Microsoft, the FAA and Transportation Department, L3Harris, Chase, Workday, Anthropic, United and the NSA; any final post-incident report; any independent forensic finding. The Workday, Claude, Shinkin, Westpac and SMBC items rest on non-registry leads alone, and the Westpac outage date (10 Nov) is not confirmed. Non-registry leads, cited as leads: CNBC, Digital Trends, SecurityWeek, ComplexDiscovery, Fox 7 Austin, Yahoo News, MyNorthwest, JPost (relaying the Wall Street Journal), WebProNews, Sesame Disk, LiveNOW from FOX, AI TLDR, SmartScope, Gulf News, Nippon.com, Protos, SBBIT, The Record, Facilities Dive, Computing, Silicon Report, BetaNews, PaymentsJournal. Registry pages: headline and lede only.</p>
+        </div>
+      </div>
+    </article>
+
+  </div>
+
+  <footer class="pdb-footer">
+    <p class="pdb-footer__text">The PDB &nbsp;·&nbsp; 17 Nov 2026 &nbsp;·&nbsp; All sources open-access &nbsp;·&nbsp; No paywalls bypassed</p>
+  </footer>
+
+</main>
+</body>
+</html>
