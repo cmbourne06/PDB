@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>The PDB · 21 Nov 2026</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="The PDB">
+<meta property="og:title" content="PDB · 21 Nov 2026 — Chinese Typhoon Campaigns and the November Outages, NSANet and the NCIC Intrusion">
+<meta property="og:description" content="Today's brief: Technology">
+<meta property="og:url" content="https://thepdb.news/OnDemand/2026-11-21-od-Typhoon_Campaign_Linkages.html">
+<meta property="og:image" content="https://thepdb.news/Assets/Images/pdb-og-rose.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="The PDB — Your Personal Daily Brief">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@thepdb">
+<meta name="twitter:title" content="PDB · 21 Nov 2026 — Chinese Typhoon Campaigns and the November Outages, NSANet and the NCIC Intrusion">
+<meta name="twitter:description" content="Today's brief: Technology">
+<meta name="twitter:image" content="https://thepdb.news/Assets/Images/pdb-og-rose.png">
+<meta name="twitter:image:alt" content="The PDB — Your Personal Daily Brief">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&family=Inter:wght@400;600;700&display=swap">
+<style>
+/* ============================================================
+   THE PDB — CANONICAL STYLESHEET v2.0 (01 Nov 2026)
+   Governs: Daily PDB and On-Demand (OD) reports.
+   Authority: SOP Draft 0.8, Section 6; PDB Style Spec v2.0.
+   LOCKED: copy verbatim into every edition. Do not edit per run.
+   ============================================================ */
+:root {
+  --page-bg:        #F5F4F0;
+  --content-bg:     #FFFFFF;
+  --content-radius: 6px;
+  --content-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  --max-width:      760px;
+  --masthead-bg:    #1A2744;
+  --masthead-fg:    #FFFFFF;
+  --accent-gold:    #C8A84B;
+  --heading-fg:     #1A2744;
+  --heading-rule:   #1A2744;
+  --body-fg:        #1A1A1A;
+  --meta-fg:        #555555;
+  --secondary-fg:   #AAAAAA;
+  --divider:        #DDDDDD;
+  --card-border:    #E0DDD6;
+  --banner-bg:      #1A2744;
+  --banner-fg:      #FFFFFF;
+  --balance-bg:     #F0EDE6;
+  --iw-bg:          #FFF8E8;
+  --otr-bg:         #F5F0E8;
+  --trend:          #B06010;
+  --gaps-fg:        #8B0000;
+  /* Source group colors (SOP Table 4) */
+  --lc:  #1A5FBF;
+  --ctr: #2A7A3A;
+  --rc:  #B03020;
+  --int: #5A3A8A;
+  --ps:  #5A5850;
+  --link-fg:        #1A5FBF;
+  --link-hover:     #0D3D8A;
+  --font-display:   'Playfair Display', 'Georgia', serif;
+  --font-body:      'Source Serif 4', 'Georgia', 'Times New Roman', serif;
+  --font-ui:        'Inter', 'Helvetica Neue', 'Arial', sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --page-bg: #111318; --content-bg: #1C2030; --content-shadow: 0 2px 12px rgba(0,0,0,0.4);
+    --masthead-bg: #0D1526; --banner-bg: #0D1526; --body-fg: #E8E6E0; --meta-fg: #9A9890;
+    --secondary-fg: #8A8880; --divider: #2E3040; --card-border: #2E3040;
+    --balance-bg: #1E1C14; --iw-bg: #1E1A0C; --otr-bg: #201A12; --trend: #C87020;
+    --heading-fg: #C8D0E8; --heading-rule: #3A4060; --link-fg: #6FA0E8; --link-hover: #9CBEF0;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --page-bg: #111318; --content-bg: #1C2030; --content-shadow: 0 2px 12px rgba(0,0,0,0.4);
+  --masthead-bg: #0D1526; --banner-bg: #0D1526; --body-fg: #E8E6E0; --meta-fg: #9A9890;
+  --secondary-fg: #8A8880; --divider: #2E3040; --card-border: #2E3040;
+  --balance-bg: #1E1C14; --iw-bg: #1E1A0C; --otr-bg: #201A12; --trend: #C87020;
+  --heading-fg: #C8D0E8; --heading-rule: #3A4060; --link-fg: #6FA0E8; --link-hover: #9CBEF0;
+  color-scheme: dark;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+body { margin: 0; background: var(--page-bg); color: var(--body-fg); font-family: var(--font-body); font-size: 15px; line-height: 1.65; padding: 24px 16px; }
+a { color: var(--link-fg); text-decoration: none; }
+a:hover { color: var(--link-hover); text-decoration: underline; }
+.pdb-page { max-width: var(--max-width); margin-inline: auto; background: var(--content-bg); border-radius: var(--content-radius); box-shadow: var(--content-shadow); overflow: hidden; }
+
+/* ── MASTHEAD (locked) ── */
+.pdb-masthead { background: var(--masthead-bg); padding: 32px 24px 24px; text-align: center; }
+.pdb-masthead__eyebrow { font-family: var(--font-ui); font-size: 11px; font-weight: 600; color: var(--accent-gold); text-transform: uppercase; letter-spacing: 0.2em; margin: 0 0 10px; }
+.pdb-masthead__title { font-family: var(--font-display); font-size: clamp(36px, 8vw, 56px); font-weight: 900; color: var(--masthead-fg); margin: 0; line-height: 1.1; }
+.pdb-masthead__rule { border: none; border-top: 2px solid var(--accent-gold); margin: 10px 0; }
+.pdb-masthead__sub { font-family: var(--font-ui); font-size: 11px; font-weight: 600; color: var(--accent-gold); letter-spacing: 0.15em; text-transform: uppercase; margin: 0 0 6px; }
+.pdb-masthead__meta { font-family: var(--font-ui); font-size: 13px; color: var(--secondary-fg); margin: 0; }            /* PDB: date · reports · window */
+.pdb-masthead__odtitle { font-family: var(--font-ui); font-size: 14px; font-weight: 700; color: var(--accent-gold); text-transform: uppercase; letter-spacing: 0.08em; margin: 12px 0 8px; text-wrap: balance; } /* OD only */
+.pdb-masthead__date { font-family: var(--font-ui); font-size: 13px; color: var(--secondary-fg); margin: 0; }            /* OD only */
+.pdb-masthead__window { font-family: var(--font-ui); font-size: 11px; color: var(--secondary-fg); margin: 2px 0 0; }     /* OD only */
+
+/* ── TOPICS BANNER (locked) ── */
+.pdb-banner { background: var(--banner-bg); padding: 10px 24px; display: flex; flex-wrap: wrap; gap: 4px 0; align-items: center; }
+.pdb-banner__link { font-family: var(--font-ui); font-size: 11px; font-weight: 600; color: var(--banner-fg); text-transform: uppercase; letter-spacing: 0.04em; white-space: nowrap; padding: 2px 4px; text-decoration: none; }
+.pdb-banner__link:hover { color: var(--accent-gold); text-decoration: none; }
+.pdb-banner__link--otr { color: var(--accent-gold); font-weight: 700; }
+.pdb-banner__link--active { color: var(--accent-gold); text-decoration: underline; }
+.pdb-banner__sep { font-family: var(--font-ui); font-size: 11px; color: rgba(255,255,255,0.3); padding: 0 2px; user-select: none; }
+
+.pdb-content { padding: 24px 24px 0; }
+
+/* ── BALANCE AND SOURCE INTEGRITY BOX (locked text: SOP Figure 1) ── */
+.pdb-balance { background: var(--balance-bg); border-left: 4px solid var(--accent-gold); padding: 16px 20px; margin: 0 0 24px; border-radius: 0 4px 4px 0; }
+.pdb-balance__heading { font-family: var(--font-ui); font-size: 11px; font-weight: 700; color: var(--heading-fg); text-transform: uppercase; letter-spacing: 0.08em; margin: 0 0 8px; }
+.pdb-balance__body { font-family: var(--font-body); font-size: 13px; color: var(--body-fg); line-height: 1.6; margin: 0; }
+.pdb-balance__legend { margin-top: 10px; display: flex; flex-wrap: wrap; gap: 6px 16px; }
+.pdb-balance__swatch { display: inline-flex; align-items: center; gap: 6px; font-family: var(--font-ui); font-size: 11px; color: var(--meta-fg); }
+.pdb-balance__dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
+.pdb-balance__dot--lc { background: #1A5FBF; } .pdb-balance__dot--ctr { background: #2A7A3A; } .pdb-balance__dot--rc { background: #B03020; }
+.pdb-balance__dot--int { background: #5A3A8A; } .pdb-balance__dot--ps { background: #5A5850; }
+.pdb-balance__dot--reg { background: transparent; border: 2px dashed #5A3A8A; }
+
+/* ── SECTION HEADINGS ── */
+.pdb-section-heading { font-family: var(--font-ui); font-size: 14px; font-weight: 700; color: var(--heading-fg); text-transform: uppercase; letter-spacing: 0.05em; border-bottom: 2px solid var(--heading-rule); padding-bottom: 6px; margin: 0 0 14px; }
+.pdb-section-head { font-family: var(--font-ui); font-size: 13px; font-weight: 700; color: var(--heading-fg); border-bottom: 2px solid var(--heading-rule); padding-bottom: 6px; margin: 0 0 14px; } /* OD: above the card */
+
+/* ── INDICATIONS AND WARNING ── */
+.pdb-iw { background: var(--iw-bg); border-left: 4px solid var(--accent-gold); padding: 16px 20px; margin: 0 0 24px; border-radius: 0 4px 4px 0; }
+.pdb-iw__item { margin-bottom: 14px; padding-bottom: 14px; border-bottom: 1px dashed var(--divider); }
+.pdb-iw__item:last-child { margin-bottom: 0; padding-bottom: 0; border-bottom: none; }
+.pdb-iw__label { font-family: var(--font-ui); font-size: 10px; font-weight: 700; color: var(--meta-fg); text-transform: uppercase; letter-spacing: 0.06em; margin: 0 0 3px; }
+.pdb-iw__title { font-family: var(--font-ui); font-size: 13px; font-weight: 700; color: var(--heading-fg); margin: 0 0 6px; }
+.pdb-iw__body { font-family: var(--font-body); font-size: 13px; color: var(--body-fg); line-height: 1.6; margin: 0 0 6px; }
+.pdb-iw__indicator { font-family: var(--font-body); font-size: 13px; color: var(--body-fg); line-height: 1.6; margin: 0 0 8px; }
+.pdb-iw__indicator strong, .pdb-report__assessment strong { font-weight: 700; }
+.pdb-none { font-family: var(--font-body); font-size: 13px; color: var(--meta-fg); font-style: italic; margin: 0; }
+
+/* ── ON THE RISE ── */
+.pdb-otr { background: var(--otr-bg); border-left: 4px solid var(--trend); border-radius: 4px; padding: 16px 20px; margin: 0 0 24px; }
+.pdb-otr__eyebrow { font-family: var(--font-ui); font-size: 11px; font-weight: 700; color: var(--trend); letter-spacing: 0.1em; text-transform: uppercase; margin: 0 0 4px; }
+.pdb-otr__heading { font-family: var(--font-ui); font-size: 14px; font-weight: 700; color: var(--heading-fg); border-bottom: 2px solid var(--heading-rule); padding-bottom: 6px; margin: 0 0 14px; }
+.pdb-otr__item { margin-bottom: 14px; padding-bottom: 14px; border-bottom: 1px dashed var(--divider); }
+.pdb-otr__item:last-child { margin-bottom: 0; padding-bottom: 0; border-bottom: none; }
+.pdb-otr__title { font-family: var(--font-ui); font-size: 14px; font-weight: 700; color: var(--heading-fg); margin: 0 0 4px; }
+.pdb-otr__velocity { font-family: var(--font-ui); font-size: 11px; color: var(--trend); font-style: italic; margin: 0 0 8px; }
+.pdb-otr__body { font-family: var(--font-body); font-size: 14px; color: var(--body-fg); line-height: 1.65; margin: 0 0 8px; }
+
+/* ── TRENDING FLAG (locked) ── */
+.trending-flag { display: inline-block; background-color: var(--trend); color: #FFFFFF; font-family: var(--font-ui); font-size: 10px; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; border-radius: 3px; padding: 2px 6px; margin-left: 8px; vertical-align: middle; }
+
+/* ── TOPIC REPORTS ──
+   PDB: .pdb-topic (open block, divider between topics)
+   OD:  .pdb-topic.pdb-topic--card (bordered card beneath .pdb-section-head) */
+.pdb-topic { padding-bottom: 24px; border-bottom: 1px solid var(--divider); }
+.pdb-topic + .pdb-topic { padding-top: 20px; }
+.pdb-topic:last-of-type { border-bottom: none; }
+.pdb-topic--card { background: var(--content-bg); border: 1px solid var(--card-border); border-radius: 6px; padding: 22px 24px; margin: 0 0 20px; }
+.pdb-topic--card:last-of-type { border-bottom: 1px solid var(--card-border); }
+.pdb-topic__eyebrow { font-family: var(--font-ui); font-size: 10px; font-weight: 700; color: var(--meta-fg); text-transform: uppercase; letter-spacing: 0.1em; margin: 0 0 2px; }
+.pdb-topic--card .pdb-topic__eyebrow { font-size: 11px; font-weight: 600; letter-spacing: 0.08em; margin: 0 0 4px; }
+.pdb-topic__heading { font-family: var(--font-ui); font-size: 14px; font-weight: 700; color: var(--heading-fg); text-transform: uppercase; letter-spacing: 0.05em; border-bottom: 2px solid var(--heading-rule); padding-bottom: 6px; margin: 0 0 14px; }
+.pdb-topic__rule { border: none; border-top: 1px solid var(--accent-gold); margin: 8px 0 16px; }
+
+.pdb-report__subject { font-family: var(--font-ui); font-size: 18px; font-weight: 700; color: var(--heading-fg); margin: 0 0 6px; line-height: 1.3; text-wrap: balance; }
+.pdb-report__label { font-family: var(--font-ui); font-size: 10px; font-weight: 700; color: var(--heading-fg); text-transform: uppercase; letter-spacing: 0.06em; margin: 0 0 4px; }
+.pdb-report__label--change { color: var(--ps); }
+.pdb-report__bluf { font-family: var(--font-body); font-size: 15px; font-style: italic; color: var(--body-fg); margin: 0 0 14px; line-height: 1.6; }
+.pdb-report__text { font-family: var(--font-body); font-size: 14px; color: var(--body-fg); margin: 0 0 14px; }
+.pdb-report__facts { margin: 0 0 14px; padding-left: 20px; list-style: disc; font-family: var(--font-body); font-size: 14px; line-height: 1.65; color: var(--body-fg); }
+.pdb-report__facts li { margin-bottom: 5px; }
+.pdb-report__dispute { font-family: var(--font-body); font-size: 14px; line-height: 1.6; color: var(--body-fg); background: rgba(176,48,32,0.04); border-left: 3px solid #B03020; padding: 8px 12px; margin: 0 0 14px; }
+.pdb-report__dispute p { margin: 0 0 8px; }
+.pdb-report__dispute p:last-child { margin-bottom: 0; }
+.pdb-report__dispute em { color: var(--meta-fg); }
+.pdb-report__watch { margin: 0 0 14px; padding: 0; list-style: none; font-family: var(--font-body); font-size: 14px; line-height: 1.65; color: var(--body-fg); }
+.pdb-report__watch li { margin-bottom: 10px; padding-left: 38px; position: relative; }
+.pdb-report__watch li::before { content: "W" attr(data-n); font-family: var(--font-ui); font-size: 11px; font-weight: 700; color: var(--heading-fg); position: absolute; left: 0; top: 2px; }
+.pdb-report__watch-text { display: block; margin-bottom: 4px; }
+.pdb-report__assessment { display: block; font-size: 14px; font-style: normal; color: var(--body-fg); margin-top: 4px; }
+.pdb-report__comment { font-family: var(--font-body); font-size: 14px; color: var(--body-fg); border-left: 3px solid var(--accent-gold); padding: 8px 12px; margin: 0 0 14px; }
+.pdb-report__comment p { margin: 0 0 8px; } .pdb-report__comment p:last-child { margin-bottom: 0; }
+
+/* ── SOURCE TAGS (locked: solid group color, white text, <a> elements) ── */
+.pdb-sources { margin-top: 14px; }
+.pdb-sources__group { margin-bottom: 8px; }
+.pdb-sources__group-label { font-family: var(--font-ui); font-size: 10px; font-weight: 700; color: var(--meta-fg); text-transform: uppercase; letter-spacing: 0.06em; margin: 0 0 4px; }
+.pdb-sources__tags { display: flex; flex-wrap: wrap; gap: 4px; }
+.pdb-sources__tags--inline { margin-top: 2px; }
+.pdb-tag { display: inline-block; font-family: var(--font-ui); font-size: 11px; font-weight: 600; border-radius: 4px; padding: 2px 8px; color: #FFFFFF; border: 2px solid transparent; text-decoration: none; line-height: 1.4; }
+.pdb-tag:hover { color: #FFFFFF; text-decoration: underline; }
+.pdb-tag__desc { font-weight: 400; opacity: 0.85; }
+.pdb-tag--lc  { background: var(--lc);  border-color: var(--lc); }
+.pdb-tag--ctr { background: var(--ctr); border-color: var(--ctr); }
+.pdb-tag--rc  { background: var(--rc);  border-color: var(--rc); }
+.pdb-tag--int { background: var(--int); border-color: var(--int); }
+.pdb-tag--reg { background: var(--int); border-color: #FFFFFF; border-style: dashed; outline: 1px solid var(--int); }
+.pdb-tag--ps  { background: var(--ps);  border-color: var(--ps); }
+
+/* ── COVERAGE GAPS (locked heading color) ── */
+.pdb-gaps { margin-top: 12px; background: rgba(139,0,0,0.04); border-left: 3px solid #8B0000; border-radius: 3px; padding: 10px 14px; }
+.pdb-gaps__heading { font-family: var(--font-ui); font-size: 10px; font-weight: 700; color: var(--gaps-fg); text-transform: uppercase; letter-spacing: 0.06em; margin: 0 0 4px; }
+.pdb-gaps__body { font-family: var(--font-body); font-size: 12px; color: var(--meta-fg); margin: 0; }
+
+/* ── FOLLOW UP / RESPONSES TO YOUR QUESTIONS (PDB only) ── */
+.pdb-followup { border-top: 1px solid var(--divider); padding: 24px 0; }
+.pdb-followup__item { margin-bottom: 16px; }
+.pdb-followup__item:last-child { margin-bottom: 0; }
+.pdb-followup__number { font-family: var(--font-ui); font-size: 11px; font-weight: 700; color: var(--heading-fg); margin: 0 0 2px; }
+.pdb-followup__text { font-family: var(--font-body); font-size: 14px; color: var(--body-fg); margin: 0 0 4px; }
+.pdb-badge { display: inline-block; font-family: var(--font-ui); font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; padding: 1px 6px; border-radius: 3px; }
+.pdb-badge--open   { color: var(--ctr); border: 1px solid var(--ctr); }
+.pdb-badge--closed { color: var(--ps);  border: 1px solid var(--ps); }
+.pdb-badge--alert  { color: #8B0000;    border: 1px solid #8B0000; }
+.pdb-badge--action { color: var(--trend); border: 1px solid var(--trend); }
+
+/* ── FOOTER ── */
+.pdb-footer { padding: 16px 24px; border-top: 1px solid var(--divider); }
+.pdb-footer__text { font-family: var(--font-ui); font-size: 11px; color: var(--secondary-fg); text-align: center; margin: 0; }
+
+/* ── RESPONSIVE ── */
+@media (max-width: 500px) {
+  body { padding: 0; }
+  .pdb-page { border-radius: 0; box-shadow: none; }
+  .pdb-masthead, .pdb-content, .pdb-banner, .pdb-footer { padding-inline: 16px; }
+  .pdb-topic--card { padding: 18px 16px; }
+}
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation: none !important; transition: none !important; } }
+</style>
+</head>
+<body>
+<main class="pdb-page" role="main">
+
+  <header class="pdb-masthead">
+    <p class="pdb-masthead__eyebrow">★ ★ ★ · Open Source Intelligence · ★ ★ ★</p>
+    <h1 class="pdb-masthead__title">THE PDB</h1>
+    <hr class="pdb-masthead__rule" aria-hidden="true">
+    <p class="pdb-masthead__sub">Your Personal Daily Brief</p>
+    <p class="pdb-masthead__odtitle">On-Demand Report: Typhoon Campaign Linkages</p>
+    <p class="pdb-masthead__date">21 Nov 2026</p>
+    <p class="pdb-masthead__window">1 report · Collection window: 01 Mar–21 Nov 2026</p>
+  </header>
+
+  <nav class="pdb-banner" aria-label="Report sections">
+    <a class="pdb-banner__link pdb-banner__link--active" href="#topic-4">Technology</a>
+  </nav>
+
+  <div class="pdb-content">
+
+    <aside class="pdb-balance" aria-label="Balance and source integrity statement">
+      <p class="pdb-balance__heading">How We Ensure Balance and Source Integrity</p>
+      <p class="pdb-balance__body">This brief draws from a curated registry of over 300 news and information sources including national and international news outlets rated for editorial bias and factual reliability by independent third-party assessors. Each report includes sources from across the editorial spectrum — left, center, and right — and includes primary-source materials where available. Sources are selected for relevance and reliability, not conformity with any particular narrative or perspective. Gaps in coverage are noted when a spectrum segment did not report on the selected story. All sources are open-access; no paywalled content is accessed or reproduced.</p>
+      <div class="pdb-balance__legend">
+        <span class="pdb-balance__swatch"><span class="pdb-balance__dot pdb-balance__dot--lc"></span>Left / Left-Center</span>
+        <span class="pdb-balance__swatch"><span class="pdb-balance__dot pdb-balance__dot--ctr"></span>Center</span>
+        <span class="pdb-balance__swatch"><span class="pdb-balance__dot pdb-balance__dot--rc"></span>Right / Right-Center</span>
+        <span class="pdb-balance__swatch"><span class="pdb-balance__dot pdb-balance__dot--int"></span>International</span>
+        <span class="pdb-balance__swatch"><span class="pdb-balance__dot pdb-balance__dot--ps"></span>Primary Source</span>
+      </div>
+    </aside>
+
+    <h2 class="pdb-section-head">Topic 4 — Technology &amp; Science</h2>
+
+    <article class="pdb-topic pdb-topic--card" id="topic-4" aria-label="Topic 4: Technology &amp; Science">
+      <p class="pdb-topic__eyebrow">Technology &amp; Science · On-Demand · PIR 4.5 · Standard</p>
+      <p class="pdb-report__subject">Chinese Typhoon Campaigns and the November Outages, NSANet and the NCIC Intrusion</p>
+      <hr class="pdb-topic__rule">
+
+      <p class="pdb-report__label">BLUF</p>
+      <p class="pdb-report__bluf">No source attributes the November IT outages, the NSA network failure or the intrusion into the FBI’s NCIC database to a Typhoon group, the label American firms give Chinese state-linked hackers. Operators and officials cite maintenance, software and equipment faults for the outages, and no technical detail on NCIC is public. Typhoon groups remain active against American targets in 2026.</p>
+
+      <p class="pdb-report__label">Key Facts</p>
+      <ul class="pdb-report__facts">
+        <li><strong>Outages.</strong> On 12–17 Nov, outages hit Microsoft 365, FAA air traffic control, Chase, United and NSANet, the NSA’s classified network. Microsoft blamed a capacity upgrade, Chase a hardware bug and FAA officials contractor network work; none reported a cyberattack (<a href="https://ktar.com/?p=5930724" target="_blank" rel="noopener noreferrer">AP</a>; <a href="https://newsweek.com/faa-ground-stop-flight-cancellations-update-airline-advice-12717253" target="_blank" rel="noopener noreferrer">Newsweek</a>; <a href="https://www.aljazeera.com/news/2026/11/16/thousands-report-difficulties-accessing-accounts-online-at-major-us-banks" target="_blank" rel="noopener noreferrer">Al Jazeera</a>).</li>
+        <li><strong>NCIC.</strong> On 20 Nov CNN and AP reported an FBI investigation of an intrusion into the National Crime Information Center, the FBI’s national criminal-records database, by “apparent hackers.” No actor, entry point or stolen data is public (<a href="https://www.wisn.com/article/fbi-ncic-database-breach-investigation/74497434" target="_blank" rel="noopener noreferrer">CNN</a>; <a href="https://fox4news.com/news/fbis-ncic-criminal-database-hacked-sources-tell-ap" target="_blank" rel="noopener noreferrer">AP</a>; <a href="https://occasionaldigest.com/fbi-national-crime-database-suffers-suspected-breach-reports-technology-news/" target="_blank" rel="noopener noreferrer">Al Jazeera</a>).</li>
+        <li><strong>Earlier FBI breaches.</strong> The FBI called a March surveillance-system breach a “major incident.” ShinyHunters, a criminal group, claimed September’s jobs-portal compromise, and the FBI called its “point of breach” undetermined. No source read ties either to NCIC (<a href="https://www.aol.com/articles/fbi-labels-data-breach-major-182037071.html" target="_blank" rel="noopener noreferrer">The Hill</a>; <a href="https://www.aljazeera.com/news/2026/9/23/fbi-says-investigating-breach-of-very-sensitive-data-by-hackers" target="_blank" rel="noopener noreferrer">Al Jazeera</a>).</li>
+        <li><strong>NSANet.</strong> Director of National Intelligence Jay Clayton tied the 17 Nov failure to patching for PHP2Shell, a set of web-server flaws, and said officials “do not see the indicia of state-sponsored activity.” The NSA’s statement cited <a href="https://www.kbtx.com/2026/11/17/highly-classified-nsa-communications-network-is-down-report-says/" target="_blank" rel="noopener noreferrer">scheduled maintenance</a> (<a href="https://www.foxbusiness.com/technology/jay-clayton-addresses-concerns-amid-widespread-tech-outages" target="_blank" rel="noopener noreferrer">Fox Business</a>; <a href="https://krdo.com/?p=1776282" target="_blank" rel="noopener noreferrer">CNN</a>).</li>
+        <li><strong>PHP2Shell.</strong> Dream found a China-nexus operator chained PHP2Shell with a kernel flaw to root 25 firewall servers, including a U.S. government-affiliated organization’s. Dream names no actor, no Typhoon group and no NSA link; Unit 42 tracks it as CL-UNK-1280 (<a href="https://dreamgroup.com/blog/chained-php2shell-exploit-roots-25-servers" target="_blank" rel="noopener noreferrer">Dream</a>).</li>
+        <li><strong>U.S. enforcement.</strong> On 26 Aug the Justice Department seized QTFY’s QScan and QTRouter platforms, which it says Chinese state-sponsored hackers used. Targets included NASA and the Federal Reserve. Advisory AA26-281A on Flax Typhoon describes data theft and no disruption (<a href="https://www.justice.gov/usao-sdca/pr/justice-department-and-fbi-seize-platforms-operated-and-used-china-state-sponsored" target="_blank" rel="noopener noreferrer">DOJ</a>; <a href="https://www.ic3.gov/CSA/2026/261008.pdf" target="_blank" rel="noopener noreferrer">FBI, CISA, NSA</a>).</li>
+        <li><strong>Beijing.</strong> On 27 Aug China’s foreign ministry rejected the QTFY allegations as unsupported and cited an alleged NSA attack on its National Time Service Center. No source read shows a Chinese statement on the November incidents (<a href="https://www.mfa.gov.cn/eng/wjb/zzjg_663340/jks_665232/jkxw_665234/202608/t20260828_12011976.html" target="_blank" rel="noopener noreferrer">Foreign Ministry</a>).</li>
+      </ul>
+
+      <p class="pdb-report__label">Points of Dispute</p>
+      <div class="pdb-report__dispute">
+        <p><strong>Whether the March breach was Salt Typhoon.</strong> <em>NBC’s</em> source says the intrusion resembled Salt Typhoon techniques; <em>Fox News</em> was told China is responsible (<a href="https://www.aol.com/news/fbi-labels-suspected-china-hack-003927896.html" target="_blank" rel="noopener noreferrer">NBC</a>; <a href="https://www.foxnews.com/politics/fbi-notified-congress-last-week-china-linked-hack-deemed-major-incident" target="_blank" rel="noopener noreferrer">Fox News</a>). <em>Nextgov</em> could not independently confirm a Chinese link (<a href="https://www.nextgov.com/cybersecurity/2026/04/suspected-chinese-breach-fbi-system-exposed-surveillance-targets-phone-numbers/412612" target="_blank" rel="noopener noreferrer">Nextgov</a>). <em>CNN’s</em> NCIC report lists the September breach and a 2023 incident, not the March one (<a href="https://www.wisn.com/article/fbi-ncic-database-breach-investigation/74497434" target="_blank" rel="noopener noreferrer">CNN</a>). These reports cite no FBI attribution.</p>
+        <p><strong>Whether PHP2Shell links NSANet to Chinese operators.</strong> <em>Clayton</em> says patching took systems down (<a href="https://www.foxbusiness.com/technology/jay-clayton-addresses-concerns-amid-widespread-tech-outages" target="_blank" rel="noopener noreferrer">Fox Business</a>). <em>The Record</em> reports NSA officials called his account correct (<a href="https://therecord.media/nsa-continues-response-to-nsa-net-problems" target="_blank" rel="noopener noreferrer">The Record</a>); <em>Techlicious</em> notes the NSA’s statement named neither the flaw nor patching (<a href="https://www.techlicious.com/blog/nsas-classified-network-goes-down-amid-nationwide-tech-failures/" target="_blank" rel="noopener noreferrer">Techlicious</a>). <em>Dream</em> mentions no NSA link (<a href="https://dreamgroup.com/blog/chained-php2shell-exploit-roots-25-servers" target="_blank" rel="noopener noreferrer">Dream</a>). No source connects the two.</p>
+        <p><strong>Whether “China-nexus” means a Typhoon group.</strong> <em>Aviatrix</em> says the PHP2Shell activity mirrors Salt and Volt Typhoon patterns (<a href="https://aviatrix.ai/threat-research-center/attackers-exploit-php2shell-flaws-palo-alto-management-interfaces-cve-2026-109618/" target="_blank" rel="noopener noreferrer">Aviatrix</a>). <em>Dream</em> names no group, and <em>Unit 42</em> assesses a Chinese-speaking operator in the UTC+8 time zone (<a href="https://dreamgroup.com/blog/chained-php2shell-exploit-roots-25-servers" target="_blank" rel="noopener noreferrer">Dream</a>).</p>
+        <p><strong>How to read Beijing’s denials.</strong> <em>China’s foreign ministry</em> calls U.S. attributions disinformation and cites alleged U.S. pre-positioning (<a href="https://www.mfa.gov.cn/eng/wjb/zzjg_663340/jks_665232/jkxw_665234/202608/t20260828_12011976.html" target="_blank" rel="noopener noreferrer">Foreign Ministry</a>; <a href="https://www.globaltimes.cn/page/202608/1369217.shtml" target="_blank" rel="noopener noreferrer">Global Times</a>); <em>Xinhua</em> carried the same line on 14 Jul (<a href="https://en.people.cn/n3/2026/0714/c90000-20477672.html" target="_blank" rel="noopener noreferrer">Xinhua</a>). <em>Justice</em> later corrected its release to say all listed agencies were targeted and only some were compromised (<a href="https://www.aljazeera.com/amp/news/2026/8/29/us-revises-statements-suggesting-chinese-hackers-attacked-agencies" target="_blank" rel="noopener noreferrer">Al Jazeera</a>).</p>
+      </div>
+
+      <p class="pdb-report__label">Background</p>
+      <p class="pdb-report__text">“Typhoon” is the label American security firms and agencies give Chinese state-linked hacking groups. Four matter here. Volt Typhoon places hidden access in critical-infrastructure networks to enable disruption in a crisis. Salt Typhoon breached telecommunications carriers and law-enforcement systems to collect data. Flax Typhoon runs botnets of compromised edge and consumer devices. Silk Typhoon exploits IT suppliers to reach their customers. Pre-positioning of this kind shows no visible effect until used, so a linkage claim needs a matching sector, access path, attribution and timing. A May advisory says Volt Typhoon seeks to disrupt functions and operations (<a href="https://www.washingtontimes.com/news/2026/may/7/feds-urge-greater-protection-critical-infrastructure-chinese-hacks/" target="_blank" rel="noopener noreferrer">Washington Times</a>). Lumen reported on 28 Oct that Volt Typhoon built a new relay network, with no sabotage reported (<a href="https://www.nextgov.com/cybersecurity/2026/10/chinas-volt-typhoon-quietly-built-another-hacking-network-following-us-crackdown-new-findings-say/416848/" target="_blank" rel="noopener noreferrer">Nextgov</a>). Dream found the PHP2Shell operator used AI tools, including Claude Code, and no full autonomy.</p>
+
+      <p class="pdb-report__label">Watch</p>
+      <ol class="pdb-report__watch">
+        <li data-n="4.28">
+          <span class="pdb-report__watch-text">The FBI or DOJ names an actor, or a claimant emerges, for the NCIC intrusion by 31 Dec.</span>
+          <span class="pdb-report__assessment"><strong>Assessment:</strong> Roughly even chance (low confidence), based on ShinyHunters claiming September’s breach within hours and the March breach staying officially unattributed.</span>
+        </li>
+        <li data-n="4.29">
+          <span class="pdb-report__watch-text">A U.S. or allied agency names a PRC-linked actor for any November outage or the NCIC intrusion by 31 Dec.</span>
+          <span class="pdb-report__assessment"><strong>Assessment:</strong> Very unlikely (moderate confidence), based on no source attributing either and officials citing patching and maintenance.</span>
+        </li>
+        <li data-n="4.30">
+          <span class="pdb-report__watch-text">CISA, NSA or a vendor ties the PHP2Shell cluster CL-UNK-1280 to a named Typhoon group by 31 Jan 2027.</span>
+          <span class="pdb-report__assessment"><strong>Assessment:</strong> Unlikely (low confidence), based on Dream and Unit 42 leaving the cluster unnamed.</span>
+        </li>
+      </ol>
+
+      <p class="pdb-report__label">Analyst Comment: No Typhoon Linkage Has Evidence; Quiet Access Would Leave None</p>
+      <div class="pdb-report__comment">
+        <p><strong>Judgment.</strong> A Typhoon operation is unlikely to explain the November outages (moderate confidence): each has a stated cause, and quiet access shows no effect. An NSANet link is unlikely (low confidence). The NCIC actor cannot be ranked (low confidence).</p>
+        <p><strong>Target fit does not separate state from criminal actors.</strong> NCIC holds law-enforcement data like that Salt Typhoon collected, and ShinyHunters took FBI data in September.</p>
+        <p><strong>PHP2Shell is the one shared factor, and it runs through patching.</strong> A China-nexus cluster exploited it from late October while the NSA urged users to patch or go offline (<a href="https://www.tweaktown.com/news/114213/nsa-warns-70-percent-of-websites-to-install-the-latest-php-patch-now-or-go-offline/index.html" target="_blank" rel="noopener noreferrer">TweakTown</a>). <strong>Assessment:</strong> roughly even chance (low confidence) that this urgency shaped NSANet’s maintenance timing, based on Clayton’s patching account and that advisory. AI-assisted discovery of the flaws would raise patch volume (<a href="https://www.implicator.ai/us-tech-outages-ai-patch-rush.md" target="_blank" rel="noopener noreferrer">Implicator</a>).</p>
+        <p><strong>Absence of attribution is not clearance.</strong> Volt Typhoon rebuilt relay infrastructure after earlier takedowns (<a href="https://www.nextgov.com/cybersecurity/2026/10/chinas-volt-typhoon-quietly-built-another-hacking-network-following-us-crackdown-new-findings-say/416848/" target="_blank" rel="noopener noreferrer">Nextgov</a>), and court documents place a South Carolina power company among Flax Typhoon’s victims (<a href="https://www.theregister.com/a/5302107" target="_blank" rel="noopener noreferrer">The Register</a>). The record supports no linkage and no exclusion.</p>
+        <p><strong>Key assumptions.</strong> Operator and official causes are accurate, NCIC reporting is complete on attribution, and quiet pre-positioning leaves no visible effect before use. Disclosure: Anthropic made the model that prepared this report, and Claude Code appears in Dream’s findings.</p>
+        <p><strong>Alternative outcome.</strong> FBI or CISA detail places PHP2Shell exploitation inside NSA or FBI systems, or ties NCIC to the March intrusion’s tooling. Either would move both judgments toward a state actor.</p>
+      </div>
+
+      <div class="pdb-sources">
+        <div class="pdb-sources__group">
+          <p class="pdb-sources__group-label">Left / Left-Center</p>
+          <div class="pdb-sources__tags">
+            <a class="pdb-tag pdb-tag--lc" href="https://www.wisn.com/article/fbi-ncic-database-breach-investigation/74497434" target="_blank" rel="noopener noreferrer">CNN <span class="pdb-tag__desc">· broadcast · via WISN · NCIC</span></a>
+            <a class="pdb-tag pdb-tag--lc" href="https://www.aol.com/news/fbi-labels-suspected-china-hack-003927896.html" target="_blank" rel="noopener noreferrer">NBC News <span class="pdb-tag__desc">· broadcast · via AOL · headline and lede only</span></a>
+            <a class="pdb-tag pdb-tag--lc" href="https://fox4news.com/news/fbis-ncic-criminal-database-hacked-sources-tell-ap" target="_blank" rel="noopener noreferrer">AP <span class="pdb-tag__desc">· wire service · via FOX 4</span></a>
+            <a class="pdb-tag pdb-tag--lc" href="https://krdo.com/?p=1776282" target="_blank" rel="noopener noreferrer">CNN <span class="pdb-tag__desc">· broadcast · via KRDO · NSANet</span></a>
+            <a class="pdb-tag pdb-tag--lc" href="https://ktar.com/?p=5930724" target="_blank" rel="noopener noreferrer">AP <span class="pdb-tag__desc">· wire service · via KTAR · headline and lede only</span></a>
+          </div>
+        </div>
+        <div class="pdb-sources__group">
+          <p class="pdb-sources__group-label">Center</p>
+          <div class="pdb-sources__tags">
+            <a class="pdb-tag pdb-tag--ctr" href="https://www.aol.com/articles/fbi-labels-data-breach-major-182037071.html" target="_blank" rel="noopener noreferrer">The Hill <span class="pdb-tag__desc">· digital outlet · via AOL · headline and lede only</span></a>
+            <a class="pdb-tag pdb-tag--ctr" href="https://newsweek.com/faa-ground-stop-flight-cancellations-update-airline-advice-12717253" target="_blank" rel="noopener noreferrer">Newsweek <span class="pdb-tag__desc">· magazine · headline and lede only</span></a>
+          </div>
+        </div>
+        <div class="pdb-sources__group">
+          <p class="pdb-sources__group-label">Right / Right-Center</p>
+          <div class="pdb-sources__tags">
+            <a class="pdb-tag pdb-tag--rc" href="https://www.foxnews.com/politics/fbi-notified-congress-last-week-china-linked-hack-deemed-major-incident" target="_blank" rel="noopener noreferrer">Fox News <span class="pdb-tag__desc">· broadcast · via AOL · headline and lede only</span></a>
+            <a class="pdb-tag pdb-tag--rc" href="https://www.foxbusiness.com/technology/jay-clayton-addresses-concerns-amid-widespread-tech-outages" target="_blank" rel="noopener noreferrer">Fox News <span class="pdb-tag__desc">· broadcast · Fox Business · 17 Nov</span></a>
+            <a class="pdb-tag pdb-tag--rc" href="https://www.washingtontimes.com/news/2026/may/7/feds-urge-greater-protection-critical-infrastructure-chinese-hacks/" target="_blank" rel="noopener noreferrer">Washington Times <span class="pdb-tag__desc">· newspaper · 07 May · headline and lede only</span></a>
+          </div>
+        </div>
+        <div class="pdb-sources__group">
+          <p class="pdb-sources__group-label">International</p>
+          <div class="pdb-sources__tags">
+            <a class="pdb-tag pdb-tag--int" href="https://occasionaldigest.com/fbi-national-crime-database-suffers-suspected-breach-reports-technology-news/" target="_blank" rel="noopener noreferrer">Al Jazeera <span class="pdb-tag__desc">· digital outlet · via Occasional Digest</span></a>
+            <a class="pdb-tag pdb-tag--int" href="https://www.aljazeera.com/news/2026/9/23/fbi-says-investigating-breach-of-very-sensitive-data-by-hackers" target="_blank" rel="noopener noreferrer">Al Jazeera <span class="pdb-tag__desc">· digital outlet · 23 Sep</span></a>
+            <a class="pdb-tag pdb-tag--int" href="https://www.aljazeera.com/news/2026/11/16/thousands-report-difficulties-accessing-accounts-online-at-major-us-banks" target="_blank" rel="noopener noreferrer">Al Jazeera <span class="pdb-tag__desc">· digital outlet · 16 Nov · headline and lede only</span></a>
+            <a class="pdb-tag pdb-tag--int" href="https://www.aljazeera.com/amp/news/2026/8/29/us-revises-statements-suggesting-chinese-hackers-attacked-agencies" target="_blank" rel="noopener noreferrer">Al Jazeera <span class="pdb-tag__desc">· digital outlet · 29 Aug · headline and lede only</span></a>
+            <a class="pdb-tag pdb-tag--int" href="https://en.people.cn/n3/2026/0714/c90000-20477672.html" target="_blank" rel="noopener noreferrer">Xinhua <span class="pdb-tag__desc">· wire service · via People’s Daily · 14 Jul · headline and lede only</span></a>
+          </div>
+        </div>
+        <div class="pdb-sources__group">
+          <p class="pdb-sources__group-label">Primary Source</p>
+          <div class="pdb-sources__tags">
+            <a class="pdb-tag pdb-tag--ps" href="https://dreamgroup.com/blog/chained-php2shell-exploit-roots-25-servers" target="_blank" rel="noopener noreferrer">Dream <span class="pdb-tag__desc">· primary document · vendor report</span></a>
+            <a class="pdb-tag pdb-tag--ps" href="https://www.justice.gov/usao-sdca/pr/justice-department-and-fbi-seize-platforms-operated-and-used-china-state-sponsored" target="_blank" rel="noopener noreferrer">Justice Department <span class="pdb-tag__desc">· official statement · press release · 26 Aug</span></a>
+            <a class="pdb-tag pdb-tag--ps" href="https://www.ic3.gov/CSA/2026/261008.pdf" target="_blank" rel="noopener noreferrer">FBI, CISA, NSA <span class="pdb-tag__desc">· primary document · AA26-281A</span></a>
+            <a class="pdb-tag pdb-tag--ps" href="https://www.mfa.gov.cn/eng/wjb/zzjg_663340/jks_665232/jkxw_665234/202608/t20260828_12011976.html" target="_blank" rel="noopener noreferrer">Foreign Ministry of China <span class="pdb-tag__desc">· official statement · 27 Aug briefing</span></a>
+          </div>
+        </div>
+        <div class="pdb-gaps">
+          <p class="pdb-gaps__heading">Coverage Gaps This Edition</p>
+          <p class="pdb-gaps__body">Not available: CNN’s original NCIC text; an FBI statement; NCIC technical detail; the NSA’s root cause; Microsoft’s final report; a Chinese statement on the November incidents. Single group: PHP2Shell attribution.</p>
+        </div>
+      </div>
+    </article>
+
+  </div>
+
+  <footer class="pdb-footer">
+    <p class="pdb-footer__text">The PDB &nbsp;·&nbsp; 21 Nov 2026 &nbsp;·&nbsp; All sources open-access &nbsp;·&nbsp; No paywalls bypassed</p>
+  </footer>
+
+</main>
+</body>
+</html>
